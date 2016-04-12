@@ -3,7 +3,8 @@
 		"name":"SN2016bln",
 		"aliases":[
 			"SN2016bln",
-			"iPTF16abc"
+			"iPTF16abc",
+			"AT2016bln"
 		],
 		"sources":[
 			{
@@ -16,6 +17,11 @@
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
 				"alias":"2",
 				"secondary":true
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"3"
 			}
 		],
 		"claimedtype":[
@@ -26,7 +32,7 @@
 		],
 		"comovingdist":[
 			{
-				"value":"103",
+				"value":"102.47",
 				"source":"D",
 				"unit":"Mpc"
 			}
@@ -35,6 +41,11 @@
 			{
 				"value":"+13:51:14.3",
 				"source":"1,2",
+				"unit":"degrees"
+			},
+			{
+				"value":"+13:51:14.30",
+				"source":"3",
 				"unit":"degrees"
 			}
 		],
@@ -48,56 +59,119 @@
 			{
 				"value":"PTF",
 				"source":"1,2"
+			},
+			{
+				"value":"iPTF",
+				"source":"3"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 5221",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"lumdist":[
 			{
-				"value":"106",
+				"value":"104.85",
 				"source":"D",
+				"kind":"host",
 				"unit":"Mpc"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-15.9",
+				"value":"-15.903",
 				"source":"D"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"19.2",
-				"source":"D,1,2"
+				"source":"D,3"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"source":"D,3"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/04/03",
-				"source":"D,1,2"
+				"value":"2016/04/04",
+				"source":"D,3"
+			}
+		],
+		"observer":[
+			{
+				"value":"DAO_OTS",
+				"source":"3"
+			},
+			{
+				"value":"DES",
+				"source":"3"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"3"
+			},
+			{
+				"value":"iPTF",
+				"source":"3"
+			},
+			{
+				"value":"KEGS",
+				"source":"3"
+			},
+			{
+				"value":"OGLE",
+				"source":"3"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"3"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"3"
+			},
+			{
+				"value":"RANSSP",
+				"source":"3"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"3"
+			},
+			{
+				"value":"XOSS",
+				"source":"3"
+			},
+			{
+				"value":"XTSS",
+				"source":"3"
 			}
 		],
 		"ra":[
 			{
 				"value":"13:34:45.49",
-				"source":"1,2",
+				"source":"1,2,3",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
-				"value":"0.0235",
-				"source":"1,2"
+				"value":"0.023279",
+				"source":"3",
+				"kind":"host"
 			}
 		],
 		"velocity":[
 			{
-				"value":"6960",
+				"value":"6897.7",
 				"source":"D",
+				"kind":"host",
 				"unit":"km/s"
 			}
 		],
@@ -106,6 +180,20 @@
 				"timeunit":"MJD",
 				"time":"57481.5",
 				"magnitude":"19.2",
+				"source":"1,2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57482.39",
+				"band":"g",
+				"magnitude":"19.2",
+				"survey":"iPTF",
+				"source":"3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57487.5",
+				"magnitude":"16.7",
 				"source":"1,2"
 			}
 		]

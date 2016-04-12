@@ -7,27 +7,32 @@
 		],
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"1"
+			},
+			{
 				"name":"ATEL 8569",
 				"url":"http://www.astronomerstelegram.org/?read=8569",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"3",
 				"secondary":true
 			},
 			{
 				"name":"WISeREP",
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"3",
+				"alias":"4",
 				"secondary":true
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,3"
+				"source":"1,2,3,4"
 			}
 		],
 		"comovingdist":[
@@ -39,33 +44,43 @@
 		],
 		"dec":[
 			{
+				"value":"+22:01:34.90",
+				"source":"1",
+				"unit":"degrees"
+			},
+			{
 				"value":"+22:01:34.9",
-				"source":"1,2",
+				"source":"2,3",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/01/18",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"ASAS-SN",
+				"source":"1"
+			},
+			{
 				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 3926 NED02",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"115.82",
 				"source":"D",
+				"kind":"spectroscopic",
 				"unit":"Mpc"
 			}
 		],
@@ -78,32 +93,90 @@
 		"maxappmag":[
 			{
 				"value":"16.5",
-				"source":"D,1,2"
+				"source":"D,1"
+			}
+		],
+		"maxband":[
+			{
+				"value":"V",
+				"source":"D,1"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/01/17",
-				"source":"D,1,2"
+				"value":"2016/01/18",
+				"source":"D,1"
+			}
+		],
+		"observer":[
+			{
+				"value":"ASAS-SN",
+				"source":"1"
+			},
+			{
+				"value":"DAO_OTS",
+				"source":"1"
+			},
+			{
+				"value":"DES",
+				"source":"1"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"1"
+			},
+			{
+				"value":"KEGS",
+				"source":"1"
+			},
+			{
+				"value":"OGLE",
+				"source":"1"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"1"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"1"
+			},
+			{
+				"value":"RANSSP",
+				"source":"1"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"1"
+			},
+			{
+				"value":"XOSS",
+				"source":"1"
+			},
+			{
+				"value":"XTSS",
+				"source":"1"
 			}
 		],
 		"ra":[
 			{
 				"value":"11:51:28.20",
-				"source":"1,2",
+				"source":"1,2,3",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.025668",
-				"source":"3"
+				"source":"1,4",
+				"kind":"spectroscopic"
 			}
 		],
 		"velocity":[
 			{
 				"value":"7596.3",
 				"source":"D",
+				"kind":"spectroscopic",
 				"unit":"km/s"
 			}
 		],
@@ -112,7 +185,15 @@
 				"timeunit":"MJD",
 				"time":"57404.5",
 				"magnitude":"16.5",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57405.44",
+				"band":"V",
+				"magnitude":"16.5",
+				"survey":"ASAS-SN",
+				"source":"1"
 			}
 		]
 	}

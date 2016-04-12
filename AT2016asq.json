@@ -3,18 +3,24 @@
 		"name":"AT2016asq",
 		"aliases":[
 			"AT2016asq",
+			"PS16asn",
 			"PS1-6asn"
 		],
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"1"
+			},
+			{
 				"name":"PS1 SN page",
 				"url":"http://star.pst.qub.ac.uk/ps1threepi/psdb/public/",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"3",
 				"secondary":true
 			}
 		],
@@ -26,39 +32,105 @@
 		],
 		"dec":[
 			{
+				"value":"+31:26:37.96",
+				"source":"1",
+				"unit":"degrees"
+			},
+			{
 				"value":"+31:26:37.9",
-				"source":"1,2",
+				"source":"2,3",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/02/27",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"Pan-STARRS1",
+				"source":"1"
+			},
+			{
 				"value":"PS1",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"19.7",
-				"source":"D,1,2"
+				"value":"17.64",
+				"source":"D,1"
+			}
+		],
+		"maxband":[
+			{
+				"value":"r",
+				"source":"D,1"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/02/14",
-				"source":"D,1,2"
+				"value":"2016/02/27",
+				"source":"D,1"
+			}
+		],
+		"observer":[
+			{
+				"value":"DAO_OTS",
+				"source":"1"
+			},
+			{
+				"value":"DES",
+				"source":"1"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"1"
+			},
+			{
+				"value":"KEGS",
+				"source":"1"
+			},
+			{
+				"value":"OGLE",
+				"source":"1"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"1"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"1"
+			},
+			{
+				"value":"RANSSP",
+				"source":"1"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"1"
+			},
+			{
+				"value":"XOSS",
+				"source":"1"
+			},
+			{
+				"value":"XTSS",
+				"source":"1"
 			}
 		],
 		"ra":[
 			{
+				"value":"17:13:09.22",
+				"source":"1",
+				"unit":"hours"
+			},
+			{
 				"value":"17:13:09.21",
-				"source":"1,2",
+				"source":"2,3",
 				"unit":"hours"
 			}
 		],
@@ -67,7 +139,15 @@
 				"timeunit":"MJD",
 				"time":"57432.5",
 				"magnitude":"19.7",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57445.61858796296",
+				"band":"r",
+				"magnitude":"17.6369",
+				"survey":"Pan-STARRS1",
+				"source":"1"
 			}
 		]
 	}

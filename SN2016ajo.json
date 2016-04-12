@@ -7,21 +7,26 @@
 		],
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"1"
+			},
+			{
 				"name":"TNS",
 				"url":"http://wis-tns.weizmann.ac.il/object/2016ajo",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"3",
 				"secondary":true
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ib",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"comovingdist":[
@@ -33,27 +38,37 @@
 		],
 		"dec":[
 			{
+				"value":"+24:09:29.70",
+				"source":"1",
+				"unit":"degrees"
+			},
+			{
 				"value":"+24:09:29.7",
-				"source":"1,2",
+				"source":"2,3",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/02/20",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"XOSS",
+				"source":"1"
+			},
+			{
 				"value":"Xing Gao et al.",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"72",
 				"source":"D",
+				"kind":"spectroscopic",
 				"unit":"Mpc"
 			}
 		],
@@ -66,32 +81,86 @@
 		"maxappmag":[
 			{
 				"value":"15.7",
-				"source":"D,1,2"
+				"source":"D,1"
+			}
+		],
+		"maxband":[
+			{
+				"value":"Clear",
+				"source":"D,1"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/02/19",
-				"source":"D,1,2"
+				"value":"2016/02/20",
+				"source":"D,1"
+			}
+		],
+		"observer":[
+			{
+				"value":"DAO_OTS",
+				"source":"1"
+			},
+			{
+				"value":"DES",
+				"source":"1"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"1"
+			},
+			{
+				"value":"KEGS",
+				"source":"1"
+			},
+			{
+				"value":"OGLE",
+				"source":"1"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"1"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"1"
+			},
+			{
+				"value":"RANSSP",
+				"source":"1"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"1"
+			},
+			{
+				"value":"XOSS",
+				"source":"1"
+			},
+			{
+				"value":"XTSS",
+				"source":"1"
 			}
 		],
 		"ra":[
 			{
 				"value":"18:44:12.49",
-				"source":"1,2",
+				"source":"1,2,3",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.016",
-				"source":"1,2"
+				"source":"1,2,3",
+				"kind":"spectroscopic"
 			}
 		],
 		"velocity":[
 			{
 				"value":"4800",
 				"source":"D",
+				"kind":"spectroscopic",
 				"unit":"km/s"
 			}
 		],
@@ -100,7 +169,15 @@
 				"timeunit":"MJD",
 				"time":"57437.5",
 				"magnitude":"15.7",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57438.9909837963",
+				"band":"Clear",
+				"magnitude":"15.7",
+				"survey":"XOSS",
+				"source":"1"
 			}
 		]
 	}

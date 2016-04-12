@@ -7,65 +7,190 @@
 		],
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"1"
+			},
+			{
 				"name":"TNS",
 				"url":"http://wis-tns.weizmann.ac.il/object/2016aqp",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"3",
 				"secondary":true
+			},
+			{
+				"name":"Gaia Photometric Science Alerts",
+				"url":"https://gaia.ac.uk/selected-gaia-science-alerts",
+				"alias":"4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II P",
-				"source":"1,2"
+				"source":"1,2,3,4"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"71",
+				"source":"D",
+				"unit":"Mpc"
 			}
 		],
 		"dec":[
 			{
+				"value":"-04:58:43.50",
+				"source":"1",
+				"unit":"degrees"
+			},
+			{
 				"value":"-04:58:43.5",
-				"source":"1,2",
+				"source":"2,3",
+				"unit":"degrees"
+			},
+			{
+				"value":"-04:58:43.75",
+				"source":"4",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/02/26",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"POSS",
+				"source":"1"
+			},
+			{
 				"value":"Tim Puckett et al.",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"host":[
 			{
+				"value":"PGC 16065",
+				"source":"1"
+			},
+			{
 				"value":"MCG -01-13-12",
-				"source":"1,2"
+				"source":"2,3"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"72",
+				"source":"D",
+				"kind":"spectroscopic",
+				"unit":"Mpc"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-17",
+				"source":"D"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.7",
-				"source":"D,1,2"
+				"source":"D,1"
+			}
+		],
+		"maxband":[
+			{
+				"value":"Clear",
+				"source":"D,1"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/02/25",
-				"source":"D,1,2"
+				"value":"2016/02/26",
+				"source":"D,1"
+			}
+		],
+		"observer":[
+			{
+				"value":"DAO_OTS",
+				"source":"1"
+			},
+			{
+				"value":"DES",
+				"source":"1"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"1"
+			},
+			{
+				"value":"KEGS",
+				"source":"1"
+			},
+			{
+				"value":"OGLE",
+				"source":"1"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"1"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"1"
+			},
+			{
+				"value":"POSS",
+				"source":"1"
+			},
+			{
+				"value":"RANSSP",
+				"source":"1"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"1"
+			},
+			{
+				"value":"XOSS",
+				"source":"1"
+			},
+			{
+				"value":"XTSS",
+				"source":"1"
 			}
 		],
 		"ra":[
 			{
 				"value":"04:48:43.43",
-				"source":"1,2",
+				"source":"1,2,3",
 				"unit":"hours"
+			},
+			{
+				"value":"04:48:43.44",
+				"source":"4",
+				"unit":"hours"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.016",
+				"source":"1",
+				"kind":"spectroscopic"
+			}
+		],
+		"velocity":[
+			{
+				"value":"4800",
+				"source":"D",
+				"kind":"spectroscopic",
+				"unit":"km/s"
 			}
 		],
 		"photometry":[
@@ -73,7 +198,47 @@
 				"timeunit":"MJD",
 				"time":"57443.5",
 				"magnitude":"17.7",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57444.14270833333",
+				"band":"Clear",
+				"magnitude":"17.7",
+				"survey":"POSS",
+				"source":"1"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57446.049",
+				"band":"G",
+				"magnitude":"17.94",
+				"telescope":"GAIA",
+				"source":"4"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57446.123",
+				"band":"G",
+				"magnitude":"17.93",
+				"telescope":"GAIA",
+				"source":"4"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57483.264",
+				"band":"G",
+				"magnitude":"18.25",
+				"telescope":"GAIA",
+				"source":"4"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57483.338",
+				"band":"G",
+				"magnitude":"18.09",
+				"telescope":"GAIA",
+				"source":"4"
 			}
 		]
 	}

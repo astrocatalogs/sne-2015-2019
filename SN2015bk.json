@@ -7,27 +7,32 @@
 		],
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"1"
+			},
+			{
 				"name":"ATEL 8601",
 				"url":"http://www.astronomerstelegram.org/?read=8601",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"3",
 				"secondary":true
 			},
 			{
 				"name":"WISeREP",
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"3",
+				"alias":"4",
 				"secondary":true
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,3"
+				"source":"1,2,3,4"
 			}
 		],
 		"comovingdist":[
@@ -40,64 +45,132 @@
 		"dec":[
 			{
 				"value":"+58:13:01.87",
-				"source":"1,2",
+				"source":"1,2,3",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2015/12/31",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"iPTF",
+				"source":"1"
+			},
+			{
 				"value":"PTF",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"1290",
 				"source":"D",
+				"kind":"spectroscopic",
 				"unit":"Mpc"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-20",
+				"value":"-19.9",
 				"source":"D"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"20.6",
-				"source":"D,1,2"
+				"value":"20.61",
+				"source":"D,1"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"source":"D,1"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2015/12/30",
-				"source":"D,1,2"
+				"value":"2015/12/31",
+				"source":"D,1"
+			}
+		],
+		"observer":[
+			{
+				"value":"DAO_OTS",
+				"source":"1"
+			},
+			{
+				"value":"DES",
+				"source":"1"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"1"
+			},
+			{
+				"value":"iPTF",
+				"source":"1"
+			},
+			{
+				"value":"KEGS",
+				"source":"1"
+			},
+			{
+				"value":"OGLE",
+				"source":"1"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"1"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"1"
+			},
+			{
+				"value":"RANSSP",
+				"source":"1"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"1"
+			},
+			{
+				"value":"XOSS",
+				"source":"1"
+			},
+			{
+				"value":"XTSS",
+				"source":"1"
 			}
 		],
 		"ra":[
 			{
+				"value":"07:03:28.62",
+				"source":"1",
+				"unit":"hours"
+			},
+			{
 				"value":"07:03:28.622",
-				"source":"1,2",
+				"source":"2,3",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.249",
-				"source":"1,2,3"
+				"source":"1,2,3,4",
+				"kind":"spectroscopic"
 			}
 		],
 		"velocity":[
 			{
 				"value":"65600",
 				"source":"D",
+				"kind":"spectroscopic",
 				"unit":"km/s"
 			}
 		],
@@ -106,7 +179,15 @@
 				"timeunit":"MJD",
 				"time":"57386.5",
 				"magnitude":"20.6",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57387.32",
+				"band":"g",
+				"magnitude":"20.61",
+				"survey":"iPTF",
+				"source":"1"
 			}
 		]
 	}

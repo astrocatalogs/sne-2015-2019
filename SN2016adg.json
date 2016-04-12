@@ -7,42 +7,47 @@
 		],
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"1"
+			},
+			{
 				"name":"TNS",
 				"url":"http://wis-tns.weizmann.ac.il/object/2016adg",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"3",
 				"secondary":true
 			},
 			{
 				"name":"Asiago Supernova Catalogue",
 				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-				"alias":"3",
+				"alias":"4",
 				"secondary":true
 			},
 			{
 				"name":"ATEL8671",
 				"url":"http://www.astronomerstelegram.org/?read=8671",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"WISeREP",
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"5",
+				"alias":"6",
 				"secondary":true
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II P",
-				"source":"1,2,5"
+				"source":"1,2,3,6"
 			},
 			{
 				"value":"II",
-				"source":"4,3"
+				"source":"5,4"
 			}
 		],
 		"comovingdist":[
@@ -54,33 +59,39 @@
 		],
 		"dec":[
 			{
+				"value":"+15:10:27.44",
+				"source":"1",
+				"unit":"degrees"
+			},
+			{
 				"value":"+15:10:27.4",
-				"source":"1,2,4,3",
+				"source":"2,3,5,4",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/02/07",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"LOSS",
-				"source":"1,2,4,3"
+				"source":"1,2,3,5,4"
 			}
 		],
 		"host":[
 			{
 				"value":"UGC 3376",
-				"source":"1,2,4,3"
+				"source":"1,2,3,5,4"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"58.733",
 				"source":"D",
+				"kind":"host",
 				"unit":"Mpc"
 			}
 		],
@@ -93,41 +104,101 @@
 		"maxappmag":[
 			{
 				"value":"17.2",
-				"source":"D,1,2"
+				"source":"D,2,3"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/02/14",
-				"source":"D,1,2"
+				"source":"D,2,3"
+			}
+		],
+		"observer":[
+			{
+				"value":"DAO_OTS",
+				"source":"1"
+			},
+			{
+				"value":"DES",
+				"source":"1"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"1"
+			},
+			{
+				"value":"KEGS",
+				"source":"1"
+			},
+			{
+				"value":"LOSS",
+				"source":"1"
+			},
+			{
+				"value":"OGLE",
+				"source":"1"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"1"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"1"
+			},
+			{
+				"value":"RANSSP",
+				"source":"1"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"1"
+			},
+			{
+				"value":"XOSS",
+				"source":"1"
+			},
+			{
+				"value":"XTSS",
+				"source":"1"
 			}
 		],
 		"ra":[
 			{
 				"value":"05:54:40.63",
-				"source":"1,2,4,3",
+				"source":"1,2,3,5,4",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.013139",
-				"source":"1,2,4,3"
+				"source":"1,2,3,5,4",
+				"kind":"host"
 			}
 		],
 		"velocity":[
 			{
 				"value":"3913.1",
 				"source":"D",
+				"kind":"host",
 				"unit":"km/s"
 			}
 		],
 		"photometry":[
 			{
 				"timeunit":"MJD",
+				"time":"57425.21115740741",
+				"band":"Clear",
+				"magnitude":"17.9",
+				"survey":"LOSS",
+				"source":"1"
+			},
+			{
+				"timeunit":"MJD",
 				"time":"57432.5",
 				"magnitude":"17.2",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		]
 	}

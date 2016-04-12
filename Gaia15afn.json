@@ -2,19 +2,37 @@
 	"Gaia15afn":{
 		"name":"Gaia15afn",
 		"aliases":[
-			"Gaia15afn"
+			"Gaia15afn",
+			"ASASSN-15ic"
 		],
 		"sources":[
 			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"https://gaia.ac.uk/selected-gaia-science-alerts",
 				"alias":"1"
+			},
+			{
+				"name":"ATEL 7455",
+				"url":"http://www.astronomerstelegram.org/?read=7455",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1"
+				"source":"1,2,3"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"110",
+				"source":"D",
+				"unit":"Mpc"
 			}
 		],
 		"dec":[
@@ -22,30 +40,48 @@
 				"value":"-42:47:56.76",
 				"source":"1",
 				"unit":"degrees"
+			},
+			{
+				"value":"-42:47:56.0",
+				"source":"2,3",
+				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2015/05/17",
-				"source":"D,1"
+				"value":"2015/04/27",
+				"source":"2,3"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
+				"source":"2,3"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"110",
+				"source":"D",
+				"unit":"Mpc"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-19",
+				"source":"D"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"16.94",
-				"source":"D,1"
-			}
-		],
-		"maxband":[
-			{
-				"value":"G",
-				"source":"D,1"
+				"value":"16.4",
+				"source":"D,2,3"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2015/05/17",
-				"source":"D,1"
+				"value":"2015/04/27",
+				"source":"D,2,3"
 			}
 		],
 		"ra":[
@@ -53,22 +89,62 @@
 				"value":"06:14:51.31",
 				"source":"1",
 				"unit":"hours"
+			},
+			{
+				"value":"06:14:51.38",
+				"source":"2,3",
+				"unit":"hours"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.025",
+				"source":"2,3"
+			}
+		],
+		"velocity":[
+			{
+				"value":"7400",
+				"source":"D",
+				"unit":"km/s"
 			}
 		],
 		"photometry":[
 			{
 				"timeunit":"MJD",
-				"time":"57159.915",
+				"time":"57139.5",
+				"magnitude":"16.4",
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57159.913",
 				"band":"G",
-				"magnitude":"16.94",
+				"magnitude":"16.93",
 				"telescope":"GAIA",
 				"source":"1"
 			},
 			{
 				"timeunit":"MJD",
-				"time":"57159.989",
+				"time":"57159.987",
 				"band":"G",
 				"magnitude":"17.02",
+				"telescope":"GAIA",
+				"source":"1"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57221.687",
+				"band":"G",
+				"magnitude":"19.09",
+				"telescope":"GAIA",
+				"source":"1"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57221.863",
+				"band":"G",
+				"magnitude":"19.14",
 				"telescope":"GAIA",
 				"source":"1"
 			}

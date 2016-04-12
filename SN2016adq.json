@@ -8,38 +8,43 @@
 		],
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"1"
+			},
+			{
 				"name":"ATEL 8666",
 				"url":"http://www.astronomerstelegram.org/?read=8666",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"3",
 				"secondary":true
 			},
 			{
 				"name":"Asiago Supernova Catalogue",
 				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-				"alias":"3",
+				"alias":"4",
 				"secondary":true
 			},
 			{
 				"name":"ATEL8672",
 				"url":"http://www.astronomerstelegram.org/?read=8672",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"WISeREP",
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"5",
+				"alias":"6",
 				"secondary":true
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,4,3,5"
+				"source":"1,2,3,5,4,6"
 			}
 		],
 		"comovingdist":[
@@ -51,37 +56,43 @@
 		],
 		"dec":[
 			{
+				"value":"+71:53:15.25",
+				"source":"1",
+				"unit":"degrees"
+			},
+			{
 				"value":"+71:53:15.3",
-				"source":"1,2,4,3",
+				"source":"2,3,5,4",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/02/09",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"discoverer":[
 			{
-				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
-				"source":"1,2"
+				"value":"ASAS-SN",
+				"source":"1,5,4"
 			},
 			{
-				"value":"ASAS-SN",
-				"source":"4,3"
+				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
+				"source":"2,3"
 			}
 		],
 		"host":[
 			{
 				"value":"CGCG 336-041",
-				"source":"1,2,4,3"
+				"source":"1,2,3,5,4"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"155.26",
 				"source":"D",
+				"kind":"spectroscopic",
 				"unit":"Mpc"
 			}
 		],
@@ -94,32 +105,90 @@
 		"maxappmag":[
 			{
 				"value":"16.2",
-				"source":"D,1,2"
+				"source":"D,1"
+			}
+		],
+		"maxband":[
+			{
+				"value":"V",
+				"source":"D,1"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/02/08",
-				"source":"D,1,2"
+				"value":"2016/02/09",
+				"source":"D,1"
+			}
+		],
+		"observer":[
+			{
+				"value":"ASAS-SN",
+				"source":"1"
+			},
+			{
+				"value":"DAO_OTS",
+				"source":"1"
+			},
+			{
+				"value":"DES",
+				"source":"1"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"1"
+			},
+			{
+				"value":"KEGS",
+				"source":"1"
+			},
+			{
+				"value":"OGLE",
+				"source":"1"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"1"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"1"
+			},
+			{
+				"value":"RANSSP",
+				"source":"1"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"1"
+			},
+			{
+				"value":"XOSS",
+				"source":"1"
+			},
+			{
+				"value":"XTSS",
+				"source":"1"
 			}
 		],
 		"ra":[
 			{
 				"value":"14:06:44.37",
-				"source":"1,2,4,3",
+				"source":"1,2,3,5,4",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.034194",
-				"source":"1,2,5"
+				"source":"1,2,3,6",
+				"kind":"spectroscopic"
 			}
 		],
 		"velocity":[
 			{
 				"value":"10076",
 				"source":"D",
+				"kind":"spectroscopic",
 				"unit":"km/s"
 			}
 		],
@@ -128,7 +197,15 @@
 				"timeunit":"MJD",
 				"time":"57426.5",
 				"magnitude":"16.2",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57427.6",
+				"band":"V",
+				"magnitude":"16.2",
+				"survey":"ASAS-SN",
+				"source":"1"
 			}
 		]
 	}

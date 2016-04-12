@@ -7,27 +7,32 @@
 		],
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"1"
+			},
+			{
 				"name":"ATEL 8680",
 				"url":"http://www.astronomerstelegram.org/?read=8680",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"3",
 				"secondary":true
 			},
 			{
 				"name":"WISeREP",
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"3",
+				"alias":"4",
 				"secondary":true
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,3"
+				"source":"1,2,3,4"
 			}
 		],
 		"comovingdist":[
@@ -39,33 +44,39 @@
 		],
 		"dec":[
 			{
+				"value":"+42:05:49.40",
+				"source":"1",
+				"unit":"degrees"
+			},
+			{
 				"value":"+42:05:49.4",
-				"source":"1,2",
+				"source":"2,3",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/01/21",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ATLAS",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"host":[
 			{
 				"value":"PGC 2192359",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"81",
 				"source":"D",
+				"kind":"spectroscopic",
 				"unit":"Mpc"
 			}
 		],
@@ -78,32 +89,90 @@
 		"maxappmag":[
 			{
 				"value":"16.5",
-				"source":"D,1,2"
+				"source":"D,1"
+			}
+		],
+		"maxband":[
+			{
+				"value":"orange",
+				"source":"D,1"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/01/20",
-				"source":"D,1,2"
+				"value":"2016/01/21",
+				"source":"D,1"
+			}
+		],
+		"observer":[
+			{
+				"value":"ATLAS",
+				"source":"1"
+			},
+			{
+				"value":"DAO_OTS",
+				"source":"1"
+			},
+			{
+				"value":"DES",
+				"source":"1"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"1"
+			},
+			{
+				"value":"KEGS",
+				"source":"1"
+			},
+			{
+				"value":"OGLE",
+				"source":"1"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"1"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"1"
+			},
+			{
+				"value":"RANSSP",
+				"source":"1"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"1"
+			},
+			{
+				"value":"XOSS",
+				"source":"1"
+			},
+			{
+				"value":"XTSS",
+				"source":"1"
 			}
 		],
 		"ra":[
 			{
 				"value":"03:21:42.43",
-				"source":"1,2",
+				"source":"1,2,3",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.018",
-				"source":"1,2,3"
+				"source":"1,2,3,4",
+				"kind":"spectroscopic"
 			}
 		],
 		"velocity":[
 			{
 				"value":"5300",
 				"source":"D",
+				"kind":"spectroscopic",
 				"unit":"km/s"
 			}
 		],
@@ -112,7 +181,15 @@
 				"timeunit":"MJD",
 				"time":"57407.5",
 				"magnitude":"16.5",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57408.811956018515",
+				"band":"orange",
+				"magnitude":"16.5",
+				"survey":"ATLAS",
+				"source":"1"
 			}
 		]
 	}

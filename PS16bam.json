@@ -3,13 +3,29 @@
 		"name":"PS16bam",
 		"aliases":[
 			"PS16bam",
-			"AT2016arl"
+			"AT2016arl",
+			"LSQ16zj"
 		],
 		"sources":[
 			{
 				"name":"Pan-STARRS 3Pi",
 				"url":"http://psweb.mp.qub.ac.uk/ps1threepi/psdb/",
 				"alias":"1"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"2"
+			},
+			{
+				"name":"TNS",
+				"url":"http://wis-tns.weizmann.ac.il/search",
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
 			}
 		],
 		"dec":[
@@ -17,12 +33,32 @@
 				"value":"-01:32:07.9",
 				"source":"1",
 				"unit":"degrees"
+			},
+			{
+				"value":"-01:32:08.09",
+				"source":"2",
+				"unit":"degrees"
+			},
+			{
+				"value":"-01:32:08.1",
+				"source":"3,4",
+				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/03/10",
-				"source":"D,1"
+				"value":"2016/03/03",
+				"source":"3,4"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"LSQ",
+				"source":"2"
+			},
+			{
+				"value":"La Silla-QUEST",
+				"source":"3,4"
 			}
 		],
 		"host":[
@@ -33,26 +69,75 @@
 		],
 		"maxappmag":[
 			{
-				"value":"18.73",
-				"source":"D,1"
-			}
-		],
-		"maxband":[
-			{
-				"value":"w",
-				"source":"D,1"
+				"value":"18.7",
+				"source":"D,3,4"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/03/10",
-				"source":"D,1"
+				"value":"2016/03/09",
+				"source":"D,3,4"
+			}
+		],
+		"observer":[
+			{
+				"value":"DAO_OTS",
+				"source":"2"
+			},
+			{
+				"value":"DES",
+				"source":"2"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"2"
+			},
+			{
+				"value":"KEGS",
+				"source":"2"
+			},
+			{
+				"value":"LSQ",
+				"source":"2"
+			},
+			{
+				"value":"OGLE",
+				"source":"2"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"2"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"2"
+			},
+			{
+				"value":"RANSSP",
+				"source":"2"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"2"
+			},
+			{
+				"value":"XOSS",
+				"source":"2"
+			},
+			{
+				"value":"XTSS",
+				"source":"2"
 			}
 		],
 		"ra":[
 			{
 				"value":"12:10:54.57",
 				"source":"1",
+				"unit":"hours"
+			},
+			{
+				"value":"12:10:54.61",
+				"source":"2,3,4",
 				"unit":"hours"
 			}
 		],
@@ -902,6 +987,20 @@
 				"telescope":"Pan-STARRS1",
 				"source":"1",
 				"upperlimit":true
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57450.260196759256",
+				"band":"gr",
+				"magnitude":"19.1213",
+				"survey":"LSQ",
+				"source":"2"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57456.5",
+				"magnitude":"18.7",
+				"source":"3,4"
 			},
 			{
 				"timeunit":"MJD",

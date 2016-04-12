@@ -3,107 +3,208 @@
 		"name":"SN2016ahb",
 		"aliases":[
 			"SN2016ahb",
+			"SNHunt309",
 			"SNhunt309"
 		],
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"1"
+			},
+			{
 				"name":"TNS",
 				"url":"http://wis-tns.weizmann.ac.il/object/2016ahb",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"3",
 				"secondary":true
+			},
+			{
+				"name":"Supernova Hunt",
+				"url":"http://nesssi.cacr.caltech.edu/catalina/current.html",
+				"alias":"4"
 			},
 			{
 				"name":"WISeREP",
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"3",
+				"alias":"5",
 				"secondary":true
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,3"
+				"source":"1,2,3,5"
 			}
 		],
 		"comovingdist":[
 			{
-				"value":"92",
+				"value":"90.104",
 				"source":"D",
 				"unit":"Mpc"
 			}
 		],
 		"dec":[
 			{
+				"value":"-16:07:34.50",
+				"source":"1",
+				"unit":"degrees"
+			},
+			{
 				"value":"-16:07:34.5",
-				"source":"1,2",
+				"source":"2,3",
+				"unit":"degrees"
+			},
+			{
+				"value":"-16:07:34.32",
+				"source":"4",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/02/16",
-				"source":"1,2"
+				"source":"2,3,4"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"SNHunt",
+				"source":"1"
+			},
+			{
 				"value":"CRTS",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"value":"Villi",
+				"source":"4"
 			}
 		],
 		"host":[
 			{
+				"value":"MCG -03-35-004",
+				"source":"1,4"
+			},
+			{
 				"value":"MCG -03-35-04",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"lumdist":[
 			{
-				"value":"94",
+				"value":"91.947",
 				"source":"D",
+				"kind":"host",
 				"unit":"Mpc"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-16",
+				"value":"-15.918",
 				"source":"D"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.9",
-				"source":"D,1,2"
+				"source":"D,1"
+			}
+		],
+		"maxband":[
+			{
+				"value":"V",
+				"source":"D,1"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/02/15",
-				"source":"D,1,2"
+				"value":"2016/02/16",
+				"source":"D,1"
+			}
+		],
+		"observer":[
+			{
+				"value":"CRTS",
+				"source":"1"
+			},
+			{
+				"value":"DAO_OTS",
+				"source":"1"
+			},
+			{
+				"value":"DES",
+				"source":"1"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"1"
+			},
+			{
+				"value":"KEGS",
+				"source":"1"
+			},
+			{
+				"value":"OGLE",
+				"source":"1"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"1"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"1"
+			},
+			{
+				"value":"RANSSP",
+				"source":"1"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"1"
+			},
+			{
+				"value":"SNHunt",
+				"source":"1"
+			},
+			{
+				"value":"XOSS",
+				"source":"1"
+			},
+			{
+				"value":"XTSS",
+				"source":"1"
 			}
 		],
 		"ra":[
 			{
 				"value":"13:33:16.86",
-				"source":"1,2",
+				"source":"1,2,3",
+				"unit":"hours"
+			},
+			{
+				"value":"13:33:16.8",
+				"source":"4",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
-				"value":"0.021",
-				"source":"1,2,3"
+				"value":"0.020457",
+				"source":"1",
+				"kind":"host"
 			}
 		],
 		"velocity":[
 			{
-				"value":"6200",
+				"value":"6070.1",
 				"source":"D",
+				"kind":"host",
 				"unit":"km/s"
 			}
 		],
@@ -112,7 +213,15 @@
 				"timeunit":"MJD",
 				"time":"57433.5",
 				"magnitude":"18.9",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57434.4737962963",
+				"band":"V",
+				"magnitude":"18.9",
+				"survey":"SNHunt",
+				"source":"1"
 			}
 		]
 	}
