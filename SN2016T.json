@@ -3,7 +3,8 @@
 		"name":"SN2016T",
 		"aliases":[
 			"SN2016T",
-			"PS16hx"
+			"PS16hx",
+			"AT2016T"
 		],
 		"sources":[
 			{
@@ -20,12 +21,22 @@
 				"name":"ATel 8546",
 				"url":"http://www.astronomerstelegram.org/?read=8546",
 				"alias":"3"
+			},
+			{
+				"name":"PS1 SN page",
+				"url":"http://star.pst.qub.ac.uk/ps1threepi/psdb/public/",
+				"alias":"4"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II",
-				"source":"1"
+				"source":"1,4,5"
 			}
 		],
 		"comovingdist":[
@@ -43,20 +54,24 @@
 			},
 			{
 				"value":"+31:00:27.8",
-				"source":"2,3",
+				"source":"2,3,4,5",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/01/07",
-				"source":"D,1"
+				"source":"4,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Pan-STARRS1",
 				"source":"1"
+			},
+			{
+				"value":"PS1",
+				"source":"4,5"
 			}
 		],
 		"host":[
@@ -146,14 +161,14 @@
 		"ra":[
 			{
 				"value":"07:45:43.36",
-				"source":"1,2,3",
+				"source":"1,2,3,4,5",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.062",
-				"source":"1",
+				"source":"1,4,5",
 				"kind":"spectroscopic"
 			}
 		],
@@ -570,6 +585,12 @@
 				"telescope":"Pan-STARRS1",
 				"source":"2,3",
 				"upperlimit":true
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57393.5",
+				"magnitude":"20.6",
+				"source":"4,5"
 			},
 			{
 				"timeunit":"MJD",
