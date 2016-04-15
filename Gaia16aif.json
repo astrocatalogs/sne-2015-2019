@@ -2,13 +2,31 @@
 	"Gaia16aif":{
 		"name":"Gaia16aif",
 		"aliases":[
-			"Gaia16aif"
+			"Gaia16aif",
+			"AT2016aym",
+			"ATLAS16acs"
 		],
 		"sources":[
 			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"https://gaia.ac.uk/selected-gaia-science-alerts",
 				"alias":"1"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"2"
+			},
+			{
+				"name":"ATEL 8805",
+				"url":"http://www.astronomerstelegram.org/?read=8805",
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4",
+				"secondary":true
 			}
 		],
 		"dec":[
@@ -16,30 +34,96 @@
 				"value":"+46:28:7.68",
 				"source":"1",
 				"unit":"degrees"
+			},
+			{
+				"value":"+46:28:08.10",
+				"source":"2",
+				"unit":"degrees"
+			},
+			{
+				"value":"+46:28:08.1",
+				"source":"3,4",
+				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/03/13",
-				"source":"D,1"
+				"value":"2016/02/22",
+				"source":"3,4"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"ATLAS",
+				"source":"2,3,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.18",
-				"source":"D,1"
+				"value":"17.78",
+				"source":"D,2"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
-				"source":"D,1"
+				"value":"orange",
+				"source":"D,2"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/03/13",
-				"source":"D,1"
+				"value":"2016/02/22",
+				"source":"D,2"
+			}
+		],
+		"observer":[
+			{
+				"value":"ATLAS",
+				"source":"2"
+			},
+			{
+				"value":"DAO_OTS",
+				"source":"2"
+			},
+			{
+				"value":"DES",
+				"source":"2"
+			},
+			{
+				"value":"GaiaAlerts",
+				"source":"2"
+			},
+			{
+				"value":"KEGS",
+				"source":"2"
+			},
+			{
+				"value":"OGLE",
+				"source":"2"
+			},
+			{
+				"value":"Padova-Asiago",
+				"source":"2"
+			},
+			{
+				"value":"Pan-STARRS1",
+				"source":"2"
+			},
+			{
+				"value":"RANSSP",
+				"source":"2"
+			},
+			{
+				"value":"SkyMapper",
+				"source":"2"
+			},
+			{
+				"value":"XOSS",
+				"source":"2"
+			},
+			{
+				"value":"XTSS",
+				"source":"2"
 			}
 		],
 		"ra":[
@@ -47,9 +131,28 @@
 				"value":"07:20:21.84",
 				"source":"1",
 				"unit":"hours"
+			},
+			{
+				"value":"07:20:21.81",
+				"source":"2,3,4",
+				"unit":"hours"
 			}
 		],
 		"photometry":[
+			{
+				"timeunit":"MJD",
+				"time":"57439.5",
+				"magnitude":"17.8",
+				"source":"3,4"
+			},
+			{
+				"timeunit":"MJD",
+				"time":"57440.33",
+				"band":"orange",
+				"magnitude":"17.78",
+				"survey":"ATLAS",
+				"source":"2"
+			},
 			{
 				"timeunit":"MJD",
 				"time":"57460.571",
