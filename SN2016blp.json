@@ -1,135 +1,169 @@
 {
-	"AT2016blp":{
-		"name":"AT2016blp",
+	"SN2016blp":{
+		"name":"SN2016blp",
 		"aliases":[
+			"SN2016blp",
+			"PS16bma",
 			"AT2016blp",
-			"LSQ16aiy",
-			"PS16bma"
+			"LSQ16aiy"
 		],
 		"sources":[
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il",
-				"alias":"1"
-			},
-			{
 				"name":"PS1 SN page",
 				"url":"http://star.pst.qub.ac.uk/ps1threepi/psdb/public/",
-				"alias":"2"
+				"alias":"1"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3",
+				"alias":"2",
 				"secondary":true
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"3"
 			}
 		],
 		"claimedtype":[
 			{
-				"value":"Candidate",
-				"source":"D"
+				"value":"Ia",
+				"source":"1,2"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"300",
+				"source":"D",
+				"unit":"Mpc"
 			}
 		],
 		"dec":[
 			{
-				"value":"+14:29:25.22",
-				"source":"1",
+				"value":"+14:29:24.9",
+				"source":"1,2",
 				"unit":"degrees"
 			},
 			{
-				"value":"+14:29:24.9",
-				"source":"2,3",
+				"value":"+14:29:25.22",
+				"source":"3",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/03/28",
-				"source":"2,3"
+				"source":"1,2"
 			}
 		],
 		"discoverer":[
 			{
-				"value":"LSQ",
-				"source":"1"
+				"value":"PS1",
+				"source":"1,2"
 			},
 			{
-				"value":"PS1",
-				"source":"2,3"
+				"value":"LSQ",
+				"source":"3"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"300",
+				"source":"D",
+				"unit":"Mpc"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-20",
+				"source":"D"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.3",
-				"source":"D,2,3"
+				"source":"D,1,2"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/03/28",
-				"source":"D,2,3"
+				"source":"D,1,2"
 			}
 		],
 		"observer":[
 			{
 				"value":"DAO_OTS",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"DES",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"GaiaAlerts",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"KEGS",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"LSQ",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"OGLE",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"Padova-Asiago",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"Pan-STARRS1",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"RANSSP",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"SkyMapper",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"XOSS",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"XTSS",
-				"source":"1"
+				"source":"3"
 			}
 		],
 		"ra":[
 			{
-				"value":"10:56:05.54",
-				"source":"1",
+				"value":"10:56:05.56",
+				"source":"1,2",
 				"unit":"hours"
 			},
 			{
-				"value":"10:56:05.56",
-				"source":"2,3",
+				"value":"10:56:05.54",
+				"source":"3",
 				"unit":"hours"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.06",
+				"source":"1,2"
+			}
+		],
+		"velocity":[
+			{
+				"value":"20000",
+				"source":"D",
+				"unit":"km/s"
 			}
 		],
 		"photometry":[
@@ -139,13 +173,13 @@
 				"band":"gr",
 				"magnitude":"18.9957",
 				"survey":"LSQ",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"timeunit":"MJD",
 				"time":"57475.5",
 				"magnitude":"18.3",
-				"source":"2,3"
+				"source":"1,2"
 			}
 		]
 	}
