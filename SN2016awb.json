@@ -1,92 +1,106 @@
 {
 	"SN2016awb":{
 		"name":"SN2016awb",
-		"aliases":[
-			"SN2016awb",
-			"PS16awf"
-		],
 		"sources":[
+			{
+				"name":"Guillochon, Parrent, & Margutti (2016)",
+				"url":"https://sne.space",
+				"bibcode":"2016arXiv160501054G",
+				"alias":"1",
+				"secondary":true
+			},
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"PS1 SN page",
 				"url":"http://star.pst.qub.ac.uk/ps1threepi/psdb/public/",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3",
+				"alias":"4",
 				"secondary":true
 			},
 			{
 				"name":"Schlafly & Finkbeiner (2011)",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"4"
+				"alias":"5"
+			}
+		],
+		"alias":[
+			{
+				"value":"SN2016awb",
+				"source":"2,4,3"
+			},
+			{
+				"value":"PS16awf",
+				"source":"2,3"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia-91T",
-				"source":"1,2,3"
+				"source":"2,3,4"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"640",
-				"source":"D",
+				"source":"1",
 				"unit":"Mpc"
 			}
 		],
 		"dec":[
 			{
 				"value":"-21:01:30.15",
-				"source":"1",
+				"source":"2",
 				"unit":"degrees"
 			},
 			{
 				"value":"-21:01:30.1",
-				"source":"2,3",
+				"source":"3,4",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/03/03",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Pan-STARRS1",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"PS1",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0532",
 				"error":"0.001",
-				"source":"4"
+				"source":"5"
 			}
 		],
-		"errors":[
+		"error":[
 			{
-				"sourcekind":"name",
-				"id":"Latest Supernovae",
-				"quantity":"redshift"
+				"value":"redshift",
+				"source":"1",
+				"kind":"name",
+				"extra":"Latest Supernovae"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"740",
-				"source":"D",
+				"source":"1",
 				"kind":"spectroscopic",
 				"unit":"Mpc"
 			}
@@ -94,91 +108,91 @@
 		"maxabsmag":[
 			{
 				"value":"-19",
-				"source":"D"
+				"source":"1"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"20.13",
-				"source":"D,1"
+				"source":"1,2"
 			}
 		],
 		"maxband":[
 			{
 				"value":"r",
-				"source":"D,1"
+				"source":"1,2"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/03/03",
-				"source":"D,1"
+				"source":"1,2"
 			}
 		],
 		"observer":[
 			{
 				"value":"DAO_OTS",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"DES",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"GaiaAlerts",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"KEGS",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"OGLE",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"Padova-Asiago",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"Pan-STARRS1",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"RANSSP",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"SkyMapper",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"XOSS",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"XTSS",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"ra":[
 			{
 				"value":"13:57:59.79",
-				"source":"1,2,3",
+				"source":"2,3,4",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.15",
-				"source":"1",
+				"source":"2",
 				"kind":"spectroscopic"
 			}
 		],
 		"velocity":[
 			{
 				"value":"42000",
-				"source":"D",
+				"source":"1",
 				"kind":"spectroscopic",
 				"unit":"km/s"
 			}
@@ -188,7 +202,7 @@
 				"time":"57449.5",
 				"u_time":"MJD",
 				"magnitude":"20.1",
-				"source":"2,3"
+				"source":"3,4"
 			},
 			{
 				"time":"57450.59711805556",
@@ -196,7 +210,7 @@
 				"band":"r",
 				"magnitude":"20.1348",
 				"survey":"Pan-STARRS1",
-				"source":"1"
+				"source":"2"
 			}
 		]
 	}
