@@ -21,10 +21,22 @@
 				"secondary":true
 			},
 			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"4"
+			},
+			{
+				"name":"ATel 8397",
+				"url":"http://www.astronomerstelegram.org/?read=8397",
+				"bibcode":"2015ATel.8397....1X",
+				"alias":"5",
+				"reference":"Xin & Zhang (2015)"
+			},
+			{
 				"name":"WISeREP",
 				"url":"http://wiserep.weizmann.ac.il/",
 				"bibcode":"2012PASP..124..668Y",
-				"alias":"4",
+				"alias":"6",
 				"secondary":true,
 				"reference":"Yaron & Gal-Yam (2012)"
 			},
@@ -32,21 +44,21 @@
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"5",
+				"alias":"7",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"6",
+				"alias":"8",
 				"reference":"Schlafly & Finkbeiner (2011)"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2016aai",
-				"source":"1,2,3,4"
+				"source":"1,2,3,4,6"
 			},
 			{
 				"value":"PS16rd",
@@ -60,13 +72,13 @@
 		"claimedtype":[
 			{
 				"value":"II P",
-				"source":"1,2,3,4"
+				"source":"1,2,3,4,5,6"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"35.22",
-				"source":"5",
+				"source":"7",
 				"unit":"Mpc"
 			}
 		],
@@ -79,6 +91,11 @@
 			{
 				"value":"-10:50:29.1",
 				"source":"2,3",
+				"unit":"degrees"
+			},
+			{
+				"value":"-10:50:29.04",
+				"source":"4,2",
 				"unit":"degrees"
 			}
 		],
@@ -102,7 +119,7 @@
 			{
 				"value":"0.0391",
 				"error":"0.001",
-				"source":"6"
+				"source":"8"
 			}
 		],
 		"host":[
@@ -111,10 +128,17 @@
 				"source":"2,3"
 			}
 		],
+		"hostoffset":[
+			{
+				"value":"50.89",
+				"source":"4,2",
+				"unit":"arcseconds"
+			}
+		],
 		"lumdist":[
 			{
 				"value":"35.5",
-				"source":"5",
+				"source":"7",
 				"kind":"spectroscopic",
 				"unit":"Mpc"
 			}
@@ -122,19 +146,19 @@
 		"maxabsmag":[
 			{
 				"value":"-16.35",
-				"source":"5"
+				"source":"7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.4",
-				"source":"5,2,3"
+				"source":"7,2,3"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2015/12/10",
-				"source":"5,2,3"
+				"source":"7,2,3"
 			}
 		],
 		"observer":[
@@ -197,19 +221,24 @@
 				"value":"12:50:28.05",
 				"source":"2,3",
 				"unit":"hours"
+			},
+			{
+				"value":"12:50:28.08",
+				"source":"4,2",
+				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.007972",
-				"source":"1,2,3,4",
+				"source":"1,2,3,4,6",
 				"kind":"spectroscopic"
 			}
 		],
 		"velocity":[
 			{
 				"value":"2380",
-				"source":"5",
+				"source":"7",
 				"kind":"spectroscopic",
 				"unit":"km/s"
 			}
