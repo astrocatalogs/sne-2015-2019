@@ -3,103 +3,125 @@
 		"name":"SN2016G",
 		"sources":[
 			{
+				"name":"The Open Supernova Catalog",
+				"url":"https://sne.space",
+				"bibcode":"2016arXiv160501054G",
+				"alias":"1",
+				"secondary":true,
+				"reference":"Guillochon, Parrent, & Margutti (2016)"
+			},
+			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"3",
 				"secondary":true
+			},
+			{
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"alias":"4"
 			},
 			{
 				"name":"WISeREP",
 				"url":"http://wiserep.weizmann.ac.il/",
 				"bibcode":"2012PASP..124..668Y",
-				"alias":"3",
+				"alias":"5",
 				"secondary":true,
 				"reference":"Yaron & Gal-Yam (2012)"
 			},
 			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"4",
-				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
-			},
-			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"5",
+				"alias":"6",
 				"reference":"Schlafly & Finkbeiner (2011)"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2016G",
-				"source":"1,2,3"
+				"source":"1,2,3,4,5"
+			},
+			{
+				"value":"Gaia16acf",
+				"source":"1"
 			},
 			{
 				"value":"PSN J03035774+4324035",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"value":"AT2016G",
+				"source":"1"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ic-BL",
-				"source":"1,2,3"
+				"source":"2,3,5"
+			},
+			{
+				"value":"Candidate",
+				"source":"4"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"40",
-				"source":"4",
+				"source":"1",
 				"unit":"Mpc"
 			}
 		],
 		"dec":[
 			{
 				"value":"+43:24:03.50",
-				"source":"1",
+				"source":"2",
 				"unit":"degrees"
 			},
 			{
 				"value":"+43:24:03.5",
-				"source":"1,2",
+				"source":"2,3",
+				"unit":"degrees"
+			},
+			{
+				"value":"+43:24:03.6",
+				"source":"4",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/01/09.935",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Jaroslaw Grzegorzek",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.1353",
 				"error":"0.0011",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 1171",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"40",
-				"source":"4",
+				"source":"1",
 				"kind":"spectroscopic",
 				"unit":"Mpc"
 			}
@@ -107,39 +129,50 @@
 		"maxabsmag":[
 			{
 				"value":"-20",
-				"source":"4"
+				"source":"1"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"16.3",
-				"source":"4,1,2"
+				"value":"16.7",
+				"source":"1,4"
+			}
+		],
+		"maxband":[
+			{
+				"value":"G",
+				"source":"1,4"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/01/27",
-				"source":"4,1,2"
+				"value":"2016/02/04",
+				"source":"1,4"
 			}
 		],
 		"ra":[
 			{
 				"value":"03:03:57.74",
-				"source":"1,2",
+				"source":"2,3",
+				"unit":"hours"
+			},
+			{
+				"value":"03:03:57.696",
+				"source":"4",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.009",
-				"source":"1,2,3",
+				"source":"2,3,5",
 				"kind":"spectroscopic"
 			}
 		],
 		"velocity":[
 			{
 				"value":"3000",
-				"source":"4",
+				"source":"1",
 				"kind":"spectroscopic",
 				"unit":"km/s"
 			}
@@ -149,7 +182,23 @@
 				"time":"57414.5",
 				"u_time":"MJD",
 				"magnitude":"16.3",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"time":"57422.677",
+				"u_time":"MJD",
+				"band":"G",
+				"magnitude":"16.7",
+				"telescope":"GAIA",
+				"source":"4"
+			},
+			{
+				"time":"57422.853",
+				"u_time":"MJD",
+				"band":"G",
+				"magnitude":"16.76",
+				"telescope":"GAIA",
+				"source":"4"
 			}
 		]
 	}

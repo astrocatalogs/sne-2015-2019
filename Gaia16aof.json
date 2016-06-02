@@ -3,90 +3,204 @@
 		"name":"Gaia16aof",
 		"sources":[
 			{
-				"name":"Gaia Photometric Science Alerts",
-				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
-				"alias":"1"
-			},
-			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"2",
+				"alias":"1",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"2"
+			},
+			{
+				"name":"ATel 9057",
+				"url":"http://www.astronomerstelegram.org/?read=9057",
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4",
+				"secondary":true
+			},
+			{
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"alias":"5"
+			},
+			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"6"
+			},
+			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"3",
+				"alias":"7",
 				"reference":"Schlafly & Finkbeiner (2011)"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia16aof",
-				"source":"1"
+				"source":"1,2,3,4,5,6"
+			},
+			{
+				"value":"AT2016cdb",
+				"source":"1,3,4"
+			},
+			{
+				"value":"ASASSN-16fd",
+				"source":"2,3,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"1"
+				"source":"5"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"105.21",
+				"source":"1",
+				"unit":"Mpc"
 			}
 		],
 		"dec":[
 			{
+				"value":"-22:15:46.05",
+				"source":"2,3,4",
+				"unit":"degrees"
+			},
+			{
 				"value":"-22:15:45.72",
-				"source":"1",
+				"source":"5",
+				"unit":"degrees"
+			},
+			{
+				"value":"-22:15:46.08",
+				"source":"6,3",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/05/10",
-				"source":"2,1"
+				"value":"2016/05/15.38",
+				"source":"2,6,3"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"ASAS-SN",
+				"source":"2"
+			},
+			{
+				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
+				"source":"3,4"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0267",
 				"error":"0.0008",
-				"source":"3"
+				"source":"7"
+			}
+		],
+		"host":[
+			{
+				"value":"2MASX J22212881-2215454",
+				"source":"2,6,3"
+			}
+		],
+		"hostoffset":[
+			{
+				"value":"7.3",
+				"source":"6,3",
+				"unit":"arcseconds"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"107.73",
+				"source":"1",
+				"kind":"host",
+				"unit":"Mpc"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-18.952",
+				"source":"1"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.21",
-				"source":"2,1"
+				"source":"1,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
-				"source":"2,1"
+				"source":"1,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/05/10",
-				"source":"2,1"
+				"source":"1,5"
 			}
 		],
 		"ra":[
 			{
+				"value":"22:21:29.32",
+				"source":"2",
+				"unit":"hours"
+			},
+			{
+				"value":"22:21:29.320",
+				"source":"3,4",
+				"unit":"hours"
+			},
+			{
 				"value":"22:21:29.28",
-				"source":"1",
+				"source":"5,6,3",
 				"unit":"hours"
 			}
 		],
+		"redshift":[
+			{
+				"value":"0.023906",
+				"source":"2,3,4,6",
+				"kind":"host"
+			}
+		],
+		"velocity":[
+			{
+				"value":"7081.2",
+				"source":"1",
+				"kind":"host",
+				"unit":"km/s"
+			}
+		],
 		"photometry":[
+			{
+				"time":"57517.5",
+				"u_time":"MJD",
+				"magnitude":"16.2",
+				"source":"3,4"
+			},
 			{
 				"time":"57518.480",
 				"u_time":"MJD",
 				"band":"G",
 				"magnitude":"16.23",
 				"telescope":"GAIA",
-				"source":"1"
+				"source":"5"
 			},
 			{
 				"time":"57518.656",
@@ -94,7 +208,15 @@
 				"band":"G",
 				"magnitude":"16.21",
 				"telescope":"GAIA",
-				"source":"1"
+				"source":"5"
+			},
+			{
+				"time":"57523.38",
+				"u_time":"MJD",
+				"band":"V",
+				"magnitude":"16.3",
+				"survey":"ASAS-SN",
+				"source":"2"
 			}
 		]
 	}
