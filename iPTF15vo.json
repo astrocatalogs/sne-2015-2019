@@ -3,61 +3,68 @@
 		"name":"iPTF15vo",
 		"sources":[
 			{
-				"name":"ATel 7399",
-				"url":"http://www.astronomerstelegram.org/?read=7399",
-				"bibcode":"2015ATel.7399....1T",
+				"name":"SIMBAD astronomical database",
+				"url":"http://simbad.u-strasbg.fr/",
+				"bibcode":"2000A&AS..143....9W",
 				"alias":"1",
+				"secondary":true,
+				"reference":"Wenger et al. (2000)"
+			},
+			{
+				"name":"2015ATel.7399....1T",
+				"bibcode":"2015ATel.7399....1T",
+				"alias":"2",
 				"reference":"Taddia et al. (2015)"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"3",
 				"secondary":true
 			},
 			{
 				"name":"2012PASP..124..668Y",
 				"bibcode":"2012PASP..124..668Y",
-				"alias":"3",
+				"alias":"4",
 				"reference":"Yaron & Gal-Yam (2012)"
 			},
 			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"4",
+				"alias":"5",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"5",
+				"alias":"6",
 				"reference":"Schlafly & Finkbeiner (2011)"
 			},
 			{
 				"name":"2015arXiv150201589P",
 				"bibcode":"2015arXiv150201589P",
-				"alias":"6",
+				"alias":"7",
 				"reference":"Planck Collaboration et al. (2015)"
 			}
 		],
 		"alias":[
 			{
 				"value":"iPTF15vo",
-				"source":"1,2,3"
+				"source":"1,2,3,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II",
-				"source":"1,2,3"
+				"source":"1,2,3,4"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"230",
-				"source":"4,6,1,2,3",
+				"source":"2,3,4,5,7",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -65,33 +72,34 @@
 		"dec":[
 			{
 				"value":"+19:15:32.7",
-				"source":"1,2",
+				"source":"1,2,3",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2015/03/13",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"PTF",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.024",
 				"error":"0.0002",
-				"source":"5"
+				"source":"5,6",
+				"derived":true
 			}
 		],
 		"lumdist":[
 			{
 				"value":"240",
-				"source":"4,6,1,2,3",
+				"source":"2,3,4,5,7",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -99,39 +107,41 @@
 		"maxabsmag":[
 			{
 				"value":"-17",
-				"source":"4,6,1,2,3",
+				"source":"2,3,4,5,7",
 				"derived":true
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"19.5",
-				"source":"4,1,2"
+				"source":"2,3,5",
+				"derived":true
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2015/03/12",
-				"source":"4,1,2"
+				"source":"2,3,5",
+				"derived":true
 			}
 		],
 		"ra":[
 			{
 				"value":"08:43:46.77",
-				"source":"1,2",
+				"source":"1,2,3",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.052",
-				"source":"1,2,3"
+				"source":"2,3,4"
 			}
 		],
 		"velocity":[
 			{
 				"value":"15000",
-				"source":"4,1,2,3",
+				"source":"2,3,4,5",
 				"unit":"km/s",
 				"derived":true
 			}
@@ -141,7 +151,7 @@
 				"time":"57093.5",
 				"u_time":"MJD",
 				"magnitude":"19.5",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"spectra":[
@@ -27027,7 +27037,7 @@
 						"-8.764E-18"
 					]
 				],
-				"source":"3"
+				"source":"4"
 			}
 		]
 	}

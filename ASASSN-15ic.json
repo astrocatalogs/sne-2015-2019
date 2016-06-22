@@ -3,133 +3,175 @@
 		"name":"ASASSN-15ic",
 		"sources":[
 			{
-				"name":"ATel 7455",
-				"url":"http://www.astronomerstelegram.org/?read=7455",
-				"bibcode":"2015ATel.7455....1B",
+				"name":"SIMBAD astronomical database",
+				"url":"http://simbad.u-strasbg.fr/",
+				"bibcode":"2000A&AS..143....9W",
 				"alias":"1",
+				"secondary":true,
+				"reference":"Wenger et al. (2000)"
+			},
+			{
+				"name":"2015ATel.7455....1B",
+				"bibcode":"2015ATel.7455....1B",
+				"alias":"2",
 				"reference":"Brimacombe et al. (2015)"
+			},
+			{
+				"name":"2015ATel.7458....1C",
+				"bibcode":"2015ATel.7458....1C",
+				"alias":"3",
+				"reference":"Childress et al. (2015)"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
+				"alias":"4",
 				"secondary":true
 			},
 			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"4"
-			},
-			{
-				"name":"ATel 7458",
-				"url":"http://www.astronomerstelegram.org/?read=7458",
-				"bibcode":"2015ATel.7458....1C",
-				"alias":"5",
-				"reference":"Childress et al. (2015)"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
 				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"6",
+				"alias":"7",
 				"secondary":true,
 				"reference":"Guillochon, Parrent, & Margutti (2016)"
 			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
-				"alias":"7",
+				"alias":"8",
 				"reference":"Schlafly & Finkbeiner (2011)"
 			},
 			{
 				"name":"2015arXiv150201589P",
 				"bibcode":"2015arXiv150201589P",
-				"alias":"8",
+				"alias":"9",
 				"reference":"Planck Collaboration et al. (2015)"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-15ic",
-				"source":"1,2,3,4"
+				"source":"1,2,4,5,6"
 			},
 			{
 				"value":"Gaia15afn",
-				"source":"1,2,3"
+				"source":"2,4,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,3,4,5"
+				"source":"1,3,2,4,5,6"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"110",
-				"source":"6,8,1,2,4",
+				"source":"2,4,6,7,9",
 				"unit":"Mpc",
 				"derived":true
 			}
 		],
 		"dec":[
 			{
-				"value":"-42:47:56.0",
+				"value":"-42:47:56.03",
 				"source":"1,2",
 				"unit":"degrees"
 			},
 			{
+				"value":"-42:47:56.0",
+				"source":"2,4",
+				"unit":"degrees"
+			},
+			{
 				"value":"-42:47:56.76",
-				"source":"3",
-				"unit":"floatdegrees"
+				"source":"5",
+				"unit":"degrees"
 			},
 			{
 				"value":"-42:47:56.04",
-				"source":"4,1",
-				"unit":"floatdegrees"
+				"source":"6,2",
+				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2015/04/27",
-				"source":"1,2"
+				"source":"2,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
-				"source":"1,2"
+				"source":"2,4"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0483",
 				"error":"0.0013",
-				"source":"7"
+				"source":"7,8",
+				"derived":true
 			}
 		],
 		"host":[
 			{
 				"value":"2MASX J06145320-4247357",
-				"source":"4,1"
+				"source":"6,2"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"-42:47:35.7",
+				"source":"7",
+				"unit":"degrees",
+				"derived":true
 			}
 		],
 		"hostoffset":[
 			{
 				"value":"29",
-				"source":"4,1",
+				"source":"6,2",
 				"unit":"arcseconds"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"34.04",
+				"source":"1,2,7",
+				"unit":"arcseconds",
+				"derived":true
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"17.71",
+				"source":"1,2,4,6,7,9"
+			}
+		],
+		"hostra":[
+			{
+				"value":"06:14:53.20",
+				"source":"7",
+				"unit":"hours",
+				"derived":true
 			}
 		],
 		"lumdist":[
 			{
 				"value":"110",
-				"source":"6,8,1,2,4",
+				"source":"2,4,6,7,9",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -137,55 +179,63 @@
 		"maxabsmag":[
 			{
 				"value":"-18",
-				"source":"6,8,1,2,4",
+				"source":"2,4,6,7,9",
 				"derived":true
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.93",
-				"source":"6,3"
+				"source":"5,7",
+				"derived":true
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
-				"source":"6,3"
+				"source":"5,7",
+				"derived":true
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2015/05/17",
-				"source":"6,3"
+				"source":"5,7",
+				"derived":true
 			}
 		],
 		"ra":[
 			{
-				"value":"06:14:51.38",
+				"value":"06:14:51.380",
 				"source":"1,2",
 				"unit":"hours"
 			},
 			{
+				"value":"06:14:51.38",
+				"source":"2,4",
+				"unit":"hours"
+			},
+			{
 				"value":"06:14:51.312",
-				"source":"3",
-				"unit":"floatdegrees"
+				"source":"5",
+				"unit":"hours"
 			},
 			{
 				"value":"06:14:51.384",
-				"source":"4,1",
-				"unit":"floatdegrees"
+				"source":"6,2",
+				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.025",
-				"source":"1,2,4"
+				"source":"2,4,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"7400",
-				"source":"6,1,2,4",
+				"source":"2,4,6,7",
 				"unit":"km/s",
 				"derived":true
 			}
@@ -195,7 +245,7 @@
 				"time":"57139.5",
 				"u_time":"MJD",
 				"magnitude":"16.4",
-				"source":"1,2"
+				"source":"2,4"
 			},
 			{
 				"time":"57159.913",
@@ -203,7 +253,7 @@
 				"band":"G",
 				"magnitude":"16.93",
 				"telescope":"GAIA",
-				"source":"3"
+				"source":"5"
 			},
 			{
 				"time":"57159.987",
@@ -211,7 +261,7 @@
 				"band":"G",
 				"magnitude":"17.02",
 				"telescope":"GAIA",
-				"source":"3"
+				"source":"5"
 			},
 			{
 				"time":"57221.687",
@@ -219,7 +269,7 @@
 				"band":"G",
 				"magnitude":"19.09",
 				"telescope":"GAIA",
-				"source":"3"
+				"source":"5"
 			},
 			{
 				"time":"57221.863",
@@ -227,7 +277,7 @@
 				"band":"G",
 				"magnitude":"19.14",
 				"telescope":"GAIA",
-				"source":"3"
+				"source":"5"
 			}
 		]
 	}
