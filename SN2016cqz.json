@@ -1,22 +1,23 @@
 {
-	"AT2016cqz":{
-		"name":"AT2016cqz",
+	"SN2016cqz":{
+		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"name":"SN2016cqz",
 		"sources":[
-			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il",
-				"alias":"1"
-			},
 			{
 				"name":"ATel 9123",
 				"url":"http://www.astronomerstelegram.org/?read=9123",
-				"alias":"2"
+				"alias":"1"
 			},
 			{
 				"name":"Latest Supernovae",
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3",
+				"alias":"2",
 				"secondary":true
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il",
+				"alias":"3"
 			},
 			{
 				"name":"ASAS-SN Supernovae",
@@ -51,18 +52,22 @@
 		],
 		"alias":[
 			{
-				"value":"AT2016cqz",
-				"source":"1,2,3,4"
+				"value":"SN2016cqz",
+				"source":"1,2"
 			},
 			{
 				"value":"ASASSN-16fv",
 				"source":"1,2,3"
+			},
+			{
+				"value":"AT2016cqz",
+				"source":"1,2,3,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,3,4,5"
+				"source":"1,2,4,5"
 			}
 		],
 		"comovingdist":[
@@ -81,24 +86,24 @@
 			},
 			{
 				"value":"-71:41:38.76",
-				"source":"4,2",
+				"source":"1,4",
 				"unit":"degrees"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/06/06.28",
-				"source":"1,4,2"
+				"value":"2016/06/06",
+				"source":"1,2"
 			}
 		],
 		"discoverer":[
 			{
-				"value":"ASAS-SN",
-				"source":"1"
+				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
+				"source":"1,2"
 			},
 			{
-				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
-				"source":"2,3"
+				"value":"ASAS-SN",
+				"source":"3"
 			}
 		],
 		"ebv":[
@@ -115,10 +120,10 @@
 				"source":"1,2,3,4"
 			}
 		],
-		"hostoffset":[
+		"hostoffsetang":[
 			{
 				"value":"0.85",
-				"source":"4,2",
+				"source":"1,4",
 				"unit":"arcseconds"
 			}
 		],
@@ -126,7 +131,6 @@
 			{
 				"value":"53.469",
 				"source":"1,2,3,4,6,8",
-				"kind":"host",
 				"unit":"Mpc",
 				"derived":true
 			}
@@ -141,53 +145,51 @@
 		"maxappmag":[
 			{
 				"value":"15.6",
-				"source":"1,6",
+				"source":"3,6",
 				"derived":true
 			}
 		],
 		"maxband":[
 			{
 				"value":"V",
-				"source":"1,6",
+				"source":"3,6",
 				"derived":true
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/06/06",
-				"source":"1,6",
+				"source":"3,6",
 				"derived":true
 			}
 		],
 		"ra":[
 			{
-				"value":"18:28:10.44",
-				"source":"1",
+				"value":"18:28:10.441",
+				"source":"1,2",
 				"unit":"hours"
 			},
 			{
-				"value":"18:28:10.441",
-				"source":"2,3",
+				"value":"18:28:10.44",
+				"source":"3",
 				"unit":"hours"
 			},
 			{
 				"value":"18:28:10.32",
-				"source":"4,2",
+				"source":"1,4",
 				"unit":"hours"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.011972",
-				"source":"1,2,3,4",
-				"kind":"host"
+				"source":"1,2,3,4"
 			}
 		],
 		"velocity":[
 			{
 				"value":"3567.6",
 				"source":"1,2,3,4,6",
-				"kind":"host",
 				"unit":"km/s",
 				"derived":true
 			}
@@ -197,7 +199,7 @@
 				"time":"57544.5",
 				"u_time":"MJD",
 				"magnitude":"15.6",
-				"source":"2,3"
+				"source":"1,2"
 			},
 			{
 				"time":"57545.28",
@@ -205,7 +207,7 @@
 				"band":"V",
 				"magnitude":"15.6",
 				"survey":"ASAS-SN",
-				"source":"1"
+				"source":"3"
 			}
 		]
 	}
