@@ -1,953 +1,972 @@
 {
 	"PS15alr":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"PS15alr",
 		"sources":[
 			{
-				"name":"Pan-STARRS 3Pi",
-				"url":"http://star.pst.qub.ac.uk/ps1threepi/psdb/public/",
-				"alias":"1"
-			},
-			{
-				"name":"Latest Supernovae",
-				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
-				"secondary":true
-			},
-			{
-				"name":"ATel 7573",
-				"url":"http://www.astronomerstelegram.org/?read=7573",
+				"name":"2015ATel.7573....1P",
 				"bibcode":"2015ATel.7573....1P",
-				"alias":"3",
-				"reference":"Petrushevska et al. (2015)"
-			},
-			{
-				"name":"2012PASP..124..668Y",
-				"bibcode":"2012PASP..124..668Y",
-				"alias":"4",
-				"reference":"Yaron & Gal-Yam (2012)"
-			},
-			{
-				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
-				"bibcode":"2016arXiv160501054G",
-				"alias":"5",
-				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
-			},
-			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"6",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"reference":"Petrushevska et al. (2015)",
+				"alias":"1"
 			},
 			{
 				"name":"2015arXiv150201589P",
 				"bibcode":"2015arXiv150201589P",
-				"alias":"7",
-				"reference":"Planck Collaboration et al. (2015)"
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"2"
+			},
+			{
+				"name":"2012PASP..124..668Y",
+				"bibcode":"2012PASP..124..668Y",
+				"reference":"Yaron & Gal-Yam (2012)",
+				"alias":"3"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"4"
+			},
+			{
+				"name":"Pan-STARRS 3Pi",
+				"url":"http://star.pst.qub.ac.uk/ps1threepi/psdb/public/",
+				"alias":"5"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"6"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2016arXiv160501054G",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"7"
+			},
+			{
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"PS15alr",
-				"source":"1,2,4"
+				"source":"3,5,6"
 			},
 			{
 				"value":"iPTF15asx",
-				"source":"1,2,4"
+				"source":"3,5,6,8"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,4"
+				"source":"1,3,5,6,8"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"475.34",
-				"source":"4,5,7",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"2,3,7"
 			}
 		],
 		"dec":[
 			{
+				"value":"+06:07:35.2",
+				"u_value":"degrees",
+				"source":"1,8"
+			},
+			{
 				"value":"+06:07:35.0",
-				"source":"1,2,3",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"1,5,6"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2015/05/13",
-				"source":"1,2"
+				"source":"5,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"PS1",
-				"source":"1,2"
+				"source":"5,6"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0164",
-				"error":"0.0003",
-				"source":"5,6",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0003",
+				"source":"4,7"
 			}
 		],
 		"host":[
 			{
 				"value":"2MASX J12312585+0607391",
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"hostdec":[
 			{
 				"value":"+06:07:39.1",
-				"source":"5",
-				"unit":"degrees",
-				"derived":true
+				"derived":true,
+				"u_value":"degrees",
+				"source":"7"
 			}
 		],
 		"hostoffsetang":[
 			{
-				"value":"6.088",
-				"source":"1,2,3,5",
-				"unit":"arcseconds",
-				"derived":true
+				"value":"6.42",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"1,7,8"
 			}
 		],
 		"hostoffsetdist":[
 			{
-				"value":"12.64",
-				"source":"1,2,3,4,5,7"
+				"value":"13.3",
+				"source":"1,2,3,7,8"
 			}
 		],
 		"hostra":[
 			{
 				"value":"12:31:25.85",
-				"source":"5",
-				"unit":"hours",
-				"derived":true
+				"derived":true,
+				"u_value":"hours",
+				"source":"7"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"527.77",
-				"source":"4,5,7",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"2,3,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19.332",
-				"source":"4,5,7",
-				"derived":true
+				"derived":true,
+				"source":"2,3,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"19.28",
-				"source":"1,3,5",
-				"derived":true
+				"derived":true,
+				"source":"1,5,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"w",
-				"source":"1,3,5",
-				"derived":true
+				"derived":true,
+				"source":"1,5,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2015/05/21",
-				"source":"1,3,5",
-				"derived":true
+				"derived":true,
+				"source":"1,5,7"
 			}
 		],
 		"ra":[
 			{
+				"value":"12:31:26.19",
+				"u_value":"hours",
+				"source":"1,8"
+			},
+			{
 				"value":"12:31:26.15",
-				"source":"1,2,3",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"1,5,6"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.11028",
-				"source":"4"
+				"source":"3"
 			}
 		],
 		"velocity":[
 			{
 				"value":"31248",
-				"source":"4,5",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"7"
 			}
 		],
 		"photometry":[
 			{
 				"time":"56465.2693000831",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"18.3",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"56466.2825187909",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"20.4",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"56662.6493862298",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"20.4",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"56662.6720383344",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"18.3",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57071.5382970664",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57071.5507302605",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57071.563254477",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57071.5756644444",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57072.5105607853",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57072.5230075024",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57072.5354571678",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57072.5479504564",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57104.4846375092",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57104.4972034721",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57104.5097812992",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57104.5223537185",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57105.4221505723",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57105.4366262118",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57105.4510969538",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57105.4656821085",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57162.5",
-				"u_time":"MJD",
 				"magnitude":"19.3",
-				"source":"1,2"
+				"u_time":"MJD",
+				"source":"5,6"
 			},
 			{
 				"time":"57163.2674502864",
-				"u_time":"MJD",
 				"band":"w",
-				"magnitude":"19.2754",
 				"e_magnitude":"0.0279832",
+				"magnitude":"19.2754",
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"source":"1,5"
 			},
 			{
 				"time":"57163.281743626",
-				"u_time":"MJD",
 				"band":"w",
-				"magnitude":"19.2754",
 				"e_magnitude":"0.0344582",
+				"magnitude":"19.2754",
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"source":"1,5"
 			},
 			{
 				"time":"57163.2961126383",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57163.3104153431",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57164.2822807975",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"19.4347",
 				"e_magnitude":"0.0829712",
+				"magnitude":"19.4347",
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"source":"1,5"
 			},
 			{
 				"time":"57164.2948962398",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"19.3762",
 				"e_magnitude":"0.0744848",
+				"magnitude":"19.3762",
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"source":"1,5"
 			},
 			{
 				"time":"57164.3074573167",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"19.5555",
 				"e_magnitude":"0.120637",
+				"magnitude":"19.5555",
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"source":"1,5"
 			},
 			{
 				"time":"57164.3200152843",
-				"u_time":"MJD",
 				"band":"i",
-				"magnitude":"19.4868",
 				"e_magnitude":"0.1197",
+				"magnitude":"19.4868",
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"source":"1,5"
 			},
 			{
 				"time":"57243.2550676156",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"20.4",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57246.245810987",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"20.4",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57403.5617929325",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57403.5739273782",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57403.5860707396",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57403.5982663189",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57420.5732685784",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57420.585584609",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57420.5974211488",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57420.6095903696",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57427.4985432229",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57427.5106801066",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57427.5228427858",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57427.5350172036",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57429.6713971343",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"18.3",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57429.6748564844",
-				"u_time":"MJD",
 				"band":"y",
 				"magnitude":"18.3",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57434.5388940018",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57434.5513066672",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57434.5637825895",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57447.5108701382",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57447.5116131912",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57447.5228985573",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57447.5235495111",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57447.5350261392",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57447.5468902588",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57454.4412978887",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57454.4548177571",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57454.4684326421",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57454.4820257857",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57461.4906734177",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57461.5028300597",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57461.5150376569",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57461.5271579018",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57476.406827928",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57476.4074707152",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57476.4201463157",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57476.420788873",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57476.4335136682",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57476.4341645422",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57476.4469233084",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57476.4475836702",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57481.3939320114",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57481.4057313312",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57481.4175650267",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57481.4294057251",
-				"u_time":"MJD",
 				"band":"w",
 				"magnitude":"22.0",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57507.4066786082",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57507.4073260912",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57507.4185009115",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57507.4191516191",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57507.4303021236",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57507.4309483161",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57507.4421343189",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57507.442778701",
-				"u_time":"MJD",
 				"band":"r",
 				"magnitude":"20.6",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			},
 			{
 				"time":"57557.2681643288",
-				"u_time":"MJD",
 				"band":"z",
 				"magnitude":"20.4",
-				"upperlimit":true,
 				"telescope":"Pan-STARRS1",
-				"source":"1,3"
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1,5"
 			}
 		],
 		"spectra":[
 			{
-				"instrument":"Keck1 - LRIS",
-				"u_time":"MJD",
 				"time":"57162.0",
-				"observer":"Perley",
-				"reducer":"Perley (pipeline)",
 				"filename":"15asx_20150520_Keck1_v1.ascii",
-				"waveunit":"Angstrom",
-				"fluxunit":"erg/s/cm^2/Angstrom",
+				"instrument":"Keck1 - LRIS",
+				"observer":"Perley",
+				"redshift":"0.11028",
+				"reducer":"Perley (pipeline)",
+				"reduction":"final",
+				"survey":"iPTF",
+				"u_fluxes":"erg/s/cm^2/Angstrom",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"3095.3792",
@@ -1023,7 +1042,7 @@
 					],
 					[
 						"3134.2864",
-						"9.1286e-16"
+						"9.12860e-16"
 					],
 					[
 						"3136.2390",
@@ -1043,7 +1062,7 @@
 					],
 					[
 						"3144.0562",
-						"-6.3409e-18"
+						"-6.34090e-18"
 					],
 					[
 						"3146.0122",
@@ -1051,7 +1070,7 @@
 					],
 					[
 						"3147.9688",
-						"3.0852e-16"
+						"3.08520e-16"
 					],
 					[
 						"3149.9263",
@@ -1075,7 +1094,7 @@
 					],
 					[
 						"3159.7227",
-						"3.323e-16"
+						"3.32300e-16"
 					],
 					[
 						"3161.6841",
@@ -1083,7 +1102,7 @@
 					],
 					[
 						"3163.6462",
-						"6.8908e-16"
+						"6.89080e-16"
 					],
 					[
 						"3165.6086",
@@ -1223,7 +1242,7 @@
 					],
 					[
 						"3232.7229",
-						"5.3058e-16"
+						"5.30580e-16"
 					],
 					[
 						"3234.7078",
@@ -1279,7 +1298,7 @@
 					],
 					[
 						"3260.5679",
-						"3.6959e-16"
+						"3.69590e-16"
 					],
 					[
 						"3262.5613",
@@ -1291,7 +1310,7 @@
 					],
 					[
 						"3266.5500",
-						"2.2748e-16"
+						"2.27480e-16"
 					],
 					[
 						"3268.5454",
@@ -1323,7 +1342,7 @@
 					],
 					[
 						"3282.5288",
-						"2.957e-16"
+						"2.95700e-16"
 					],
 					[
 						"3284.5288",
@@ -1543,7 +1562,7 @@
 					],
 					[
 						"3393.3696",
-						"2.6219e-16"
+						"2.62190e-16"
 					],
 					[
 						"3395.4004",
@@ -1559,7 +1578,7 @@
 					],
 					[
 						"3401.4954",
-						"1.1521e-16"
+						"1.15210e-16"
 					],
 					[
 						"3403.5281",
@@ -1567,7 +1586,7 @@
 					],
 					[
 						"3405.5613",
-						"1.6047e-16"
+						"1.60470e-16"
 					],
 					[
 						"3407.5950",
@@ -1635,7 +1654,7 @@
 					],
 					[
 						"3440.2051",
-						"3.2164e-16"
+						"3.21640e-16"
 					],
 					[
 						"3442.2476",
@@ -1659,7 +1678,7 @@
 					],
 					[
 						"3452.4673",
-						"3.0318e-16"
+						"3.03180e-16"
 					],
 					[
 						"3454.5129",
@@ -1723,7 +1742,7 @@
 					],
 					[
 						"3485.2542",
-						"7.515e-17"
+						"7.51500e-17"
 					],
 					[
 						"3487.3076",
@@ -1731,7 +1750,7 @@
 					],
 					[
 						"3489.3613",
-						"2.2237e-16"
+						"2.22370e-16"
 					],
 					[
 						"3491.4158",
@@ -1771,7 +1790,7 @@
 					],
 					[
 						"3509.9258",
-						"1.6165e-16"
+						"1.61650e-16"
 					],
 					[
 						"3511.9849",
@@ -1819,7 +1838,7 @@
 					],
 					[
 						"3534.6653",
-						"8.8801e-17"
+						"8.88010e-17"
 					],
 					[
 						"3536.7300",
@@ -1827,7 +1846,7 @@
 					],
 					[
 						"3538.7952",
-						"8.6202e-17"
+						"8.62020e-17"
 					],
 					[
 						"3540.8608",
@@ -1835,7 +1854,7 @@
 					],
 					[
 						"3542.9268",
-						"3.6273e-17"
+						"3.62730e-17"
 					],
 					[
 						"3544.9932",
@@ -1895,7 +1914,7 @@
 					],
 					[
 						"3573.9714",
-						"1.0651e-16"
+						"1.06510e-16"
 					],
 					[
 						"3576.0447",
@@ -1947,7 +1966,7 @@
 					],
 					[
 						"3600.9578",
-						"2.7203e-16"
+						"2.72030e-16"
 					],
 					[
 						"3603.0369",
@@ -1955,7 +1974,7 @@
 					],
 					[
 						"3605.1162",
-						"1.5936e-16"
+						"1.59360e-16"
 					],
 					[
 						"3607.1960",
@@ -2027,7 +2046,7 @@
 					],
 					[
 						"3642.6169",
-						"2.1684e-16"
+						"2.16840e-16"
 					],
 					[
 						"3644.7043",
@@ -2059,7 +2078,7 @@
 					],
 					[
 						"3659.3274",
-						"2.1935e-16"
+						"2.19350e-16"
 					],
 					[
 						"3661.4180",
@@ -2099,7 +2118,7 @@
 					],
 					[
 						"3680.2520",
-						"2.8905e-16"
+						"2.89050e-16"
 					],
 					[
 						"3682.3464",
@@ -2111,11 +2130,11 @@
 					],
 					[
 						"3686.5371",
-						"2.8895e-16"
+						"2.88950e-16"
 					],
 					[
 						"3688.6328",
-						"2.9036e-16"
+						"2.90360e-16"
 					],
 					[
 						"3690.7292",
@@ -2215,7 +2234,7 @@
 					],
 					[
 						"3741.1545",
-						"3.3166e-16"
+						"3.31660e-16"
 					],
 					[
 						"3743.2605",
@@ -2275,7 +2294,7 @@
 					],
 					[
 						"3772.7800",
-						"2.5453e-16"
+						"2.54530e-16"
 					],
 					[
 						"3774.8914",
@@ -2343,7 +2362,7 @@
 					],
 					[
 						"3808.7197",
-						"3.145e-16"
+						"3.14500e-16"
 					],
 					[
 						"3810.8372",
@@ -2363,7 +2382,7 @@
 					],
 					[
 						"3819.3093",
-						"3.0712e-16"
+						"3.07120e-16"
 					],
 					[
 						"3821.4285",
@@ -2415,7 +2434,7 @@
 					],
 					[
 						"3846.8818",
-						"2.904e-16"
+						"2.90400e-16"
 					],
 					[
 						"3849.0049",
@@ -2427,7 +2446,7 @@
 					],
 					[
 						"3853.2524",
-						"1.7763e-16"
+						"1.77630e-16"
 					],
 					[
 						"3855.3770",
@@ -2471,7 +2490,7 @@
 					],
 					[
 						"3876.6372",
-						"2.4243e-16"
+						"2.42430e-16"
 					],
 					[
 						"3878.7649",
@@ -2531,7 +2550,7 @@
 					],
 					[
 						"3908.5864",
-						"3.4406e-16"
+						"3.44060e-16"
 					],
 					[
 						"3910.7188",
@@ -2575,7 +2594,7 @@
 					],
 					[
 						"3932.0596",
-						"2.645e-16"
+						"2.64500e-16"
 					],
 					[
 						"3934.1951",
@@ -2587,7 +2606,7 @@
 					],
 					[
 						"3938.4673",
-						"3.1164e-16"
+						"3.11640e-16"
 					],
 					[
 						"3940.6040",
@@ -2631,7 +2650,7 @@
 					],
 					[
 						"3961.9854",
-						"3.5308e-16"
+						"3.53080e-16"
 					],
 					[
 						"3964.1252",
@@ -2659,7 +2678,7 @@
 					],
 					[
 						"3976.9692",
-						"2.2481e-16"
+						"2.24810e-16"
 					],
 					[
 						"3979.1108",
@@ -2667,7 +2686,7 @@
 					],
 					[
 						"3981.2527",
-						"3.2284e-16"
+						"3.22840e-16"
 					],
 					[
 						"3983.3950",
@@ -2687,7 +2706,7 @@
 					],
 					[
 						"3991.9666",
-						"2.4061e-16"
+						"2.40610e-16"
 					],
 					[
 						"3994.1101",
@@ -2711,7 +2730,7 @@
 					],
 					[
 						"4004.8318",
-						"2.583e-16"
+						"2.58300e-16"
 					],
 					[
 						"4006.9771",
@@ -2719,7 +2738,7 @@
 					],
 					[
 						"4009.1223",
-						"2.69e-16"
+						"2.69000e-16"
 					],
 					[
 						"4011.2681",
@@ -2751,7 +2770,7 @@
 					],
 					[
 						"4026.2952",
-						"2.1667e-16"
+						"2.16670e-16"
 					],
 					[
 						"4028.4429",
@@ -2759,11 +2778,11 @@
 					],
 					[
 						"4030.5908",
-						"2.4205e-16"
+						"2.42050e-16"
 					],
 					[
 						"4032.7390",
-						"2.75e-16"
+						"2.75000e-16"
 					],
 					[
 						"4034.8875",
@@ -2835,7 +2854,7 @@
 					],
 					[
 						"4071.4497",
-						"2.251e-16"
+						"2.25100e-16"
 					],
 					[
 						"4073.6025",
@@ -2859,7 +2878,7 @@
 					],
 					[
 						"4084.3708",
-						"2.2525e-16"
+						"2.25250e-16"
 					],
 					[
 						"4086.5251",
@@ -2911,7 +2930,7 @@
 					],
 					[
 						"4112.3945",
-						"1.8166e-16"
+						"1.81660e-16"
 					],
 					[
 						"4114.5518",
@@ -2943,7 +2962,7 @@
 					],
 					[
 						"4129.6587",
-						"2.1958e-16"
+						"2.19580e-16"
 					],
 					[
 						"4131.8174",
@@ -2971,7 +2990,7 @@
 					],
 					[
 						"4144.7759",
-						"2.2368e-16"
+						"2.23680e-16"
 					],
 					[
 						"4146.9365",
@@ -2983,7 +3002,7 @@
 					],
 					[
 						"4151.2578",
-						"1.7055e-16"
+						"1.70550e-16"
 					],
 					[
 						"4153.4189",
@@ -3039,7 +3058,7 @@
 					],
 					[
 						"4181.5312",
-						"1.4725e-16"
+						"1.47250e-16"
 					],
 					[
 						"4183.6953",
@@ -3047,7 +3066,7 @@
 					],
 					[
 						"4185.8594",
-						"2.0417e-16"
+						"2.04170e-16"
 					],
 					[
 						"4188.0234",
@@ -3083,7 +3102,7 @@
 					],
 					[
 						"4205.3442",
-						"1.7084e-16"
+						"1.70840e-16"
 					],
 					[
 						"4207.5103",
@@ -3091,7 +3110,7 @@
 					],
 					[
 						"4209.6763",
-						"7.4201e-17"
+						"7.42010e-17"
 					],
 					[
 						"4211.8428",
@@ -3119,7 +3138,7 @@
 					],
 					[
 						"4224.8442",
-						"2.0712e-16"
+						"2.07120e-16"
 					],
 					[
 						"4227.0122",
@@ -3127,7 +3146,7 @@
 					],
 					[
 						"4229.1797",
-						"1.6696e-16"
+						"1.66960e-16"
 					],
 					[
 						"4231.3477",
@@ -3183,7 +3202,7 @@
 					],
 					[
 						"4259.5464",
-						"2.7072e-16"
+						"2.70720e-16"
 					],
 					[
 						"4261.7168",
@@ -3275,7 +3294,7 @@
 					],
 					[
 						"4309.5034",
-						"2.3131e-16"
+						"2.31310e-16"
 					],
 					[
 						"4311.6772",
@@ -3311,7 +3330,7 @@
 					],
 					[
 						"4329.0737",
-						"2.519e-16"
+						"2.51900e-16"
 					],
 					[
 						"4331.2485",
@@ -3427,7 +3446,7 @@
 					],
 					[
 						"4392.2065",
-						"2.8542e-16"
+						"2.85420e-16"
 					],
 					[
 						"4394.3853",
@@ -3515,7 +3534,7 @@
 					],
 					[
 						"4440.1675",
-						"2.4722e-16"
+						"2.47220e-16"
 					],
 					[
 						"4442.3491",
@@ -3591,7 +3610,7 @@
 					],
 					[
 						"4481.6284",
-						"3.2968e-16"
+						"3.29680e-16"
 					],
 					[
 						"4483.8115",
@@ -3615,7 +3634,7 @@
 					],
 					[
 						"4494.7285",
-						"2.6569e-16"
+						"2.65690e-16"
 					],
 					[
 						"4496.9121",
@@ -3647,7 +3666,7 @@
 					],
 					[
 						"4512.1997",
-						"3.1344e-16"
+						"3.13440e-16"
 					],
 					[
 						"4514.3843",
@@ -3715,7 +3734,7 @@
 					],
 					[
 						"4549.3433",
-						"2.2968e-16"
+						"2.29680e-16"
 					],
 					[
 						"4551.5288",
@@ -3763,7 +3782,7 @@
 					],
 					[
 						"4575.5747",
-						"3.0409e-16"
+						"3.04090e-16"
 					],
 					[
 						"4577.7612",
@@ -3787,7 +3806,7 @@
 					],
 					[
 						"4588.6938",
-						"1.849e-16"
+						"1.84900e-16"
 					],
 					[
 						"4590.8809",
@@ -3799,7 +3818,7 @@
 					],
 					[
 						"4595.2544",
-						"2.2665e-16"
+						"2.26650e-16"
 					],
 					[
 						"4597.4414",
@@ -3811,7 +3830,7 @@
 					],
 					[
 						"4601.8154",
-						"2.6691e-16"
+						"2.66910e-16"
 					],
 					[
 						"4604.0024",
@@ -3855,7 +3874,7 @@
 					],
 					[
 						"4625.8770",
-						"2.6845e-16"
+						"2.68450e-16"
 					],
 					[
 						"4628.0645",
@@ -3883,7 +3902,7 @@
 					],
 					[
 						"4641.1919",
-						"1.6844e-16"
+						"1.68440e-16"
 					],
 					[
 						"4643.3799",
@@ -3891,7 +3910,7 @@
 					],
 					[
 						"4645.5684",
-						"1.9446e-16"
+						"1.94460e-16"
 					],
 					[
 						"4647.7563",
@@ -3919,7 +3938,7 @@
 					],
 					[
 						"4660.8867",
-						"1.9999e-16"
+						"1.99990e-16"
 					],
 					[
 						"4663.0752",
@@ -3975,7 +3994,7 @@
 					],
 					[
 						"4691.5298",
-						"2.2165e-16"
+						"2.21650e-16"
 					],
 					[
 						"4693.7192",
@@ -3995,7 +4014,7 @@
 					],
 					[
 						"4702.4761",
-						"1.7325e-16"
+						"1.73250e-16"
 					],
 					[
 						"4704.6655",
@@ -4007,7 +4026,7 @@
 					],
 					[
 						"4709.0444",
-						"1.9872e-16"
+						"1.98720e-16"
 					],
 					[
 						"4711.2339",
@@ -4167,7 +4186,7 @@
 					],
 					[
 						"4796.6504",
-						"1.6237e-16"
+						"1.62370e-16"
 					],
 					[
 						"4798.8408",
@@ -4191,7 +4210,7 @@
 					],
 					[
 						"4809.7954",
-						"1.7972e-16"
+						"1.79720e-16"
 					],
 					[
 						"4811.9868",
@@ -4199,7 +4218,7 @@
 					],
 					[
 						"4814.1777",
-						"1.0441e-16"
+						"1.04410e-16"
 					],
 					[
 						"4816.3687",
@@ -4215,7 +4234,7 @@
 					],
 					[
 						"4822.9419",
-						"2.0261e-16"
+						"2.02610e-16"
 					],
 					[
 						"4825.1333",
@@ -4227,11 +4246,11 @@
 					],
 					[
 						"4829.5156",
-						"1.6609e-16"
+						"1.66090e-16"
 					],
 					[
 						"4831.7070",
-						"1.8872e-16"
+						"1.88720e-16"
 					],
 					[
 						"4833.8984",
@@ -4247,7 +4266,7 @@
 					],
 					[
 						"4840.4722",
-						"2.376e-16"
+						"2.37600e-16"
 					],
 					[
 						"4842.6636",
@@ -4287,11 +4306,11 @@
 					],
 					[
 						"4862.3882",
-						"1.657e-16"
+						"1.65700e-16"
 					],
 					[
 						"4864.5796",
-						"1.738e-16"
+						"1.73800e-16"
 					],
 					[
 						"4866.7715",
@@ -4307,7 +4326,7 @@
 					],
 					[
 						"4873.3467",
-						"1.3598e-16"
+						"1.35980e-16"
 					],
 					[
 						"4875.5386",
@@ -4315,19 +4334,19 @@
 					],
 					[
 						"4877.7305",
-						"2.1191e-16"
+						"2.11910e-16"
 					],
 					[
 						"4879.9224",
-						"1.101e-16"
+						"1.10100e-16"
 					],
 					[
 						"4882.1143",
-						"1.4499e-16"
+						"1.44990e-16"
 					],
 					[
 						"4884.3066",
-						"1.5562e-16"
+						"1.55620e-16"
 					],
 					[
 						"4886.4985",
@@ -4355,11 +4374,11 @@
 					],
 					[
 						"4899.6514",
-						"1.5563e-16"
+						"1.55630e-16"
 					],
 					[
 						"4901.8433",
-						"1.6775e-16"
+						"1.67750e-16"
 					],
 					[
 						"4904.0356",
@@ -4387,7 +4406,7 @@
 					],
 					[
 						"4917.1899",
-						"1.3199e-16"
+						"1.31990e-16"
 					],
 					[
 						"4919.3828",
@@ -4399,7 +4418,7 @@
 					],
 					[
 						"4923.7676",
-						"1.6355e-16"
+						"1.63550e-16"
 					],
 					[
 						"4925.9604",
@@ -4439,7 +4458,7 @@
 					],
 					[
 						"4945.6953",
-						"1.4753e-16"
+						"1.47530e-16"
 					],
 					[
 						"4947.8882",
@@ -4483,7 +4502,7 @@
 					],
 					[
 						"4969.8203",
-						"2.0309e-16"
+						"2.03090e-16"
 					],
 					[
 						"4972.0137",
@@ -4495,7 +4514,7 @@
 					],
 					[
 						"4976.4004",
-						"1.8389e-16"
+						"1.83890e-16"
 					],
 					[
 						"4978.5938",
@@ -4539,7 +4558,7 @@
 					],
 					[
 						"5000.5312",
-						"1.8252e-16"
+						"1.82520e-16"
 					],
 					[
 						"5002.7256",
@@ -4559,7 +4578,7 @@
 					],
 					[
 						"5011.5020",
-						"2.1187e-16"
+						"2.11870e-16"
 					],
 					[
 						"5013.6963",
@@ -4611,7 +4630,7 @@
 					],
 					[
 						"5040.0312",
-						"1.9946e-16"
+						"1.99460e-16"
 					],
 					[
 						"5042.2261",
@@ -4679,11 +4698,11 @@
 					],
 					[
 						"5077.3535",
-						"1.8357e-16"
+						"1.83570e-16"
 					],
 					[
 						"5079.5498",
-						"1.142e-16"
+						"1.14200e-16"
 					],
 					[
 						"5081.7461",
@@ -4699,7 +4718,7 @@
 					],
 					[
 						"5088.3345",
-						"1.258e-16"
+						"1.25800e-16"
 					],
 					[
 						"5090.5308",
@@ -4743,7 +4762,7 @@
 					],
 					[
 						"5112.4990",
-						"2.1654e-16"
+						"2.16540e-16"
 					],
 					[
 						"5114.6963",
@@ -4767,7 +4786,7 @@
 					],
 					[
 						"5125.6836",
-						"1.5442e-16"
+						"1.54420e-16"
 					],
 					[
 						"5127.8813",
@@ -4795,7 +4814,7 @@
 					],
 					[
 						"5141.0698",
-						"1.5216e-16"
+						"1.52160e-16"
 					],
 					[
 						"5143.2686",
@@ -4827,7 +4846,7 @@
 					],
 					[
 						"5158.6602",
-						"1.8748e-16"
+						"1.87480e-16"
 					],
 					[
 						"5160.8594",
@@ -4839,7 +4858,7 @@
 					],
 					[
 						"5165.2583",
-						"1.337e-16"
+						"1.33700e-16"
 					],
 					[
 						"5167.4575",
@@ -4863,7 +4882,7 @@
 					],
 					[
 						"5178.4570",
-						"1.1974e-16"
+						"1.19740e-16"
 					],
 					[
 						"5180.6572",
@@ -4883,7 +4902,7 @@
 					],
 					[
 						"5189.4595",
-						"8.0489e-17"
+						"8.04890e-17"
 					],
 					[
 						"5191.6602",
@@ -4919,7 +4938,7 @@
 					],
 					[
 						"5209.2715",
-						"1.5522e-16"
+						"1.55220e-16"
 					],
 					[
 						"5211.4731",
@@ -4927,7 +4946,7 @@
 					],
 					[
 						"5213.6753",
-						"1.7437e-16"
+						"1.74370e-16"
 					],
 					[
 						"5215.8779",
@@ -4967,7 +4986,7 @@
 					],
 					[
 						"5235.7046",
-						"1.7276e-16"
+						"1.72760e-16"
 					],
 					[
 						"5237.9082",
@@ -4975,7 +4994,7 @@
 					],
 					[
 						"5240.1118",
-						"1.2389e-16"
+						"1.23890e-16"
 					],
 					[
 						"5242.3159",
@@ -5055,11 +5074,11 @@
 					],
 					[
 						"5284.2236",
-						"8.7569e-17"
+						"8.75690e-17"
 					],
 					[
 						"5286.4312",
-						"1.5358e-16"
+						"1.53580e-16"
 					],
 					[
 						"5288.6387",
@@ -5067,7 +5086,7 @@
 					],
 					[
 						"5290.8467",
-						"8.9653e-17"
+						"8.96530e-17"
 					],
 					[
 						"5293.0547",
@@ -5111,7 +5130,7 @@
 					],
 					[
 						"5315.1455",
-						"1.3293e-16"
+						"1.32930e-16"
 					],
 					[
 						"5317.3560",
@@ -5135,7 +5154,7 @@
 					],
 					[
 						"5328.4102",
-						"1.2126e-16"
+						"1.21260e-16"
 					],
 					[
 						"5330.6221",
@@ -5151,7 +5170,7 @@
 					],
 					[
 						"5337.2583",
-						"8.1621e-17"
+						"8.16210e-17"
 					],
 					[
 						"5339.4707",
@@ -5171,7 +5190,7 @@
 					],
 					[
 						"5348.3232",
-						"1.1975e-16"
+						"1.19750e-16"
 					],
 					[
 						"5350.5366",
@@ -5215,7 +5234,7 @@
 					],
 					[
 						"5372.6880",
-						"2.1763e-16"
+						"2.17630e-16"
 					],
 					[
 						"5374.9043",
@@ -5263,7 +5282,7 @@
 					],
 					[
 						"5399.3047",
-						"1.5322e-16"
+						"1.53220e-16"
 					],
 					[
 						"5401.5244",
@@ -5307,11 +5326,11 @@
 					],
 					[
 						"5423.7412",
-						"1.1921e-16"
+						"1.19210e-16"
 					],
 					[
 						"5425.9644",
-						"1.2324e-16"
+						"1.23240e-16"
 					],
 					[
 						"5428.1885",
@@ -5327,7 +5346,7 @@
 					],
 					[
 						"5434.8613",
-						"5.049e-17"
+						"5.04900e-17"
 					],
 					[
 						"5437.0864",
@@ -5371,7 +5390,7 @@
 					],
 					[
 						"5459.3564",
-						"1.2249e-16"
+						"1.22490e-16"
 					],
 					[
 						"5461.5854",
@@ -5487,7 +5506,7 @@
 					],
 					[
 						"5524.1587",
-						"4.2901e-17"
+						"4.29010e-17"
 					],
 					[
 						"5526.3999",
@@ -5511,7 +5530,7 @@
 					],
 					[
 						"5537.6118",
-						"1.047e-16"
+						"1.04700e-16"
 					],
 					[
 						"5539.8555",
@@ -5603,7 +5622,7 @@
 					],
 					[
 						"5589.3481",
-						"1.9784e-16"
+						"1.97840e-16"
 					],
 					[
 						"5591.6040",
@@ -5619,7 +5638,7 @@
 					],
 					[
 						"5598.3750",
-						"1.3583e-16"
+						"1.35830e-16"
 					],
 					[
 						"5600.6333",
@@ -5635,7 +5654,7 @@
 					],
 					[
 						"5607.4111",
-						"4.961e-17"
+						"4.96100e-17"
 					],
 					[
 						"5609.6719",
@@ -5643,7 +5662,7 @@
 					],
 					[
 						"5611.9326",
-						"1.6789e-16"
+						"1.67890e-16"
 					],
 					[
 						"5614.1943",
@@ -5683,7 +5702,7 @@
 					],
 					[
 						"5627.2612",
-						"4.788e-17"
+						"4.78800e-17"
 					],
 					[
 						"5628.4053",
@@ -5707,7 +5726,7 @@
 					],
 					[
 						"5634.1265",
-						"-6.0294e-17"
+						"-6.02940e-17"
 					],
 					[
 						"5635.2710",
@@ -5723,7 +5742,7 @@
 					],
 					[
 						"5638.7041",
-						"1.2793e-16"
+						"1.27930e-16"
 					],
 					[
 						"5639.8486",
@@ -5747,7 +5766,7 @@
 					],
 					[
 						"5645.5713",
-						"1.1257e-16"
+						"1.12570e-16"
 					],
 					[
 						"5646.7163",
@@ -5787,7 +5806,7 @@
 					],
 					[
 						"5657.0200",
-						"7.3156e-17"
+						"7.31560e-17"
 					],
 					[
 						"5658.1650",
@@ -5803,7 +5822,7 @@
 					],
 					[
 						"5661.6001",
-						"1.5435e-16"
+						"1.54350e-16"
 					],
 					[
 						"5662.7456",
@@ -5903,7 +5922,7 @@
 					],
 					[
 						"5690.2393",
-						"2.1848e-16"
+						"2.18480e-16"
 					],
 					[
 						"5691.3853",
@@ -5951,7 +5970,7 @@
 					],
 					[
 						"5703.9937",
-						"1.3809e-16"
+						"1.38090e-16"
 					],
 					[
 						"5705.1401",
@@ -6091,7 +6110,7 @@
 					],
 					[
 						"5744.1392",
-						"5.8846e-17"
+						"5.88460e-17"
 					],
 					[
 						"5745.2871",
@@ -6115,7 +6134,7 @@
 					],
 					[
 						"5751.0254",
-						"1.3427e-16"
+						"1.34270e-16"
 					],
 					[
 						"5752.1738",
@@ -6303,7 +6322,7 @@
 					],
 					[
 						"5805.0132",
-						"2.9454e-17"
+						"2.94540e-17"
 					],
 					[
 						"5806.1626",
@@ -6319,7 +6338,7 @@
 					],
 					[
 						"5809.6118",
-						"1.9737e-16"
+						"1.97370e-16"
 					],
 					[
 						"5810.7612",
@@ -6367,7 +6386,7 @@
 					],
 					[
 						"5823.4097",
-						"8.7717e-17"
+						"8.77170e-17"
 					],
 					[
 						"5824.5596",
@@ -6439,7 +6458,7 @@
 					],
 					[
 						"5844.1172",
-						"3.3818e-17"
+						"3.38180e-17"
 					],
 					[
 						"5845.2676",
@@ -6447,7 +6466,7 @@
 					],
 					[
 						"5846.4185",
-						"6.9123e-17"
+						"6.91230e-17"
 					],
 					[
 						"5847.5698",
@@ -6467,7 +6486,7 @@
 					],
 					[
 						"5852.1733",
-						"1.3197e-17"
+						"1.31970e-17"
 					],
 					[
 						"5853.3242",
@@ -6491,7 +6510,7 @@
 					],
 					[
 						"5859.0796",
-						"5.2951e-17"
+						"5.29510e-17"
 					],
 					[
 						"5860.2305",
@@ -6523,7 +6542,7 @@
 					],
 					[
 						"5868.2905",
-						"4.0426e-17"
+						"4.04260e-17"
 					],
 					[
 						"5869.4419",
@@ -6675,7 +6694,7 @@
 					],
 					[
 						"5912.0732",
-						"7.7405e-17"
+						"7.74050e-17"
 					],
 					[
 						"5913.2256",
@@ -6687,7 +6706,7 @@
 					],
 					[
 						"5915.5322",
-						"1.6323e-16"
+						"1.63230e-16"
 					],
 					[
 						"5916.6846",
@@ -6727,7 +6746,7 @@
 					],
 					[
 						"5927.0635",
-						"2.5811e-17"
+						"2.58110e-17"
 					],
 					[
 						"5928.2168",
@@ -6751,7 +6770,7 @@
 					],
 					[
 						"5933.9839",
-						"1.0542e-16"
+						"1.05420e-16"
 					],
 					[
 						"5935.1377",
@@ -6775,7 +6794,7 @@
 					],
 					[
 						"5940.9062",
-						"1.0171e-16"
+						"1.01710e-16"
 					],
 					[
 						"5942.0601",
@@ -6787,7 +6806,7 @@
 					],
 					[
 						"5944.3677",
-						"6.1762e-17"
+						"6.17620e-17"
 					],
 					[
 						"5945.5215",
@@ -6799,7 +6818,7 @@
 					],
 					[
 						"5947.8296",
-						"1.1944e-16"
+						"1.19440e-16"
 					],
 					[
 						"5948.9834",
@@ -6835,7 +6854,7 @@
 					],
 					[
 						"5958.2168",
-						"1.7066e-17"
+						"1.70660e-17"
 					],
 					[
 						"5959.3711",
@@ -6851,7 +6870,7 @@
 					],
 					[
 						"5962.8345",
-						"1.56e-16"
+						"1.56000e-16"
 					],
 					[
 						"5963.9888",
@@ -6863,7 +6882,7 @@
 					],
 					[
 						"5966.2983",
-						"6.5547e-17"
+						"6.55470e-17"
 					],
 					[
 						"5967.4531",
@@ -6883,7 +6902,7 @@
 					],
 					[
 						"5972.0718",
-						"1.3949e-16"
+						"1.39490e-16"
 					],
 					[
 						"5973.2261",
@@ -6979,7 +6998,7 @@
 					],
 					[
 						"5999.7969",
-						"7.7025e-17"
+						"7.70250e-17"
 					],
 					[
 						"6000.9526",
@@ -7027,7 +7046,7 @@
 					],
 					[
 						"6013.6670",
-						"4.886e-17"
+						"4.88600e-17"
 					],
 					[
 						"6014.8237",
@@ -7059,7 +7078,7 @@
 					],
 					[
 						"6022.9170",
-						"8.889e-17"
+						"8.88900e-17"
 					],
 					[
 						"6024.0737",
@@ -7111,7 +7130,7 @@
 					],
 					[
 						"6037.9536",
-						"5.686e-17"
+						"5.68600e-17"
 					],
 					[
 						"6039.1104",
@@ -7143,7 +7162,7 @@
 					],
 					[
 						"6047.2095",
-						"8.9604e-17"
+						"8.96040e-17"
 					],
 					[
 						"6048.3667",
@@ -7151,7 +7170,7 @@
 					],
 					[
 						"6049.5244",
-						"1.1739e-16"
+						"1.17390e-16"
 					],
 					[
 						"6050.6816",
@@ -7183,7 +7202,7 @@
 					],
 					[
 						"6058.7832",
-						"1.3826e-16"
+						"1.38260e-16"
 					],
 					[
 						"6059.9409",
@@ -7211,7 +7230,7 @@
 					],
 					[
 						"6066.8867",
-						"7.1516e-17"
+						"7.15160e-17"
 					],
 					[
 						"6068.0449",
@@ -7271,7 +7290,7 @@
 					],
 					[
 						"6084.2578",
-						"7.3116e-17"
+						"7.31160e-17"
 					],
 					[
 						"6085.4165",
@@ -7295,7 +7314,7 @@
 					],
 					[
 						"6091.2085",
-						"1.026e-16"
+						"1.02600e-16"
 					],
 					[
 						"6092.3667",
@@ -7311,7 +7330,7 @@
 					],
 					[
 						"6095.8428",
-						"1.2203e-16"
+						"1.22030e-16"
 					],
 					[
 						"6097.0015",
@@ -7339,7 +7358,7 @@
 					],
 					[
 						"6103.9546",
-						"6.0943e-17"
+						"6.09430e-17"
 					],
 					[
 						"6105.1138",
@@ -7375,7 +7394,7 @@
 					],
 					[
 						"6114.3872",
-						"1.4182e-16"
+						"1.41820e-16"
 					],
 					[
 						"6115.5464",
@@ -7419,7 +7438,7 @@
 					],
 					[
 						"6127.1416",
-						"1.3514e-16"
+						"1.35140e-16"
 					],
 					[
 						"6128.3013",
@@ -7479,7 +7498,7 @@
 					],
 					[
 						"6144.5415",
-						"7.01e-17"
+						"7.01000e-17"
 					],
 					[
 						"6145.7017",
@@ -7503,7 +7522,7 @@
 					],
 					[
 						"6151.5039",
-						"6.4066e-17"
+						"6.40660e-17"
 					],
 					[
 						"6152.6641",
@@ -7511,7 +7530,7 @@
 					],
 					[
 						"6153.8247",
-						"3.7474e-17"
+						"3.74740e-17"
 					],
 					[
 						"6154.9849",
@@ -7527,7 +7546,7 @@
 					],
 					[
 						"6158.4668",
-						"6.1564e-17"
+						"6.15640e-17"
 					],
 					[
 						"6159.6279",
@@ -7535,7 +7554,7 @@
 					],
 					[
 						"6160.7886",
-						"5.7678e-17"
+						"5.76780e-17"
 					],
 					[
 						"6161.9497",
@@ -7587,7 +7606,7 @@
 					],
 					[
 						"6175.8818",
-						"1.2232e-16"
+						"1.22320e-16"
 					],
 					[
 						"6177.0430",
@@ -7631,7 +7650,7 @@
 					],
 					[
 						"6188.6577",
-						"1.1533e-16"
+						"1.15330e-16"
 					],
 					[
 						"6189.8198",
@@ -7643,7 +7662,7 @@
 					],
 					[
 						"6192.1426",
-						"9.1134e-17"
+						"9.11340e-17"
 					],
 					[
 						"6193.3047",
@@ -7659,11 +7678,11 @@
 					],
 					[
 						"6196.7905",
-						"1.1149e-16"
+						"1.11490e-16"
 					],
 					[
 						"6197.9521",
-						"1.9477e-16"
+						"1.94770e-16"
 					],
 					[
 						"6199.1138",
@@ -7931,7 +7950,7 @@
 					],
 					[
 						"6275.8843",
-						"8.7569e-17"
+						"8.75690e-17"
 					],
 					[
 						"6277.0488",
@@ -7987,7 +8006,7 @@
 					],
 					[
 						"6292.1890",
-						"8.4253e-17"
+						"8.42530e-17"
 					],
 					[
 						"6293.3540",
@@ -8007,7 +8026,7 @@
 					],
 					[
 						"6298.0142",
-						"1.5118e-16"
+						"1.51180e-16"
 					],
 					[
 						"6299.1792",
@@ -8019,11 +8038,11 @@
 					],
 					[
 						"6301.5093",
-						"2.1779e-16"
+						"2.17790e-16"
 					],
 					[
 						"6302.6748",
-						"5.8106e-17"
+						"5.81060e-17"
 					],
 					[
 						"6303.8403",
@@ -8071,7 +8090,7 @@
 					],
 					[
 						"6316.6597",
-						"3.6399e-17"
+						"3.63990e-17"
 					],
 					[
 						"6317.8252",
@@ -8091,7 +8110,7 @@
 					],
 					[
 						"6322.4883",
-						"1.6024e-16"
+						"1.60240e-16"
 					],
 					[
 						"6323.6543",
@@ -8167,11 +8186,11 @@
 					],
 					[
 						"6344.6460",
-						"1.4039e-16"
+						"1.40390e-16"
 					],
 					[
 						"6345.8125",
-						"8.3714e-17"
+						"8.37140e-17"
 					],
 					[
 						"6346.9790",
@@ -8211,15 +8230,15 @@
 					],
 					[
 						"6357.4795",
-						"6.0866e-17"
+						"6.08660e-17"
 					],
 					[
 						"6358.6460",
-						"8.0341e-17"
+						"8.03410e-17"
 					],
 					[
 						"6359.8130",
-						"1.0623e-17"
+						"1.06230e-17"
 					],
 					[
 						"6360.9800",
@@ -8247,7 +8266,7 @@
 					],
 					[
 						"6367.9829",
-						"1.3732e-16"
+						"1.37320e-16"
 					],
 					[
 						"6369.1499",
@@ -8303,7 +8322,7 @@
 					],
 					[
 						"6384.3276",
-						"1.2567e-16"
+						"1.25670e-16"
 					],
 					[
 						"6385.4956",
@@ -8395,7 +8414,7 @@
 					],
 					[
 						"6411.1943",
-						"1.3593e-16"
+						"1.35930e-16"
 					],
 					[
 						"6412.3628",
@@ -8435,7 +8454,7 @@
 					],
 					[
 						"6422.8813",
-						"1.0449e-16"
+						"1.04490e-16"
 					],
 					[
 						"6424.0503",
@@ -8487,7 +8506,7 @@
 					],
 					[
 						"6438.0796",
-						"1.2344e-16"
+						"1.23440e-16"
 					],
 					[
 						"6439.2490",
@@ -8587,7 +8606,7 @@
 					],
 					[
 						"6467.3242",
-						"1.1643e-16"
+						"1.16430e-16"
 					],
 					[
 						"6468.4946",
@@ -8639,7 +8658,7 @@
 					],
 					[
 						"6482.5400",
-						"9.7023e-17"
+						"9.70230e-17"
 					],
 					[
 						"6483.7100",
@@ -8671,7 +8690,7 @@
 					],
 					[
 						"6491.9058",
-						"6.9722e-17"
+						"6.97220e-17"
 					],
 					[
 						"6493.0767",
@@ -8719,7 +8738,7 @@
 					],
 					[
 						"6505.9595",
-						"1.1097e-16"
+						"1.10970e-16"
 					],
 					[
 						"6507.1309",
@@ -8831,7 +8850,7 @@
 					],
 					[
 						"6538.7710",
-						"1.2715e-16"
+						"1.27150e-16"
 					],
 					[
 						"6539.9429",
@@ -8839,7 +8858,7 @@
 					],
 					[
 						"6541.1152",
-						"7.942e-17"
+						"7.94200e-17"
 					],
 					[
 						"6542.2876",
@@ -8895,7 +8914,7 @@
 					],
 					[
 						"6557.5317",
-						"7.9237e-17"
+						"7.92370e-17"
 					],
 					[
 						"6558.7046",
@@ -8907,7 +8926,7 @@
 					],
 					[
 						"6561.0503",
-						"7.455e-17"
+						"7.45500e-17"
 					],
 					[
 						"6562.2236",
@@ -8927,7 +8946,7 @@
 					],
 					[
 						"6566.9155",
-						"8.8865e-17"
+						"8.88650e-17"
 					],
 					[
 						"6568.0884",
@@ -8955,7 +8974,7 @@
 					],
 					[
 						"6575.1284",
-						"7.1738e-17"
+						"7.17380e-17"
 					],
 					[
 						"6576.3013",
@@ -8963,7 +8982,7 @@
 					],
 					[
 						"6577.4751",
-						"1.2454e-16"
+						"1.24540e-16"
 					],
 					[
 						"6578.6484",
@@ -8971,7 +8990,7 @@
 					],
 					[
 						"6579.8218",
-						"1.3481e-16"
+						"1.34810e-16"
 					],
 					[
 						"6580.9956",
@@ -9011,7 +9030,7 @@
 					],
 					[
 						"6591.5581",
-						"7.8919e-17"
+						"7.89190e-17"
 					],
 					[
 						"6592.7319",
@@ -9075,7 +9094,7 @@
 					],
 					[
 						"6610.3433",
-						"1.3158e-16"
+						"1.31580e-16"
 					],
 					[
 						"6611.5176",
@@ -9127,7 +9146,7 @@
 					],
 					[
 						"6625.6123",
-						"6.1061e-17"
+						"6.10610e-17"
 					],
 					[
 						"6626.7876",
@@ -9191,7 +9210,7 @@
 					],
 					[
 						"6644.4131",
-						"1.2865e-16"
+						"1.28650e-16"
 					],
 					[
 						"6645.5884",
@@ -9203,7 +9222,7 @@
 					],
 					[
 						"6647.9390",
-						"1.1902e-16"
+						"1.19020e-16"
 					],
 					[
 						"6649.1143",
@@ -9291,7 +9310,7 @@
 					],
 					[
 						"6673.8057",
-						"6.131e-17"
+						"6.13100e-17"
 					],
 					[
 						"6674.9819",
@@ -9303,7 +9322,7 @@
 					],
 					[
 						"6677.3340",
-						"4.3703e-17"
+						"4.37030e-17"
 					],
 					[
 						"6678.5107",
@@ -9311,7 +9330,7 @@
 					],
 					[
 						"6679.6870",
-						"4.641e-17"
+						"4.64100e-17"
 					],
 					[
 						"6680.8628",
@@ -9319,7 +9338,7 @@
 					],
 					[
 						"6682.0391",
-						"5.0142e-17"
+						"5.01420e-17"
 					],
 					[
 						"6683.2158",
@@ -9375,7 +9394,7 @@
 					],
 					[
 						"6698.5112",
-						"1.6644e-16"
+						"1.66440e-16"
 					],
 					[
 						"6699.6880",
@@ -9403,7 +9422,7 @@
 					],
 					[
 						"6706.7495",
-						"1.1541e-16"
+						"1.15410e-16"
 					],
 					[
 						"6707.9263",
@@ -9419,7 +9438,7 @@
 					],
 					[
 						"6711.4580",
-						"3.9567e-17"
+						"3.95670e-17"
 					],
 					[
 						"6712.6348",
@@ -9443,7 +9462,7 @@
 					],
 					[
 						"6718.5210",
-						"8.6279e-17"
+						"8.62790e-17"
 					],
 					[
 						"6719.6987",
@@ -9595,7 +9614,7 @@
 					],
 					[
 						"6763.2822",
-						"2.4469e-17"
+						"2.44690e-17"
 					],
 					[
 						"6764.4609",
@@ -9651,7 +9670,7 @@
 					],
 					[
 						"6779.7842",
-						"7.9966e-17"
+						"7.99660e-17"
 					],
 					[
 						"6780.9634",
@@ -9659,7 +9678,7 @@
 					],
 					[
 						"6782.1421",
-						"1.2677e-16"
+						"1.26770e-16"
 					],
 					[
 						"6783.3213",
@@ -9671,7 +9690,7 @@
 					],
 					[
 						"6785.6792",
-						"8.0741e-17"
+						"8.07410e-17"
 					],
 					[
 						"6786.8584",
@@ -9683,7 +9702,7 @@
 					],
 					[
 						"6789.2168",
-						"2.7965e-17"
+						"2.79650e-17"
 					],
 					[
 						"6790.3960",
@@ -9767,7 +9786,7 @@
 					],
 					[
 						"6813.9868",
-						"8.3338e-17"
+						"8.33380e-17"
 					],
 					[
 						"6815.1665",
@@ -9815,7 +9834,7 @@
 					],
 					[
 						"6828.1470",
-						"1.1498e-16"
+						"1.14980e-16"
 					],
 					[
 						"6829.3276",
@@ -9835,11 +9854,11 @@
 					],
 					[
 						"6834.0483",
-						"-2.3315e-18"
+						"-2.33150e-18"
 					],
 					[
 						"6835.2290",
-						"9.1674e-17"
+						"9.16740e-17"
 					],
 					[
 						"6836.4092",
@@ -9879,7 +9898,7 @@
 					],
 					[
 						"6847.0337",
-						"5.6878e-17"
+						"5.68780e-17"
 					],
 					[
 						"6848.2148",
@@ -9951,7 +9970,7 @@
 					],
 					[
 						"6868.2915",
-						"-1.4134e-18"
+						"-1.41340e-18"
 					],
 					[
 						"6869.4722",
@@ -10031,7 +10050,7 @@
 					],
 					[
 						"6891.9209",
-						"4.7518e-17"
+						"4.75180e-17"
 					],
 					[
 						"6893.1030",
@@ -10047,7 +10066,7 @@
 					],
 					[
 						"6896.6489",
-						"8.8772e-17"
+						"8.87720e-17"
 					],
 					[
 						"6897.8306",
@@ -10075,7 +10094,7 @@
 					],
 					[
 						"6904.9229",
-						"4.6613e-17"
+						"4.66130e-17"
 					],
 					[
 						"6906.1050",
@@ -10147,7 +10166,7 @@
 					],
 					[
 						"6926.2056",
-						"9.0352e-17"
+						"9.03520e-17"
 					],
 					[
 						"6927.3882",
@@ -10155,7 +10174,7 @@
 					],
 					[
 						"6928.5708",
-						"5.2123e-17"
+						"5.21230e-17"
 					],
 					[
 						"6929.7539",
@@ -10203,7 +10222,7 @@
 					],
 					[
 						"6942.7656",
-						"4.7237e-17"
+						"4.72370e-17"
 					],
 					[
 						"6943.9487",
@@ -10215,7 +10234,7 @@
 					],
 					[
 						"6946.3149",
-						"6.4723e-17"
+						"6.47230e-17"
 					],
 					[
 						"6947.4976",
@@ -10227,7 +10246,7 @@
 					],
 					[
 						"6949.8643",
-						"6.6609e-17"
+						"6.66090e-17"
 					],
 					[
 						"6951.0474",
@@ -10259,7 +10278,7 @@
 					],
 					[
 						"6959.3306",
-						"5.2724e-17"
+						"5.27240e-17"
 					],
 					[
 						"6960.5142",
@@ -10459,7 +10478,7 @@
 					],
 					[
 						"7018.5376",
-						"2.3027e-17"
+						"2.30270e-17"
 					],
 					[
 						"7019.7217",
@@ -10543,7 +10562,7 @@
 					],
 					[
 						"7043.4243",
-						"7.2268e-17"
+						"7.22680e-17"
 					],
 					[
 						"7044.6094",
@@ -10623,7 +10642,7 @@
 					],
 					[
 						"7067.1377",
-						"7.0612e-17"
+						"7.06120e-17"
 					],
 					[
 						"7068.3232",
@@ -10631,7 +10650,7 @@
 					],
 					[
 						"7069.5093",
-						"1.5213e-17"
+						"1.52130e-17"
 					],
 					[
 						"7070.6953",
@@ -10659,7 +10678,7 @@
 					],
 					[
 						"7077.8120",
-						"3.4101e-17"
+						"3.41010e-17"
 					],
 					[
 						"7078.9976",
@@ -10671,7 +10690,7 @@
 					],
 					[
 						"7081.3706",
-						"1.0534e-16"
+						"1.05340e-16"
 					],
 					[
 						"7082.5566",
@@ -10695,7 +10714,7 @@
 					],
 					[
 						"7088.4878",
-						"4.4299e-17"
+						"4.42990e-17"
 					],
 					[
 						"7089.6748",
@@ -10707,7 +10726,7 @@
 					],
 					[
 						"7092.0474",
-						"1.068e-16"
+						"1.06800e-16"
 					],
 					[
 						"7093.2339",
@@ -10755,7 +10774,7 @@
 					],
 					[
 						"7106.2871",
-						"6.3021e-17"
+						"6.30210e-17"
 					],
 					[
 						"7107.4736",
@@ -10763,7 +10782,7 @@
 					],
 					[
 						"7108.6602",
-						"5.182e-17"
+						"5.18200e-17"
 					],
 					[
 						"7109.8472",
@@ -10771,7 +10790,7 @@
 					],
 					[
 						"7111.0337",
-						"8.3422e-17"
+						"8.34220e-17"
 					],
 					[
 						"7112.2207",
@@ -10779,7 +10798,7 @@
 					],
 					[
 						"7113.4082",
-						"7.6797e-17"
+						"7.67970e-17"
 					],
 					[
 						"7114.5952",
@@ -10803,7 +10822,7 @@
 					],
 					[
 						"7120.5298",
-						"9.9536e-17"
+						"9.95360e-17"
 					],
 					[
 						"7121.7168",
@@ -10811,7 +10830,7 @@
 					],
 					[
 						"7122.9043",
-						"1.0139e-16"
+						"1.01390e-16"
 					],
 					[
 						"7124.0913",
@@ -10819,7 +10838,7 @@
 					],
 					[
 						"7125.2788",
-						"7.2856e-17"
+						"7.28560e-17"
 					],
 					[
 						"7126.4658",
@@ -10847,7 +10866,7 @@
 					],
 					[
 						"7133.5894",
-						"3.4856e-17"
+						"3.48560e-17"
 					],
 					[
 						"7134.7764",
@@ -10931,7 +10950,7 @@
 					],
 					[
 						"7158.5293",
-						"9.1168e-17"
+						"9.11680e-17"
 					],
 					[
 						"7159.7173",
@@ -10999,7 +11018,7 @@
 					],
 					[
 						"7178.7271",
-						"9.9323e-17"
+						"9.93230e-17"
 					],
 					[
 						"7179.9155",
@@ -11047,7 +11066,7 @@
 					],
 					[
 						"7192.9883",
-						"1.0613e-16"
+						"1.06130e-16"
 					],
 					[
 						"7194.1768",
@@ -11055,11 +11074,11 @@
 					],
 					[
 						"7195.3657",
-						"6.4637e-17"
+						"6.46370e-17"
 					],
 					[
 						"7196.5542",
-						"7.0256e-17"
+						"7.02560e-17"
 					],
 					[
 						"7197.7427",
@@ -11067,11 +11086,11 @@
 					],
 					[
 						"7198.9321",
-						"2.7593e-17"
+						"2.75930e-17"
 					],
 					[
 						"7200.1206",
-						"5.1048e-17"
+						"5.10480e-17"
 					],
 					[
 						"7201.3091",
@@ -11151,7 +11170,7 @@
 					],
 					[
 						"7223.8999",
-						"8.4811e-17"
+						"8.48110e-17"
 					],
 					[
 						"7225.0894",
@@ -11167,7 +11186,7 @@
 					],
 					[
 						"7228.6572",
-						"2.3198e-17"
+						"2.31980e-17"
 					],
 					[
 						"7229.8462",
@@ -11175,7 +11194,7 @@
 					],
 					[
 						"7231.0361",
-						"7.1164e-17"
+						"7.11640e-17"
 					],
 					[
 						"7232.2251",
@@ -11335,7 +11354,7 @@
 					],
 					[
 						"7278.6294",
-						"-5.6873e-17"
+						"-5.68730e-17"
 					],
 					[
 						"7279.8193",
@@ -11447,7 +11466,7 @@
 					],
 					[
 						"7311.9663",
-						"5.0795e-17"
+						"5.07950e-17"
 					],
 					[
 						"7313.1572",
@@ -11475,7 +11494,7 @@
 					],
 					[
 						"7320.3032",
-						"5.4373e-17"
+						"5.43730e-17"
 					],
 					[
 						"7321.4941",
@@ -11491,11 +11510,11 @@
 					],
 					[
 						"7325.0674",
-						"2.0364e-17"
+						"2.03640e-17"
 					],
 					[
 						"7326.2588",
-						"8.7909e-17"
+						"8.79090e-17"
 					],
 					[
 						"7327.4502",
@@ -11511,7 +11530,7 @@
 					],
 					[
 						"7331.0239",
-						"2.2787e-17"
+						"2.27870e-17"
 					],
 					[
 						"7332.2153",
@@ -11543,7 +11562,7 @@
 					],
 					[
 						"7340.5542",
-						"1.7116e-16"
+						"1.71160e-16"
 					],
 					[
 						"7341.7456",
@@ -11607,11 +11626,11 @@
 					],
 					[
 						"7359.6206",
-						"1.311e-17"
+						"1.31100e-17"
 					],
 					[
 						"7360.8125",
-						"1.7311e-17"
+						"1.73110e-17"
 					],
 					[
 						"7362.0044",
@@ -11687,7 +11706,7 @@
 					],
 					[
 						"7383.4609",
-						"1.4161e-17"
+						"1.41610e-17"
 					],
 					[
 						"7384.6528",
@@ -11707,7 +11726,7 @@
 					],
 					[
 						"7389.4219",
-						"5.5514e-17"
+						"5.55140e-17"
 					],
 					[
 						"7390.6138",
@@ -11715,7 +11734,7 @@
 					],
 					[
 						"7391.8066",
-						"1.2487e-17"
+						"1.24870e-17"
 					],
 					[
 						"7392.9990",
@@ -11727,7 +11746,7 @@
 					],
 					[
 						"7395.3838",
-						"9.305e-17"
+						"9.30500e-17"
 					],
 					[
 						"7396.5762",
@@ -11767,7 +11786,7 @@
 					],
 					[
 						"7407.3086",
-						"4.1476e-17"
+						"4.14760e-17"
 					],
 					[
 						"7408.5015",
@@ -11779,7 +11798,7 @@
 					],
 					[
 						"7410.8872",
-						"5.6961e-17"
+						"5.69610e-17"
 					],
 					[
 						"7412.0796",
@@ -11791,7 +11810,7 @@
 					],
 					[
 						"7414.4653",
-						"4.0085e-17"
+						"4.00850e-17"
 					],
 					[
 						"7415.6582",
@@ -11799,7 +11818,7 @@
 					],
 					[
 						"7416.8506",
-						"3.6393e-17"
+						"3.63930e-17"
 					],
 					[
 						"7418.0435",
@@ -11831,7 +11850,7 @@
 					],
 					[
 						"7426.3940",
-						"-1.4934e-17"
+						"-1.49340e-17"
 					],
 					[
 						"7427.5869",
@@ -11859,7 +11878,7 @@
 					],
 					[
 						"7434.7451",
-						"3.9045e-17"
+						"3.90450e-17"
 					],
 					[
 						"7435.9380",
@@ -11907,7 +11926,7 @@
 					],
 					[
 						"7449.0635",
-						"5.3343e-17"
+						"5.33430e-17"
 					],
 					[
 						"7450.2568",
@@ -11955,7 +11974,7 @@
 					],
 					[
 						"7463.3848",
-						"3.9228e-17"
+						"3.92280e-17"
 					],
 					[
 						"7464.5786",
@@ -12027,7 +12046,7 @@
 					],
 					[
 						"7484.8721",
-						"3.5723e-17"
+						"3.57230e-17"
 					],
 					[
 						"7486.0664",
@@ -12043,7 +12062,7 @@
 					],
 					[
 						"7489.6484",
-						"-3.014e-18"
+						"-3.01400e-18"
 					],
 					[
 						"7490.8418",
@@ -12075,7 +12094,7 @@
 					],
 					[
 						"7499.2007",
-						"6.0491e-17"
+						"6.04910e-17"
 					],
 					[
 						"7500.3950",
@@ -12091,7 +12110,7 @@
 					],
 					[
 						"7503.9775",
-						"3.6477e-17"
+						"3.64770e-17"
 					],
 					[
 						"7505.1714",
@@ -12099,7 +12118,7 @@
 					],
 					[
 						"7506.3662",
-						"4.1767e-17"
+						"4.17670e-17"
 					],
 					[
 						"7507.5601",
@@ -12115,7 +12134,7 @@
 					],
 					[
 						"7511.1431",
-						"7.7617e-17"
+						"7.76170e-17"
 					],
 					[
 						"7512.3374",
@@ -12131,7 +12150,7 @@
 					],
 					[
 						"7515.9209",
-						"3.9485e-17"
+						"3.94850e-17"
 					],
 					[
 						"7517.1152",
@@ -12147,7 +12166,7 @@
 					],
 					[
 						"7520.6987",
-						"7.7053e-17"
+						"7.70530e-17"
 					],
 					[
 						"7521.8926",
@@ -12207,7 +12226,7 @@
 					],
 					[
 						"7538.6177",
-						"3.2829e-17"
+						"3.28290e-17"
 					],
 					[
 						"7539.8125",
@@ -12295,7 +12314,7 @@
 					],
 					[
 						"7564.9067",
-						"6.1065e-17"
+						"6.10650e-17"
 					],
 					[
 						"7566.1016",
@@ -12383,7 +12402,7 @@
 					],
 					[
 						"7591.2041",
-						"5.7323e-17"
+						"5.73230e-17"
 					],
 					[
 						"7592.3999",
@@ -12459,7 +12478,7 @@
 					],
 					[
 						"7613.9229",
-						"1.3164e-18"
+						"1.31640e-18"
 					],
 					[
 						"7615.1187",
@@ -12467,7 +12486,7 @@
 					],
 					[
 						"7616.3149",
-						"8.7828e-18"
+						"8.78280e-18"
 					],
 					[
 						"7617.5107",
@@ -12555,7 +12574,7 @@
 					],
 					[
 						"7642.6284",
-						"2.7321e-17"
+						"2.73210e-17"
 					],
 					[
 						"7643.8247",
@@ -12615,7 +12634,7 @@
 					],
 					[
 						"7660.5742",
-						"1.0683e-16"
+						"1.06830e-16"
 					],
 					[
 						"7661.7710",
@@ -12723,7 +12742,7 @@
 					],
 					[
 						"7692.8857",
-						"1.0105e-16"
+						"1.01050e-16"
 					],
 					[
 						"7694.0830",
@@ -12755,7 +12774,7 @@
 					],
 					[
 						"7702.4619",
-						"3.1869e-17"
+						"3.18690e-17"
 					],
 					[
 						"7703.6587",
@@ -12827,7 +12846,7 @@
 					],
 					[
 						"7724.0112",
-						"2.384e-17"
+						"2.38400e-17"
 					],
 					[
 						"7725.2085",
@@ -12839,7 +12858,7 @@
 					],
 					[
 						"7727.6035",
-						"6.1855e-17"
+						"6.18550e-17"
 					],
 					[
 						"7728.8003",
@@ -12863,11 +12882,11 @@
 					],
 					[
 						"7734.7876",
-						"8.3275e-17"
+						"8.32750e-17"
 					],
 					[
 						"7735.9849",
-						"4.8333e-17"
+						"4.83330e-17"
 					],
 					[
 						"7737.1826",
@@ -13019,7 +13038,7 @@
 					],
 					[
 						"7781.5000",
-						"1.4141e-16"
+						"1.41410e-16"
 					],
 					[
 						"7782.6982",
@@ -13047,7 +13066,7 @@
 					],
 					[
 						"7789.8867",
-						"7.0999e-17"
+						"7.09990e-17"
 					],
 					[
 						"7791.0845",
@@ -13171,7 +13190,7 @@
 					],
 					[
 						"7827.0347",
-						"7.5966e-17"
+						"7.59660e-17"
 					],
 					[
 						"7828.2334",
@@ -13195,7 +13214,7 @@
 					],
 					[
 						"7834.2261",
-						"-5.0963e-18"
+						"-5.09630e-18"
 					],
 					[
 						"7835.4248",
@@ -13275,7 +13294,7 @@
 					],
 					[
 						"7858.2007",
-						"8.9547e-17"
+						"8.95470e-17"
 					],
 					[
 						"7859.3999",
@@ -13335,7 +13354,7 @@
 					],
 					[
 						"7876.1855",
-						"3.2397e-17"
+						"3.23970e-17"
 					],
 					[
 						"7877.3843",
@@ -13363,7 +13382,7 @@
 					],
 					[
 						"7884.5791",
-						"5.7875e-17"
+						"5.78750e-17"
 					],
 					[
 						"7885.7788",
@@ -13387,7 +13406,7 @@
 					],
 					[
 						"7891.7744",
-						"-5.4756e-18"
+						"-5.47560e-18"
 					],
 					[
 						"7892.9736",
@@ -13399,7 +13418,7 @@
 					],
 					[
 						"7895.3721",
-						"7.466e-17"
+						"7.46600e-17"
 					],
 					[
 						"7896.5713",
@@ -13435,7 +13454,7 @@
 					],
 					[
 						"7906.1660",
-						"3.8943e-17"
+						"3.89430e-17"
 					],
 					[
 						"7907.3652",
@@ -13463,7 +13482,7 @@
 					],
 					[
 						"7914.5620",
-						"-5.2468e-17"
+						"-5.24680e-17"
 					],
 					[
 						"7915.7612",
@@ -13539,7 +13558,7 @@
 					],
 					[
 						"7937.3535",
-						"6.786e-17"
+						"6.78600e-17"
 					],
 					[
 						"7938.5532",
@@ -13671,11 +13690,11 @@
 					],
 					[
 						"7976.9482",
-						"-5.2302e-17"
+						"-5.23020e-17"
 					],
 					[
 						"7978.1484",
-						"7.0965e-17"
+						"7.09650e-17"
 					],
 					[
 						"7979.3486",
@@ -13703,7 +13722,7 @@
 					],
 					[
 						"7986.5488",
-						"8.5778e-17"
+						"8.57780e-17"
 					],
 					[
 						"7987.7490",
@@ -13751,7 +13770,7 @@
 					],
 					[
 						"8000.9507",
-						"6.2461e-17"
+						"6.24610e-17"
 					],
 					[
 						"8002.1509",
@@ -13863,7 +13882,7 @@
 					],
 					[
 						"8034.5615",
-						"2.5959e-17"
+						"2.59590e-17"
 					],
 					[
 						"8035.7617",
@@ -13875,7 +13894,7 @@
 					],
 					[
 						"8038.1626",
-						"5.0734e-17"
+						"5.07340e-17"
 					],
 					[
 						"8039.3633",
@@ -13931,7 +13950,7 @@
 					],
 					[
 						"8054.9712",
-						"4.3735e-17"
+						"4.37350e-17"
 					],
 					[
 						"8056.1719",
@@ -13963,7 +13982,7 @@
 					],
 					[
 						"8064.5767",
-						"1.3977e-17"
+						"1.39770e-17"
 					],
 					[
 						"8065.7778",
@@ -13987,7 +14006,7 @@
 					],
 					[
 						"8071.7817",
-						"5.3295e-17"
+						"5.32950e-17"
 					],
 					[
 						"8072.9824",
@@ -14071,7 +14090,7 @@
 					],
 					[
 						"8097.0000",
-						"7.039e-17"
+						"7.03900e-17"
 					],
 					[
 						"8098.2012",
@@ -14139,7 +14158,7 @@
 					],
 					[
 						"8117.4180",
-						"4.0282e-17"
+						"4.02820e-17"
 					],
 					[
 						"8118.6196",
@@ -14163,7 +14182,7 @@
 					],
 					[
 						"8124.6250",
-						"4.1958e-17"
+						"4.19580e-17"
 					],
 					[
 						"8125.8262",
@@ -14195,7 +14214,7 @@
 					],
 					[
 						"8134.2344",
-						"8.4141e-17"
+						"8.41410e-17"
 					],
 					[
 						"8135.4360",
@@ -14227,7 +14246,7 @@
 					],
 					[
 						"8143.8447",
-						"8.7573e-17"
+						"8.75730e-17"
 					],
 					[
 						"8145.0459",
@@ -14271,7 +14290,7 @@
 					],
 					[
 						"8157.0596",
-						"2.2426e-17"
+						"2.24260e-17"
 					],
 					[
 						"8158.2612",
@@ -14339,7 +14358,7 @@
 					],
 					[
 						"8177.4839",
-						"2.1647e-17"
+						"2.16470e-17"
 					],
 					[
 						"8178.6860",
@@ -14383,7 +14402,7 @@
 					],
 					[
 						"8190.7012",
-						"3.9003e-17"
+						"3.90030e-17"
 					],
 					[
 						"8191.9028",
@@ -14391,7 +14410,7 @@
 					],
 					[
 						"8193.1045",
-						"1.4246e-17"
+						"1.42460e-17"
 					],
 					[
 						"8194.3066",
@@ -14531,11 +14550,11 @@
 					],
 					[
 						"8235.1650",
-						"4.1532e-17"
+						"4.15320e-17"
 					],
 					[
 						"8236.3672",
-						"5.7982e-17"
+						"5.79820e-17"
 					],
 					[
 						"8237.5684",
@@ -14631,7 +14650,7 @@
 					],
 					[
 						"8265.2129",
-						"2.3152e-17"
+						"2.31520e-17"
 					],
 					[
 						"8266.4150",
@@ -14699,7 +14718,7 @@
 					],
 					[
 						"8285.6475",
-						"-2.7373e-17"
+						"-2.73730e-17"
 					],
 					[
 						"8286.8496",
@@ -14719,7 +14738,7 @@
 					],
 					[
 						"8291.6572",
-						"1.5724e-16"
+						"1.57240e-16"
 					],
 					[
 						"8292.8604",
@@ -14763,7 +14782,7 @@
 					],
 					[
 						"8304.8809",
-						"4.3123e-17"
+						"4.31230e-17"
 					],
 					[
 						"8306.0840",
@@ -14807,7 +14826,7 @@
 					],
 					[
 						"8318.1055",
-						"1.9509e-18"
+						"1.95090e-18"
 					],
 					[
 						"8319.3076",
@@ -14879,7 +14898,7 @@
 					],
 					[
 						"8339.7461",
-						"1.496e-16"
+						"1.49600e-16"
 					],
 					[
 						"8340.9482",
@@ -14947,7 +14966,7 @@
 					],
 					[
 						"8360.1855",
-						"3.3978e-17"
+						"3.39780e-17"
 					],
 					[
 						"8361.3887",
@@ -14959,7 +14978,7 @@
 					],
 					[
 						"8363.7939",
-						"9.7271e-17"
+						"9.72710e-17"
 					],
 					[
 						"8364.9951",
@@ -14979,11 +14998,11 @@
 					],
 					[
 						"8369.8057",
-						"1.1253e-17"
+						"1.12530e-17"
 					],
 					[
 						"8371.0078",
-						"2.646e-17"
+						"2.64600e-17"
 					],
 					[
 						"8372.2100",
@@ -15011,7 +15030,7 @@
 					],
 					[
 						"8379.4248",
-						"-1.4004e-17"
+						"-1.40040e-17"
 					],
 					[
 						"8380.6270",
@@ -15023,7 +15042,7 @@
 					],
 					[
 						"8383.0322",
-						"-1.6526e-17"
+						"-1.65260e-17"
 					],
 					[
 						"8384.2344",
@@ -15035,7 +15054,7 @@
 					],
 					[
 						"8386.6396",
-						"4.208e-17"
+						"4.20800e-17"
 					],
 					[
 						"8387.8418",
@@ -15047,7 +15066,7 @@
 					],
 					[
 						"8390.2471",
-						"1.5589e-17"
+						"1.55890e-17"
 					],
 					[
 						"8391.4492",
@@ -15123,7 +15142,7 @@
 					],
 					[
 						"8413.0947",
-						"1.8788e-17"
+						"1.87880e-17"
 					],
 					[
 						"8414.2979",
@@ -15191,7 +15210,7 @@
 					],
 					[
 						"8433.5391",
-						"1.1935e-16"
+						"1.19350e-16"
 					],
 					[
 						"8434.7412",
@@ -15211,7 +15230,7 @@
 					],
 					[
 						"8439.5518",
-						"5.9563e-17"
+						"5.95630e-17"
 					],
 					[
 						"8440.7549",
@@ -15219,7 +15238,7 @@
 					],
 					[
 						"8441.9570",
-						"6.4459e-17"
+						"6.44590e-17"
 					],
 					[
 						"8443.1602",
@@ -15235,7 +15254,7 @@
 					],
 					[
 						"8446.7676",
-						"1.8455e-17"
+						"1.84550e-17"
 					],
 					[
 						"8447.9697",
@@ -15315,7 +15334,7 @@
 					],
 					[
 						"8470.8213",
-						"5.6786e-17"
+						"5.67860e-17"
 					],
 					[
 						"8472.0234",
@@ -15323,7 +15342,7 @@
 					],
 					[
 						"8473.2266",
-						"6.3192e-17"
+						"6.31920e-17"
 					],
 					[
 						"8474.4297",
@@ -15355,7 +15374,7 @@
 					],
 					[
 						"8482.8477",
-						"3.043e-18"
+						"3.04300e-18"
 					],
 					[
 						"8484.0508",
@@ -15427,7 +15446,7 @@
 					],
 					[
 						"8504.4980",
-						"6.4531e-17"
+						"6.45310e-17"
 					],
 					[
 						"8505.7002",
@@ -15539,7 +15558,7 @@
 					],
 					[
 						"8538.1758",
-						"7.5933e-17"
+						"7.59330e-17"
 					],
 					[
 						"8539.3779",
@@ -15563,11 +15582,11 @@
 					],
 					[
 						"8545.3926",
-						"2.6352e-17"
+						"2.63520e-17"
 					],
 					[
 						"8546.5947",
-						"8.2027e-18"
+						"8.20270e-18"
 					],
 					[
 						"8547.7979",
@@ -15583,7 +15602,7 @@
 					],
 					[
 						"8551.4062",
-						"3.8437e-17"
+						"3.84370e-17"
 					],
 					[
 						"8552.6094",
@@ -15591,7 +15610,7 @@
 					],
 					[
 						"8553.8115",
-						"4.4688e-17"
+						"4.46880e-17"
 					],
 					[
 						"8555.0146",
@@ -15599,11 +15618,11 @@
 					],
 					[
 						"8556.2178",
-						"7.213e-17"
+						"7.21300e-17"
 					],
 					[
 						"8557.4199",
-						"4.4073e-17"
+						"4.40730e-17"
 					],
 					[
 						"8558.6230",
@@ -15619,7 +15638,7 @@
 					],
 					[
 						"8562.2314",
-						"3.4856e-17"
+						"3.48560e-17"
 					],
 					[
 						"8563.4346",
@@ -15631,7 +15650,7 @@
 					],
 					[
 						"8565.8398",
-						"3.0992e-17"
+						"3.09920e-17"
 					],
 					[
 						"8567.0430",
@@ -15659,7 +15678,7 @@
 					],
 					[
 						"8574.2598",
-						"9.1142e-18"
+						"9.11420e-18"
 					],
 					[
 						"8575.4629",
@@ -15667,7 +15686,7 @@
 					],
 					[
 						"8576.6650",
-						"7.3893e-17"
+						"7.38930e-17"
 					],
 					[
 						"8577.8682",
@@ -15687,7 +15706,7 @@
 					],
 					[
 						"8582.6797",
-						"-3.556e-18"
+						"-3.55600e-18"
 					],
 					[
 						"8583.8828",
@@ -15723,7 +15742,7 @@
 					],
 					[
 						"8593.5059",
-						"5.3497e-18"
+						"5.34970e-18"
 					],
 					[
 						"8594.7080",
@@ -15763,7 +15782,7 @@
 					],
 					[
 						"8605.5342",
-						"8.0655e-17"
+						"8.06550e-17"
 					],
 					[
 						"8606.7363",
@@ -15831,7 +15850,7 @@
 					],
 					[
 						"8625.9824",
-						"4.5433e-17"
+						"4.54330e-17"
 					],
 					[
 						"8627.1855",
@@ -15871,7 +15890,7 @@
 					],
 					[
 						"8638.0107",
-						"-1.2143e-17"
+						"-1.21430e-17"
 					],
 					[
 						"8639.2139",
@@ -15939,11 +15958,11 @@
 					],
 					[
 						"8658.4600",
-						"7.7813e-17"
+						"7.78130e-17"
 					],
 					[
 						"8659.6621",
-						"-4.7912e-18"
+						"-4.79120e-18"
 					],
 					[
 						"8660.8652",
@@ -16067,7 +16086,7 @@
 					],
 					[
 						"8696.9502",
-						"2.5217e-17"
+						"2.52170e-17"
 					],
 					[
 						"8698.1533",
@@ -16087,7 +16106,7 @@
 					],
 					[
 						"8702.9648",
-						"-2.4703e-17"
+						"-2.47030e-17"
 					],
 					[
 						"8704.1670",
@@ -16163,7 +16182,7 @@
 					],
 					[
 						"8725.8174",
-						"3.284e-17"
+						"3.28400e-17"
 					],
 					[
 						"8727.0205",
@@ -16235,7 +16254,7 @@
 					],
 					[
 						"8747.4678",
-						"5.878e-17"
+						"5.87800e-17"
 					],
 					[
 						"8748.6699",
@@ -16279,11 +16298,11 @@
 					],
 					[
 						"8760.6982",
-						"-6.8085e-17"
+						"-6.80850e-17"
 					],
 					[
 						"8761.9004",
-						"-9.1825e-17"
+						"-9.18250e-17"
 					],
 					[
 						"8763.1035",
@@ -16315,7 +16334,7 @@
 					],
 					[
 						"8771.5225",
-						"2.5721e-17"
+						"2.57210e-17"
 					],
 					[
 						"8772.7256",
@@ -16331,7 +16350,7 @@
 					],
 					[
 						"8776.3330",
-						"1.8024e-16"
+						"1.80240e-16"
 					],
 					[
 						"8777.5361",
@@ -16355,7 +16374,7 @@
 					],
 					[
 						"8783.5488",
-						"9.5808e-17"
+						"9.58080e-17"
 					],
 					[
 						"8784.7520",
@@ -16375,7 +16394,7 @@
 					],
 					[
 						"8789.5635",
-						"8.3416e-18"
+						"8.34160e-18"
 					],
 					[
 						"8790.7656",
@@ -16455,7 +16474,7 @@
 					],
 					[
 						"8813.6152",
-						"5.1555e-17"
+						"5.15550e-17"
 					],
 					[
 						"8814.8184",
@@ -16475,7 +16494,7 @@
 					],
 					[
 						"8819.6289",
-						"4.1502e-17"
+						"4.15020e-17"
 					],
 					[
 						"8820.8311",
@@ -16507,7 +16526,7 @@
 					],
 					[
 						"8829.2500",
-						"-3.1611e-17"
+						"-3.16110e-17"
 					],
 					[
 						"8830.4521",
@@ -16547,7 +16566,7 @@
 					],
 					[
 						"8841.2754",
-						"-1.8087e-17"
+						"-1.80870e-17"
 					],
 					[
 						"8842.4775",
@@ -16595,11 +16614,11 @@
 					],
 					[
 						"8855.7061",
-						"3.6166e-17"
+						"3.61660e-17"
 					],
 					[
 						"8856.9082",
-						"1.9402e-17"
+						"1.94020e-17"
 					],
 					[
 						"8858.1104",
@@ -16619,11 +16638,11 @@
 					],
 					[
 						"8862.9209",
-						"6.7372e-17"
+						"6.73720e-17"
 					],
 					[
 						"8864.1230",
-						"1.2069e-16"
+						"1.20690e-16"
 					],
 					[
 						"8865.3262",
@@ -16643,7 +16662,7 @@
 					],
 					[
 						"8870.1357",
-						"7.145e-17"
+						"7.14500e-17"
 					],
 					[
 						"8871.3379",
@@ -16667,7 +16686,7 @@
 					],
 					[
 						"8877.3506",
-						"1.4138e-17"
+						"1.41380e-17"
 					],
 					[
 						"8878.5527",
@@ -16711,7 +16730,7 @@
 					],
 					[
 						"8890.5771",
-						"1.0297e-16"
+						"1.02970e-16"
 					],
 					[
 						"8891.7793",
@@ -16727,7 +16746,7 @@
 					],
 					[
 						"8895.3857",
-						"5.5419e-17"
+						"5.54190e-17"
 					],
 					[
 						"8896.5889",
@@ -16891,7 +16910,7 @@
 					],
 					[
 						"8944.6797",
-						"1.4013e-16"
+						"1.40130e-16"
 					],
 					[
 						"8945.8818",
@@ -16923,7 +16942,7 @@
 					],
 					[
 						"8954.2979",
-						"-1.2652e-17"
+						"-1.26520e-17"
 					],
 					[
 						"8955.4990",
@@ -16931,11 +16950,11 @@
 					],
 					[
 						"8956.7021",
-						"1.11e-16"
+						"1.11000e-16"
 					],
 					[
 						"8957.9033",
-						"4.1264e-17"
+						"4.12640e-17"
 					],
 					[
 						"8959.1064",
@@ -16955,7 +16974,7 @@
 					],
 					[
 						"8963.9141",
-						"4.1016e-17"
+						"4.10160e-17"
 					],
 					[
 						"8965.1162",
@@ -16983,7 +17002,7 @@
 					],
 					[
 						"8972.3291",
-						"1.0602e-16"
+						"1.06020e-16"
 					],
 					[
 						"8973.5312",
@@ -17095,7 +17114,7 @@
 					],
 					[
 						"9005.9844",
-						"4.1478e-17"
+						"4.14780e-17"
 					],
 					[
 						"9007.1865",
@@ -17199,7 +17218,7 @@
 					],
 					[
 						"9037.2314",
-						"5.7775e-18"
+						"5.77750e-18"
 					],
 					[
 						"9038.4336",
@@ -17259,7 +17278,7 @@
 					],
 					[
 						"9055.2568",
-						"4.1582e-17"
+						"4.15820e-17"
 					],
 					[
 						"9056.4590",
@@ -17407,7 +17426,7 @@
 					],
 					[
 						"9099.7119",
-						"9.5234e-18"
+						"9.52340e-18"
 					],
 					[
 						"9100.9141",
@@ -17423,7 +17442,7 @@
 					],
 					[
 						"9104.5176",
-						"3.0978e-17"
+						"3.09780e-17"
 					],
 					[
 						"9105.7188",
@@ -17515,7 +17534,7 @@
 					],
 					[
 						"9132.1465",
-						"1.3335e-17"
+						"1.33350e-17"
 					],
 					[
 						"9133.3477",
@@ -17527,7 +17546,7 @@
 					],
 					[
 						"9135.7490",
-						"1.7825e-17"
+						"1.78250e-17"
 					],
 					[
 						"9136.9512",
@@ -17607,7 +17626,7 @@
 					],
 					[
 						"9159.7705",
-						"5.2569e-17"
+						"5.25690e-17"
 					],
 					[
 						"9160.9717",
@@ -17659,7 +17678,7 @@
 					],
 					[
 						"9175.3818",
-						"2.9492e-17"
+						"2.94920e-17"
 					],
 					[
 						"9176.5830",
@@ -17707,7 +17726,7 @@
 					],
 					[
 						"9189.7910",
-						"3.377e-17"
+						"3.37700e-17"
 					],
 					[
 						"9190.9922",
@@ -17743,7 +17762,7 @@
 					],
 					[
 						"9200.5977",
-						"2.8881e-17"
+						"2.88810e-17"
 					],
 					[
 						"9201.7979",
@@ -17755,7 +17774,7 @@
 					],
 					[
 						"9204.1992",
-						"-4.7798e-18"
+						"-4.77980e-18"
 					],
 					[
 						"9205.3994",
@@ -17767,7 +17786,7 @@
 					],
 					[
 						"9207.8018",
-						"1.2738e-17"
+						"1.27380e-17"
 					],
 					[
 						"9209.0020",
@@ -17791,7 +17810,7 @@
 					],
 					[
 						"9215.0049",
-						"3.4871e-17"
+						"3.48710e-17"
 					],
 					[
 						"9216.2051",
@@ -17815,7 +17834,7 @@
 					],
 					[
 						"9222.2070",
-						"4.4578e-17"
+						"4.45780e-17"
 					],
 					[
 						"9223.4082",
@@ -17843,7 +17862,7 @@
 					],
 					[
 						"9230.6104",
-						"2.3346e-17"
+						"2.33460e-17"
 					],
 					[
 						"9231.8105",
@@ -17911,7 +17930,7 @@
 					],
 					[
 						"9251.0156",
-						"8.078e-17"
+						"8.07800e-17"
 					],
 					[
 						"9252.2158",
@@ -17919,7 +17938,7 @@
 					],
 					[
 						"9253.4160",
-						"1.4041e-17"
+						"1.40410e-17"
 					],
 					[
 						"9254.6172",
@@ -18015,7 +18034,7 @@
 					],
 					[
 						"9282.2188",
-						"-1.614e-17"
+						"-1.61400e-17"
 					],
 					[
 						"9283.4189",
@@ -18083,7 +18102,7 @@
 					],
 					[
 						"9302.6162",
-						"2.1711e-17"
+						"2.17110e-17"
 					],
 					[
 						"9303.8154",
@@ -18091,7 +18110,7 @@
 					],
 					[
 						"9305.0156",
-						"-6.7887e-18"
+						"-6.78870e-18"
 					],
 					[
 						"9306.2148",
@@ -18103,11 +18122,11 @@
 					],
 					[
 						"9308.6143",
-						"1.8355e-17"
+						"1.83550e-17"
 					],
 					[
 						"9309.8145",
-						"-7.7387e-18"
+						"-7.73870e-18"
 					],
 					[
 						"9311.0146",
@@ -18167,7 +18186,7 @@
 					],
 					[
 						"9327.8086",
-						"4.5412e-17"
+						"4.54120e-17"
 					],
 					[
 						"9329.0078",
@@ -18175,7 +18194,7 @@
 					],
 					[
 						"9330.2080",
-						"8.6604e-18"
+						"8.66040e-18"
 					],
 					[
 						"9331.4072",
@@ -18187,7 +18206,7 @@
 					],
 					[
 						"9333.8066",
-						"2.5878e-17"
+						"2.58780e-17"
 					],
 					[
 						"9335.0059",
@@ -18211,7 +18230,7 @@
 					],
 					[
 						"9341.0029",
-						"7.2178e-17"
+						"7.21780e-17"
 					],
 					[
 						"9342.2021",
@@ -18231,7 +18250,7 @@
 					],
 					[
 						"9346.9990",
-						"9.8141e-17"
+						"9.81410e-17"
 					],
 					[
 						"9348.1992",
@@ -18271,7 +18290,7 @@
 					],
 					[
 						"9358.9922",
-						"-4.3346e-18"
+						"-4.33460e-18"
 					],
 					[
 						"9360.1914",
@@ -18287,7 +18306,7 @@
 					],
 					[
 						"9363.7891",
-						"-5.7714e-17"
+						"-5.77140e-17"
 					],
 					[
 						"9364.9883",
@@ -18319,7 +18338,7 @@
 					],
 					[
 						"9373.3818",
-						"9.3409e-17"
+						"9.34090e-17"
 					],
 					[
 						"9374.5811",
@@ -18331,7 +18350,7 @@
 					],
 					[
 						"9376.9785",
-						"-1.1586e-16"
+						"-1.15860e-16"
 					],
 					[
 						"9378.1777",
@@ -18355,7 +18374,7 @@
 					],
 					[
 						"9384.1729",
-						"7.3871e-17"
+						"7.38710e-17"
 					],
 					[
 						"9385.3721",
@@ -18371,11 +18390,11 @@
 					],
 					[
 						"9388.9688",
-						"8.1514e-17"
+						"8.15140e-17"
 					],
 					[
 						"9390.1680",
-						"2.0311e-17"
+						"2.03110e-17"
 					],
 					[
 						"9391.3662",
@@ -18383,7 +18402,7 @@
 					],
 					[
 						"9392.5654",
-						"3.5084e-19"
+						"3.50840e-19"
 					],
 					[
 						"9393.7646",
@@ -18419,7 +18438,7 @@
 					],
 					[
 						"9403.3545",
-						"4.4301e-18"
+						"4.43010e-18"
 					],
 					[
 						"9404.5527",
@@ -18483,7 +18502,7 @@
 					],
 					[
 						"9422.5322",
-						"-3.5547e-17"
+						"-3.55470e-17"
 					],
 					[
 						"9423.7314",
@@ -18503,7 +18522,7 @@
 					],
 					[
 						"9428.5254",
-						"5.625e-17"
+						"5.62500e-17"
 					],
 					[
 						"9429.7236",
@@ -18595,7 +18614,7 @@
 					],
 					[
 						"9456.0859",
-						"1.7568e-16"
+						"1.75680e-16"
 					],
 					[
 						"9457.2842",
@@ -18723,7 +18742,7 @@
 					],
 					[
 						"9494.4189",
-						"8.1856e-17"
+						"8.18560e-17"
 					],
 					[
 						"9495.6172",
@@ -18911,7 +18930,7 @@
 					],
 					[
 						"9550.6934",
-						"7.1067e-17"
+						"7.10670e-17"
 					],
 					[
 						"9551.8896",
@@ -18955,7 +18974,7 @@
 					],
 					[
 						"9563.8584",
-						"9.6269e-17"
+						"9.62690e-17"
 					],
 					[
 						"9565.0557",
@@ -18979,7 +18998,7 @@
 					],
 					[
 						"9571.0391",
-						"1.6269e-17"
+						"1.62690e-17"
 					],
 					[
 						"9572.2354",
@@ -19067,7 +19086,7 @@
 					],
 					[
 						"9597.3613",
-						"-3.253e-18"
+						"-3.25300e-18"
 					],
 					[
 						"9598.5576",
@@ -19091,7 +19110,7 @@
 					],
 					[
 						"9604.5391",
-						"1.7673e-17"
+						"1.76730e-17"
 					],
 					[
 						"9605.7354",
@@ -19231,7 +19250,7 @@
 					],
 					[
 						"9646.3945",
-						"3.4915e-17"
+						"3.49150e-17"
 					],
 					[
 						"9647.5898",
@@ -19303,7 +19322,7 @@
 					],
 					[
 						"9667.9121",
-						"-4.4178e-17"
+						"-4.41780e-17"
 					],
 					[
 						"9669.1064",
@@ -19383,7 +19402,7 @@
 					],
 					[
 						"9691.8135",
-						"5.5874e-17"
+						"5.58740e-17"
 					],
 					[
 						"9693.0078",
@@ -19439,7 +19458,7 @@
 					],
 					[
 						"9708.5391",
-						"-2.1722e-17"
+						"-2.17220e-17"
 					],
 					[
 						"9709.7334",
@@ -19451,7 +19470,7 @@
 					],
 					[
 						"9712.1230",
-						"7.8774e-17"
+						"7.87740e-17"
 					],
 					[
 						"9713.3174",
@@ -19507,7 +19526,7 @@
 					],
 					[
 						"9728.8438",
-						"-8.7144e-18"
+						"-8.71440e-18"
 					],
 					[
 						"9730.0381",
@@ -19575,7 +19594,7 @@
 					],
 					[
 						"9749.1436",
-						"1.6544e-17"
+						"1.65440e-17"
 					],
 					[
 						"9750.3369",
@@ -19591,7 +19610,7 @@
 					],
 					[
 						"9753.9189",
-						"4.7025e-17"
+						"4.70250e-17"
 					],
 					[
 						"9755.1123",
@@ -19619,11 +19638,11 @@
 					],
 					[
 						"9762.2744",
-						"2.641e-17"
+						"2.64100e-17"
 					],
 					[
 						"9763.4688",
-						"6.1778e-18"
+						"6.17780e-18"
 					],
 					[
 						"9764.6621",
@@ -19755,7 +19774,7 @@
 					],
 					[
 						"9802.8477",
-						"3.6965e-17"
+						"3.69650e-17"
 					],
 					[
 						"9804.0400",
@@ -19811,7 +19830,7 @@
 					],
 					[
 						"9819.5469",
-						"4.2281e-17"
+						"4.22810e-17"
 					],
 					[
 						"9820.7393",
@@ -19823,7 +19842,7 @@
 					],
 					[
 						"9823.1240",
-						"-4.8898e-19"
+						"-4.88980e-19"
 					],
 					[
 						"9824.3174",
@@ -19847,7 +19866,7 @@
 					],
 					[
 						"9830.2793",
-						"-1.0578e-17"
+						"-1.05780e-17"
 					],
 					[
 						"9831.4717",
@@ -19871,7 +19890,7 @@
 					],
 					[
 						"9837.4336",
-						"3.586e-17"
+						"3.58600e-17"
 					],
 					[
 						"9838.6260",
@@ -19915,7 +19934,7 @@
 					],
 					[
 						"9850.5469",
-						"-9.8256e-17"
+						"-9.82560e-17"
 					],
 					[
 						"9851.7393",
@@ -19935,7 +19954,7 @@
 					],
 					[
 						"9856.5068",
-						"3.7003e-17"
+						"3.70030e-17"
 					],
 					[
 						"9857.6992",
@@ -19975,7 +19994,7 @@
 					],
 					[
 						"9868.4248",
-						"-4.2335e-17"
+						"-4.23350e-17"
 					],
 					[
 						"9869.6172",
@@ -19999,7 +20018,7 @@
 					],
 					[
 						"9875.5742",
-						"-3.4315e-17"
+						"-3.43150e-17"
 					],
 					[
 						"9876.7666",
@@ -20015,11 +20034,11 @@
 					],
 					[
 						"9880.3408",
-						"5.7694e-18"
+						"5.76940e-18"
 					],
 					[
 						"9881.5322",
-						"3.6197e-17"
+						"3.61970e-17"
 					],
 					[
 						"9882.7236",
@@ -20127,7 +20146,7 @@
 					],
 					[
 						"9913.6924",
-						"-1.1436e-16"
+						"-1.14360e-16"
 					],
 					[
 						"9914.8828",
@@ -20167,7 +20186,7 @@
 					],
 					[
 						"9925.5977",
-						"-3.8735e-17"
+						"-3.87350e-17"
 					],
 					[
 						"9926.7891",
@@ -20227,7 +20246,7 @@
 					],
 					[
 						"9943.4531",
-						"-9.6186e-17"
+						"-9.61860e-17"
 					],
 					[
 						"9944.6436",
@@ -20239,7 +20258,7 @@
 					],
 					[
 						"9947.0234",
-						"5.0466e-17"
+						"5.04660e-17"
 					],
 					[
 						"9948.2139",
@@ -20279,7 +20298,7 @@
 					],
 					[
 						"9958.9229",
-						"1.406e-16"
+						"1.40600e-16"
 					],
 					[
 						"9960.1123",
@@ -20287,7 +20306,7 @@
 					],
 					[
 						"9961.3018",
-						"7.1633e-17"
+						"7.16330e-17"
 					],
 					[
 						"9962.4922",
@@ -20295,7 +20314,7 @@
 					],
 					[
 						"9963.6816",
-						"2.0657e-16"
+						"2.06570e-16"
 					],
 					[
 						"9964.8711",
@@ -20335,7 +20354,7 @@
 					],
 					[
 						"9975.5771",
-						"1.0646e-16"
+						"1.06460e-16"
 					],
 					[
 						"9976.7666",
@@ -20395,7 +20414,7 @@
 					],
 					[
 						"9993.4150",
-						"5.6393e-17"
+						"5.63930e-17"
 					],
 					[
 						"9994.6045",
@@ -20491,11 +20510,11 @@
 					],
 					[
 						"10021.9434",
-						"-9.6778e-17"
+						"-9.67780e-17"
 					],
 					[
 						"10023.1318",
-						"-1.6865e-17"
+						"-1.68650e-17"
 					],
 					[
 						"10024.3203",
@@ -20503,7 +20522,7 @@
 					],
 					[
 						"10025.5078",
-						"3.4254e-17"
+						"3.42540e-17"
 					],
 					[
 						"10026.6973",
@@ -20527,7 +20546,7 @@
 					],
 					[
 						"10032.6377",
-						"1.3028e-16"
+						"1.30280e-16"
 					],
 					[
 						"10033.8262",
@@ -20615,7 +20634,7 @@
 					],
 					[
 						"10058.7695",
-						"-2.3242e-17"
+						"-2.32420e-17"
 					],
 					[
 						"10059.9561",
@@ -20751,7 +20770,7 @@
 					],
 					[
 						"10099.1260",
-						"-7.5605e-17"
+						"-7.56050e-17"
 					],
 					[
 						"10100.3125",
@@ -20879,7 +20898,7 @@
 					],
 					[
 						"10137.0771",
-						"-6.1512e-18"
+						"-6.15120e-18"
 					],
 					[
 						"10138.2617",
@@ -20943,7 +20962,7 @@
 					],
 					[
 						"10156.0400",
-						"-1.4721e-16"
+						"-1.47210e-16"
 					],
 					[
 						"10157.2246",
@@ -20959,7 +20978,7 @@
 					],
 					[
 						"10160.7793",
-						"3.014e-19"
+						"3.01400e-19"
 					],
 					[
 						"10161.9648",
@@ -20967,7 +20986,7 @@
 					],
 					[
 						"10163.1484",
-						"8.3093e-17"
+						"8.30930e-17"
 					],
 					[
 						"10164.3340",
@@ -21051,7 +21070,7 @@
 					],
 					[
 						"10188.0215",
-						"-1.6543e-16"
+						"-1.65430e-16"
 					],
 					[
 						"10189.2061",
@@ -21059,7 +21078,7 @@
 					],
 					[
 						"10190.3896",
-						"3.1281e-16"
+						"3.12810e-16"
 					],
 					[
 						"10191.5732",
@@ -21095,7 +21114,7 @@
 					],
 					[
 						"10201.0439",
-						"3.993e-17"
+						"3.99300e-17"
 					],
 					[
 						"10202.2275",
@@ -21103,11 +21122,11 @@
 					],
 					[
 						"10203.4111",
-						"1.3109e-16"
+						"1.31090e-16"
 					],
 					[
 						"10204.5947",
-						"1.4717e-16"
+						"1.47170e-16"
 					],
 					[
 						"10205.7783",
@@ -21195,7 +21214,7 @@
 					],
 					[
 						"10230.6260",
-						"-1.125e-16"
+						"-1.12500e-16"
 					],
 					[
 						"10231.8076",
@@ -21219,7 +21238,7 @@
 					],
 					[
 						"10237.7217",
-						"-7.7161e-17"
+						"-7.71610e-17"
 					],
 					[
 						"10238.9043",
@@ -21263,7 +21282,7 @@
 					],
 					[
 						"10250.7285",
-						"4.778e-17"
+						"4.77800e-17"
 					],
 					[
 						"10251.9102",
@@ -21335,7 +21354,7 @@
 					],
 					[
 						"10272.0020",
-						"-1.257e-16"
+						"-1.25700e-16"
 					],
 					[
 						"10273.1836",
@@ -21403,7 +21422,7 @@
 					],
 					[
 						"10292.0840",
-						"-3.7638e-16"
+						"-3.76380e-16"
 					],
 					[
 						"10293.2646",
@@ -21411,11 +21430,11 @@
 					],
 					[
 						"10294.4453",
-						"2.4826e-17"
+						"2.48260e-17"
 					],
 					[
 						"10295.6270",
-						"4.1797e-16"
+						"4.17970e-16"
 					],
 					[
 						"10296.8066",
@@ -21447,7 +21466,7 @@
 					],
 					[
 						"10305.0713",
-						"3.9043e-16"
+						"3.90430e-16"
 					],
 					[
 						"10306.2520",
@@ -21475,7 +21494,7 @@
 					],
 					[
 						"10313.3350",
-						"5.2516e-17"
+						"5.25160e-17"
 					],
 					[
 						"10314.5146",
@@ -21487,7 +21506,7 @@
 					],
 					[
 						"10316.8740",
-						"6.3307e-17"
+						"6.33070e-17"
 					],
 					[
 						"10318.0557",
@@ -21503,7 +21522,7 @@
 					],
 					[
 						"10321.5957",
-						"5.192e-17"
+						"5.19200e-17"
 					],
 					[
 						"10322.7754",
@@ -21511,7 +21530,7 @@
 					],
 					[
 						"10323.9561",
-						"-8.6241e-17"
+						"-8.62410e-17"
 					],
 					[
 						"10325.1357",
@@ -21531,7 +21550,7 @@
 					],
 					[
 						"10329.8545",
-						"1.8397e-16"
+						"1.83970e-16"
 					],
 					[
 						"10331.0342",
@@ -21563,7 +21582,7 @@
 					],
 					[
 						"10339.2900",
-						"1.1336e-16"
+						"1.13360e-16"
 					],
 					[
 						"10340.4697",
@@ -21574,7 +21593,7 @@
 						"-6.26082e-17"
 					]
 				],
-				"source":"4"
+				"source":"3"
 			}
 		]
 	}

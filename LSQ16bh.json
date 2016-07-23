@@ -1,90 +1,92 @@
 {
 	"LSQ16bh":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"LSQ16bh",
 		"sources":[
 			{
-				"name":"WISeREP",
-				"url":"http://wiserep.weizmann.ac.il/",
-				"bibcode":"2012PASP..124..668Y",
-				"alias":"1",
-				"secondary":true,
-				"reference":"Yaron & Gal-Yam (2012)"
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
 			},
 			{
 				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"2",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"url":"https://sne.space",
+				"alias":"2"
 			},
 			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"3",
-				"reference":"Planck Collaboration et al. (2015)"
+				"name":"WISeREP",
+				"bibcode":"2012PASP..124..668Y",
+				"reference":"Yaron & Gal-Yam (2012)",
+				"secondary":true,
+				"url":"http://wiserep.weizmann.ac.il/",
+				"alias":"3"
 			}
 		],
 		"alias":[
 			{
 				"value":"LSQ16bh",
-				"source":"1"
+				"source":"3"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II",
-				"source":"1"
+				"source":"3"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"150",
-				"source":"1,2,3",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/01/18",
-				"source":"1,2",
-				"derived":true
+				"derived":true,
+				"source":"2,3"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"160",
-				"source":"1,2,3",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,3"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.035",
-				"source":"1"
+				"source":"3"
 			}
 		],
 		"velocity":[
 			{
 				"value":"10000",
-				"source":"1,2",
-				"unit":"km/s",
-				"derived":true
+				"u_value":"km/s",
+				"source":"2"
 			}
 		],
 		"spectra":[
 			{
-				"instrument":"ESO-NTT - EFOSC2-NTT",
-				"u_time":"MJD",
 				"time":"57405.0",
-				"observer":"Frohmaier, Dimitriadis, Firth",
-				"reducer":"Firth, Frohmaier",
 				"filename":"tLSQ16bh_20160117_Gr13_Free_slit1.0_1_f.asci",
-				"waveunit":"Angstrom",
-				"fluxunit":"erg/s/cm^2/Angstrom",
+				"instrument":"ESO-NTT - EFOSC2-NTT",
+				"observer":"Frohmaier, Dimitriadis, Firth",
+				"redshift":"0.035",
+				"reducer":"Firth, Frohmaier",
+				"reduction":"rapid",
+				"survey":"PESSTO",
+				"u_fluxes":"erg/s/cm^2/Angstrom",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"3640.047852",
@@ -4147,7 +4149,7 @@
 						"4.46546e-17"
 					]
 				],
-				"source":"1"
+				"source":"3"
 			}
 		]
 	}

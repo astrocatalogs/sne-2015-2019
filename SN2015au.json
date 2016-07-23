@@ -1,33 +1,29 @@
 {
 	"SN2015au":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"SN2015au",
 		"sources":[
 			{
-				"name":"SIMBAD astronomical database",
-				"url":"http://simbad.u-strasbg.fr/",
-				"bibcode":"2000A&AS..143....9W",
-				"alias":"1",
-				"secondary":true,
-				"reference":"Wenger et al. (2000)"
+				"name":"2015arXiv150201589P",
+				"bibcode":"2015arXiv150201589P",
+				"reference":"Planck Collaboration et al. (2015)",
+				"alias":"1"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"2"
 			},
 			{
 				"name":"2008yCat....1.2024B",
 				"bibcode":"2008yCat....1.2024B",
-				"alias":"2",
-				"reference":"Barbon et al. (2008)"
-			},
-			{
-				"name":"Asiago Supernova Catalogue",
-				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-				"bibcode":"1989A&AS...81..421B",
-				"alias":"3",
-				"secondary":true,
-				"reference":"Barbon, Cappellaro, & Turatto (1989)"
+				"reference":"Barbon et al. (2008)",
+				"alias":"3"
 			},
 			{
 				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il",
+				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"4"
 			},
 			{
@@ -37,43 +33,47 @@
 			},
 			{
 				"name":"Latest Supernovae",
-				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"6",
-				"secondary":true
-			},
-			{
-				"name":"WISeREP",
-				"url":"http://wiserep.weizmann.ac.il/",
-				"bibcode":"2012PASP..124..668Y",
-				"alias":"7",
 				"secondary":true,
-				"reference":"Yaron & Gal-Yam (2012)"
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"8",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
+				"url":"https://sne.space",
+				"alias":"7"
 			},
 			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"9",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"name":"WISeREP",
+				"bibcode":"2012PASP..124..668Y",
+				"reference":"Yaron & Gal-Yam (2012)",
+				"secondary":true,
+				"url":"http://wiserep.weizmann.ac.il/",
+				"alias":"8"
 			},
 			{
-				"name":"2015arXiv150201589P",
-				"bibcode":"2015arXiv150201589P",
-				"alias":"10",
-				"reference":"Planck Collaboration et al. (2015)"
+				"name":"SIMBAD astronomical database",
+				"bibcode":"2000A&AS..143....9W",
+				"reference":"Wenger et al. (2000)",
+				"secondary":true,
+				"url":"http://simbad.u-strasbg.fr/",
+				"alias":"9"
+			},
+			{
+				"name":"Asiago Supernova Catalogue",
+				"bibcode":"1989A&AS...81..421B",
+				"reference":"Barbon, Cappellaro, & Turatto (1989)",
+				"secondary":true,
+				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
+				"alias":"10"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2015au",
-				"source":"1,3,4,5,6,7"
+				"source":"4,5,6,8,9,10"
 			},
 			{
 				"value":"PSN J22305942-1359561",
@@ -83,39 +83,39 @@
 		"claimedtype":[
 			{
 				"value":"IIb",
-				"source":"1,2,3,4,5,6,7"
+				"source":"3,4,5,6,8,9,10"
 			}
 		],
 		"comovingdist":[
 			{
 				"value":"71",
-				"source":"10,5,6,8",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,5,6,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"-13:59:56.1",
-				"source":"1,2,3,5,6",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"3,5,6,9,10"
 			},
 			{
 				"value":"-13:59:56.11",
-				"source":"4",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2015/11/10",
-				"source":"3,4,5,6"
+				"source":"4,5,6,10"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Bock",
-				"source":"3"
+				"source":"10"
 			},
 			{
 				"value":"Greg Bock",
@@ -125,79 +125,79 @@
 		"ebv":[
 			{
 				"value":"0.0499",
-				"error":"0.0013",
-				"source":"8,9",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0013",
+				"source":"2,7"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 7300",
-				"source":"3,4,5,6"
+				"source":"4,5,6,10"
 			}
 		],
 		"hostdec":[
 			{
 				"value":"-14:00:13",
-				"source":"3",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"10"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"19.01",
-				"source":"1,2,3,4,5,6,8",
-				"unit":"arcseconds",
-				"derived":true
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"3,4,5,6,7,9,10"
 			}
 		],
 		"hostoffsetdist":[
 			{
 				"value":"6.441",
-				"source":"1,10,2,3,4,5,6,8"
+				"source":"1,3,4,5,6,7,9,10"
 			}
 		],
 		"hostra":[
 			{
 				"value":"22:31:00",
-				"source":"3",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"10"
 			}
 		],
 		"lumdist":[
 			{
 				"value":"72",
-				"source":"10,5,6,8",
-				"unit":"Mpc",
-				"derived":true
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,5,6,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-17",
-				"source":"10,5,6,8",
-				"derived":true
+				"derived":true,
+				"source":"1,5,6,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.7",
-				"source":"5,6,8",
-				"derived":true
+				"derived":true,
+				"source":"5,6,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2015/11/09",
-				"source":"5,6,8",
-				"derived":true
+				"derived":true,
+				"source":"5,6,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"22:30:59.42",
-				"source":"1,2,3,4,5,6",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"3,4,5,6,9,10"
 			}
 		],
 		"redshift":[
@@ -207,35 +207,38 @@
 			},
 			{
 				"value":"0.025",
-				"source":"7"
+				"source":"8"
 			}
 		],
 		"velocity":[
 			{
 				"value":"4895",
-				"source":"3",
 				"kind":"host",
-				"unit":"km/s"
+				"u_value":"km/s",
+				"source":"10"
 			}
 		],
 		"photometry":[
 			{
 				"time":"57335.5",
-				"u_time":"MJD",
 				"magnitude":"17.7",
+				"u_time":"MJD",
 				"source":"5,6"
 			}
 		],
 		"spectra":[
 			{
-				"instrument":"ESO-NTT - EFOSC2-NTT",
-				"u_time":"MJD",
 				"time":"57345.0",
-				"observer":"Harmanen, Dennefeld",
-				"reducer":"Kangas",
 				"filename":"tPSNJ2230-1359_20151118_Gr13_Free_slit1.0_1_f.asci",
-				"waveunit":"Angstrom",
-				"fluxunit":"erg/s/cm^2/Angstrom",
+				"instrument":"ESO-NTT - EFOSC2-NTT",
+				"observer":"Harmanen, Dennefeld",
+				"redshift":"0.025",
+				"reducer":"Kangas",
+				"reduction":"rapid",
+				"survey":"PESSTO",
+				"u_fluxes":"erg/s/cm^2/Angstrom",
+				"u_time":"MJD",
+				"u_wavelengths":"Angstrom",
 				"data":[
 					[
 						"3640.04834",
@@ -4298,7 +4301,7 @@
 						"7.5151e-17"
 					]
 				],
-				"source":"7"
+				"source":"8"
 			}
 		]
 	}

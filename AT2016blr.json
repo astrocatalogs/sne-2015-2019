@@ -1,128 +1,128 @@
 {
 	"AT2016blr":{
-		"schema":"https://github.com/astrocatalogs/sne/blob/07f1aa00c396ea7c98a76b8de18028285b2e7b14/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"AT2016blr",
 		"sources":[
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il",
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"Latest Supernovae",
+				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2",
-				"secondary":true
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
-				"url":"https://sne.space",
 				"bibcode":"2016arXiv160501054G",
-				"alias":"3",
+				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
-				"reference":"Guillochon, Parrent, & Margutti (2016)"
-			},
-			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"alias":"4",
-				"reference":"Schlafly & Finkbeiner (2011)"
+				"url":"https://sne.space",
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2016blr",
-				"source":"1,2"
+				"source":"2,3"
 			},
 			{
 				"value":"LSQ16akj",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"3"
+				"source":"4"
 			}
 		],
 		"dec":[
 			{
 				"value":"-29:44:54.65",
-				"source":"1",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"2"
 			},
 			{
 				"value":"-29:44:54.7",
-				"source":"1,2",
-				"unit":"degrees"
+				"u_value":"degrees",
+				"source":"2,3"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/03/24.0738889",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"LSQ",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"value":"La Silla-QUEST",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"ebv":[
 			{
 				"value":"0.0579",
-				"error":"0.0017",
-				"source":"3,4",
-				"derived":true
+				"derived":true,
+				"e_value":"0.0017",
+				"source":"1,4"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.38",
-				"source":"1,3",
-				"derived":true
+				"derived":true,
+				"source":"2,4"
 			}
 		],
 		"maxband":[
 			{
 				"value":"gr",
-				"source":"1,3",
-				"derived":true
+				"derived":true,
+				"source":"2,4"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/03/24",
-				"source":"1,3",
-				"derived":true
+				"derived":true,
+				"source":"2,4"
 			}
 		],
 		"ra":[
 			{
 				"value":"12:20:34.49",
-				"source":"1,2",
-				"unit":"hours"
+				"u_value":"hours",
+				"source":"2,3"
 			}
 		],
 		"photometry":[
 			{
 				"time":"57470.5",
-				"u_time":"MJD",
 				"magnitude":"18.4",
-				"source":"1,2"
+				"u_time":"MJD",
+				"source":"2,3"
 			},
 			{
 				"time":"57471.07388888889",
-				"u_time":"MJD",
 				"band":"gr",
 				"magnitude":"18.3829",
 				"survey":"LSQ",
-				"source":"1"
+				"u_time":"MJD",
+				"source":"2"
 			}
 		]
 	}
