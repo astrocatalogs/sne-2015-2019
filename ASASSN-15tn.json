@@ -30,21 +30,26 @@
 				"alias":"4"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"5"
+			},
+			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"Asiago Supernova Catalogue",
 				"secondary":true,
 				"url":"http://graspa.oapd.inaf.it/cgi-bin/sncat.php",
-				"alias":"6"
+				"alias":"7"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"7"
+				"alias":"8"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -52,7 +57,7 @@
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"8"
+				"alias":"9"
 			},
 			{
 				"name":"WISeREP",
@@ -60,19 +65,27 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"9"
+				"alias":"10"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-15tn",
-				"source":"1,5,6,7,9"
+				"source":"1,7,8"
+			},
+			{
+				"value":"AT2016dho",
+				"source":"1,5,6,7,8,10"
+			},
+			{
+				"value":"PS16def",
+				"source":"5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,5,6,9"
+				"source":"1,2,6,7,8,10"
 			}
 		],
 		"comovingdist":[
@@ -80,31 +93,49 @@
 				"value":"100",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,5,8"
+				"source":"1,3,6,9"
 			}
 		],
 		"dec":[
 			{
+				"value":"+30:34:47.63",
+				"u_value":"degrees",
+				"source":"5"
+			},
+			{
+				"value":"+30:34:46.5",
+				"u_value":"degrees",
+				"source":"1,8"
+			},
+			{
 				"value":"+30:34:46.56",
 				"u_value":"degrees",
-				"source":"1,5"
+				"source":"1,6"
 			},
 			{
 				"value":"+30:34:43.5",
 				"u_value":"degrees",
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2015/12/06.28",
-				"source":"1,5"
+				"value":"2016/07/18.502488",
+				"source":"5"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"Pan-STARRS1",
+				"source":"5"
+			},
+			{
+				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
+				"source":"1,8"
+			},
+			{
 				"value":"ASAS-SN",
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"ebv":[
@@ -112,20 +143,20 @@
 				"value":"0.0545",
 				"derived":true,
 				"e_value":"0.0033",
-				"source":"4,8"
+				"source":"4,9"
 			}
 		],
 		"host":[
 			{
 				"value":"CGCG 496-051",
-				"source":"1,2,5,6"
+				"source":"1,2,6,7,8"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"4.81",
 				"u_value":"arcseconds",
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"lumdist":[
@@ -133,32 +164,79 @@
 				"value":"100",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,5,8"
+				"source":"1,3,6,9"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-19",
+				"derived":true,
+				"source":"1,3,6,9"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"15.9",
+				"derived":true,
+				"source":"1,8,9"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2015/12/01",
+				"derived":true,
+				"source":"1,8,9"
 			}
 		],
 		"ra":[
 			{
+				"value":"23:10:11.34",
+				"u_value":"hours",
+				"source":"5"
+			},
+			{
+				"value":"23:10:11.42",
+				"u_value":"hours",
+				"source":"1,8"
+			},
+			{
 				"value":"23:10:11.52",
 				"u_value":"hours",
-				"source":"1,5"
+				"source":"1,6"
 			},
 			{
 				"value":"23:10:11.4",
 				"u_value":"hours",
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.023",
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"6800",
 				"u_value":"km/s",
-				"source":"8"
+				"source":"9"
+			}
+		],
+		"photometry":[
+			{
+				"time":"57357.5",
+				"magnitude":"15.9",
+				"u_time":"MJD",
+				"source":"1,8"
+			},
+			{
+				"time":"57587.502488425926",
+				"band":"i",
+				"magnitude":"19.25",
+				"survey":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"5"
 			}
 		],
 		"spectra":[
@@ -4260,7 +4338,7 @@
 						"2.919253525e-16"
 					]
 				],
-				"source":"9"
+				"source":"10"
 			}
 		]
 	}
