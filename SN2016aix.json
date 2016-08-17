@@ -1,11 +1,5 @@
 {
 	"SN2016aix":{
-		"AT2016aix":[
-			{
-				"value":"SN2016aix",
-				"source":"5"
-			}
-		],
 		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
 		"name":"SN2016aix",
 		"sources":[
@@ -41,15 +35,20 @@
 				"alias":"5"
 			},
 			{
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"alias":"6"
+			},
+			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"6"
+				"alias":"7"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"7"
+				"alias":"8"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -57,7 +56,7 @@
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"8"
+				"alias":"9"
 			},
 			{
 				"name":"WISeREP",
@@ -65,27 +64,35 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"9"
+				"alias":"10"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2016aix",
-				"source":"1,5,6,7,9"
+				"source":"1,5,6,7,8,9,10"
+			},
+			{
+				"value":"Gaia16ady",
+				"source":"9"
 			},
 			{
 				"value":"ASASSN-16bv",
-				"source":"1,5,7"
+				"source":"1,5,8"
 			},
 			{
 				"value":"AT2016aix",
-				"source":"8"
+				"source":"9"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia-91T",
-				"source":"1,2,5,6,7,9"
+				"source":"1,2,5,7,8,10"
+			},
+			{
+				"value":"Candidate",
+				"source":"6"
 			}
 		],
 		"comovingdist":[
@@ -93,7 +100,7 @@
 				"value":"130",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"3,5,8"
+				"source":"3,5,9"
 			}
 		],
 		"dec":[
@@ -105,18 +112,23 @@
 			{
 				"value":"-41:53:36.9",
 				"u_value":"degrees",
-				"source":"1,7"
+				"source":"1,8"
+			},
+			{
+				"value":"-41:53:37.32",
+				"u_value":"degrees",
+				"source":"6"
 			},
 			{
 				"value":"-41:53:36.96",
 				"u_value":"degrees",
-				"source":"1,6"
+				"source":"1,7"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/02/16.04",
-				"source":"1,5,6"
+				"source":"1,5,7"
 			}
 		],
 		"discoverer":[
@@ -126,7 +138,7 @@
 			},
 			{
 				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
-				"source":"1,7"
+				"source":"1,8"
 			}
 		],
 		"ebv":[
@@ -134,20 +146,20 @@
 				"value":"0.0134",
 				"derived":true,
 				"e_value":"0.0003",
-				"source":"4,8"
+				"source":"4,9"
 			}
 		],
 		"host":[
 			{
 				"value":"LCRS B014209.4-420839",
-				"source":"1,5,6"
+				"source":"1,5,7"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"2.21",
 				"u_value":"arcseconds",
-				"source":"1,6"
+				"source":"1,7"
 			}
 		],
 		"lumdist":[
@@ -156,35 +168,35 @@
 				"derived":true,
 				"kind":"spectroscopic",
 				"u_value":"Mpc",
-				"source":"3,5,8"
+				"source":"3,5,9"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19",
 				"derived":true,
-				"source":"3,5,8"
+				"source":"3,5,9"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.4",
 				"derived":true,
-				"source":"5,8"
+				"source":"5,9"
 			}
 		],
 		"maxband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"5,8"
+				"source":"5,9"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/02/16",
 				"derived":true,
-				"source":"5,8"
+				"source":"5,9"
 			}
 		],
 		"ra":[
@@ -196,12 +208,12 @@
 			{
 				"value":"01:44:16.85",
 				"u_value":"hours",
-				"source":"1,7"
+				"source":"1,8"
 			},
 			{
 				"value":"01:44:16.848",
 				"u_value":"hours",
-				"source":"1,6"
+				"source":"1,6,7"
 			}
 		],
 		"redshift":[
@@ -212,7 +224,7 @@
 			},
 			{
 				"value":"0.029",
-				"source":"1,6,7,9"
+				"source":"1,7,8,10"
 			}
 		],
 		"velocity":[
@@ -220,15 +232,33 @@
 				"value":"8600",
 				"kind":"spectroscopic",
 				"u_value":"km/s",
-				"source":"8"
+				"source":"9"
 			}
 		],
 		"photometry":[
 			{
+				"time":"57432.539",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"17.25",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"6"
+			},
+			{
+				"time":"57432.613",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"17.19",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"6"
+			},
+			{
 				"time":"57433.5",
 				"magnitude":"16.5",
 				"u_time":"MJD",
-				"source":"1,7"
+				"source":"1,8"
 			},
 			{
 				"time":"57434.04",
@@ -237,17 +267,90 @@
 				"survey":"ASAS-SN",
 				"u_time":"MJD",
 				"source":"5"
+			},
+			{
+				"time":"57477.546",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"17.56",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"6"
+			},
+			{
+				"time":"57477.722",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"17.55",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"6"
+			},
+			{
+				"time":"57485.226",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"17.93",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"6"
+			},
+			{
+				"time":"57485.477",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"18.15",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"6"
+			},
+			{
+				"time":"57529.423",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"19.54",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"6"
+			},
+			{
+				"time":"57529.497",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"19.32",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"6"
+			},
+			{
+				"time":"57552.995",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"19.79",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"6"
+			},
+			{
+				"time":"57586.481",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"20.37",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"6"
 			}
 		],
 		"spectra":[
 			{
 				"time":"57436.0",
-				"filename":"tns_2016aix_2016-02-18_00-53-49_ESO-NTT_EFOSC2-NTT_PESSTO.asci",
+				"filename":"tGaia-16ady_20160217_Gr13_Free_slit1.0_1_f.asci",
 				"instrument":"ESO-NTT - EFOSC2-NTT",
-				"observer":"Taubenberger, Faran, Kromer",
+				"observer":"Taubenberger/Faran/Kromer",
 				"redshift":"0.029",
 				"reducer":"Elias-Rosa",
-				"reduction":"final",
+				"reduction":"rapid",
+				"survey":"PESSTO",
 				"u_fluxes":"erg/s/cm^2/Angstrom",
 				"u_time":"MJD",
 				"u_wavelengths":"Angstrom",
@@ -4313,7 +4416,7 @@
 						"1.48639e-16"
 					]
 				],
-				"source":"9"
+				"source":"10"
 			}
 		]
 	}

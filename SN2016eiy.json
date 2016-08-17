@@ -27,13 +27,13 @@
 				"alias":"3"
 			},
 			{
-				"name":"ASAS-SN Supernovae",
-				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"name":"ATel 9268",
+				"url":"http://www.astronomerstelegram.org/?read=9268",
 				"alias":"4"
 			},
 			{
-				"name":"ATel 9268",
-				"url":"http://www.astronomerstelegram.org/?read=9268",
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
 				"alias":"5"
 			},
 			{
@@ -42,12 +42,18 @@
 				"alias":"6"
 			},
 			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"7"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2016arXiv160501054G",
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"7"
+				"alias":"8"
 			},
 			{
 				"name":"WISeREP",
@@ -55,27 +61,27 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"8"
+				"alias":"9"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2016eiy",
-				"source":"3,4,5,8"
+				"source":"3,4,5,7,9"
 			},
 			{
 				"value":"ASASSN-16hp",
-				"source":"3"
+				"source":"3,4,7"
 			},
 			{
 				"value":"AT2016eiy",
-				"source":"7"
+				"source":"8"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"3,4,6,8"
+				"source":"3,4,5,6,7,9"
 			}
 		],
 		"comovingdist":[
@@ -83,14 +89,14 @@
 				"value":"38.26",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,7"
+				"source":"1,3,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"-23:40:53.15",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,4,7"
 			},
 			{
 				"value":"-23:40:53.04",
@@ -108,6 +114,10 @@
 			{
 				"value":"ASAS-SN",
 				"source":"3"
+			},
+			{
+				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
+				"source":"4,7"
 			}
 		],
 		"ebv":[
@@ -115,13 +125,17 @@
 				"value":"0.1084",
 				"derived":true,
 				"e_value":"0.0033",
-				"source":"2,7"
+				"source":"2,8"
 			}
 		],
 		"host":[
 			{
 				"value":"ESO 509-IG 064",
 				"source":"3"
+			},
+			{
+				"value":"ESO 509-IG64",
+				"source":"4,7"
 			},
 			{
 				"value":"ESO 509-IG064",
@@ -141,35 +155,35 @@
 				"derived":true,
 				"kind":"host",
 				"u_value":"Mpc",
-				"source":"1,3,7"
+				"source":"1,3,8"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-16.73",
 				"derived":true,
-				"source":"1,3,7"
+				"source":"1,3,8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.2",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"maxband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/07/26",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"ra":[
@@ -177,6 +191,11 @@
 				"value":"13:34:38.64",
 				"u_value":"hours",
 				"source":"3,4,5"
+			},
+			{
+				"value":"13:34:38.640",
+				"u_value":"hours",
+				"source":"4,7"
 			}
 		],
 		"redshift":[
@@ -195,10 +214,16 @@
 				"value":"2586",
 				"kind":"host",
 				"u_value":"km/s",
-				"source":"7"
+				"source":"8"
 			}
 		],
 		"photometry":[
+			{
+				"time":"57594.5",
+				"magnitude":"16.2",
+				"u_time":"MJD",
+				"source":"4,7"
+			},
 			{
 				"time":"57595.07",
 				"band":"V",
@@ -211,12 +236,13 @@
 		"spectra":[
 			{
 				"time":"57595.0",
-				"filename":"tns_2016eiy_2016-07-26_23-04-04_ESO-NTT_EFOSC2-NTT.asci",
+				"filename":"tAT2016eiy_20160726_Gr13_Free_slit1.0_1_f.asci",
 				"instrument":"ESO-NTT - EFOSC2-NTT",
 				"observer":"Fraser,Reynolds",
 				"redshift":"0.0087",
 				"reducer":"Inserra",
-				"reduction":"final",
+				"reduction":"rapid",
+				"survey":"PESSTO",
 				"u_fluxes":"erg/s/cm^2/Angstrom",
 				"u_time":"MJD",
 				"u_wavelengths":"Angstrom",
@@ -4282,7 +4308,7 @@
 						"1.47418e-16"
 					]
 				],
-				"source":"8"
+				"source":"9"
 			}
 		]
 	}

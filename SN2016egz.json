@@ -27,13 +27,13 @@
 				"alias":"3"
 			},
 			{
-				"name":"ASAS-SN Supernovae",
-				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"name":"ATel 9262",
+				"url":"http://www.astronomerstelegram.org/?read=9262",
 				"alias":"4"
 			},
 			{
-				"name":"ATel 9262",
-				"url":"http://www.astronomerstelegram.org/?read=9262",
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
 				"alias":"5"
 			},
 			{
@@ -42,12 +42,18 @@
 				"alias":"6"
 			},
 			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"7"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2016arXiv160501054G",
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"7"
+				"alias":"8"
 			},
 			{
 				"name":"WISeREP",
@@ -55,27 +61,27 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"8"
+				"alias":"9"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2016egz",
-				"source":"3,4,5,8"
+				"source":"3,4,5,7,9"
 			},
 			{
 				"value":"ASASSN-16hn",
-				"source":"3"
+				"source":"3,4,7"
 			},
 			{
 				"value":"AT2016egz",
-				"source":"7"
+				"source":"8"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II",
-				"source":"3,4,6,8"
+				"source":"3,4,5,6,7,9"
 			}
 		],
 		"comovingdist":[
@@ -83,14 +89,14 @@
 				"value":"102",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,7"
+				"source":"1,3,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"-34:48:51.87",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,4,7"
 			},
 			{
 				"value":"-34:48:51.84",
@@ -108,6 +114,10 @@
 			{
 				"value":"ASAS-SN",
 				"source":"3"
+			},
+			{
+				"value":"All Sky Automated Survey for SuperNovae (ASAS-SN)",
+				"source":"4,7"
 			}
 		],
 		"ebv":[
@@ -115,7 +125,7 @@
 				"value":"0.0133",
 				"derived":true,
 				"e_value":"0.0003",
-				"source":"2,7"
+				"source":"2,8"
 			}
 		],
 		"host":[
@@ -129,7 +139,7 @@
 				"value":"-34:48:51.6",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"7"
+				"source":"8"
 			}
 		],
 		"hostoffsetang":[
@@ -142,7 +152,7 @@
 		"hostoffsetdist":[
 			{
 				"value":"0.46",
-				"source":"1,3,7"
+				"source":"1,3,4,7,8"
 			}
 		],
 		"hostra":[
@@ -150,7 +160,7 @@
 				"value":"00:04:03.88",
 				"derived":true,
 				"u_value":"hours",
-				"source":"7"
+				"source":"8"
 			}
 		],
 		"lumdist":[
@@ -159,35 +169,35 @@
 				"derived":true,
 				"kind":"host",
 				"u_value":"Mpc",
-				"source":"1,3,7"
+				"source":"1,3,8"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18.5",
 				"derived":true,
-				"source":"1,3,7"
+				"source":"1,3,8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.6",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"maxband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/07/24",
 				"derived":true,
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"ra":[
@@ -195,6 +205,11 @@
 				"value":"00:04:03.85",
 				"u_value":"hours",
 				"source":"3"
+			},
+			{
+				"value":"00:04:03.850",
+				"u_value":"hours",
+				"source":"4,7"
 			},
 			{
 				"value":"00:04:03.8544",
@@ -218,10 +233,16 @@
 				"value":"6870",
 				"kind":"host",
 				"u_value":"km/s",
-				"source":"7"
+				"source":"8"
 			}
 		],
 		"photometry":[
+			{
+				"time":"57589.5",
+				"magnitude":"16.1",
+				"u_time":"MJD",
+				"source":"4,7"
+			},
 			{
 				"time":"57593.32",
 				"band":"V",
@@ -234,12 +255,13 @@
 		"spectra":[
 			{
 				"time":"57595.0",
-				"filename":"tns_2016egz_2016-07-26_05-49-17_ESO-NTT_EFOSC2-NTT.asci",
+				"filename":"tAT2016egz_20160725_Gr13_Free_slit1.5_1_f.asci",
 				"instrument":"ESO-NTT - EFOSC2-NTT",
 				"observer":"Fraser/Reynolds",
 				"redshift":"0.023",
 				"reducer":"Inserra",
-				"reduction":"final",
+				"reduction":"rapid",
+				"survey":"PESSTO",
 				"u_fluxes":"erg/s/cm^2/Angstrom",
 				"u_time":"MJD",
 				"u_wavelengths":"Angstrom",
@@ -4305,7 +4327,7 @@
 						"2.19134e-16"
 					]
 				],
-				"source":"8"
+				"source":"9"
 			}
 		]
 	}
