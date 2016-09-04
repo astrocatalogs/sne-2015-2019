@@ -1,12 +1,6 @@
 {
 	"SN2016ayq":{
-		"AT2016ayq":[
-			{
-				"value":"2016ayq",
-				"source":"1,5"
-			}
-		],
-		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/supernovae/blob//SCHEMA.md",
 		"name":"SN2016ayq",
 		"sources":[
 			{
@@ -34,10 +28,15 @@
 				"alias":"4"
 			},
 			{
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -45,17 +44,21 @@
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2016ayq",
-				"source":"1,5"
+				"source":"1,5,6,7"
+			},
+			{
+				"value":"Gaia16agp",
+				"source":"7"
 			},
 			{
 				"value":"ATLAS16ada",
-				"source":"1,4,5"
+				"source":"1,4,6"
 			},
 			{
 				"value":"AT2016ayq",
@@ -65,7 +68,7 @@
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"comovingdist":[
@@ -73,7 +76,7 @@
 				"value":"200",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5,6"
+				"source":"1,2,6,7"
 			}
 		],
 		"dec":[
@@ -85,7 +88,12 @@
 			{
 				"value":"+22:07:16.2",
 				"u_value":"degrees",
-				"source":"1,5"
+				"source":"1,6"
+			},
+			{
+				"value":"+22:07:16.32",
+				"u_value":"degrees",
+				"source":"5"
 			}
 		],
 		"discoverdate":[
@@ -97,7 +105,7 @@
 		"discoverer":[
 			{
 				"value":"ATLAS",
-				"source":"1,4,5"
+				"source":"1,4,6"
 			}
 		],
 		"ebv":[
@@ -105,7 +113,7 @@
 				"value":"0.1347",
 				"derived":true,
 				"e_value":"0.0079",
-				"source":"3,6"
+				"source":"3,7"
 			}
 		],
 		"lumdist":[
@@ -113,63 +121,80 @@
 				"value":"210",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5,6"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19",
 				"derived":true,
-				"source":"1,2,5,6"
+				"source":"1,2,6,7"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"17.69",
+				"value":"18.04",
 				"derived":true,
-				"source":"4,6"
+				"source":"5,7"
 			}
 		],
 		"maxband":[
 			{
-				"value":"cyan",
+				"value":"G",
 				"derived":true,
-				"source":"4,6"
+				"source":"5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/03/03",
+				"value":"2016/02/28",
 				"derived":true,
-				"source":"4,6"
+				"source":"5,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"02:33:21.66",
 				"u_value":"hours",
-				"source":"1,4,5"
+				"source":"1,4,6"
+			},
+			{
+				"value":"02:33:21.672",
+				"u_value":"hours",
+				"source":"5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.046",
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"13000",
 				"u_value":"km/s",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"photometry":[
 			{
-				"time":"57449.5",
-				"magnitude":"17.7",
+				"time":"57446.827",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"18.09",
+				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"1,5"
+				"source":"5"
+			},
+			{
+				"time":"57446.901",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"magnitude":"18.04",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"5"
 			},
 			{
 				"time":"57450.23",

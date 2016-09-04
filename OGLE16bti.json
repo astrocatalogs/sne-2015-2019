@@ -1,6 +1,6 @@
 {
 	"OGLE16bti":{
-		"schema":"https://github.com/astrocatalogs/astrocats/blob/aaf96e3b3fbcf703610b756295a7120ec1ecc3f7/OSC-JSON-format.md",
+		"schema":"https://github.com/astrocatalogs/supernovae/blob//SCHEMA.md",
 		"name":"OGLE16bti",
 		"sources":[
 			{
@@ -15,10 +15,15 @@
 				"alias":"2"
 			},
 			{
+				"name":"OGLE-IV Transient Detection System",
+				"url":"http://ogle.astrouw.edu.pl/ogle4/transients/transients.html",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,32 +31,38 @@
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"OGLE16bti",
-				"source":"2,3"
+				"source":"2,3,4"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
-				"value":"-77:19:58.10",
+				"value":"-77:19:58.1",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/08/23",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"OGLE",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"ebv":[
@@ -59,36 +70,73 @@
 				"value":"0.0688",
 				"derived":true,
 				"e_value":"0.0019",
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"20.2",
+				"value":"20.19",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,5"
+			}
+		],
+		"maxband":[
+			{
+				"value":"I",
+				"derived":true,
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/08/22",
+				"value":"2016/08/23",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,5"
 			}
 		],
 		"ra":[
 			{
-				"value":"04:02:57.660",
+				"value":"04:02:57.66",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
 			{
-				"time":"57622.5",
-				"magnitude":"20.2",
+				"time":"57607.39578",
+				"band":"I",
+				"e_magnitude":"0.078",
+				"magnitude":"20.246",
+				"system":"Vega",
 				"u_time":"MJD",
-				"source":"2,3"
+				"source":"3"
+			},
+			{
+				"time":"57616.42803",
+				"band":"I",
+				"e_magnitude":"0.146",
+				"magnitude":"20.507",
+				"system":"Vega",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"57623.38565",
+				"band":"I",
+				"e_magnitude":"0.078",
+				"magnitude":"20.194",
+				"system":"Vega",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"57632.39683",
+				"band":"I",
+				"e_magnitude":"0.076",
+				"magnitude":"20.212",
+				"system":"Vega",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		]
 	}
