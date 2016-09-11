@@ -1,6 +1,6 @@
 {
 	"Gaia16bel":{
-		"schema":"https://github.com/astrocatalogs/supernovae/blob//SCHEMA.md",
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/5e77bae/SCHEMA.md",
 		"name":"Gaia16bel",
 		"sources":[
 			{
@@ -16,8 +16,14 @@
 			},
 			{
 				"name":"Gaia Photometric Science Alerts",
-				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"url":"http://gaia.ac.uk/selected-gaia-science-alerts",
 				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -25,24 +31,24 @@
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia16bel",
-				"source":"2"
+				"source":"2,3,4"
 			},
 			{
 				"value":"AT2016fsh",
-				"source":"2,3"
+				"source":"2,3,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"+02:51:54.97",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,3,4"
 			},
 			{
 				"value":"+02:51:54.972",
@@ -60,6 +66,10 @@
 			{
 				"value":"GaiaAlerts",
 				"source":"2"
+			},
+			{
+				"value":"Gaia",
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -67,28 +77,28 @@
 				"value":"0.0235",
 				"derived":true,
 				"e_value":"0.0011",
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.93",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/08/31",
 				"derived":true,
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"ra":[
@@ -98,12 +108,23 @@
 				"source":"2"
 			},
 			{
+				"value":"01:44:25.138",
+				"u_value":"hours",
+				"source":"3,4"
+			},
+			{
 				"value":"01:44:25.128",
 				"u_value":"hours",
 				"source":"3"
 			}
 		],
 		"photometry":[
+			{
+				"time":"57630.5",
+				"magnitude":"19.0",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
 			{
 				"time":"57631.86099537037",
 				"band":"G",

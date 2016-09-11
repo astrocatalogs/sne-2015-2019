@@ -1,6 +1,6 @@
 {
 	"iPTF16fip":{
-		"schema":"https://github.com/astrocatalogs/supernovae/blob//SCHEMA.md",
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/5e77bae/SCHEMA.md",
 		"name":"iPTF16fip",
 		"sources":[
 			{
@@ -21,12 +21,18 @@
 				"alias":"3"
 			},
 			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2016arXiv160501054G",
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
@@ -36,14 +42,14 @@
 			},
 			{
 				"value":"AT2016fip",
-				"source":"3"
+				"source":"3,4"
 			}
 		],
 		"dec":[
 			{
 				"value":"+29:27:32.19",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
@@ -56,6 +62,10 @@
 			{
 				"value":"iPTF",
 				"source":"3"
+			},
+			{
+				"value":"PTF",
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -63,7 +73,21 @@
 				"value":"0.0881",
 				"derived":true,
 				"e_value":"0.0041",
-				"source":"2,4"
+				"source":"2,5"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"18.2",
+				"derived":true,
+				"source":"3,4,5"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2016/08/24",
+				"derived":true,
+				"source":"3,4,5"
 			}
 		],
 		"ra":[
@@ -71,6 +95,19 @@
 				"value":"23:46:58.20",
 				"u_value":"hours",
 				"source":"3"
+			},
+			{
+				"value":"23:46:58.200",
+				"u_value":"hours",
+				"source":"3,4"
+			}
+		],
+		"photometry":[
+			{
+				"time":"57624.5",
+				"magnitude":"18.2",
+				"u_time":"MJD",
+				"source":"3,4"
 			}
 		]
 	}

@@ -1,6 +1,6 @@
 {
 	"MLS160903:215010+281550":{
-		"schema":"https://github.com/astrocatalogs/supernovae/blob//SCHEMA.md",
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/5e77bae/SCHEMA.md",
 		"name":"MLS160903:215010+281550",
 		"sources":[
 			{
@@ -17,21 +17,37 @@
 				"alias":"2"
 			},
 			{
+				"name":"CRTS SN page",
+				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2016arXiv160501054G",
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"MLS160903:215010+281550",
-				"source":"2"
+				"source":"2,3,4"
 			}
 		],
 		"dec":[
+			{
+				"value":"+28:15:50.29",
+				"u_value":"degrees",
+				"source":"3,4"
+			},
 			{
 				"value":"+28:15:50.4",
 				"u_value":"degrees",
@@ -41,8 +57,13 @@
 		"discoverdate":[
 			{
 				"value":"2016/09/03",
-				"derived":true,
-				"source":"3"
+				"source":"3,4"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"CRTS",
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -50,10 +71,29 @@
 				"value":"0.072",
 				"derived":true,
 				"e_value":"0.0006",
-				"source":"1,3"
+				"source":"1,5"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"18.8",
+				"derived":true,
+				"source":"3,4,5"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2016/09/02",
+				"derived":true,
+				"source":"3,4,5"
 			}
 		],
 		"ra":[
+			{
+				"value":"21:50:10.144",
+				"u_value":"hours",
+				"source":"3,4"
+			},
 			{
 				"value":"21:50:10.08",
 				"u_value":"hours",
@@ -68,6 +108,12 @@
 				"magnitude":"22",
 				"telescope":"Catalina Schmidt",
 				"source":"2"
+			},
+			{
+				"time":"57633.5",
+				"magnitude":"18.8",
+				"u_time":"MJD",
+				"source":"3,4"
 			}
 		]
 	}
