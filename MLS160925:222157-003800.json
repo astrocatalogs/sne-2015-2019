@@ -17,21 +17,37 @@
 				"alias":"2"
 			},
 			{
+				"name":"CRTS SN page",
+				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2016arXiv160501054G",
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"MLS160925:222157-003800",
-				"source":"2"
+				"source":"2,3,4"
 			}
 		],
 		"dec":[
+			{
+				"value":"-00:38:00.02",
+				"u_value":"degrees",
+				"source":"3,4"
+			},
 			{
 				"value":"-00:38:00.024",
 				"u_value":"degrees",
@@ -41,8 +57,13 @@
 		"discoverdate":[
 			{
 				"value":"2016/09/25",
-				"derived":true,
-				"source":"2,3"
+				"source":"3,4"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"CRTS",
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -50,52 +71,43 @@
 				"value":"0.0623",
 				"derived":true,
 				"e_value":"0.0017",
-				"source":"1,3"
+				"source":"1,5"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"20.22",
+				"value":"20.2",
 				"derived":true,
-				"source":"2,3"
-			}
-		],
-		"maxband":[
-			{
-				"value":"C",
-				"derived":true,
-				"source":"2,3"
+				"source":"3,4,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/09/25",
+				"value":"2016/09/24",
 				"derived":true,
-				"source":"2,3"
+				"source":"3,4,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"20.22",
+				"value":"20.2",
 				"derived":true,
-				"source":"2,3"
-			}
-		],
-		"maxvisualband":[
-			{
-				"value":"C",
-				"derived":true,
-				"source":"2,3"
+				"source":"3,4,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2016/09/25",
+				"value":"2016/09/24",
 				"derived":true,
-				"source":"2,3"
+				"source":"3,4,5"
 			}
 		],
 		"ra":[
+			{
+				"value":"22:21:57.185",
+				"u_value":"hours",
+				"source":"3,4"
+			},
 			{
 				"value":"22:21:57.12",
 				"u_value":"hours",
@@ -111,6 +123,12 @@
 				"telescope":"Catalina Schmidt",
 				"upperlimit":true,
 				"source":"2"
+			},
+			{
+				"time":"57655.5",
+				"magnitude":"20.2",
+				"u_time":"MJD",
+				"source":"3,4"
 			},
 			{
 				"time":"57656.5",
