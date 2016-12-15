@@ -29,15 +29,20 @@
 				"alias":"4"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"5"
+			},
+			{
 				"name":"CRTS SN page",
 				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"6"
+				"alias":"7"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -45,31 +50,31 @@
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"7"
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2016cvz",
-				"source":"2,4,5,6"
+				"source":"2,4,5,6,7"
 			},
 			{
 				"value":"AT2016cvz",
-				"source":"5,6"
-			},
-			{
-				"value":"CSS160607:162521+574415",
-				"source":"5,6"
+				"source":"5"
 			},
 			{
 				"value":"iPTF16aut",
-				"source":"2,5,6"
+				"source":"2,5,6,7"
+			},
+			{
+				"value":"CSS160607:162521+574415",
+				"source":"6,7"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,5,6"
+				"source":"2,5,6,7"
 			}
 		],
 		"comovingdist":[
@@ -77,14 +82,19 @@
 				"value":"320",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5,6,7"
+				"source":"1,5,8"
 			}
 		],
 		"dec":[
 			{
+				"value":"+57:44:15.87",
+				"u_value":"degrees",
+				"source":"5"
+			},
+			{
 				"value":"+57:44:15.2",
 				"u_value":"degrees",
-				"source":"5,6"
+				"source":"6,7"
 			},
 			{
 				"value":"+57:44:15",
@@ -94,14 +104,18 @@
 		],
 		"discoverdate":[
 			{
-				"value":"2016/05/13",
-				"source":"5,6"
+				"value":"2016/05/13.43",
+				"source":"5"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"iPTF",
+				"source":"5"
+			},
+			{
 				"value":"CRTS",
-				"source":"5,6"
+				"source":"6,7"
 			}
 		],
 		"ebv":[
@@ -109,7 +123,7 @@
 				"value":"0.008",
 				"derived":true,
 				"e_value":"0.0008",
-				"source":"3,7"
+				"source":"3,8"
 			}
 		],
 		"lumdist":[
@@ -117,14 +131,75 @@
 				"value":"346",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5,6,7"
+				"source":"1,5,8"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-16.8",
+				"derived":true,
+				"source":"1,5,8"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"20.91",
+				"derived":true,
+				"source":"5,8"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"5,8"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2016/05/13",
+				"derived":true,
+				"source":"5,8"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-16.8",
+				"derived":true,
+				"source":"1,5,8"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"20.91",
+				"derived":true,
+				"source":"5,8"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"5,8"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2016/05/13",
+				"derived":true,
+				"source":"5,8"
 			}
 		],
 		"ra":[
 			{
+				"value":"16:25:20.79",
+				"u_value":"hours",
+				"source":"5"
+			},
+			{
 				"value":"16:25:20.82",
 				"u_value":"hours",
-				"source":"5,6"
+				"source":"6,7"
 			},
 			{
 				"value":"16:25:20.88",
@@ -135,14 +210,19 @@
 		"redshift":[
 			{
 				"value":"0.074",
-				"source":"2,5,6"
+				"kind":"spectroscopic",
+				"source":"5"
+			},
+			{
+				"value":"0.074",
+				"source":"2,6,7"
 			}
 		],
 		"velocity":[
 			{
 				"value":"21000",
 				"u_value":"km/s",
-				"source":"7"
+				"source":"8"
 			}
 		],
 		"photometry":[
@@ -1286,6 +1366,14 @@
 				"u_time":"MJD",
 				"upperlimit":true,
 				"source":"4"
+			},
+			{
+				"time":"57521.43",
+				"band":"g",
+				"magnitude":"20.91",
+				"survey":"iPTF",
+				"u_time":"MJD",
+				"source":"5"
 			},
 			{
 				"time":"57524.439941",

@@ -23,15 +23,20 @@
 				"alias":"3"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"4"
+			},
+			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -39,7 +44,7 @@
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			},
 			{
 				"name":"WISeREP",
@@ -47,31 +52,31 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"7"
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2016ggp",
-				"source":"1,4,5,7"
+				"source":"1,4,5,6,8"
 			},
 			{
 				"value":"AT2016ggp",
-				"source":"1,5"
-			},
-			{
-				"value":"MASTER OT J203239.31-565835.8",
-				"source":"1,5"
+				"source":"4"
 			},
 			{
 				"value":"Gaia16bgd",
-				"source":"1,5"
+				"source":"1,4,6"
+			},
+			{
+				"value":"MASTER OT J203239.31-565835.8",
+				"source":"1,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,5,7"
+				"source":"1,4,6,8"
 			}
 		],
 		"comovingdist":[
@@ -79,31 +84,40 @@
 				"value":"210",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5,6,7"
+				"source":"2,4,7"
 			}
 		],
 		"dec":[
 			{
+				"value":"-56:58:36.73",
+				"u_value":"degrees",
+				"source":"4"
+			},
+			{
 				"value":"-56:58:35.80",
 				"u_value":"degrees",
-				"source":"1,5"
+				"source":"1,6"
 			},
 			{
 				"value":"-56:58:36.84",
 				"u_value":"degrees",
-				"source":"4"
+				"source":"5"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/09/10",
-				"source":"1,5"
+				"value":"2016/09/10.68",
+				"source":"4"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"GaiaAlerts",
+				"source":"4"
+			},
+			{
 				"value":"MASTER",
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"ebv":[
@@ -111,13 +125,13 @@
 				"value":"0.0541",
 				"derived":true,
 				"e_value":"0.0016",
-				"source":"3,6"
+				"source":"3,7"
 			}
 		],
 		"host":[
 			{
 				"value":"PGC 395099",
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"lumdist":[
@@ -125,88 +139,98 @@
 				"value":"220",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5,6,7"
+				"source":"2,4,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18.5",
 				"derived":true,
-				"source":"1,2,5,6,7"
+				"source":"2,4,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.26",
 				"derived":true,
-				"source":"4,6"
+				"source":"5,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"4,6"
+				"source":"5,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/09/10",
 				"derived":true,
-				"source":"4,6"
+				"source":"5,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-18.5",
 				"derived":true,
-				"source":"1,2,5,6,7"
+				"source":"2,4,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.26",
 				"derived":true,
-				"source":"4,6"
+				"source":"5,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"4,6"
+				"source":"5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2016/09/10",
 				"derived":true,
-				"source":"4,6"
+				"source":"5,7"
 			}
 		],
 		"ra":[
 			{
+				"value":"20:32:39.47",
+				"u_value":"hours",
+				"source":"4"
+			},
+			{
 				"value":"20:32:39.310",
 				"u_value":"hours",
-				"source":"1,5"
+				"source":"1,6"
 			},
 			{
 				"value":"20:32:39.36",
 				"u_value":"hours",
-				"source":"4"
+				"source":"5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.048",
-				"source":"1,5,7"
+				"kind":"spectroscopic",
+				"source":"4"
+			},
+			{
+				"value":"0.048",
+				"source":"1,6,8"
 			}
 		],
 		"velocity":[
 			{
 				"value":"14000",
 				"u_value":"km/s",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"photometry":[
@@ -214,7 +238,15 @@
 				"time":"57640.5",
 				"magnitude":"18.3",
 				"u_time":"MJD",
-				"source":"1,5"
+				"source":"1,6"
+			},
+			{
+				"time":"57641.68",
+				"band":"G",
+				"magnitude":"18.27",
+				"survey":"GaiaAlerts",
+				"u_time":"MJD",
+				"source":"4"
 			},
 			{
 				"time":"57641.681",
@@ -223,7 +255,7 @@
 				"magnitude":"18.27",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"4"
+				"source":"5"
 			},
 			{
 				"time":"57641.755",
@@ -232,7 +264,7 @@
 				"magnitude":"18.26",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"4"
+				"source":"5"
 			},
 			{
 				"time":"57668.676",
@@ -241,7 +273,7 @@
 				"magnitude":"18.82",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"4"
+				"source":"5"
 			}
 		],
 		"spectra":[
@@ -4319,7 +4351,7 @@
 						"3.27147e-17"
 					]
 				],
-				"source":"7"
+				"source":"8"
 			}
 		]
 	}

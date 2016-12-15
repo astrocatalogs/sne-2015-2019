@@ -10,15 +10,20 @@
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"Pan-STARRS 3Pi",
 				"url":"http://star.pst.qub.ac.uk/ps1threepi/psdb/public/",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,36 +31,45 @@
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"PS16cyp",
-				"source":"2,3"
+				"source":"2,3,4"
 			},
 			{
 				"value":"AT2016ddu",
-				"source":"2,3"
+				"source":"2,3,4"
 			}
 		],
 		"dec":[
 			{
+				"value":"-03:20:08.59",
+				"u_value":"degrees",
+				"source":"2"
+			},
+			{
 				"value":"-03:20:08.60",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/06/28",
-				"source":"2,3"
+				"value":"2016/06/28.299132",
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"Pan-STARRS1",
+				"source":"2"
+			},
+			{
 				"value":"PS1",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -63,48 +77,67 @@
 				"value":"0.0515",
 				"derived":true,
 				"e_value":"0.0006",
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"host":[
 			{
 				"value":"2dFGRS N205Z024",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"19.8",
+				"value":"19.77",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5"
+			}
+		],
+		"maxband":[
+			{
+				"value":"w",
+				"derived":true,
+				"source":"2,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/06/27",
+				"value":"2016/06/28",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"19.8",
+				"value":"19.77",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"w",
+				"derived":true,
+				"source":"2,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2016/06/27",
+				"value":"2016/06/28",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5"
 			}
 		],
 		"ra":[
 			{
+				"value":"14:10:31.25",
+				"u_value":"hours",
+				"source":"2"
+			},
+			{
 				"value":"14:10:31.250",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"photometry":[
@@ -112,7 +145,15 @@
 				"time":"57566.5",
 				"magnitude":"19.8",
 				"u_time":"MJD",
-				"source":"2,3"
+				"source":"3,4"
+			},
+			{
+				"time":"57567.29913194444",
+				"band":"w",
+				"magnitude":"19.77",
+				"survey":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
 			}
 		]
 	}
