@@ -1,7 +1,7 @@
 {
-	"ATLAS17agh":{
+	"SN2017le":{
 		"schema":"https://github.com/astrocatalogs/supernovae/blob/a0bc0b9/SCHEMA.md",
-		"name":"ATLAS17agh",
+		"name":"SN2017le",
 		"sources":[
 			{
 				"name":"2016A&A...594A..13P",
@@ -10,12 +10,23 @@
 				"alias":"1"
 			},
 			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"2"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2016arXiv160501054G",
 				"reference":"Guillochon, Parrent, & Margutti (2016)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"WISeREP",
@@ -23,10 +34,18 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
+			{
+				"value":"SN2017le",
+				"source":"3,5"
+			},
+			{
+				"value":"AT2017le",
+				"source":"3"
+			},
 			{
 				"value":"ATLAS17agh",
 				"source":"3"
@@ -35,7 +54,7 @@
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"comovingdist":[
@@ -43,14 +62,34 @@
 				"value":"100",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3"
+				"source":"1,3,4"
+			}
+		],
+		"dec":[
+			{
+				"value":"+28:41:42.33",
+				"u_value":"degrees",
+				"source":"3"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017/01/18",
+				"value":"2017/01/04.56",
+				"source":"3"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"ATLAS",
+				"source":"3"
+			}
+		],
+		"ebv":[
+			{
+				"value":"0.0248",
 				"derived":true,
-				"source":"2,3"
+				"e_value":"0.0007",
+				"source":"2,4"
 			}
 		],
 		"lumdist":[
@@ -58,20 +97,98 @@
 				"value":"140",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3"
+				"source":"1,3,4"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-17",
+				"derived":true,
+				"source":"1,3,4"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"18.9",
+				"derived":true,
+				"source":"3,4"
+			}
+		],
+		"maxband":[
+			{
+				"value":"cyan",
+				"derived":true,
+				"source":"3,4"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2017/01/04",
+				"derived":true,
+				"source":"3,4"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-17",
+				"derived":true,
+				"source":"1,3,4"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"18.9",
+				"derived":true,
+				"source":"3,4"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"cyan",
+				"derived":true,
+				"source":"3,4"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2017/01/04",
+				"derived":true,
+				"source":"3,4"
+			}
+		],
+		"ra":[
+			{
+				"value":"11:10:27.20",
+				"u_value":"hours",
+				"source":"3"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.03",
+				"kind":"spectroscopic",
 				"source":"3"
+			},
+			{
+				"value":"0.03",
+				"source":"5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"9000",
 				"u_value":"km/s",
-				"source":"2"
+				"source":"4"
+			}
+		],
+		"photometry":[
+			{
+				"time":"57757.56",
+				"band":"cyan",
+				"magnitude":"18.9",
+				"survey":"ATLAS",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		],
 		"spectra":[
@@ -4149,7 +4266,7 @@
 						"4.41393e-16"
 					]
 				],
-				"source":"3"
+				"source":"5"
 			}
 		]
 	}
