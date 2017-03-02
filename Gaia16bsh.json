@@ -10,8 +10,8 @@
 				"alias":"1"
 			},
 			{
-				"name":"Pan-STARRS 3Pi",
-				"url":"http://psweb.mp.qub.ac.uk/ps1threepi/psdb/",
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"2"
 			},
 			{
@@ -20,8 +20,8 @@
 				"alias":"3"
 			},
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
+				"name":"Pan-STARRS 3Pi",
+				"url":"http://psweb.mp.qub.ac.uk/ps1threepi/psdb/",
 				"alias":"4"
 			},
 			{
@@ -42,15 +42,15 @@
 		"alias":[
 			{
 				"value":"Gaia16bsh",
-				"source":"3,4,5"
-			},
-			{
-				"value":"PS17bcm",
-				"source":"2"
+				"source":"2,3,5"
 			},
 			{
 				"value":"AT2016ian",
 				"source":"2,3,4,5"
+			},
+			{
+				"value":"PS17bcm",
+				"source":"3,5"
 			}
 		],
 		"claimedtype":[
@@ -63,7 +63,7 @@
 			{
 				"value":"+27:43:03.65",
 				"u_value":"degrees",
-				"source":"3,4,5"
+				"source":"2,3,5"
 			},
 			{
 				"value":"+27:43:03.72",
@@ -73,19 +73,19 @@
 			{
 				"value":"+27:43:03.4",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/11/04.552998",
-				"source":"4"
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"GaiaAlerts",
-				"source":"4"
+				"source":"2"
 			},
 			{
 				"value":"Gaia",
@@ -103,7 +103,7 @@
 		"host":[
 			{
 				"value":"2MASX J16294266+2742564",
-				"source":"2"
+				"source":"4"
 			}
 		],
 		"hostdec":[
@@ -119,7 +119,7 @@
 				"value":"8.03",
 				"derived":true,
 				"u_value":"arcseconds",
-				"source":"3,4,5,6"
+				"source":"2,3,5,6"
 			}
 		],
 		"hostra":[
@@ -132,16 +132,23 @@
 		],
 		"maxappmag":[
 			{
-				"value":"17.4",
+				"value":"17.42",
 				"derived":true,
-				"source":"3,5,6"
+				"source":"3,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"G",
+				"derived":true,
+				"source":"3,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2016/11/03",
+				"value":"2016/11/04",
 				"derived":true,
-				"source":"3,5,6"
+				"source":"3,6"
 			}
 		],
 		"maxvisualappmag":[
@@ -169,7 +176,7 @@
 			{
 				"value":"16:29:42.92",
 				"u_value":"hours",
-				"source":"4"
+				"source":"2"
 			},
 			{
 				"value":"16:29:42.923",
@@ -184,15 +191,31 @@
 			{
 				"value":"16:29:42.89",
 				"u_value":"hours",
-				"source":"2"
+				"source":"4"
 			}
 		],
 		"photometry":[
 			{
-				"time":"57695.5",
-				"magnitude":"17.4",
+				"time":"57696.0529977",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Gaia-photometric",
+				"magnitude":"17.44",
+				"observer":"Robot",
+				"telescope":"Gaia",
 				"u_time":"MJD",
-				"source":"3,5"
+				"source":"2"
+			},
+			{
+				"time":"57696.4769907",
+				"band":"G",
+				"instrument":"Gaia-photometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
 			},
 			{
 				"time":"57696.554",
@@ -276,6 +299,17 @@
 				"source":"3"
 			},
 			{
+				"time":"57798.1339931",
+				"band":"i",
+				"e_magnitude":"0.12",
+				"instrument":"GPC1",
+				"magnitude":"20.36",
+				"observer":"Robot",
+				"telescope":"PS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
 				"time":"57798.6337759117",
 				"band":"i",
 				"e_magnitude":"0.120384",
@@ -283,7 +317,7 @@
 				"magnitude":"20.3603",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"57798.6395991673",
@@ -293,7 +327,7 @@
 				"magnitude":"20.3577",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"57798.6454105214",
@@ -303,7 +337,7 @@
 				"magnitude":"20.2624",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			}
 		]
 	}
