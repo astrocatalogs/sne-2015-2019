@@ -15,10 +15,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 25886",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25886",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,37 +37,37 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia15acq",
-				"source":"2,3"
+				"source":"2,4,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"-79:08:22.3",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"-79:08:22.2",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2015/03/04",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -64,47 +75,54 @@
 				"value":"0.2712",
 				"derived":true,
 				"e_value":"0.0109",
-				"source":"1,4"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.5",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2015/03/03",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18.5",
+				"value":"26.28",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,4,6"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2015/03/03",
+				"value":"2015/03/18",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"11:35:48.89",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"11:35:48.96",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -112,7 +130,15 @@
 				"time":"57084.5",
 				"magnitude":"18.5",
 				"u_time":"MJD",
-				"source":"2,3"
+				"source":"2,5"
+			},
+			{
+				"time":"57099.3937",
+				"band":"r",
+				"magnitude":"26.2806",
+				"observatory":"Euler Geneva Group",
+				"u_time":"MJD",
+				"source":"3,4"
 			}
 		]
 	}

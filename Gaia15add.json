@@ -15,10 +15,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 25908",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25908",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,13 +37,13 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia15add",
-				"source":"2,3"
+				"source":"2,4,5"
 			}
 		],
 		"claimedtype":[
@@ -45,24 +56,24 @@
 			{
 				"value":"-57:25:43.3",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"-57:25:43.32",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2015/03/07",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -70,54 +81,61 @@
 				"value":"0.1463",
 				"derived":true,
 				"e_value":"0.0079",
-				"source":"1,4"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"17.6",
+				"value":"17.58",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,4,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"3,4,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2015/03/21",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.48",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2015/03/07",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"07:42:43.25",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"07:42:43.2",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -140,10 +158,31 @@
 				"source":"2"
 			},
 			{
-				"time":"57102.5",
-				"magnitude":"17.6",
+				"time":"57101.9924",
+				"band":"r",
+				"e_magnitude":"0.0079",
+				"magnitude":"18.0615",
+				"observatory":"Euler Geneva Group",
 				"u_time":"MJD",
-				"source":"2,3"
+				"source":"3,4"
+			},
+			{
+				"time":"57102.9801",
+				"band":"r",
+				"e_magnitude":"0.0365",
+				"magnitude":"17.5848",
+				"observatory":"Euler Geneva Group",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57103.9925",
+				"band":"r",
+				"e_magnitude":"0.0073",
+				"magnitude":"17.8459",
+				"observatory":"Euler Geneva Group",
+				"u_time":"MJD",
+				"source":"3,4"
 			}
 		]
 	}

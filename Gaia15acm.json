@@ -15,10 +15,21 @@
 				"alias":"2"
 			},
 			{
+				"name":"CPCS Alert 25874",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25874",
+				"alias":"3"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,37 +37,37 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia15acm",
-				"source":"2,3"
+				"source":"2,4,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"-37:29:03.1",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"-37:29:03.12",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2015/02/20",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"ebv":[
@@ -64,54 +75,61 @@
 				"value":"0.0527",
 				"derived":true,
 				"e_value":"0.0014",
-				"source":"1,4"
+				"source":"1,6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.7",
+				"value":"17.92",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,4,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"3,4,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2015/02/19",
+				"value":"2015/03/12",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18.71",
+				"value":"20.66",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2015/02/21",
+				"value":"2015/03/28",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"13:06:59.62",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"13:06:59.52",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,4"
 			}
 		],
 		"photometry":[
@@ -119,7 +137,7 @@
 				"time":"57072.5",
 				"magnitude":"18.7",
 				"u_time":"MJD",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"time":"57073.926",
@@ -138,6 +156,119 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"57087.8776",
+				"band":"B2pg",
+				"magnitude":"20.975",
+				"observatory":"LCOGT Gaia Alerts Gr",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57087.8857",
+				"band":"r",
+				"e_magnitude":"0.168",
+				"magnitude":"19.7001",
+				"observatory":"LCOGT Gaia Alerts Gr",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57087.9134",
+				"band":"B2pg",
+				"magnitude":"21.4003",
+				"observatory":"LCOGT Gaia Alerts Gr",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57087.9208",
+				"band":"Ipg",
+				"e_magnitude":"0.136",
+				"magnitude":"18.9525",
+				"observatory":"LCOGT Gaia Alerts Gr",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57087.9283",
+				"band":"R1pg",
+				"e_magnitude":"0.139",
+				"magnitude":"19.2492",
+				"observatory":"LCOGT Gaia Alerts Gr",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57093.4128",
+				"band":"r",
+				"e_magnitude":"0.0209",
+				"magnitude":"17.9214",
+				"observatory":"Euler Geneva Group",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57097.4069",
+				"band":"r",
+				"e_magnitude":"0.0157",
+				"magnitude":"18.6758",
+				"observatory":"Euler Geneva Group",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57106.1356",
+				"band":"B2pg",
+				"e_magnitude":"0.124",
+				"magnitude":"19.1472",
+				"observatory":"LCOGT Gaia Alerts Gr",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57106.1431",
+				"band":"Ipg",
+				"magnitude":"20.5269",
+				"observatory":"LCOGT Gaia Alerts Gr",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57106.1505",
+				"band":"R1pg",
+				"magnitude":"20.3943",
+				"observatory":"LCOGT Gaia Alerts Gr",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57109.8502",
+				"band":"g",
+				"e_magnitude":"0.13",
+				"magnitude":"20.6565",
+				"observatory":"LCOGT Gaia Alerts Gr",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57109.8575",
+				"band":"r",
+				"e_magnitude":"0.079",
+				"magnitude":"19.9216",
+				"observatory":"LCOGT Gaia Alerts Gr",
+				"u_time":"MJD",
+				"source":"3,4"
+			},
+			{
+				"time":"57109.8649",
+				"band":"i",
+				"e_magnitude":"0.088",
+				"magnitude":"19.9809",
+				"observatory":"LCOGT Gaia Alerts Gr",
+				"u_time":"MJD",
+				"source":"3,4"
 			}
 		]
 	}
