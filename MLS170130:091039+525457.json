@@ -17,15 +17,20 @@
 				"alias":"2"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
+			},
+			{
 				"name":"CRTS SN page",
 				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -33,17 +38,21 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"MLS170130:091039+525457",
-				"source":"2,3,4"
+				"source":"2,4,5"
+			},
+			{
+				"value":"AT2017clo",
+				"source":"2,3,4,5"
 			},
 			{
 				"value":"PS17bwa",
-				"source":"3,4"
+				"source":"3,4,5"
 			}
 		],
 		"claimedtype":[
@@ -54,9 +63,14 @@
 		],
 		"dec":[
 			{
+				"value":"+52:54:56.29",
+				"u_value":"degrees",
+				"source":"3"
+			},
+			{
 				"value":"+52:54:56.67",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"value":"+52:54:56.52",
@@ -66,14 +80,18 @@
 		],
 		"discoverdate":[
 			{
-				"value":"2017/01/30",
-				"source":"3,4"
+				"value":"2017/03/17.34",
+				"source":"3"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"Pan-STARRS1",
+				"source":"3"
+			},
+			{
 				"value":"CRTS",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"ebv":[
@@ -81,14 +99,61 @@
 				"value":"0.0123",
 				"derived":true,
 				"e_value":"0.0006",
-				"source":"1,5"
+				"source":"1,6"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"19.94",
+				"derived":true,
+				"source":"3,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"i",
+				"derived":true,
+				"source":"3,6"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2017/03/17",
+				"derived":true,
+				"source":"3,6"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"19.94",
+				"derived":true,
+				"source":"3,6"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"i",
+				"derived":true,
+				"source":"3,6"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2017/03/17",
+				"derived":true,
+				"source":"3,6"
 			}
 		],
 		"ra":[
 			{
+				"value":"09:10:38.56",
+				"u_value":"hours",
+				"source":"3"
+			},
+			{
 				"value":"09:10:38.587",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"value":"09:10:38.64",
@@ -203,6 +268,17 @@
 				"telescope":"Catalina Schmidt",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"57829.34",
+				"band":"i",
+				"e_magnitude":"0.09",
+				"instrument":"GPC1",
+				"magnitude":"19.94",
+				"observer":"Robot",
+				"telescope":"PS1",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		]
 	}
