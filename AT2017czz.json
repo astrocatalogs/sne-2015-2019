@@ -10,9 +10,20 @@
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"SMT",
 				"url":"http://www.mso.anu.edu.au/skymapper/smt/transients/tns/",
-				"alias":"2"
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,37 +31,47 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2017czz",
-				"source":"2"
+				"source":"2,3,4"
 			},
 			{
 				"value":"SMT17fth",
-				"source":"2"
+				"source":"2,3,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
+				"value":"-27:26:05.71",
+				"u_value":"degrees",
+				"source":"2,4"
+			},
+			{
 				"value":"-27:26:05.64",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017",
-				"derived":true,
-				"source":"3"
+				"value":"2017/03/28.68",
+				"source":"2"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"SkyMapper",
+				"source":"2,4"
 			}
 		],
 		"ebv":[
@@ -58,13 +79,87 @@
 				"value":"0.0457",
 				"derived":true,
 				"e_value":"0.0006",
-				"source":"1,3"
+				"source":"1,5"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"20.73",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g-SM",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2017/03/28",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"20.73",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g-SM",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2017/03/28",
+				"derived":true,
+				"source":"2,5"
 			}
 		],
 		"ra":[
 			{
+				"value":"13:30:54.91",
+				"u_value":"hours",
+				"source":"2"
+			},
+			{
+				"value":"13:30:54.910",
+				"u_value":"hours",
+				"source":"2,4"
+			},
+			{
 				"value":"13:30:54.96",
 				"u_value":"hours",
+				"source":"3"
+			}
+		],
+		"photometry":[
+			{
+				"time":"57838.7389931",
+				"band":"i-SM",
+				"instrument":"SM-WFCam",
+				"magnitude":"19.51",
+				"observer":"Skymapper Transient Survey",
+				"telescope":"SkyMapper 1.35m",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"57840.68",
+				"band":"g-SM",
+				"instrument":"SM-WFCam",
+				"magnitude":"20.73",
+				"telescope":"SkyMapper 1.35m",
+				"u_time":"MJD",
 				"source":"2"
 			}
 		]
