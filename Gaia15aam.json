@@ -4,78 +4,190 @@
 		"name":"Gaia15aam",
 		"sources":[
 			{
-				"name":"Latest Supernovae",
-				"secondary":true,
-				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
 				"alias":"1"
+			},
+			{
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
+				"alias":"2"
 			},
 			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"http://gaia.ac.uk/selected-gaia-science-alerts",
-				"alias":"2"
+				"alias":"3"
+			},
+			{
+				"name":"CPCS Alert 25768",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=25768",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"6"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia15aam",
-				"source":"1,2"
+				"source":"3,5,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ib/c",
-				"source":"1,2"
+				"source":"3,6"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"200",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,3,6,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"+14:24:14.5",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"3,6"
 			},
 			{
 				"value":"+14:24:14.4",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2015/01/08",
-				"source":"1,2"
+				"source":"3,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"3,6"
+			}
+		],
+		"ebv":[
+			{
+				"value":"0.0483",
+				"derived":true,
+				"e_value":"0.0011",
+				"source":"2,7"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"230",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,3,6,7"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-21",
+				"derived":true,
+				"source":"1,3,6,7"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"15.89",
+				"derived":true,
+				"source":"4,5,7"
+			}
+		],
+		"maxband":[
+			{
+				"value":"I",
+				"derived":true,
+				"source":"4,5,7"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2015/02/05",
+				"derived":true,
+				"source":"4,5,7"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-19",
+				"derived":true,
+				"source":"1,3,6,7"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"17.82",
+				"derived":true,
+				"source":"4,5,7"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"B",
+				"derived":true,
+				"source":"4,5,7"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2015/02/05",
+				"derived":true,
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"16:18:04.79",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"3,6"
 			},
 			{
 				"value":"16:18:04.8",
 				"u_value":"hours",
-				"source":"2"
+				"source":"3,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.05",
-				"source":"1,2"
+				"source":"3,6"
+			}
+		],
+		"velocity":[
+			{
+				"value":"10000",
+				"u_value":"km/s",
+				"source":"7"
 			}
 		],
 		"photometry":[
-			{
-				"time":"57029.5",
-				"magnitude":"18.2",
-				"u_time":"MJD",
-				"source":"1,2"
-			},
 			{
 				"time":"57030.465",
 				"band":"G",
@@ -84,7 +196,7 @@
 				"magnitude":"18.18",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57030.641",
@@ -94,7 +206,7 @@
 				"magnitude":"18.26",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57030.715",
@@ -104,7 +216,248 @@
 				"magnitude":"18.22",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
+			},
+			{
+				"time":"57051.785",
+				"band":"g",
+				"e_magnitude":"0.0184",
+				"magnitude":"18.7999",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57051.787",
+				"band":"r",
+				"e_magnitude":"0.0141",
+				"magnitude":"18.1192",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57051.789",
+				"band":"r",
+				"e_magnitude":"0.0135",
+				"magnitude":"18.1755",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57053.763",
+				"band":"g",
+				"e_magnitude":"0.0176",
+				"magnitude":"18.8687",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57053.765",
+				"band":"r",
+				"e_magnitude":"0.0161",
+				"magnitude":"18.186",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57053.767",
+				"band":"r",
+				"e_magnitude":"0.0132",
+				"magnitude":"18.2692",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57055.69",
+				"band":"g",
+				"e_magnitude":"0.0883",
+				"magnitude":"19.1335",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57055.692",
+				"band":"r",
+				"e_magnitude":"0.0371",
+				"magnitude":"18.3216",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57055.694",
+				"band":"r",
+				"e_magnitude":"0.0389",
+				"magnitude":"18.4334",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57057.756",
+				"band":"g",
+				"e_magnitude":"0.0737",
+				"magnitude":"19.0889",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57057.758",
+				"band":"r",
+				"e_magnitude":"0.0331",
+				"magnitude":"18.3923",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57057.76",
+				"band":"r",
+				"e_magnitude":"0.0408",
+				"magnitude":"18.581",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57058.1789",
+				"band":"B",
+				"magnitude":"18.0338",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57058.1803",
+				"band":"B",
+				"magnitude":"17.8168",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57058.1818",
+				"band":"B",
+				"magnitude":"17.9158",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57058.1832",
+				"band":"V",
+				"magnitude":"17.7268",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57058.1861",
+				"band":"V",
+				"magnitude":"17.4472",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57058.1876",
+				"band":"R",
+				"magnitude":"17.9067",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57058.189",
+				"band":"R",
+				"magnitude":"18.1349",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57058.1905",
+				"band":"R",
+				"magnitude":"17.1502",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57058.1919",
+				"band":"I",
+				"magnitude":"15.8926",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57058.1933",
+				"band":"I",
+				"magnitude":"16.1396",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57058.1948",
+				"band":"I",
+				"magnitude":"16.5681",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57059.688",
+				"band":"g",
+				"e_magnitude":"0.1015",
+				"magnitude":"19.653",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57059.69",
+				"band":"r",
+				"e_magnitude":"0.0342",
+				"magnitude":"18.3733",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57059.692",
+				"band":"r",
+				"e_magnitude":"0.0455",
+				"magnitude":"18.527",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57065.773",
+				"band":"g",
+				"e_magnitude":"0.0473",
+				"magnitude":"19.1423",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57065.775",
+				"band":"r",
+				"e_magnitude":"0.0321",
+				"magnitude":"18.5017",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
 			},
 			{
 				"time":"57067.375",
@@ -114,7 +467,7 @@
 				"magnitude":"19.31",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57067.449",
@@ -124,7 +477,473 @@
 				"magnitude":"19.22",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
+			},
+			{
+				"time":"57069.761",
+				"band":"g",
+				"e_magnitude":"0.0237",
+				"magnitude":"19.2921",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57069.763",
+				"band":"r",
+				"e_magnitude":"0.0237",
+				"magnitude":"18.555",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57069.765",
+				"band":"r",
+				"e_magnitude":"0.0184",
+				"magnitude":"18.6152",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57077.753",
+				"band":"g",
+				"e_magnitude":"0.0724",
+				"magnitude":"20.0248",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57077.755",
+				"band":"r",
+				"e_magnitude":"0.0609",
+				"magnitude":"18.8716",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57077.757",
+				"band":"r",
+				"e_magnitude":"0.0273",
+				"magnitude":"18.6797",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57079.709",
+				"band":"g",
+				"e_magnitude":"0.0355",
+				"magnitude":"19.4524",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57079.711",
+				"band":"r",
+				"e_magnitude":"0.0614",
+				"magnitude":"19.307",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57079.713",
+				"band":"r",
+				"e_magnitude":"0.038",
+				"magnitude":"18.8733",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57081.705",
+				"band":"g",
+				"e_magnitude":"0.0315",
+				"magnitude":"19.4221",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57081.707",
+				"band":"r",
+				"e_magnitude":"0.0378",
+				"magnitude":"18.7259",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57081.709",
+				"band":"r",
+				"e_magnitude":"0.0271",
+				"magnitude":"18.7962",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57109.725",
+				"band":"r",
+				"e_magnitude":"0.0196",
+				"magnitude":"18.9921",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57109.729",
+				"band":"g",
+				"e_magnitude":"0.0165",
+				"magnitude":"19.3967",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57109.733",
+				"band":"i",
+				"e_magnitude":"0.0276",
+				"magnitude":"18.8494",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57113.626",
+				"band":"r",
+				"e_magnitude":"0.0425",
+				"magnitude":"19.0611",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57113.63",
+				"band":"g",
+				"e_magnitude":"0.0581",
+				"magnitude":"19.3695",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57113.634",
+				"band":"r",
+				"e_magnitude":"0.0397",
+				"magnitude":"19.0692",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57117.587",
+				"band":"r",
+				"e_magnitude":"0.0746",
+				"magnitude":"19.264",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57117.591",
+				"band":"g",
+				"e_magnitude":"0.0894",
+				"magnitude":"19.4374",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57117.594",
+				"band":"r",
+				"e_magnitude":"0.0867",
+				"magnitude":"20.4297",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57121.675",
+				"band":"r",
+				"e_magnitude":"0.0606",
+				"magnitude":"19.3039",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57121.679",
+				"band":"g",
+				"e_magnitude":"0.0685",
+				"magnitude":"19.6745",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57121.682",
+				"band":"r",
+				"e_magnitude":"0.0585",
+				"magnitude":"19.08",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57123.546",
+				"band":"r",
+				"e_magnitude":"0.0345",
+				"magnitude":"19.0877",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57123.55",
+				"band":"g",
+				"e_magnitude":"0.0379",
+				"magnitude":"19.7219",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57123.554",
+				"band":"r",
+				"e_magnitude":"0.0395",
+				"magnitude":"19.0258",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57125.597",
+				"band":"r",
+				"e_magnitude":"0.0284",
+				"magnitude":"19.7217",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57125.601",
+				"band":"g",
+				"e_magnitude":"0.0258",
+				"magnitude":"20.0734",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57125.605",
+				"band":"i",
+				"e_magnitude":"0.0319",
+				"magnitude":"18.946",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57127.606",
+				"band":"r",
+				"e_magnitude":"0.0227",
+				"magnitude":"19.0513",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57127.61",
+				"band":"g",
+				"magnitude":"24.2036",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57127.614",
+				"band":"i",
+				"e_magnitude":"0.0332",
+				"magnitude":"19.2384",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57129.596",
+				"band":"r",
+				"e_magnitude":"0.0362",
+				"magnitude":"19.5366",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57129.6",
+				"band":"g",
+				"magnitude":"24.0942",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57129.604",
+				"band":"r",
+				"e_magnitude":"0.043",
+				"magnitude":"19.5084",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57131.512",
+				"band":"r",
+				"e_magnitude":"0.0251",
+				"magnitude":"19.1852",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57131.516",
+				"band":"g",
+				"e_magnitude":"0.0244",
+				"magnitude":"19.4057",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57131.52",
+				"band":"i",
+				"e_magnitude":"0.0472",
+				"magnitude":"19.278",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57135.643",
+				"band":"r",
+				"e_magnitude":"0.0265",
+				"magnitude":"19.1732",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57135.647",
+				"band":"g",
+				"e_magnitude":"0.0326",
+				"magnitude":"20.0866",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57135.651",
+				"band":"i",
+				"e_magnitude":"0.036",
+				"magnitude":"19.0763",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57137.612",
+				"band":"r",
+				"e_magnitude":"0.0309",
+				"magnitude":"19.9",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57137.616",
+				"band":"g",
+				"e_magnitude":"0.0313",
+				"magnitude":"20.0921",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57137.62",
+				"band":"i",
+				"e_magnitude":"0.032",
+				"magnitude":"18.9397",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57139.532",
+				"band":"r",
+				"e_magnitude":"0.0458",
+				"magnitude":"19.8196",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57139.536",
+				"band":"g",
+				"e_magnitude":"0.0525",
+				"magnitude":"20.1924",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57139.54",
+				"band":"i",
+				"e_magnitude":"0.0397",
+				"magnitude":"19.0552",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57141.553",
+				"band":"r",
+				"e_magnitude":"0.0495",
+				"magnitude":"19.757",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57141.557",
+				"band":"g",
+				"e_magnitude":"0.0642",
+				"magnitude":"20.2368",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57141.561",
+				"band":"i",
+				"e_magnitude":"0.0491",
+				"magnitude":"19.772",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"57143.459",
+				"band":"r",
+				"e_magnitude":"0.0748",
+				"magnitude":"19.6487",
+				"observatory":"Heather Campbell",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}

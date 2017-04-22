@@ -4,15 +4,16 @@
 		"name":"SN2016ecw",
 		"sources":[
 			{
-				"name":"Latest Supernovae",
-				"secondary":true,
-				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"name":"ATel 9161",
+				"bibcode":"2016ATel.9161....1S",
+				"reference":"Shurpakov et al. (2016)",
+				"url":"http://www.astronomerstelegram.org/?read=9161",
 				"alias":"1"
 			},
 			{
-				"name":"ATel 9161",
-				"bibcode":"2016ATel.9161....1S",
-				"url":"http://www.astronomerstelegram.org/?read=9161",
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
 				"alias":"2"
 			},
 			{
@@ -24,30 +25,55 @@
 				"name":"Gaia Photometric Science Alerts",
 				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
 				"alias":"4"
+			},
+			{
+				"name":"CPCS Alert 26412",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26412",
+				"alias":"5"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"6"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"7"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2016ecw",
-				"source":"1,2,4"
+				"source":"1,3,4,7"
 			},
 			{
 				"value":"AT2016ecw",
-				"source":"1,2,3"
+				"source":"1,3,7"
 			},
 			{
 				"value":"Gaia16arv",
-				"source":"1,2,3"
+				"source":"1,3,6,7"
 			},
 			{
 				"value":"MASTER OT J220727.43-053121.8",
-				"source":"1,2"
+				"source":"1,7"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,2,4"
+				"source":"1,4,7"
 			}
 		],
 		"dec":[
@@ -59,12 +85,12 @@
 			{
 				"value":"-05:31:21.80",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,7"
 			},
 			{
 				"value":"-05:31:22.152",
 				"u_value":"degrees",
-				"source":"4"
+				"source":"4,6"
 			}
 		],
 		"discoverdate":[
@@ -80,7 +106,57 @@
 			},
 			{
 				"value":"MASTER",
-				"source":"1,2"
+				"source":"1,7"
+			}
+		],
+		"ebv":[
+			{
+				"value":"0.0644",
+				"derived":true,
+				"e_value":"0.0007",
+				"source":"2,8"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"17.95",
+				"derived":true,
+				"source":"4,8"
+			}
+		],
+		"maxband":[
+			{
+				"value":"G",
+				"derived":true,
+				"source":"4,8"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2016/06/09",
+				"derived":true,
+				"source":"4,8"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"17.95",
+				"derived":true,
+				"source":"4,8"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"G",
+				"derived":true,
+				"source":"4,8"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2016/06/09",
+				"derived":true,
+				"source":"4,8"
 			}
 		],
 		"ra":[
@@ -92,20 +168,36 @@
 			{
 				"value":"22:07:27.430",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,7"
 			},
 			{
 				"value":"22:07:27.36",
 				"u_value":"hours",
-				"source":"4"
+				"source":"4,6"
 			}
 		],
 		"photometry":[
 			{
-				"time":"57554.5",
-				"magnitude":"18.2",
+				"time":"57516.2189931",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
 				"u_time":"MJD",
-				"source":"1,2"
+				"upperlimit":true,
+				"source":"3"
+			},
+			{
+				"time":"57548.38",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"17.97",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"3"
 			},
 			{
 				"time":"57548.381",
@@ -126,6 +218,15 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"4"
+			},
+			{
+				"time":"57559.3293",
+				"band":"V",
+				"e_magnitude":"0.0109",
+				"magnitude":"18.268",
+				"observatory":"K.Wiersema-NTT",
+				"u_time":"MJD",
+				"source":"5,6"
 			}
 		]
 	}
