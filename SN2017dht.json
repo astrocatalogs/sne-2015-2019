@@ -4,21 +4,27 @@
 		"name":"SN2017dht",
 		"sources":[
 			{
-				"name":"2011ApJ...737..103S",
-				"bibcode":"2011ApJ...737..103S",
-				"reference":"Schlafly & Finkbeiner (2011)",
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
 				"alias":"1"
 			},
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
+				"name":"2011ApJ...737..103S",
+				"bibcode":"2011ApJ...737..103S",
+				"reference":"Schlafly & Finkbeiner (2011)",
 				"alias":"2"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"http://wis-tns.weizmann.ac.il/object/2017dht",
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,7 +32,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"WISeREP",
@@ -34,40 +40,48 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2017dht",
-				"source":"5"
+				"source":"3,4,6"
 			},
 			{
 				"value":"AT2017dht",
-				"source":"2,3,5"
+				"source":"3,4"
 			},
 			{
 				"value":"ATLAS17etw",
-				"source":"2,3"
+				"source":"3,4"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"400",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,3,4,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+12:42:03.52",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2017/04/22.383993",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ATLAS",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -75,66 +89,95 @@
 				"value":"0.0303",
 				"derived":true,
 				"e_value":"0.0009",
-				"source":"1,4"
+				"source":"2,5"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"420",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,3,4,5"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-19",
+				"derived":true,
+				"source":"1,3,4,5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.78",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"cyan",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/04/22",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-19",
+				"derived":true,
+				"source":"1,3,4,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.78",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"cyan",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/04/22",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"09:27:06.82",
 				"u_value":"hours",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"value":"09:27:06.820",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"redshift":[
 			{
-				"value":"0",
+				"value":"0.09",
+				"source":"3,4"
+			}
+		],
+		"velocity":[
+			{
+				"value":"30000",
+				"u_value":"km/s",
 				"source":"5"
 			}
 		],
@@ -148,7 +191,7 @@
 				"telescope":"ATLAS1",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57865.3839931",
@@ -159,7 +202,7 @@
 				"observer":"Robot",
 				"telescope":"ATLAS1",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"spectra":[
@@ -168,7 +211,6 @@
 				"filename":"tAT2017dht_20170428_Gr13_Free_slit1.0_1_f.asci",
 				"instrument":"ESO-NTT - EFOSC2-NTT",
 				"observer":"C. Gutierrez, R. Cartier",
-				"redshift":"0",
 				"reducer":"R. Cartier, C. Gutierrez",
 				"reduction":"rapid",
 				"survey":"ePESSTO",
@@ -4237,7 +4279,7 @@
 						"2.49825e-17"
 					]
 				],
-				"source":"5"
+				"source":"6"
 			}
 		]
 	}
