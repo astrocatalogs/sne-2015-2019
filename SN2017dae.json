@@ -21,10 +21,15 @@
 				"alias":"3"
 			},
 			{
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -32,7 +37,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"WISeREP",
@@ -40,27 +45,31 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2017dae",
-				"source":"3,4,6"
+				"source":"3,4,5,7"
 			},
 			{
 				"value":"AT2017dae",
-				"source":"3"
+				"source":"3,5"
 			},
 			{
 				"value":"ATLAS17dzg",
-				"source":"3,4"
+				"source":"3,5"
+			},
+			{
+				"value":"Gaia17bic",
+				"source":"3,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"3,4,6"
+				"source":"3,4,5,7"
 			}
 		],
 		"comovingdist":[
@@ -68,14 +77,19 @@
 				"value":"228.22",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,4,5"
+				"source":"1,3,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+48:36:26.06",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"3,5"
+			},
+			{
+				"value":"+48:36:26.28",
+				"u_value":"degrees",
+				"source":"4"
 			}
 		],
 		"discoverdate":[
@@ -87,7 +101,7 @@
 		"discoverer":[
 			{
 				"value":"ATLAS",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"ebv":[
@@ -95,7 +109,7 @@
 				"value":"0.0171",
 				"derived":true,
 				"e_value":"0.0007",
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"lumdist":[
@@ -103,63 +117,63 @@
 				"value":"240.131",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,4,5"
+				"source":"1,3,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19.427",
 				"derived":true,
-				"source":"1,3,4,5"
+				"source":"1,3,5,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.42",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/04/21",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-19.4822",
 				"derived":true,
-				"source":"1,3,4,5"
+				"source":"1,3,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.42",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/04/21",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,6"
 			}
 		],
 		"ra":[
@@ -171,20 +185,25 @@
 			{
 				"value":"09:08:34.750",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,5"
+			},
+			{
+				"value":"09:08:34.8",
+				"u_value":"hours",
+				"source":"4"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.052205",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"15243",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"photometry":[
@@ -231,6 +250,36 @@
 				"telescope":"Gaia",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"57864.669",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.42",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"4"
+			},
+			{
+				"time":"57894.406",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.72",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"4"
+			},
+			{
+				"time":"57894.480",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.73",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"4"
 			}
 		],
 		"spectra":[
