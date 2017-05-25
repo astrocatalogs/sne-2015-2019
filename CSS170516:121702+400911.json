@@ -10,15 +10,20 @@
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"CRTS SN page",
 				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,32 +31,49 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"CSS170516:121702+400911",
-				"source":"2,3"
+				"source":"3,4"
+			},
+			{
+				"value":"AT2017egf",
+				"source":"2,3,4"
+			},
+			{
+				"value":"ATLAS17fqm",
+				"source":"2,3,4"
 			}
 		],
 		"dec":[
 			{
+				"value":"+40:09:10.72",
+				"u_value":"degrees",
+				"source":"2"
+			},
+			{
 				"value":"+40:09:10.62",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017/05/16",
-				"source":"2,3"
+				"value":"2017/05/18.315",
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"ATLAS",
+				"source":"2"
+			},
+			{
 				"value":"CRTS",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -59,50 +81,85 @@
 				"value":"0.0186",
 				"derived":true,
 				"e_value":"0.0005",
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"19.5",
+				"value":"18.86",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5"
+			}
+		],
+		"maxband":[
+			{
+				"value":"orange",
+				"derived":true,
+				"source":"2,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2017/05/15",
+				"value":"2017/05/18",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"19.5",
+				"value":"18.86",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"orange",
+				"derived":true,
+				"source":"2,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2017/05/15",
+				"value":"2017/05/18",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"2,5"
 			}
 		],
 		"ra":[
 			{
+				"value":"12:17:01.85",
+				"u_value":"hours",
+				"source":"2"
+			},
+			{
 				"value":"12:17:01.845",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"photometry":[
 			{
-				"time":"57888.5",
-				"magnitude":"19.5",
+				"time":"57870.4809954",
+				"band":"cyan",
+				"instrument":"ACAM1",
+				"magnitude":"19.48",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
 				"u_time":"MJD",
-				"source":"2,3"
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"57891.315",
+				"band":"orange",
+				"e_magnitude":"0.14",
+				"instrument":"ACAM1",
+				"magnitude":"18.86",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"source":"2"
 			}
 		]
 	}
