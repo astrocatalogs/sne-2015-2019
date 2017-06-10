@@ -1,7 +1,7 @@
 {
-	"MASTER OT J190926.13+525316.4":{
+	"AT2017eop":{
 		"schema":"https://github.com/astrocatalogs/supernovae/blob/5d080fc/SCHEMA.md",
-		"name":"MASTER OT J190926.13+525316.4",
+		"name":"AT2017eop",
 		"sources":[
 			{
 				"name":"2011ApJ...737..103S",
@@ -10,15 +10,20 @@
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"ATel 10449",
 				"url":"http://www.astronomerstelegram.org/?read=10449",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,32 +31,50 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
+				"value":"AT2017eop",
+				"source":"2,3,4"
+			},
+			{
+				"value":"PS17dgo",
+				"source":"2,3,4"
+			},
+			{
 				"value":"MASTER OT J190926.13+525316.4",
-				"source":"2,3"
+				"source":"3,4"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"5"
 			}
 		],
 		"dec":[
 			{
-				"value":"+52:53:16.40",
+				"value":"+52:53:16.26",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,3,4"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017/05/31",
-				"source":"2,3"
+				"value":"2017/06/05.496991",
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"Pan-STARRS1",
+				"source":"2"
+			},
+			{
 				"value":"MASTER",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -59,48 +82,53 @@
 				"value":"0.0573",
 				"derived":true,
 				"e_value":"0.0029",
-				"source":"1,4"
+				"source":"1,5"
 			}
 		],
 		"host":[
 			{
 				"value":"MCG +09-31-23",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.3",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,4,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/05/30",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,4,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.3",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,4,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/05/30",
 				"derived":true,
-				"source":"2,3,4"
+				"source":"3,4,5"
 			}
 		],
 		"ra":[
 			{
-				"value":"19:09:26.130",
+				"value":"19:09:26.12",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2"
+			},
+			{
+				"value":"19:09:26.120",
+				"u_value":"hours",
+				"source":"3,4"
 			}
 		],
 		"photometry":[
@@ -108,7 +136,18 @@
 				"time":"57903.5",
 				"magnitude":"17.3",
 				"u_time":"MJD",
-				"source":"2,3"
+				"source":"3,4"
+			},
+			{
+				"time":"57909.4969907",
+				"band":"i",
+				"e_magnitude":"0.06",
+				"instrument":"GPC1",
+				"magnitude":"18.09",
+				"observer":"Robot",
+				"telescope":"PS1",
+				"u_time":"MJD",
+				"source":"2"
 			}
 		]
 	}
