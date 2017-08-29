@@ -10,9 +10,20 @@
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"SMT",
 				"url":"http://www.mso.anu.edu.au/skymapper/smt/transients/tns/",
-				"alias":"2"
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,37 +31,47 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2017ghv",
-				"source":"2"
+				"source":"2,3,4"
 			},
 			{
 				"value":"SMT17sro",
-				"source":"2"
+				"source":"2,3,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
+				"value":"-00:29:38.26",
+				"u_value":"degrees",
+				"source":"2,4"
+			},
+			{
 				"value":"-00:29:38.2668",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017",
-				"derived":true,
-				"source":"3"
+				"value":"2017/08/17.692998",
+				"source":"2"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"SkyMapper",
+				"source":"2,4"
 			}
 		],
 		"ebv":[
@@ -58,14 +79,60 @@
 				"value":"0.0247",
 				"derived":true,
 				"e_value":"0.0006",
-				"source":"1,3"
+				"source":"1,5"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"18.8",
+				"derived":true,
+				"source":"2,4,5"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2017/08/16",
+				"derived":true,
+				"source":"2,4,5"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"18.8",
+				"derived":true,
+				"source":"2,4,5"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2017/08/16",
+				"derived":true,
+				"source":"2,4,5"
 			}
 		],
 		"ra":[
 			{
-				"value":"00:17:04.9632",
+				"value":"00:17:04.96",
 				"u_value":"hours",
 				"source":"2"
+			},
+			{
+				"value":"00:17:04.960",
+				"u_value":"hours",
+				"source":"2,4"
+			},
+			{
+				"value":"00:17:04.9632",
+				"u_value":"hours",
+				"source":"3"
+			}
+		],
+		"photometry":[
+			{
+				"time":"57981.5",
+				"magnitude":"18.8",
+				"u_time":"MJD",
+				"source":"2,4"
 			}
 		]
 	}
