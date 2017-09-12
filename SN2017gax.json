@@ -26,10 +26,15 @@
 				"alias":"4"
 			},
 			{
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -37,7 +42,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			},
 			{
 				"name":"WISeREP",
@@ -45,27 +50,31 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"7"
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2017gax",
-				"source":"3,4,5,7"
+				"source":"3,4,5,6,8"
 			},
 			{
 				"value":"AT2017gax",
-				"source":"3"
+				"source":"3,4,6"
 			},
 			{
 				"value":"DLT17ch",
-				"source":"3,4,5"
+				"source":"3,4,6"
+			},
+			{
+				"value":"Gaia17cgy",
+				"source":"4,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ib/c",
-				"source":"3,4,5,7"
+				"source":"3,4,5,6,8"
 			}
 		],
 		"comovingdist":[
@@ -73,14 +82,19 @@
 				"value":"19.6",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,4,5,6"
+				"source":"1,4,6,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"-59:14:42.56",
 				"u_value":"degrees",
-				"source":"3,4,5"
+				"source":"3,4,6"
+			},
+			{
+				"value":"-59:14:42.36",
+				"u_value":"degrees",
+				"source":"5"
 			}
 		],
 		"discoverdate":[
@@ -92,7 +106,7 @@
 		"discoverer":[
 			{
 				"value":"DLT40",
-				"source":"3,4,5"
+				"source":"3,4,6"
 			}
 		],
 		"ebv":[
@@ -100,13 +114,13 @@
 				"value":"0.0201",
 				"derived":true,
 				"e_value":"0.0003",
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 1672",
-				"source":"3,4,5"
+				"source":"3,4,6"
 			}
 		],
 		"lumdist":[
@@ -114,63 +128,63 @@
 				"value":"19.72",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,4,5,6"
+				"source":"1,4,6,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-17.35",
 				"derived":true,
-				"source":"1,4,5,6"
+				"source":"1,4,6,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"14.12",
 				"derived":true,
-				"source":"3,6"
+				"source":"5,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,6"
+				"source":"5,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/09/08",
 				"derived":true,
-				"source":"3,6"
+				"source":"5,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17.35",
 				"derived":true,
-				"source":"1,4,5,6"
+				"source":"1,4,6,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"14.12",
 				"derived":true,
-				"source":"3,6"
+				"source":"5,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,6"
+				"source":"5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/09/08",
 				"derived":true,
-				"source":"3,6"
+				"source":"5,7"
 			}
 		],
 		"ra":[
@@ -182,20 +196,25 @@
 			{
 				"value":"04:45:49.430",
 				"u_value":"hours",
-				"source":"4,5"
+				"source":"4,6"
+			},
+			{
+				"value":"04:45:49.488",
+				"u_value":"hours",
+				"source":"5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.00444",
-				"source":"4,5"
+				"source":"4,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"1330",
 				"u_value":"km/s",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"photometry":[
@@ -238,6 +257,26 @@
 				"telescope":"Gaia",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"58004.008",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"14.12",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"5"
+			},
+			{
+				"time":"58004.082",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"14.14",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"5"
 			}
 		],
 		"spectra":[
