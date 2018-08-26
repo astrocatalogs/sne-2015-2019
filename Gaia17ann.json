@@ -4,15 +4,26 @@
 		"name":"Gaia17ann",
 		"sources":[
 			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"1"
+			},
+			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
 				"reference":"Schlafly & Finkbeiner (2011)",
-				"alias":"1"
+				"alias":"2"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
 			},
 			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,27 +31,57 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
+			},
+			{
+				"name":"NED-D",
+				"bibcode":"1991ASSL..171...89H",
+				"reference":"Helou et al. (1991)",
+				"secondary":true,
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia17ann",
-				"source":"2"
+				"source":"5"
+			},
+			{
+				"value":"AT2016jbg",
+				"source":"3,4,5"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"0.774",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,5,6"
 			}
 		],
 		"dec":[
 			{
+				"value":"+41:16:59.40",
+				"u_value":"degrees",
+				"source":"3"
+			},
+			{
 				"value":"+41:17:00.24",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"4"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017/01/20",
-				"derived":true,
-				"source":"2,3"
+				"value":"2016/12/25.509942",
+				"source":"3"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"XOSS, GaiaAlerts",
+				"source":"3"
 			}
 		],
 		"ebv":[
@@ -48,59 +89,175 @@
 				"value":"0.488",
 				"derived":true,
 				"e_value":"0.0899",
-				"source":"1,3"
+				"source":"2,5"
+			}
+		],
+		"host":[
+			{
+				"value":"M31",
+				"source":"3"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"0.774",
+				"derived":true,
+				"source":"1,5,6"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"0.7746",
+				"derived":true,
+				"source":"1,5,6"
+			}
+		],
+		"hostredshift":[
+			{
+				"value":"0.000175",
+				"derived":true,
+				"source":"1,6"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"52.5",
+				"source":"5"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"0.7746",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,5,6"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-7.245",
+				"derived":true,
+				"source":"1,5,6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"17.62",
+				"value":"17.2",
 				"derived":true,
-				"source":"2,3"
+				"source":"3,5"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"C",
 				"derived":true,
-				"source":"2,3"
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2017/01/20",
+				"value":"2016/12/25",
 				"derived":true,
-				"source":"2,3"
+				"source":"3,5"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-6.825",
+				"derived":true,
+				"source":"1,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.62",
 				"derived":true,
-				"source":"2,3"
+				"source":"4,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,3"
+				"source":"4,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/01/20",
 				"derived":true,
-				"source":"2,3"
+				"source":"4,5"
 			}
 		],
 		"ra":[
 			{
+				"value":"00:43:01.49",
+				"u_value":"hours",
+				"source":"3"
+			},
+			{
 				"value":"00:43:01.68",
 				"u_value":"hours",
-				"source":"2"
+				"source":"4"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.000175",
+				"derived":true,
+				"kind":"host",
+				"source":"1,6"
+			}
+		],
+		"velocity":[
+			{
+				"value":"52.5",
+				"u_value":"km/s",
+				"source":"5"
 			}
 		],
 		"photometry":[
+			{
+				"time":"57738.02",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"3"
+			},
+			{
+				"time":"57742.6022454",
+				"band":"C",
+				"magnitude":"19.9",
+				"observer":"X.Gao",
+				"system":"Vega",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"3"
+			},
+			{
+				"time":"57747.5099421",
+				"band":"C",
+				"magnitude":"17.2",
+				"observer":"X.Gao",
+				"system":"Vega",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"57773.6609954",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"17.71",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"3"
+			},
 			{
 				"time":"57773.662",
 				"band":"G",
@@ -109,7 +266,7 @@
 				"magnitude":"17.62",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"57809.947",
@@ -119,7 +276,7 @@
 				"magnitude":"18.47",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"57810.021",
@@ -129,7 +286,7 @@
 				"magnitude":"18.63",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"57810.197",
@@ -139,7 +296,7 @@
 				"magnitude":"18.7",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"57824.953",
@@ -149,7 +306,7 @@
 				"magnitude":"18.89",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"57825.027",
@@ -159,7 +316,7 @@
 				"magnitude":"18.82",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"57825.203",
@@ -169,7 +326,7 @@
 				"magnitude":"18.57",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			},
 			{
 				"time":"57825.277",
@@ -179,7 +336,7 @@
 				"magnitude":"18.83",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"4"
 			}
 		]
 	}
