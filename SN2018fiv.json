@@ -1,24 +1,30 @@
 {
-	"AT2018fiv":{
+	"SN2018fiv":{
 		"schema":"https://github.com/astrocatalogs/supernovae/blob/5d080fc/SCHEMA.md",
-		"name":"AT2018fiv",
+		"name":"SN2018fiv",
 		"sources":[
+			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"1"
+			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
 				"reference":"Schlafly & Finkbeiner (2011)",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,46 +32,66 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
+			},
+			{
+				"name":"WISeREP",
+				"bibcode":"2012PASP..124..668Y",
+				"reference":"Yaron & Gal-Yam (2012)",
+				"secondary":true,
+				"url":"http://wiserep.weizmann.ac.il/",
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
+				"value":"SN2018fiv",
+				"source":"3,4,6"
+			},
+			{
 				"value":"AT2018fiv",
-				"source":"2,3"
+				"source":"3"
 			},
 			{
 				"value":"ATLAS18uai",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"claimedtype":[
 			{
-				"value":"Candidate",
-				"source":"4"
+				"value":"Ia",
+				"source":"3,4"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"200",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,3,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+18:06:56.78",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2018/08/21.495",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ATLAS, ZTF",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"value":"ATLAS",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -73,61 +99,101 @@
 				"value":"0.0727",
 				"derived":true,
 				"e_value":"0.0025",
-				"source":"1,4"
+				"source":"2,5"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"230",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,3,5"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-18",
+				"derived":true,
+				"source":"1,3,5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.91",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"orange",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/08/21",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-18",
+				"derived":true,
+				"source":"1,3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.92",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"r",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/08/25",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"21:54:36.51",
 				"u_value":"hours",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"value":"21:54:36.510",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"3,4"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.05",
+				"kind":"spectroscopic",
+				"source":"3"
+			},
+			{
+				"value":"0.05",
+				"source":"3,4"
+			}
+		],
+		"velocity":[
+			{
+				"value":"10000",
+				"u_value":"km/s",
+				"source":"5"
 			}
 		],
 		"photometry":[
@@ -140,7 +206,7 @@
 				"telescope":"P48",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58345.34",
@@ -150,7 +216,7 @@
 				"observer":"ZTF",
 				"telescope":"P48",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58347.5159954",
@@ -161,7 +227,7 @@
 				"telescope":"ATLAS1",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58351.495",
@@ -172,7 +238,7 @@
 				"observer":"Robot",
 				"telescope":"ATLAS1",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"58355.4209954",
@@ -182,7 +248,7 @@
 				"observer":"ZTF",
 				"telescope":"P48",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			}
 		]
 	}

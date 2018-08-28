@@ -1,24 +1,30 @@
 {
-	"AT2018fip":{
+	"SN2018fip":{
 		"schema":"https://github.com/astrocatalogs/supernovae/blob/5d080fc/SCHEMA.md",
-		"name":"AT2018fip",
+		"name":"SN2018fip",
 		"sources":[
+			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"1"
+			},
 			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
 				"reference":"Schlafly & Finkbeiner (2011)",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,46 +32,66 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
+			},
+			{
+				"name":"WISeREP",
+				"bibcode":"2012PASP..124..668Y",
+				"reference":"Yaron & Gal-Yam (2012)",
+				"secondary":true,
+				"url":"http://wiserep.weizmann.ac.il/",
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
+				"value":"SN2018fip",
+				"source":"3,4,6"
+			},
+			{
 				"value":"AT2018fip",
-				"source":"2,3"
+				"source":"3,4"
 			},
 			{
 				"value":"MASTER OT J165415.75-540239.27",
-				"source":"2,3"
+				"source":"3,4"
 			},
 			{
 				"value":"GRB 180828A",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"claimedtype":[
 			{
-				"value":"Candidate",
-				"source":"4"
+				"value":"Ic BL",
+				"source":"3,4"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"503",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,3,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"-54:02:39.27",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2018/07/28.728912",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"MASTER",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -73,19 +99,45 @@
 				"value":"0.2433",
 				"derived":true,
 				"e_value":"0.0112",
-				"source":"1,4"
+				"source":"2,5"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"562.4",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"16:54:15.75",
 				"u_value":"hours",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"value":"16:54:15.750",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"3,4"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.117",
+				"kind":"spectroscopic",
+				"source":"3"
+			},
+			{
+				"value":"0.117",
+				"source":"3,4"
+			}
+		],
+		"velocity":[
+			{
+				"value":"33000",
+				"u_value":"km/s",
+				"source":"5"
 			}
 		]
 	}
