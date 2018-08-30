@@ -26,10 +26,15 @@
 				"alias":"4"
 			},
 			{
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -37,7 +42,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			},
 			{
 				"name":"WISeREP",
@@ -45,31 +50,35 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"7"
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2018ejc",
-				"source":"3,4,5,7"
+				"source":"3,4,5,6,8"
 			},
 			{
 				"value":"AT2018ejc",
-				"source":"3,4,5"
+				"source":"3,4,6"
 			},
 			{
 				"value":"PS18bcw",
-				"source":"3,4,5"
+				"source":"3,4,6"
 			},
 			{
 				"value":"ZTF18abiiqdl",
-				"source":"4,5"
+				"source":"4,6"
+			},
+			{
+				"value":"Gaia18chv",
+				"source":"4,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II",
-				"source":"3,4,5"
+				"source":"3,4,5,6"
 			}
 		],
 		"comovingdist":[
@@ -77,14 +86,19 @@
 				"value":"100",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,6"
+				"source":"1,3,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"+71:45:09.93",
 				"u_value":"degrees",
-				"source":"3,4,5"
+				"source":"3,4,6"
+			},
+			{
+				"value":"+71:45:09.72",
+				"u_value":"degrees",
+				"source":"5"
 			},
 			{
 				"value":"+71:45:10.1",
@@ -100,12 +114,12 @@
 		],
 		"discoverer":[
 			{
-				"value":"Pan-STARRS1, ZTF",
+				"value":"Pan-STARRS1, ZTF, GaiaAlerts",
 				"source":"3"
 			},
 			{
 				"value":"PS1",
-				"source":"4,5"
+				"source":"4,6"
 			}
 		],
 		"ebv":[
@@ -113,7 +127,7 @@
 				"value":"0.0144",
 				"derived":true,
 				"e_value":"0.0006",
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"host":[
@@ -127,7 +141,7 @@
 				"value":"+71:45:14.3",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"hostoffsetang":[
@@ -135,13 +149,13 @@
 				"value":"4.451",
 				"derived":true,
 				"u_value":"arcseconds",
-				"source":"3,4,5,6"
+				"source":"3,4,6,7"
 			}
 		],
 		"hostoffsetdist":[
 			{
 				"value":"2.095",
-				"source":"1,3,4,5,6"
+				"source":"1,3,4,6,7"
 			}
 		],
 		"hostra":[
@@ -149,7 +163,7 @@
 				"value":"14:11:45.38",
 				"derived":true,
 				"u_value":"hours",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"lumdist":[
@@ -157,63 +171,63 @@
 				"value":"140",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,6"
+				"source":"1,3,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18",
 				"derived":true,
-				"source":"1,3,6"
+				"source":"1,3,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.13",
 				"derived":true,
-				"source":"3,6"
+				"source":"3,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"3,6"
+				"source":"3,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/08/01",
 				"derived":true,
-				"source":"3,6"
+				"source":"3,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-18",
 				"derived":true,
-				"source":"1,3,6"
+				"source":"1,3,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.13",
 				"derived":true,
-				"source":"3,6"
+				"source":"3,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"3,6"
+				"source":"3,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/08/01",
 				"derived":true,
-				"source":"3,6"
+				"source":"3,7"
 			}
 		],
 		"ra":[
@@ -225,7 +239,12 @@
 			{
 				"value":"14:11:45.200",
 				"u_value":"hours",
-				"source":"4,5"
+				"source":"4,6"
+			},
+			{
+				"value":"14:11:45.12",
+				"u_value":"hours",
+				"source":"5"
 			},
 			{
 				"value":"14:11:45.15",
@@ -241,17 +260,28 @@
 			},
 			{
 				"value":"0.03",
-				"source":"4,5"
+				"source":"4,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"9000",
 				"u_value":"km/s",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"photometry":[
+			{
+				"time":"58283.2919907",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"3"
+			},
 			{
 				"time":"58306.3029977",
 				"band":"g",
@@ -375,6 +405,37 @@
 				"source":"3"
 			},
 			{
+				"time":"58319.7769907",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"19.51",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58319.778",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.51",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"5"
+			},
+			{
+				"time":"58319.954",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"19.44",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"5"
+			},
+			{
 				"time":"58331.2759954",
 				"band":"g",
 				"instrument":"ZTF-Cam",
@@ -383,6 +444,26 @@
 				"telescope":"P48",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"58350.024",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.22",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"5"
+			},
+			{
+				"time":"58350.200",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"18.27",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"5"
 			}
 		]
 	}
