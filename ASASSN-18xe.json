@@ -20,15 +20,20 @@
 				"alias":"3"
 			},
 			{
+				"name":"Gaia Photometric Science Alerts",
+				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
+				"alias":"4"
+			},
+			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -36,17 +41,27 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-18xe",
-				"source":"2,3,5"
+				"source":"2,3,6"
 			},
 			{
 				"value":"AT2018hdn",
-				"source":"2,3,4,5"
+				"source":"2,3,4,5,6"
+			},
+			{
+				"value":"Gaia18daz",
+				"source":"3,6"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"4"
 			}
 		],
 		"dec":[
@@ -58,24 +73,33 @@
 			{
 				"value":"-09:26:09.89",
 				"u_value":"degrees",
-				"source":"3,5"
+				"source":"3,6"
+			},
+			{
+				"value":"-09:26:09.384",
+				"u_value":"degrees",
+				"source":"4"
 			},
 			{
 				"value":"-09:26:09.888",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2018/10/07.86",
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"ASAS-SN, GaiaAlerts",
+				"source":"2"
+			},
+			{
 				"value":"ASAS-SN",
-				"source":"2,3,5"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -83,55 +107,55 @@
 				"value":"0.0714",
 				"derived":true,
 				"e_value":"0.0056",
-				"source":"1,6"
+				"source":"1,7"
 			}
 		],
 		"host":[
 			{
 				"value":"Unknown",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.5",
 				"derived":true,
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/10/07",
 				"derived":true,
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.5",
 				"derived":true,
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/10/07",
 				"derived":true,
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"ra":[
@@ -143,15 +167,26 @@
 			{
 				"value":"21:01:34.251",
 				"u_value":"hours",
-				"source":"3,5"
+				"source":"3,6"
 			},
 			{
 				"value":"21:01:34.32",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,4,5"
 			}
 		],
 		"photometry":[
+			{
+				"time":"58264.63",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
 			{
 				"time":"58392.29",
 				"band":"V",
@@ -171,6 +206,37 @@
 				"telescope":"ASASSN-5",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"58406.3539931",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"17.63",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58406.355",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.63",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"4"
+			},
+			{
+				"time":"58406.429",
+				"band":"G",
+				"e_magnitude":"0.0",
+				"instrument":"Astrometric",
+				"magnitude":"17.65",
+				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"4"
 			}
 		]
 	}

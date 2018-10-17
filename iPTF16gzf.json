@@ -4,15 +4,27 @@
 		"name":"iPTF16gzf",
 		"sources":[
 			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"1"
+			},
+			{
 				"name":"2011ApJ...737..103S",
 				"bibcode":"2011ApJ...737..103S",
 				"reference":"Schlafly & Finkbeiner (2011)",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"2"
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,36 +32,48 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"iPTF16gzf",
-				"source":"2"
+				"source":"3,4"
 			},
 			{
 				"value":"AT2016gzf",
-				"source":"2"
+				"source":"3,4"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"183.4",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,3,4,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"-00:48:51.67",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2016/10/08.465995",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"iPTF",
-				"source":"2"
+				"source":"3"
+			},
+			{
+				"value":"PTF",
+				"source":"3,4"
 			}
 		],
 		"ebv":[
@@ -57,56 +81,102 @@
 				"value":"0.0249",
 				"derived":true,
 				"e_value":"0.0017",
-				"source":"1,3"
+				"source":"2,5"
+			}
+		],
+		"host":[
+			{
+				"value":"CGCG 384-050",
+				"source":"3,4"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"191.073",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,3,4,5"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-17.0815",
+				"derived":true,
+				"source":"1,3,4,5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"19.28",
 				"derived":true,
-				"source":"2,3"
+				"source":"3,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,3"
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/10/08",
 				"derived":true,
-				"source":"2,3"
+				"source":"3,5"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-17.126",
+				"derived":true,
+				"source":"1,3,4,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"19.28",
 				"derived":true,
-				"source":"2,3"
+				"source":"3,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,3"
+				"source":"3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2016/10/08",
 				"derived":true,
-				"source":"2,3"
+				"source":"3,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"00:57:53.64",
 				"u_value":"hours",
-				"source":"2"
+				"source":"3"
+			},
+			{
+				"value":"00:57:53.640",
+				"u_value":"hours",
+				"source":"3,4"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.041849",
+				"source":"3,4"
+			}
+		],
+		"velocity":[
+			{
+				"value":"12284",
+				"u_value":"km/s",
+				"source":"5"
 			}
 		],
 		"photometry":[
@@ -119,7 +189,7 @@
 				"telescope":"P48",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57669.4659954",
@@ -129,7 +199,7 @@
 				"observer":"iPTF",
 				"telescope":"P48",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			}
 		]
 	}
