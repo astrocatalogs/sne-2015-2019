@@ -15,10 +15,20 @@
 				"alias":"2"
 			},
 			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"3"
+			},
+			{
+				"name":"ATel",
+				"url":"http://www.astronomerstelegram.org/?read=####",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,17 +36,21 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-18zs",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"AT2018ifr",
-				"source":"2,3"
+				"source":"2,3,4,5"
+			},
+			{
+				"value":"ATLAS18ymk",
+				"source":"2,5"
 			}
 		],
 		"comovingdist":[
@@ -44,20 +58,25 @@
 				"value":"121.81",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4"
+				"source":"1,2,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"-25:11:42.90",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
+			},
+			{
+				"value":"-25:11:44.16",
+				"u_value":"degrees",
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2018/11/07.91",
-				"source":"2"
+				"source":"2,3,4"
 			}
 		],
 		"discoverer":[
@@ -67,20 +86,24 @@
 			},
 			{
 				"value":"ASAS-SN",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"host":[
 			{
 				"value":"2MASX J00012190-251144",
 				"source":"2"
+			},
+			{
+				"value":"2MASX J00012190-2511446",
+				"source":"3,4"
 			}
 		],
 		"hostcomovingdist":[
 			{
 				"value":"121.81",
 				"derived":true,
-				"source":"1,2,4"
+				"source":"1,2,6"
 			}
 		],
 		"hostdec":[
@@ -88,28 +111,27 @@
 				"value":"-25:11:44",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"4"
+				"source":"6"
 			}
 		],
 		"hostlumdist":[
 			{
 				"value":"125.182",
 				"derived":true,
-				"source":"1,2,4"
+				"source":"1,2,6"
 			}
 		],
 		"hostoffsetang":[
 			{
-				"value":"2.196",
-				"derived":true,
+				"value":"0.32",
 				"u_value":"arcseconds",
-				"source":"2,3,4"
+				"source":"3,4"
 			}
 		],
 		"hostoffsetdist":[
 			{
-				"value":"1.262",
-				"source":"1,2,3,4"
+				"value":"0.18",
+				"source":"1,2,5,6"
 			}
 		],
 		"hostra":[
@@ -117,7 +139,7 @@
 				"value":"00:01:21.90",
 				"derived":true,
 				"u_value":"hours",
-				"source":"4"
+				"source":"6"
 			}
 		],
 		"hostredshift":[
@@ -129,7 +151,7 @@
 		"hostvelocity":[
 			{
 				"value":"8189.9",
-				"source":"4"
+				"source":"6"
 			}
 		],
 		"lumdist":[
@@ -137,63 +159,63 @@
 				"value":"125.182",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4"
+				"source":"1,2,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-17.958",
 				"derived":true,
-				"source":"1,2,4"
+				"source":"1,2,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.5",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/11/07",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17.9877",
 				"derived":true,
-				"source":"1,2,4"
+				"source":"1,2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.5",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/11/07",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"ra":[
@@ -205,7 +227,12 @@
 			{
 				"value":"00:01:22.040",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
+			},
+			{
+				"value":"00:01:21.9",
+				"u_value":"hours",
+				"source":"3,4"
 			}
 		],
 		"redshift":[
@@ -216,14 +243,14 @@
 			},
 			{
 				"value":"0.027702",
-				"source":"2,3"
+				"source":"2,3,4,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"8189.9",
 				"u_value":"km/s",
-				"source":"4"
+				"source":"6"
 			}
 		],
 		"photometry":[
