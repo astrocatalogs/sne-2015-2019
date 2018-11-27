@@ -10,26 +10,31 @@
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"https://gsaweb.ast.cam.ac.uk/alerts/alert/Gaia16bgw",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"CPCS Alert 26368",
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26368",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Cambridge Photometric Calibration Server",
 				"secondary":true,
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -37,47 +42,51 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia16bgw",
-				"source":"2,4,5"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2016ghf",
-				"source":"2,5"
+				"source":"2,3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"2"
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
 				"value":"+39:26:31.81",
 				"u_value":"degrees",
-				"source":"2,5"
+				"source":"2,3,6"
 			},
 			{
 				"value":"+39:26:31.92",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/09/13",
-				"source":"2,5"
+				"value":"2016/09/13.566991",
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"GaiaAlerts",
+				"source":"2"
+			},
+			{
 				"value":"Gaia",
-				"source":"2,5"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -85,69 +94,90 @@
 				"value":"0.0739",
 				"derived":true,
 				"e_value":"0.0024",
-				"source":"1,6"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.8",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/09/16",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.8",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2016/09/16",
 				"derived":true,
-				"source":"3,4,6"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
 			{
+				"value":"07:01:04.98",
+				"u_value":"hours",
+				"source":"2"
+			},
+			{
 				"value":"07:01:04.977",
 				"u_value":"hours",
-				"source":"2,5"
+				"source":"3,6"
 			},
 			{
 				"value":"07:01:05.04",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
 			{
-				"time":"57643.5",
-				"magnitude":"18.3",
+				"time":"57511.3709954",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
 				"u_time":"MJD",
-				"source":"2,5"
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"57644.0669907",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"18.27",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"2"
 			},
 			{
 				"time":"57644.568",
@@ -157,7 +187,7 @@
 				"magnitude":"18.17",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57644.642",
@@ -167,7 +197,7 @@
 				"magnitude":"18.15",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57647.1842",
@@ -176,7 +206,7 @@
 				"magnitude":"17.8005",
 				"observatory":"Mercator Geneva Grou",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57647.1842",
@@ -185,7 +215,7 @@
 				"magnitude":"18.1108",
 				"observatory":"Mercator Geneva Grou",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57648.1928",
@@ -194,7 +224,7 @@
 				"magnitude":"17.926",
 				"observatory":"Mercator Geneva Grou",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57649.1916",
@@ -203,7 +233,7 @@
 				"magnitude":"18.0136",
 				"observatory":"Mercator Geneva Grou",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57649.1916",
@@ -212,7 +242,7 @@
 				"magnitude":"18.079",
 				"observatory":"Mercator Geneva Grou",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57661.0606",
@@ -221,7 +251,7 @@
 				"magnitude":"18.4401",
 				"observatory":"M.Chruslinska-Loiano",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57661.0666",
@@ -230,7 +260,7 @@
 				"magnitude":"18.6129",
 				"observatory":"M.Chruslinska-Loiano",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57661.0786",
@@ -239,7 +269,7 @@
 				"magnitude":"18.561",
 				"observatory":"M.Chruslinska-Loiano",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57661.0845",
@@ -248,7 +278,7 @@
 				"magnitude":"18.2328",
 				"observatory":"M.Chruslinska-Loiano",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57661.0905",
@@ -257,7 +287,7 @@
 				"magnitude":"18.5446",
 				"observatory":"M.Chruslinska-Loiano",
 				"u_time":"MJD",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"time":"57674.059",
@@ -267,7 +297,7 @@
 				"magnitude":"19.16",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			},
 			{
 				"time":"57696.308",
@@ -277,7 +307,7 @@
 				"magnitude":"20.15",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"2"
+				"source":"3"
 			}
 		]
 	}
