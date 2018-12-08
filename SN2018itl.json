@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 27270",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27270",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,7 +42,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			},
 			{
 				"name":"WISeREP",
@@ -39,31 +50,31 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"6"
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2018itl",
-				"source":"2,3,4,6"
+				"source":"2,3,6,8"
 			},
 			{
 				"value":"AT2018itl",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"ZTF18acmzpbf",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"Gaia18dnc",
-				"source":"2,4"
+				"source":"2,5,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			}
 		],
 		"comovingdist":[
@@ -71,19 +82,19 @@
 				"value":"160",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5"
+				"source":"1,2,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"+55:10:02.52",
 				"u_value":"degrees",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"+55:10:02.64",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -99,7 +110,7 @@
 			},
 			{
 				"value":"ZTF",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"lumdist":[
@@ -107,80 +118,80 @@
 				"value":"164",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5"
+				"source":"1,2,7"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-18",
+				"value":"-18.7",
 				"derived":true,
-				"source":"1,2,5"
+				"source":"1,2,7"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.02",
+				"value":"17.32",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxband":[
 			{
-				"value":"orange",
+				"value":"B",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2018/11/20",
+				"value":"2018/11/30",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-17.9",
+				"value":"-18.7",
 				"derived":true,
-				"source":"1,2,5"
+				"source":"1,2,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18.18",
+				"value":"17.32",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"g",
+				"value":"B",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2018/11/21",
+				"value":"2018/11/30",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
 			{
-				"value":"07:14:30.73",
+				"value":"07:14:30.727",
 				"u_value":"hours",
 				"source":"2"
 			},
 			{
 				"value":"07:14:30.730",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"2,6"
 			},
 			{
 				"value":"07:14:30.72",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"redshift":[
@@ -191,14 +202,14 @@
 			},
 			{
 				"value":"0.036",
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"11000",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"7"
 			}
 		],
 		"photometry":[
@@ -224,6 +235,46 @@
 				"source":"2"
 			},
 			{
+				"time":"58437.3826852",
+				"band":"r",
+				"e_magnitude":"0.189027",
+				"instrument":"ZTF-Cam",
+				"magnitude":"20.2319",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58437.3860995",
+				"band":"r",
+				"e_magnitude":"0.239579",
+				"instrument":"ZTF-Cam",
+				"magnitude":"20.2073",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58437.4427778",
+				"band":"g",
+				"e_magnitude":"0.288822",
+				"instrument":"ZTF-Cam",
+				"magnitude":"20.3605",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58437.4639236",
+				"band":"g",
+				"e_magnitude":"0.27158",
+				"instrument":"ZTF-Cam",
+				"magnitude":"20.3807",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
 				"time":"58438.5679977",
 				"band":"orange",
 				"instrument":"ACAM1",
@@ -232,6 +283,16 @@
 				"telescope":"ATLAS1",
 				"u_time":"MJD",
 				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"58440.5175116",
+				"band":"r",
+				"e_magnitude":"0.076793",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.917",
+				"telescope":"P48",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
@@ -261,6 +322,16 @@
 				"e_magnitude":"0.0641275",
 				"instrument":"ZTF-Cam",
 				"magnitude":"18.1662",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58443.4226852",
+				"band":"r",
+				"e_magnitude":"0.063722",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.1573",
 				"telescope":"P48",
 				"u_time":"MJD",
 				"source":"2"
@@ -325,6 +396,75 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"58447.3105208",
+				"band":"r",
+				"e_magnitude":"0.0710109",
+				"instrument":"ZTF-Cam",
+				"magnitude":"17.682",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58447.4139583",
+				"band":"r",
+				"e_magnitude":"0.0648593",
+				"instrument":"ZTF-Cam",
+				"magnitude":"17.6869",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58447.4154051",
+				"band":"r",
+				"e_magnitude":"0.0587324",
+				"instrument":"ZTF-Cam",
+				"magnitude":"17.6779",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58447.5039005",
+				"band":"r",
+				"e_magnitude":"0.0581743",
+				"instrument":"ZTF-Cam",
+				"magnitude":"17.6309",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58450.3825926",
+				"band":"r",
+				"e_magnitude":"0.0505947",
+				"instrument":"ZTF-Cam",
+				"magnitude":"17.5277",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58450.3850116",
+				"band":"r",
+				"e_magnitude":"0.0456235",
+				"instrument":"ZTF-Cam",
+				"magnitude":"17.5065",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58452.2726",
+				"band":"B",
+				"e_magnitude":"0.0736045",
+				"magnitude":"17.3213",
+				"observatory":"Liam Hardy pt5m",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}
