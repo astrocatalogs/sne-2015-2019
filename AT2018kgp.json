@@ -1,32 +1,141 @@
 {
 	"AT2018kgp":{
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/d3ef5fc/SCHEMA.md",
 		"name":"AT2018kgp",
 		"sources":[
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"3"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2018kgp",
-				"source":"1"
+				"source":"1,2"
 			},
 			{
 				"value":"ZTF18acxgumg",
-				"source":"1"
+				"source":"1,2"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
 				"value":"+23:36:13.71",
+				"u_value":"degrees",
+				"source":"1,2"
+			}
+		],
+		"discoverdate":[
+			{
+				"value":"2018/12/17.109745",
 				"source":"1"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"ZTF",
+				"source":"1,2"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"17.08",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2018/12/17",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"17.08",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2018/12/17",
+				"derived":true,
+				"source":"1,3"
 			}
 		],
 		"ra":[
 			{
 				"value":"21:27:47.891",
+				"u_value":"hours",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"time":"58456.1428",
+				"band":"r",
+				"instrument":"ZTF-Cam",
+				"magnitude":"19.54",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"58469.1097454",
+				"band":"g",
+				"e_magnitude":"0.05",
+				"instrument":"ZTF-Cam",
+				"magnitude":"17.08",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58472.0960995",
+				"band":"r",
+				"e_magnitude":"0.06",
+				"instrument":"ZTF-Cam",
+				"magnitude":"17.83",
+				"telescope":"P48",
+				"u_time":"MJD",
 				"source":"1"
 			}
 		]

@@ -15,10 +15,20 @@
 				"alias":"2"
 			},
 			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"3"
+			},
+			{
+				"name":"ATel",
+				"url":"http://www.astronomerstelegram.org/?read=####",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,17 +36,17 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-18abx",
-				"source":"2,3"
+				"source":"2,5"
 			},
 			{
 				"value":"AT2018kcw",
-				"source":"2,3"
+				"source":"2,3,4,5"
 			}
 		],
 		"comovingdist":[
@@ -44,46 +54,58 @@
 				"value":"50.385",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4"
+				"source":"1,2,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"-36:50:56.94",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"2,5"
+			},
+			{
+				"value":"-36:50:55.32",
+				"u_value":"degrees",
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2018/12/19.05",
-				"source":"2"
+				"source":"2,3,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"2,3"
+				"source":"2,5"
 			}
 		],
 		"host":[
 			{
 				"value":"IC 5179",
-				"source":"2,3"
+				"source":"2,3,4,5"
 			}
 		],
 		"hostcomovingdist":[
 			{
 				"value":"50.385",
 				"derived":true,
-				"source":"1,2,4"
+				"source":"1,2,6"
 			}
 		],
 		"hostlumdist":[
 			{
 				"value":"50.9598",
 				"derived":true,
-				"source":"1,2,4"
+				"source":"1,2,6"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"23.44",
+				"u_value":"arcseconds",
+				"source":"3,4"
 			}
 		],
 		"hostredshift":[
@@ -95,7 +117,7 @@
 		"hostvelocity":[
 			{
 				"value":"3402.6",
-				"source":"4"
+				"source":"6"
 			}
 		],
 		"lumdist":[
@@ -103,70 +125,75 @@
 				"value":"50.9598",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4"
+				"source":"1,2,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18.2238",
 				"derived":true,
-				"source":"1,2,4"
+				"source":"1,2,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"15.3",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/12/19",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-18.2361",
 				"derived":true,
-				"source":"1,2,4"
+				"source":"1,2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"15.3",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/12/19",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"22:16:07.949",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,5"
+			},
+			{
+				"value":"22:16:07.92",
+				"u_value":"hours",
+				"source":"3,4"
 			}
 		],
 		"redshift":[
@@ -177,14 +204,14 @@
 			},
 			{
 				"value":"0.011415",
-				"source":"2,3"
+				"source":"2,3,4,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"3402.6",
 				"u_value":"km/s",
-				"source":"4"
+				"source":"6"
 			}
 		],
 		"photometry":[
@@ -204,6 +231,28 @@
 				"instrument":"Cassius",
 				"magnitude":"15.3",
 				"telescope":"ASASSN-2",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58471.2309954",
+				"band":"orange",
+				"instrument":"ACAM1",
+				"magnitude":"18.24",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"58473.2119907",
+				"band":"orange",
+				"e_magnitude":"0.022",
+				"instrument":"ACAM1",
+				"magnitude":"15.415",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
 				"u_time":"MJD",
 				"source":"2"
 			}
