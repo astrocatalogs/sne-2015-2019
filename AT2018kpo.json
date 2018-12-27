@@ -1,32 +1,144 @@
 {
 	"AT2018kpo":{
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/d3ef5fc/SCHEMA.md",
 		"name":"AT2018kpo",
 		"sources":[
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"1"
+			},
+			{
+				"name":"ATel 12326",
+				"url":"http://www.astronomerstelegram.org/?read=12326",
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2018kpo",
-				"source":"1"
+				"source":"1,2,3"
 			},
 			{
 				"value":"ATLAS18bcde",
-				"source":"1"
+				"source":"1,2,3"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"4"
 			}
 		],
 		"dec":[
 			{
 				"value":"-06:25:24.14",
+				"u_value":"degrees",
+				"source":"1,2,3"
+			}
+		],
+		"discoverdate":[
+			{
+				"value":"2018/12/24.371991",
 				"source":"1"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"ATLAS",
+				"source":"1,2,3"
+			}
+		],
+		"host":[
+			{
+				"value":"MCG -01-10-19",
+				"source":"2,3"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"18.27",
+				"derived":true,
+				"source":"1,4"
+			}
+		],
+		"maxband":[
+			{
+				"value":"orange",
+				"derived":true,
+				"source":"1,4"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2018/12/24",
+				"derived":true,
+				"source":"1,4"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"18.27",
+				"derived":true,
+				"source":"1,4"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"orange",
+				"derived":true,
+				"source":"1,4"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2018/12/24",
+				"derived":true,
+				"source":"1,4"
 			}
 		],
 		"ra":[
 			{
 				"value":"03:40:43.054",
+				"u_value":"hours",
+				"source":"1,2,3"
+			}
+		],
+		"photometry":[
+			{
+				"time":"58475.4109954",
+				"band":"orange",
+				"instrument":"ACAM1",
+				"magnitude":"18.38",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"58476.3719907",
+				"band":"orange",
+				"e_magnitude":"0.125",
+				"instrument":"ACAM1",
+				"magnitude":"18.274",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
 				"source":"1"
 			}
 		]
