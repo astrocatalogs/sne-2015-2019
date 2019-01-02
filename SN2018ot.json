@@ -26,10 +26,15 @@
 				"alias":"4"
 			},
 			{
+				"name":"ATel 11284",
+				"url":"http://www.astronomerstelegram.org/?read=11284",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -37,7 +42,7 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			},
 			{
 				"name":"WISeREP",
@@ -45,27 +50,27 @@
 				"reference":"Yaron & Gal-Yam (2012)",
 				"secondary":true,
 				"url":"http://wiserep.weizmann.ac.il/",
-				"alias":"7"
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2018ot",
-				"source":"3,4,5,7"
+				"source":"3,4,5,6,8"
 			},
 			{
 				"value":"AT2018ot",
-				"source":"3"
+				"source":"3,4,5"
 			},
 			{
 				"value":"PS18fy",
-				"source":"3,4,5"
+				"source":"3,4,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ib",
-				"source":"3,4,5,7"
+				"source":"3,4,6,8"
 			}
 		],
 		"comovingdist":[
@@ -73,14 +78,19 @@
 				"value":"156",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,4,5,6"
+				"source":"1,4,6,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"+30:30:18.88",
 				"u_value":"degrees",
-				"source":"3,4,5"
+				"source":"3,4,6"
+			},
+			{
+				"value":"+30:30:18.8",
+				"u_value":"degrees",
+				"source":"4,5"
 			}
 		],
 		"discoverdate":[
@@ -96,7 +106,7 @@
 			},
 			{
 				"value":"PS1",
-				"source":"4,5"
+				"source":"4,6"
 			}
 		],
 		"ebv":[
@@ -104,13 +114,13 @@
 				"value":"0.008",
 				"derived":true,
 				"e_value":"0.0002",
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"host":[
 			{
 				"value":"HS 1302+3046",
-				"source":"4,5"
+				"source":"4,5,6"
 			}
 		],
 		"lumdist":[
@@ -118,49 +128,63 @@
 				"value":"161.3",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,4,5,6"
+				"source":"1,4,6,7"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-16.1",
+				"value":"-16.22",
 				"derived":true,
-				"source":"1,4,5,6"
+				"source":"1,4,6,7"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"19.9",
+				"value":"19.78",
 				"derived":true,
-				"source":"4,5,6"
+				"source":"4,5,7"
+			}
+		],
+		"maxband":[
+			{
+				"value":"i",
+				"derived":true,
+				"source":"4,5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2018/01/28",
+				"value":"2018/01/29",
 				"derived":true,
-				"source":"4,5,6"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-16.14",
+				"value":"-16.26",
 				"derived":true,
-				"source":"1,4,5,6"
+				"source":"1,4,6,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"19.9",
+				"value":"19.78",
 				"derived":true,
-				"source":"4,5,6"
+				"source":"4,5,7"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"i",
+				"derived":true,
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2018/01/28",
+				"value":"2018/01/29",
 				"derived":true,
-				"source":"4,5,6"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
@@ -172,20 +196,25 @@
 			{
 				"value":"13:04:58.730",
 				"u_value":"hours",
+				"source":"4,6"
+			},
+			{
+				"value":"13:04:58.73",
+				"u_value":"hours",
 				"source":"4,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.0355",
-				"source":"4,5"
+				"source":"4,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"10500",
 				"u_value":"km/s",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"photometry":[
@@ -193,7 +222,7 @@
 				"time":"58146.5",
 				"magnitude":"19.9",
 				"u_time":"MJD",
-				"source":"4,5"
+				"source":"4,6"
 			},
 			{
 				"time":"58147.56",
@@ -205,6 +234,66 @@
 				"telescope":"PS1",
 				"u_time":"MJD",
 				"source":"3"
+			},
+			{
+				"time":"58147.5603511498",
+				"band":"i",
+				"e_magnitude":"0.102818",
+				"instrument":"GPC",
+				"magnitude":"19.9533",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58147.57255443",
+				"band":"i",
+				"e_magnitude":"0.178157",
+				"instrument":"GPC",
+				"magnitude":"19.9233",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58147.5846876879",
+				"band":"i",
+				"e_magnitude":"0.122595",
+				"instrument":"GPC",
+				"magnitude":"19.7799",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58147.5968651827",
+				"band":"i",
+				"e_magnitude":"0.148508",
+				"instrument":"GPC",
+				"magnitude":"19.8507",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58158.5476302602",
+				"band":"i",
+				"e_magnitude":"0.293967",
+				"instrument":"GPC",
+				"magnitude":"20.2757",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58158.5597376656",
+				"band":"i",
+				"e_magnitude":"0.284953",
+				"instrument":"GPC",
+				"magnitude":"20.1456",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		],
 		"spectra":[

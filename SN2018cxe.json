@@ -26,21 +26,31 @@
 				"alias":"4"
 			},
 			{
+				"name":"Pan-STARRS 3Pi",
+				"url":"https://star.pst.qub.ac.uk/ps1threepi/psdb/",
+				"alias":"5"
+			},
+			{
+				"name":"ATel 11864",
+				"url":"http://www.astronomerstelegram.org/?read=11864",
+				"alias":"6"
+			},
+			{
 				"name":"CPCS Alert 27025",
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27025",
-				"alias":"5"
+				"alias":"7"
 			},
 			{
 				"name":"Cambridge Photometric Calibration Server",
 				"secondary":true,
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
-				"alias":"6"
+				"alias":"8"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"7"
+				"alias":"9"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -48,35 +58,35 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"8"
+				"alias":"10"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2018cxe",
-				"source":"3,4,7"
+				"source":"3,4,5,6,9"
 			},
 			{
 				"value":"AT2018cxe",
-				"source":"3,4,7"
+				"source":"3,4,5,6,9"
 			},
 			{
 				"value":"Gaia18bqm",
-				"source":"3,4,6,7"
+				"source":"3,4,8,9"
 			},
 			{
 				"value":"PS18bfn",
-				"source":"4,7"
+				"source":"4,9"
 			},
 			{
 				"value":"ATLAS18ssv",
-				"source":"4,7"
+				"source":"4,9"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"3,4,7"
+				"source":"3,4,9"
 			}
 		],
 		"comovingdist":[
@@ -84,19 +94,19 @@
 				"value":"191.91",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,8"
+				"source":"1,3,10"
 			}
 		],
 		"dec":[
 			{
 				"value":"+26:09:07.31",
 				"u_value":"degrees",
-				"source":"3,4,7"
+				"source":"3,4,9"
 			},
 			{
 				"value":"+26:09:07.2",
 				"u_value":"degrees",
-				"source":"4,6"
+				"source":"4,5,6,8"
 			}
 		],
 		"discoverdate":[
@@ -112,7 +122,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"4,7"
+				"source":"4,9"
 			}
 		],
 		"ebv":[
@@ -120,7 +130,43 @@
 				"value":"0.0337",
 				"derived":true,
 				"e_value":"0.0019",
-				"source":"2,8"
+				"source":"2,10"
+			}
+		],
+		"host":[
+			{
+				"value":"SDSS J172101.92+260916.7",
+				"source":"5,6"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"+26:09:16.7",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"10"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"10.17",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"3,4,9,10"
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"9.065",
+				"source":"1,3,4,9,10"
+			}
+		],
+		"hostra":[
+			{
+				"value":"17:21:01.92",
+				"derived":true,
+				"u_value":"hours",
+				"source":"10"
 			}
 		],
 		"lumdist":[
@@ -128,63 +174,63 @@
 				"value":"200.314",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,8"
+				"source":"1,3,10"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19.402",
 				"derived":true,
-				"source":"1,3,8"
+				"source":"1,3,10"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.06",
 				"derived":true,
-				"source":"5,6,8"
+				"source":"7,8,10"
 			}
 		],
 		"maxband":[
 			{
 				"value":"R",
 				"derived":true,
-				"source":"5,6,8"
+				"source":"7,8,10"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/07/05",
 				"derived":true,
-				"source":"5,6,8"
+				"source":"7,8,10"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-19.3486",
 				"derived":true,
-				"source":"1,3,8"
+				"source":"1,3,10"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.16",
 				"derived":true,
-				"source":"5,6,8"
+				"source":"7,8,10"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"B",
 				"derived":true,
-				"source":"5,6,8"
+				"source":"7,8,10"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/07/05",
 				"derived":true,
-				"source":"5,6,8"
+				"source":"7,8,10"
 			}
 		],
 		"ra":[
@@ -196,12 +242,17 @@
 			{
 				"value":"17:21:01.629",
 				"u_value":"hours",
-				"source":"4,7"
+				"source":"4,9"
 			},
 			{
 				"value":"17:21:01.68",
 				"u_value":"hours",
-				"source":"4,6"
+				"source":"4,8"
+			},
+			{
+				"value":"17:21:01.62",
+				"u_value":"hours",
+				"source":"5,6"
 			}
 		],
 		"redshift":[
@@ -212,14 +263,14 @@
 			},
 			{
 				"value":"0.043811",
-				"source":"4,7"
+				"source":"4,9"
 			}
 		],
 		"velocity":[
 			{
 				"value":"12847",
 				"u_value":"km/s",
-				"source":"8"
+				"source":"10"
 			}
 		],
 		"photometry":[
@@ -272,7 +323,7 @@
 				"magnitude":"17.1626",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
-				"source":"5,6"
+				"source":"7,8"
 			},
 			{
 				"time":"58304.9722",
@@ -281,7 +332,7 @@
 				"magnitude":"17.1293",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
-				"source":"5,6"
+				"source":"7,8"
 			},
 			{
 				"time":"58304.9768",
@@ -290,7 +341,7 @@
 				"magnitude":"17.0579",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
-				"source":"5,6"
+				"source":"7,8"
 			},
 			{
 				"time":"58306.539",
@@ -319,7 +370,7 @@
 				"magnitude":"17.782",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
-				"source":"5,6"
+				"source":"7,8"
 			},
 			{
 				"time":"58314.035",
@@ -328,7 +379,7 @@
 				"magnitude":"17.6383",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
-				"source":"5,6"
+				"source":"7,8"
 			},
 			{
 				"time":"58314.0396",
@@ -337,7 +388,7 @@
 				"magnitude":"17.5576",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
-				"source":"5,6"
+				"source":"7,8"
 			},
 			{
 				"time":"58319.4419907",
@@ -357,7 +408,7 @@
 				"magnitude":"18.6194",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
-				"source":"5,6"
+				"source":"7,8"
 			},
 			{
 				"time":"58320.9854",
@@ -366,7 +417,7 @@
 				"magnitude":"17.9084",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
-				"source":"5,6"
+				"source":"7,8"
 			},
 			{
 				"time":"58320.99",
@@ -375,7 +426,7 @@
 				"magnitude":"17.8562",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
-				"source":"5,6"
+				"source":"7,8"
 			},
 			{
 				"time":"58321.3969907",
@@ -400,6 +451,46 @@
 				"source":"3"
 			},
 			{
+				"time":"58324.3644401208",
+				"band":"i",
+				"e_magnitude":"0.0344981",
+				"instrument":"GPC",
+				"magnitude":"18.529",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"5,6"
+			},
+			{
+				"time":"58324.3775304095",
+				"band":"i",
+				"e_magnitude":"0.025563",
+				"instrument":"GPC",
+				"magnitude":"18.552",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"5,6"
+			},
+			{
+				"time":"58324.3905239679",
+				"band":"i",
+				"e_magnitude":"0.0273213",
+				"instrument":"GPC",
+				"magnitude":"18.5645",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"5,6"
+			},
+			{
+				"time":"58324.4034745284",
+				"band":"i",
+				"e_magnitude":"0.0735955",
+				"instrument":"GPC",
+				"magnitude":"18.5301",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"5,6"
+			},
+			{
 				"time":"58348.916",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -418,6 +509,46 @@
 				"telescope":"GAIA",
 				"u_time":"MJD",
 				"source":"4"
+			},
+			{
+				"time":"58351.2788018724",
+				"band":"i",
+				"e_magnitude":"0.125666",
+				"instrument":"GPC",
+				"magnitude":"19.2286",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"5,6"
+			},
+			{
+				"time":"58351.2896841538",
+				"band":"i",
+				"e_magnitude":"0.149456",
+				"instrument":"GPC",
+				"magnitude":"19.3353",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"5,6"
+			},
+			{
+				"time":"58351.3006017738",
+				"band":"i",
+				"e_magnitude":"0.124517",
+				"instrument":"GPC",
+				"magnitude":"19.261",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"5,6"
+			},
+			{
+				"time":"58351.3115395475",
+				"band":"i",
+				"e_magnitude":"0.140465",
+				"instrument":"GPC",
+				"magnitude":"19.2681",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"5,6"
 			},
 			{
 				"time":"58375.907",
