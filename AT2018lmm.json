@@ -1,32 +1,159 @@
 {
 	"AT2018lmm":{
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/d3ef5fc/SCHEMA.md",
 		"name":"AT2018lmm",
 		"sources":[
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"3"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2018lmm",
-				"source":"1"
+				"source":"1,2"
 			},
 			{
 				"value":"EGR_001",
-				"source":"1"
+				"source":"1,2"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
 				"value":"+30:17:04.00",
+				"u_value":"degrees",
+				"source":"1,2"
+			}
+		],
+		"discoverdate":[
+			{
+				"value":"2018/03/17.351481",
 				"source":"1"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"Galvez Ranera",
+				"source":"1,2"
+			}
+		],
+		"host":[
+			{
+				"value":"SDSS J152811.89+301708.0",
+				"source":"1"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"+30:17:08.0",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"3"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"4.166",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"1,2,3"
+			}
+		],
+		"hostra":[
+			{
+				"value":"15:28:11.89",
+				"derived":true,
+				"u_value":"hours",
+				"source":"3"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"21.06",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxband":[
+			{
+				"value":"R",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2018/03/17",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"21.51",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2018/03/19",
+				"derived":true,
+				"source":"1,3"
 			}
 		],
 		"ra":[
 			{
 				"value":"15:28:11.800",
+				"u_value":"hours",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"time":"58194.3514815",
+				"band":"R",
+				"instrument":"DECAM",
+				"magnitude":"21.06",
+				"telescope":"CTIO-4m",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58196.3400463",
+				"band":"g",
+				"instrument":"DECAM",
+				"magnitude":"21.51",
+				"telescope":"CTIO-4m",
+				"u_time":"MJD",
 				"source":"1"
 			}
 		]
