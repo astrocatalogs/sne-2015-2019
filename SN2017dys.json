@@ -21,23 +21,23 @@
 				"alias":"3"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"4"
+			},
+			{
 				"name":"SMT",
 				"url":"http://www.mso.anu.edu.au/skymapper/smt/transients/tns/",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"ATel 10375",
 				"url":"http://www.astronomerstelegram.org/?read=10375",
-				"alias":"6"
-			},
-			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"7"
 			},
 			{
@@ -58,25 +58,25 @@
 		"alias":[
 			{
 				"value":"SN2017dys",
-				"source":"3,5,7,8"
+				"source":"3,4,6,8"
 			},
 			{
 				"value":"AT2017dys",
-				"source":"3,4,8"
+				"source":"3,4,5,8"
 			},
 			{
 				"value":"ASASSN-17gb",
-				"source":"3,8"
+				"source":"3,4,8"
 			},
 			{
 				"value":"SMT17quy",
-				"source":"4"
+				"source":"5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"3,4,5,6,8"
+				"source":"3,5,6,7,8"
 			}
 		],
 		"comovingdist":[
@@ -84,36 +84,36 @@
 				"value":"128.63",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,5,8,9"
+				"source":"1,4,9"
 			}
 		],
 		"dec":[
 			{
 				"value":"-26:38:05.93",
 				"u_value":"degrees",
-				"source":"3,8"
+				"source":"3,4,8"
 			},
 			{
 				"value":"-26:38:07.44",
 				"u_value":"degrees",
-				"source":"4"
+				"source":"5"
 			},
 			{
 				"value":"-26:38:06.36",
 				"u_value":"degrees",
-				"source":"3,5"
+				"source":"3,6"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017/05/09",
-				"source":"3,8"
+				"value":"2017/05/09.39",
+				"source":"3,4,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"3,8"
+				"source":"3,4,8"
 			}
 		],
 		"ebv":[
@@ -127,7 +127,14 @@
 		"host":[
 			{
 				"value":"2MASX J23050199-2638071",
-				"source":"3,5"
+				"source":"3,4,6"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"128.63",
+				"derived":true,
+				"source":"1,4,9"
 			}
 		],
 		"hostdec":[
@@ -138,17 +145,24 @@
 				"source":"9"
 			}
 		],
+		"hostlumdist":[
+			{
+				"value":"132.393",
+				"derived":true,
+				"source":"1,4,9"
+			}
+		],
 		"hostoffsetang":[
 			{
 				"value":"0.85",
 				"u_value":"arcseconds",
-				"source":"3,5"
+				"source":"3,6"
 			}
 		],
 		"hostoffsetdist":[
 			{
 				"value":"0.52",
-				"source":"1,3,5,8,9"
+				"source":"1,3,4,8,9"
 			}
 		],
 		"hostra":[
@@ -159,19 +173,31 @@
 				"source":"9"
 			}
 		],
+		"hostredshift":[
+			{
+				"value":"0.029264",
+				"source":"4"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"8644.8",
+				"source":"9"
+			}
+		],
 		"lumdist":[
 			{
 				"value":"132.393",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,5,8,9"
+				"source":"1,4,9"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19.578",
 				"derived":true,
-				"source":"1,3,5,8,9"
+				"source":"1,4,9"
 			}
 		],
 		"maxappmag":[
@@ -192,31 +218,36 @@
 			{
 				"value":"-18.6093",
 				"derived":true,
-				"source":"1,3,5,8,9"
+				"source":"1,4,9"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17",
 				"derived":true,
-				"source":"7,9"
+				"source":"4,9"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"7,9"
+				"source":"4,9"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/05/09",
 				"derived":true,
-				"source":"7,9"
+				"source":"4,9"
 			}
 		],
 		"ra":[
+			{
+				"value":"23:05:02.059",
+				"u_value":"hours",
+				"source":"4"
+			},
 			{
 				"value":"23:05:02.060",
 				"u_value":"hours",
@@ -225,13 +256,18 @@
 			{
 				"value":"23:05:01.92",
 				"u_value":"hours",
-				"source":"3,4,5"
+				"source":"3,5,6"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.029264",
-				"source":"3,5,8"
+				"kind":"host",
+				"source":"4"
+			},
+			{
+				"value":"0.029264",
+				"source":"3,6,8"
 			}
 		],
 		"velocity":[
@@ -251,7 +287,7 @@
 				"telescope":"ASASSN-2",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"7"
+				"source":"4"
 			},
 			{
 				"time":"57876.38",
@@ -261,7 +297,7 @@
 				"system":"Vega",
 				"telescope":"ASASSN-2",
 				"u_time":"MJD",
-				"source":"7"
+				"source":"4"
 			},
 			{
 				"time":"57882.39",
@@ -271,7 +307,7 @@
 				"system":"Vega",
 				"telescope":"ASASSN-2",
 				"u_time":"MJD",
-				"source":"7"
+				"source":"4"
 			},
 			{
 				"time":"57883.5",

@@ -28,10 +28,15 @@
 				"alias":"4"
 			},
 			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -39,27 +44,31 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2016ggb",
-				"source":"1,4,5"
+				"source":"1,4,5,6"
 			},
 			{
 				"value":"AT2016ggb",
-				"source":"1,5"
+				"source":"1,4,6"
+			},
+			{
+				"value":"ASASSN-16km",
+				"source":"4"
 			},
 			{
 				"value":"<a id=\"ASASSN-16km\">ASASSN-16km</a>",
-				"source":"1,5"
+				"source":"1,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"1,5"
+				"source":"1,4,5,6"
 			}
 		],
 		"comovingdist":[
@@ -67,26 +76,31 @@
 				"value":"90.678",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5,6"
+				"source":"2,4,7"
 			}
 		],
 		"dec":[
 			{
 				"value":"-49:33:39.47",
 				"u_value":"degrees",
+				"source":"1,4,6"
+			},
+			{
+				"value":"-49:33:37.08",
+				"u_value":"degrees",
 				"source":"1,5"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/09/02",
-				"source":"1,5"
+				"value":"2016/09/12.34",
+				"source":"1,4,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"1,5"
+				"source":"1,4,6"
 			}
 		],
 		"ebv":[
@@ -94,13 +108,54 @@
 				"value":"0.0167",
 				"derived":true,
 				"e_value":"0.0009",
-				"source":"3,6"
+				"source":"3,7"
 			}
 		],
 		"host":[
 			{
+				"value":"ESO 197-G 010",
+				"source":"4"
+			},
+			{
 				"value":"ESO 197-G10",
+				"source":"1,6"
+			},
+			{
+				"value":"ESO 197-G010",
 				"source":"1,5"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"90.678",
+				"derived":true,
+				"source":"2,4,7"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"92.5453",
+				"derived":true,
+				"source":"2,4,7"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"0.22",
+				"u_value":"arcseconds",
+				"source":"1,5"
+			}
+		],
+		"hostredshift":[
+			{
+				"value":"0.020588",
+				"source":"4"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"6108.6",
+				"source":"7"
 			}
 		],
 		"lumdist":[
@@ -108,68 +163,73 @@
 				"value":"92.5453",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5,6"
+				"source":"2,4,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18.5096",
 				"derived":true,
-				"source":"1,2,5,6"
+				"source":"2,4,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.3",
 				"derived":true,
-				"source":"4,6"
+				"source":"4,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"4,6"
+				"source":"4,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/09/12",
 				"derived":true,
-				"source":"4,6"
+				"source":"4,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-18.5318",
 				"derived":true,
-				"source":"1,2,5,6"
+				"source":"2,4,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"16.3",
 				"derived":true,
-				"source":"4,6"
+				"source":"4,7"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"4,6"
+				"source":"4,7"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2016/09/12",
 				"derived":true,
-				"source":"4,6"
+				"source":"4,7"
 			}
 		],
 		"ra":[
 			{
 				"value":"01:53:12.541",
+				"u_value":"hours",
+				"source":"1,4,6"
+			},
+			{
+				"value":"01:53:12.576",
 				"u_value":"hours",
 				"source":"1,5"
 			}
@@ -177,14 +237,19 @@
 		"redshift":[
 			{
 				"value":"0.020588",
-				"source":"1,5"
+				"kind":"host",
+				"source":"4"
+			},
+			{
+				"value":"0.020588",
+				"source":"1,5,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"6108.6",
 				"u_value":"km/s",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"photometry":[

@@ -17,15 +17,20 @@
 				"alias":"2"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
+			},
+			{
 				"name":"CRTS SN page",
 				"url":"http://nesssi.cacr.caltech.edu/catalina/AllSN.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -33,21 +38,21 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"MLS160227:104718+072913",
-				"source":"2,3,4"
+				"source":"2,4,5"
 			},
 			{
 				"value":"AT2016bri",
-				"source":"2,3,4"
+				"source":"2,3,4,5"
 			},
 			{
 				"value":"PS16bcg",
-				"source":"3,4"
+				"source":"3,4,5"
 			}
 		],
 		"claimedtype":[
@@ -58,9 +63,14 @@
 		],
 		"dec":[
 			{
+				"value":"+07:29:13.41",
+				"u_value":"degrees",
+				"source":"3"
+			},
+			{
 				"value":"+07:29:13.5",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"value":"+07:29:13.488",
@@ -71,13 +81,17 @@
 		"discoverdate":[
 			{
 				"value":"2016/02/27",
-				"source":"3,4"
+				"source":"3,4,5"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"Pan-STARRS1",
+				"source":"3"
+			},
+			{
 				"value":"CRTS",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"ebv":[
@@ -85,14 +99,61 @@
 				"value":"0.0224",
 				"derived":true,
 				"e_value":"0.0001",
-				"source":"1,5"
+				"source":"1,6"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"19.31",
+				"derived":true,
+				"source":"3,6"
+			}
+		],
+		"maxband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"3,6"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2016/02/27",
+				"derived":true,
+				"source":"3,6"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"19.31",
+				"derived":true,
+				"source":"3,6"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"3,6"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2016/02/27",
+				"derived":true,
+				"source":"3,6"
 			}
 		],
 		"ra":[
 			{
+				"value":"10:47:18.259",
+				"u_value":"hours",
+				"source":"3"
+			},
+			{
 				"value":"10:47:18.26",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"4,5"
 			},
 			{
 				"value":"10:47:18.24",
@@ -2473,6 +2534,15 @@
 				"telescope":"Catalina Schmidt",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"57445.5",
+				"band":"r",
+				"instrument":"GPC1",
+				"magnitude":"19.31",
+				"telescope":"PS1",
+				"u_time":"MJD",
+				"source":"3"
 			},
 			{
 				"time":"57445.52002",

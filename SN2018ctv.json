@@ -21,23 +21,23 @@
 				"alias":"3"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"4"
+			},
+			{
 				"name":"Pan-STARRS 3Pi",
 				"url":"https://star.pst.qub.ac.uk/ps1threepi/psdb/",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"ATel 12313",
 				"url":"http://www.astronomerstelegram.org/?read=12313",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"6"
-			},
-			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"7"
 			},
 			{
@@ -62,11 +62,11 @@
 			},
 			{
 				"value":"AT2018ctv",
-				"source":"3,4,5,8"
+				"source":"3,4,5,6,8"
 			},
 			{
 				"value":"ASASSN-18nt",
-				"source":"3,4,5,8"
+				"source":"3,4,5,6,8"
 			},
 			{
 				"value":"PS18bjm",
@@ -88,10 +88,15 @@
 				"value":"79",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,6,8,9"
+				"source":"1,4,9"
 			}
 		],
 		"dec":[
+			{
+				"value":"-01:22:01.65",
+				"u_value":"degrees",
+				"source":"4"
+			},
 			{
 				"value":"-01:22:01.67",
 				"u_value":"degrees",
@@ -100,21 +105,25 @@
 			{
 				"value":"-01:22:01.6",
 				"u_value":"degrees",
-				"source":"3,4,5"
+				"source":"3,5,6"
 			},
 			{
 				"value":"-01:22:01.668",
 				"u_value":"degrees",
-				"source":"3,6"
+				"source":"3,7"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2018/06/21",
-				"source":"3,8"
+				"value":"2018/06/21.18",
+				"source":"4"
 			}
 		],
 		"discoverer":[
+			{
+				"value":"ASAS-SN, ATLAS, Pan-STARRS1",
+				"source":"4"
+			},
 			{
 				"value":"ASAS-SN",
 				"source":"3,8"
@@ -130,20 +139,46 @@
 		],
 		"host":[
 			{
-				"value":"NGC 541",
-				"source":"3,8"
-			},
-			{
 				"value":"Abell 0194",
 				"kind":"cluster",
-				"source":"3,6"
+				"source":"3,4,7"
+			},
+			{
+				"value":"NGC 541",
+				"source":"3,8"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"79",
+				"derived":true,
+				"source":"1,4,9"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"80.8",
+				"derived":true,
+				"source":"1,4,9"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"221.8",
 				"u_value":"arcseconds",
-				"source":"3,6"
+				"source":"3,7"
+			}
+		],
+		"hostredshift":[
+			{
+				"value":"0.018",
+				"source":"4"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"5300",
+				"source":"9"
 			}
 		],
 		"lumdist":[
@@ -151,66 +186,71 @@
 				"value":"80.8",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,6,8,9"
+				"source":"1,4,9"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-17.9",
 				"derived":true,
-				"source":"1,3,6,8,9"
+				"source":"1,4,9"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.61",
 				"derived":true,
-				"source":"7,9"
+				"source":"4,9"
 			}
 		],
 		"maxband":[
 			{
 				"value":"orange",
 				"derived":true,
-				"source":"7,9"
+				"source":"4,9"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/06/29",
 				"derived":true,
-				"source":"7,9"
+				"source":"4,9"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17.3",
 				"derived":true,
-				"source":"1,3,6,8,9"
+				"source":"1,4,9"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.2",
 				"derived":true,
-				"source":"7,9"
+				"source":"4,9"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"7,9"
+				"source":"4,9"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/06/21",
 				"derived":true,
-				"source":"7,9"
+				"source":"4,9"
 			}
 		],
 		"ra":[
+			{
+				"value":"01:25:52.030",
+				"u_value":"hours",
+				"source":"4"
+			},
 			{
 				"value":"01:25:52.042",
 				"u_value":"hours",
@@ -219,18 +259,23 @@
 			{
 				"value":"01:25:52.03",
 				"u_value":"hours",
-				"source":"3,4,5"
+				"source":"3,5,6"
 			},
 			{
 				"value":"01:25:52.032",
 				"u_value":"hours",
-				"source":"3,6"
+				"source":"3,7"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.018",
-				"source":"3,6,8"
+				"kind":"host",
+				"source":"4"
+			},
+			{
+				"value":"0.018",
+				"source":"3,7,8"
 			}
 		],
 		"velocity":[
@@ -250,7 +295,7 @@
 				"telescope":"ATLAS1",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"7"
+				"source":"4"
 			},
 			{
 				"time":"58286.59",
@@ -261,7 +306,7 @@
 				"telescope":"ASASSN-1",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"7"
+				"source":"4"
 			},
 			{
 				"time":"58290.18",
@@ -270,7 +315,7 @@
 				"magnitude":"17.2",
 				"telescope":"ASASSN-5",
 				"u_time":"MJD",
-				"source":"7"
+				"source":"4"
 			},
 			{
 				"time":"58298.6069907",
@@ -281,7 +326,7 @@
 				"observer":"Robot",
 				"telescope":"ATLAS1",
 				"u_time":"MJD",
-				"source":"7"
+				"source":"4"
 			},
 			{
 				"time":"58338.59",
@@ -292,7 +337,7 @@
 				"observer":"Robot",
 				"telescope":"PS1",
 				"u_time":"MJD",
-				"source":"7"
+				"source":"4"
 			},
 			{
 				"time":"58338.590144739",
@@ -302,7 +347,7 @@
 				"magnitude":"19.1209",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"3,4,5"
+				"source":"3,5,6"
 			},
 			{
 				"time":"58338.5973067642",
@@ -312,7 +357,7 @@
 				"magnitude":"19.1023",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"3,4,5"
+				"source":"3,5,6"
 			},
 			{
 				"time":"58338.6044426687",
@@ -322,7 +367,7 @@
 				"magnitude":"19.2016",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"3,4,5"
+				"source":"3,5,6"
 			},
 			{
 				"time":"58338.6115875985",
@@ -332,7 +377,7 @@
 				"magnitude":"19.1139",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"3,4,5"
+				"source":"3,5,6"
 			},
 			{
 				"time":"58345.5821420564",
@@ -342,7 +387,7 @@
 				"magnitude":"19.3506",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"3,4,5"
+				"source":"3,5,6"
 			},
 			{
 				"time":"58345.5933025736",
@@ -352,7 +397,7 @@
 				"magnitude":"19.4032",
 				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"3,4,5"
+				"source":"3,5,6"
 			}
 		]
 	}

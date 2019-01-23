@@ -16,23 +16,23 @@
 				"alias":"2"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
+			},
+			{
 				"name":"ATel 10358",
 				"url":"http://www.astronomerstelegram.org/?read=10358",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"ATel 10365",
 				"url":"http://www.astronomerstelegram.org/?read=10365",
-				"alias":"5"
-			},
-			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"6"
 			},
 			{
@@ -53,21 +53,21 @@
 		"alias":[
 			{
 				"value":"SN2017dry",
-				"source":"3,4,6,7"
+				"source":"3,4,5,7"
 			},
 			{
 				"value":"AT2017dry",
-				"source":"3,7"
+				"source":"3"
 			},
 			{
 				"value":"ASASSN-17fs",
-				"source":"3,7"
+				"source":"3,4,7"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"3,4,5,7"
+				"source":"3,4,5,6,7"
 			}
 		],
 		"comovingdist":[
@@ -75,31 +75,31 @@
 				"value":"177.17",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,4,7,8"
+				"source":"1,3,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"-59:28:18.05",
 				"u_value":"degrees",
-				"source":"3,7"
+				"source":"3,4,7"
 			},
 			{
 				"value":"-59:28:18.12",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2017/04/28",
-				"source":"3,7"
+				"value":"2017/04/28.4",
+				"source":"3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"3,7"
+				"source":"3,4,7"
 			}
 		],
 		"ebv":[
@@ -113,14 +113,40 @@
 		"host":[
 			{
 				"value":"FAIRALL 0131",
-				"source":"3,4,7"
+				"source":"3,4,5,7"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"177.17",
+				"derived":true,
+				"source":"1,3,8"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"184.334",
+				"derived":true,
+				"source":"1,3,8"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"0.64",
 				"u_value":"arcseconds",
-				"source":"3,4"
+				"source":"4,5"
+			}
+		],
+		"hostredshift":[
+			{
+				"value":"0.040415",
+				"source":"3"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"11871",
+				"source":"8"
 			}
 		],
 		"lumdist":[
@@ -128,81 +154,91 @@
 				"value":"184.334",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,4,7,8"
+				"source":"1,3,8"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19.285",
 				"derived":true,
-				"source":"1,3,4,7,8"
+				"source":"1,3,8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17",
 				"derived":true,
-				"source":"6,8"
+				"source":"3,8"
 			}
 		],
 		"maxband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"6,8"
+				"source":"3,8"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2017/05/03",
 				"derived":true,
-				"source":"6,8"
+				"source":"3,8"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-19.328",
 				"derived":true,
-				"source":"1,3,4,7,8"
+				"source":"1,3,8"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17",
 				"derived":true,
-				"source":"6,8"
+				"source":"3,8"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"6,8"
+				"source":"3,8"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2017/05/03",
 				"derived":true,
-				"source":"6,8"
+				"source":"3,8"
 			}
 		],
 		"ra":[
 			{
 				"value":"22:32:44.530",
 				"u_value":"hours",
-				"source":"3,7"
+				"source":"3,4,7"
 			},
 			{
 				"value":"22:32:44.64",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"4,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.040415",
-				"source":"3,4,7"
+				"kind":"spectroscopic",
+				"source":"3"
+			},
+			{
+				"value":"0.040415",
+				"kind":"host",
+				"source":"3"
+			},
+			{
+				"value":"0.040415",
+				"source":"4,5,7"
 			}
 		],
 		"velocity":[
@@ -222,7 +258,7 @@
 				"telescope":"ASASSN-2",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"6"
+				"source":"3"
 			},
 			{
 				"time":"57871.4",
@@ -232,7 +268,7 @@
 				"system":"Vega",
 				"telescope":"ASASSN-2",
 				"u_time":"MJD",
-				"source":"6"
+				"source":"3"
 			},
 			{
 				"time":"57876.37",
@@ -242,7 +278,7 @@
 				"system":"Vega",
 				"telescope":"ASASSN-2",
 				"u_time":"MJD",
-				"source":"6"
+				"source":"3"
 			}
 		],
 		"spectra":[
@@ -13361,7 +13397,7 @@
 						"8.338436384e-16"
 					]
 				],
-				"source":"6"
+				"source":"3"
 			}
 		]
 	}

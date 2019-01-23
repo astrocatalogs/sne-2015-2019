@@ -21,18 +21,18 @@
 				"alias":"3"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"4"
+			},
+			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"ATel 9734",
 				"url":"http://www.astronomerstelegram.org/?read=9734",
-				"alias":"5"
-			},
-			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"6"
 			},
 			{
@@ -53,21 +53,21 @@
 		"alias":[
 			{
 				"value":"SN2016hwp",
-				"source":"3,4,6,7"
+				"source":"3,4,5,7"
 			},
 			{
 				"value":"AT2016hwp",
-				"source":"3,7"
+				"source":"3,4,7"
 			},
 			{
 				"value":"ASASSN-16na",
-				"source":"3,7"
+				"source":"3,4,7"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia-91T",
-				"source":"3,4,5,7"
+				"source":"3,5,6,7"
 			}
 		],
 		"comovingdist":[
@@ -75,28 +75,32 @@
 				"value":"93.321",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,4,7,8"
+				"source":"1,4,8"
 			}
 		],
 		"dec":[
 			{
 				"value":"+21:26:25.48",
 				"u_value":"degrees",
-				"source":"3,7"
+				"source":"3,4,7"
 			},
 			{
 				"value":"+21:26:24.72",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2016/11/06",
-				"source":"3,7"
+				"value":"2016/11/06.33",
+				"source":"4"
 			}
 		],
 		"discoverer":[
+			{
+				"value":"ASAS-SN, iPTF",
+				"source":"4"
+			},
 			{
 				"value":"ASAS-SN",
 				"source":"3,7"
@@ -113,7 +117,14 @@
 		"host":[
 			{
 				"value":"2MASX J04091030+2126244",
-				"source":"3,4"
+				"source":"3,4,5"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"93.321",
+				"derived":true,
+				"source":"1,4,8"
 			}
 		],
 		"hostdec":[
@@ -124,11 +135,18 @@
 				"source":"8"
 			}
 		],
+		"hostlumdist":[
+			{
+				"value":"95.2987",
+				"derived":true,
+				"source":"1,4,8"
+			}
+		],
 		"hostoffsetang":[
 			{
 				"value":"0.32",
 				"u_value":"arcseconds",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"hostoffsetdist":[
@@ -145,71 +163,88 @@
 				"source":"8"
 			}
 		],
+		"hostredshift":[
+			{
+				"value":"0.021191",
+				"source":"4"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"6285.6",
+				"source":"8"
+			}
+		],
 		"lumdist":[
 			{
 				"value":"95.2987",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,3,4,7,8"
+				"source":"1,4,8"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18.0727",
 				"derived":true,
-				"source":"1,3,4,7,8"
+				"source":"1,4,8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"16.8",
 				"derived":true,
-				"source":"6,8"
+				"source":"4,8"
 			}
 		],
 		"maxband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"6,8"
+				"source":"4,8"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2016/11/07",
 				"derived":true,
-				"source":"6,8"
+				"source":"4,8"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17.1954",
 				"derived":true,
-				"source":"1,3,4,7,8"
+				"source":"1,4,8"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.7",
 				"derived":true,
-				"source":"6,8"
+				"source":"4,8"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"6,8"
+				"source":"4,8"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2016/11/25",
 				"derived":true,
-				"source":"6,8"
+				"source":"4,8"
 			}
 		],
 		"ra":[
+			{
+				"value":"04:09:10.241",
+				"u_value":"hours",
+				"source":"4"
+			},
 			{
 				"value":"04:09:10.240",
 				"u_value":"hours",
@@ -218,13 +253,18 @@
 			{
 				"value":"04:09:10.272",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.021191",
-				"source":"3,4,7"
+				"kind":"host",
+				"source":"4"
+			},
+			{
+				"value":"0.021191",
+				"source":"3,5,7"
 			}
 		],
 		"velocity":[
@@ -244,7 +284,7 @@
 				"telescope":"P48",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"6"
+				"source":"4"
 			},
 			{
 				"time":"57690.49",
@@ -255,7 +295,7 @@
 				"telescope":"ASASSN-1",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"6"
+				"source":"4"
 			},
 			{
 				"time":"57695.53",
@@ -266,7 +306,7 @@
 				"system":"Vega",
 				"telescope":"ASASSN-1",
 				"u_time":"MJD",
-				"source":"6"
+				"source":"4"
 			},
 			{
 				"time":"57698.33",
@@ -277,7 +317,7 @@
 				"system":"Vega",
 				"telescope":"ASASSN-1",
 				"u_time":"MJD",
-				"source":"6"
+				"source":"4"
 			},
 			{
 				"time":"57699.41",
@@ -288,7 +328,7 @@
 				"system":"Vega",
 				"telescope":"ASASSN-1",
 				"u_time":"MJD",
-				"source":"6"
+				"source":"4"
 			},
 			{
 				"time":"57717.3019907",
@@ -298,7 +338,7 @@
 				"observer":"iPTF",
 				"telescope":"P48",
 				"u_time":"MJD",
-				"source":"6"
+				"source":"4"
 			}
 		]
 	}

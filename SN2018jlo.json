@@ -10,25 +10,30 @@
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"ATel 12296",
 				"url":"http://www.astronomerstelegram.org/?read=12296",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"ASAS-SN Supernovae",
 				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"ATel https://wis-tns.weizmann.ac.il/object/2018jlo",
 				"url":"https://wis-tns.weizmann.ac.il/object/2018jlo",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -36,31 +41,31 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2018jlo",
-				"source":"2,3,5"
+				"source":"2,3,4,6"
 			},
 			{
 				"value":"AT2018jlo",
-				"source":"2,5"
+				"source":"2,3,6"
 			},
 			{
 				"value":"ASASSN-18aba",
-				"source":"2,5"
+				"source":"2,3,6"
 			},
 			{
 				"value":"ATLAS18bafy",
-				"source":"2,5"
+				"source":"3,6"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"II",
-				"source":"2,3,4,5"
+				"source":"2,3,4,5,6"
 			}
 		],
 		"comovingdist":[
@@ -68,37 +73,46 @@
 				"value":"200",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,5,6"
+				"source":"1,2,7"
 			}
 		],
 		"dec":[
 			{
+				"value":"-13:56:34.94",
+				"u_value":"degrees",
+				"source":"2"
+			},
+			{
 				"value":"-13:56:34.77",
 				"u_value":"degrees",
-				"source":"2,5"
+				"source":"3,6"
 			},
 			{
 				"value":"-13:56:34.8",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2018/12/05",
-				"source":"2,5"
+				"value":"2018/12/05.17",
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"ASAS-SN, ATLAS, ZTF",
+				"source":"2"
+			},
+			{
 				"value":"ASAS-SN",
-				"source":"2,5"
+				"source":"3,6"
 			}
 		],
 		"host":[
 			{
 				"value":"GALEXASC J020217.47-135638.3",
-				"source":"2,3"
+				"source":"2,3,4"
 			}
 		],
 		"hostdec":[
@@ -106,20 +120,20 @@
 				"value":"-13:56:38.3",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"hostoffsetang":[
 			{
 				"value":"3.69",
 				"u_value":"arcseconds",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"hostoffsetdist":[
 			{
 				"value":"3.41",
-				"source":"1,2,3,5,6"
+				"source":"1,2,7"
 			}
 		],
 		"hostra":[
@@ -127,7 +141,7 @@
 				"value":"02:02:17.47",
 				"derived":true,
 				"u_value":"hours",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"lumdist":[
@@ -135,82 +149,212 @@
 				"value":"230",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,5,6"
+				"source":"1,2,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-19",
 				"derived":true,
-				"source":"1,2,3,5,6"
+				"source":"1,2,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.1",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"2,7"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"2,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2018/12/04",
+				"value":"2018/12/05",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"2,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-19",
 				"derived":true,
-				"source":"1,2,3,5,6"
+				"source":"1,2,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.1",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"2,7"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"2,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2018/12/04",
+				"value":"2018/12/05",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"2,7"
 			}
 		],
 		"ra":[
 			{
+				"value":"02:02:17.443",
+				"u_value":"hours",
+				"source":"2"
+			},
+			{
 				"value":"02:02:17.467",
 				"u_value":"hours",
-				"source":"2,5"
+				"source":"3,6"
 			},
 			{
 				"value":"02:02:17.472",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.05",
-				"source":"2,3,5"
+				"kind":"spectroscopic",
+				"source":"2"
+			},
+			{
+				"value":"0.05",
+				"source":"3,4,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"10000",
 				"u_value":"km/s",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"photometry":[
 			{
-				"time":"58456.5",
-				"magnitude":"18.1",
+				"time":"58432.2736",
+				"band":"r",
+				"instrument":"ZTF-Cam",
+				"magnitude":"19.85",
+				"telescope":"P48",
 				"u_time":"MJD",
-				"source":"2,5"
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"58450.2719907",
+				"band":"g",
+				"instrument":"ZTF-Cam",
+				"magnitude":"16.12",
+				"observer":"ZTF",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"58454.18",
+				"band":"g",
+				"instrument":"Cassius",
+				"magnitude":"18.6",
+				"telescope":"ASASSN-2",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"58456.1879977",
+				"band":"r",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.5",
+				"observer":"ZTF",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58456.1882523",
+				"band":"r",
+				"e_magnitude":"0.070524",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.5001",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58456.2563542",
+				"band":"r",
+				"e_magnitude":"0.076551",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.4839",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58456.385",
+				"band":"orange",
+				"instrument":"ACAM1",
+				"magnitude":"19.04",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"58457.17",
+				"band":"g",
+				"instrument":"Cassius",
+				"magnitude":"18.1",
+				"telescope":"ASASSN-2",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58458.3609954",
+				"band":"cyan",
+				"e_magnitude":"0.081",
+				"instrument":"ACAM1",
+				"magnitude":"18.386",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58469.1659954",
+				"band":"g",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.49",
+				"observer":"ZTF",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58469.1664005",
+				"band":"g",
+				"e_magnitude":"0.08178",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.4861",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
 			}
 		]
 	}

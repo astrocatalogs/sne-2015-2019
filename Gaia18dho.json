@@ -4,15 +4,20 @@
 		"name":"Gaia18dho",
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"1"
+			},
+			{
 				"name":"Gaia Photometric Science Alerts",
 				"url":"http://gsaweb.ast.cam.ac.uk/alerts/alertsindex",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,113 +25,138 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18dho",
-				"source":"1,2"
+				"source":"1,2,3"
 			},
 			{
 				"value":"AT2018hzn",
-				"source":"1,2"
+				"source":"1,2,3"
 			},
 			{
 				"value":"ZTF18accnfrz",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"dec":[
 			{
 				"value":"+15:21:50.83",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,2,3"
 			},
 			{
 				"value":"+15:21:50.76",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2018/10/16",
-				"source":"1,2"
+				"value":"2018/10/16.786991",
+				"source":"1"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"GaiaAlerts, ZTF",
+				"source":"1"
+			},
+			{
 				"value":"Gaia",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.66",
+				"value":"18.56",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,4"
 			}
 		],
 		"maxband":[
 			{
-				"value":"G",
+				"value":"r",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,4"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2018/11/05",
+				"value":"2018/11/03",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,4"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18.66",
+				"value":"18.84",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,4"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,4"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2018/11/05",
+				"value":"2018/11/12",
 				"derived":true,
-				"source":"1,3"
+				"source":"1,4"
 			}
 		],
 		"ra":[
 			{
+				"value":"10:10:27.840",
+				"u_value":"hours",
+				"source":"1"
+			},
+			{
 				"value":"10:10:27.838",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"2,3"
 			},
 			{
 				"value":"10:10:27.84",
 				"u_value":"hours",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"photometry":[
 			{
-				"time":"58406.5",
-				"magnitude":"19.5",
+				"time":"58269.2539931",
+				"band":"G",
+				"instrument":"Astrometric",
+				"magnitude":"21.5",
+				"observer":"Robot",
+				"telescope":"Gaia",
 				"u_time":"MJD",
-				"source":"1,2"
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"58407.7869907",
+				"band":"G",
+				"e_magnitude":"0.2",
+				"instrument":"Astrometric",
+				"magnitude":"19.47",
+				"observer":"Robot",
+				"telescope":"Gaia",
+				"u_time":"MJD",
+				"source":"1"
 			},
 			{
 				"time":"58407.788",
@@ -136,7 +166,7 @@
 				"magnitude":"19.47",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"58407.964",
@@ -145,6 +175,16 @@
 				"instrument":"Astrometric",
 				"magnitude":"19.41",
 				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58425.4819907",
+				"band":"r",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.56",
+				"observer":"ZTF",
+				"telescope":"P48",
 				"u_time":"MJD",
 				"source":"1"
 			},
@@ -156,7 +196,7 @@
 				"magnitude":"18.69",
 				"telescope":"GAIA",
 				"u_time":"MJD",
-				"source":"1"
+				"source":"2"
 			},
 			{
 				"time":"58427.791",
@@ -165,6 +205,156 @@
 				"instrument":"Astrometric",
 				"magnitude":"18.66",
 				"telescope":"GAIA",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58429.5379977",
+				"band":"r",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.59",
+				"observer":"ZTF",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58429.538125",
+				"band":"r",
+				"e_magnitude":"0.0996736",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.5932",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58432.5388079",
+				"band":"r",
+				"e_magnitude":"0.105",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.6892",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58434.4972106",
+				"band":"r",
+				"e_magnitude":"0.133047",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.7324",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58434.53875",
+				"band":"g",
+				"e_magnitude":"0.11717",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.8376",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58437.487963",
+				"band":"g",
+				"e_magnitude":"0.126895",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.9695",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58437.5226968",
+				"band":"r",
+				"e_magnitude":"0.0929344",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.6413",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58439.4849074",
+				"band":"g",
+				"e_magnitude":"0.103307",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.8878",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58440.4991551",
+				"band":"g",
+				"e_magnitude":"0.1185",
+				"instrument":"ZTF-Cam",
+				"magnitude":"19.0455",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58440.5395255",
+				"band":"r",
+				"e_magnitude":"0.0727844",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.7921",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58442.4036111",
+				"band":"r",
+				"e_magnitude":"0.167091",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.8183",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58442.4045255",
+				"band":"r",
+				"e_magnitude":"0.139175",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.6622",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58443.4423495",
+				"band":"r",
+				"e_magnitude":"0.0968905",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.8139",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58443.4626968",
+				"band":"r",
+				"e_magnitude":"0.10424",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.8995",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58443.5198958",
+				"band":"g",
+				"e_magnitude":"0.132766",
+				"instrument":"ZTF-Cam",
+				"magnitude":"19.102",
+				"telescope":"P48",
 				"u_time":"MJD",
 				"source":"1"
 			}
