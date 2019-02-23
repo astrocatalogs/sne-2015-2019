@@ -11,21 +11,42 @@
 				"alias":"1"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"CRTS SN page",
 				"url":"http://nesssi.cacr.caltech.edu/MLS/CRTSII_SN.html",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"MLS190125:103833+481631",
-				"source":"1,2,3"
+				"source":"1,2,3,4"
+			},
+			{
+				"value":"AT2018lnb",
+				"source":"1,2,4"
+			},
+			{
+				"value":"ZTF19aaadwfi",
+				"source":"2,4"
 			}
 		],
 		"claimedtype":[
@@ -36,9 +57,14 @@
 		],
 		"dec":[
 			{
+				"value":"+48:16:31.05",
+				"u_value":"degrees",
+				"source":"2,4"
+			},
+			{
 				"value":"+48:16:31.34",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"3,4"
 			},
 			{
 				"value":"+48:16:31.44",
@@ -48,21 +74,72 @@
 		],
 		"discoverdate":[
 			{
-				"value":"2019/01/25",
-				"source":"2,3"
+				"value":"2018/12/28.502998",
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"ZTF",
+				"source":"2,4"
+			},
+			{
 				"value":"CRTS",
-				"source":"2,3"
+				"source":"3,4"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"18.43",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2019/02/12",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"18.43",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2019/02/12",
+				"derived":true,
+				"source":"2,5"
 			}
 		],
 		"ra":[
 			{
+				"value":"10:38:32.750",
+				"u_value":"hours",
+				"source":"2,4"
+			},
+			{
 				"value":"10:38:32.722",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"3,4"
 			},
 			{
 				"value":"10:38:32.64",
@@ -179,6 +256,27 @@
 				"source":"1"
 			},
 			{
+				"time":"58480.4479977",
+				"band":"r",
+				"instrument":"ZTF-Cam",
+				"magnitude":"19.9",
+				"observer":"ZTF",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"58480.5029977",
+				"band":"g",
+				"instrument":"ZTF-Cam",
+				"magnitude":"20.21",
+				"observer":"ZTF",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
 				"time":"58508.5",
 				"band":"C",
 				"e_magnitude":"0.0809128318498",
@@ -221,6 +319,16 @@
 				"telescope":"Catalina Schmidt",
 				"u_time":"MJD",
 				"source":"1"
+			},
+			{
+				"time":"58526.4269907",
+				"band":"g",
+				"instrument":"ZTF-Cam",
+				"magnitude":"18.43",
+				"observer":"ZTF",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"2"
 			}
 		]
 	}
