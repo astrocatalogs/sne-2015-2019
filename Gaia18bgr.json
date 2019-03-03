@@ -20,10 +20,21 @@
 				"alias":"3"
 			},
 			{
+				"name":"CPCS Alert 27402",
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=27402",
+				"alias":"4"
+			},
+			{
+				"name":"Cambridge Photometric Calibration Server",
+				"secondary":true,
+				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
+				"alias":"5"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,33 +42,33 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18bgr",
-				"source":"2,3,4"
+				"source":"2,3,5,6"
 			},
 			{
 				"value":"AT2018bva",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			},
 			{
 				"value":"ATLAS18pqj",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+20:52:42.71",
 				"u_value":"degrees",
-				"source":"2,3,4"
+				"source":"2,3,6"
 			},
 			{
 				"value":"+20:52:42.6",
 				"u_value":"degrees",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"discoverdate":[
@@ -73,7 +84,7 @@
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,6"
 			}
 		],
 		"ebv":[
@@ -81,49 +92,49 @@
 				"value":"0.1565",
 				"derived":true,
 				"e_value":"0.0021",
-				"source":"1,5"
+				"source":"1,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.68",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,7"
 			}
 		],
 		"maxband":[
 			{
 				"value":"orange",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,7"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/05/19",
 				"derived":true,
-				"source":"2,5"
+				"source":"2,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"18.88",
+				"value":"19.44",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"G",
+				"value":"g",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2018/05/15",
+				"value":"2018/05/31",
 				"derived":true,
-				"source":"3,5"
+				"source":"4,5,7"
 			}
 		],
 		"ra":[
@@ -135,12 +146,12 @@
 			{
 				"value":"18:29:08.694",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,6"
 			},
 			{
 				"value":"18:29:08.64",
 				"u_value":"hours",
-				"source":"3"
+				"source":"3,5"
 			}
 		],
 		"photometry":[
@@ -207,6 +218,23 @@
 				"telescope":"ATLAS1",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"58269.105",
+				"band":"g",
+				"magnitude":"19.4355",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
+			},
+			{
+				"time":"58269.1108",
+				"band":"r",
+				"e_magnitude":"0.1865",
+				"magnitude":"18.9443",
+				"observatory":"PIRATE Meredith Morr",
+				"u_time":"MJD",
+				"source":"4,5"
 			}
 		]
 	}
