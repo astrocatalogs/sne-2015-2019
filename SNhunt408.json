@@ -4,9 +4,20 @@
 		"name":"SNhunt408",
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"1"
+			},
+			{
 				"name":"Supernova Hunt",
 				"url":"http://nesssi.cacr.caltech.edu/catalina/current.html",
-				"alias":"1"
+				"alias":"2"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -14,42 +25,50 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"2"
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"SNhunt408",
-				"source":"1"
+				"source":"1,3"
+			},
+			{
+				"value":"AT2019bib",
+				"source":"1,2,3"
 			}
 		],
 		"dec":[
 			{
 				"value":"+03:10:15.96",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"1,2,3"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2019/02/28",
+				"value":"2019/02/28.351331",
 				"source":"1"
 			}
 		],
 		"discoverer":[
 			{
-				"value":"CRTS",
+				"value":"SNHunt",
 				"source":"1"
 			},
 			{
+				"value":"CRTS",
+				"source":"1,2,3"
+			},
+			{
 				"value":"Mishevskiy",
-				"source":"1"
+				"source":"2"
 			}
 		],
 		"host":[
 			{
 				"value":"SDSS J112452.35+031016.6",
-				"source":"1"
+				"source":"1,2"
 			}
 		],
 		"hostdec":[
@@ -57,15 +76,15 @@
 				"value":"+03:10:16.6",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"2"
+				"source":"4"
 			}
 		],
 		"hostoffsetang":[
 			{
-				"value":"0.782",
+				"value":"0.8974",
 				"derived":true,
 				"u_value":"arcseconds",
-				"source":"1,2"
+				"source":"1,2,3,4"
 			}
 		],
 		"hostra":[
@@ -73,13 +92,84 @@
 				"value":"11:24:52.35",
 				"derived":true,
 				"u_value":"hours",
-				"source":"2"
+				"source":"4"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"20.9",
+				"derived":true,
+				"source":"1,4"
+			}
+		],
+		"maxband":[
+			{
+				"value":"V-crts",
+				"derived":true,
+				"source":"1,4"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2019/02/28",
+				"derived":true,
+				"source":"1,4"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"20.9",
+				"derived":true,
+				"source":"1,4"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"V-crts",
+				"derived":true,
+				"source":"1,4"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2019/02/28",
+				"derived":true,
+				"source":"1,4"
 			}
 		],
 		"ra":[
 			{
+				"value":"11:24:52.392",
+				"u_value":"hours",
+				"source":"1,3"
+			},
+			{
 				"value":"11:24:52.32",
 				"u_value":"hours",
+				"source":"2"
+			}
+		],
+		"photometry":[
+			{
+				"time":"58466.4696296",
+				"band":"V-crts",
+				"magnitude":"21.5",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"58526.351331",
+				"band":"V-crts",
+				"magnitude":"21.3",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58542.351331",
+				"band":"V-crts",
+				"magnitude":"20.9",
+				"u_time":"MJD",
 				"source":"1"
 			}
 		]
