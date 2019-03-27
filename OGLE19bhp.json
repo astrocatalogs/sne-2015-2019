@@ -4,9 +4,25 @@
 		"name":"OGLE19bhp",
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"1"
+			},
+			{
+				"name":"OGLE page",
+				"url":"http://ogle.astrouw.edu.pl/ogle4/transients/transients.html",
+				"alias":"2"
+			},
+			{
 				"name":"OGLE-IV Transient Detection System",
 				"url":"http://ogle.astrouw.edu.pl/ogle4/transients/transients.html",
-				"alias":"1"
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -14,68 +30,97 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"2"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"OGLE19bhp",
-				"source":"1"
+				"source":"2,4"
+			},
+			{
+				"value":"AT2019bhp",
+				"source":"1,2,3,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"1"
+				"source":"3"
+			}
+		],
+		"dec":[
+			{
+				"value":"-65:19:01.40",
+				"u_value":"degrees",
+				"source":"1,2,4"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2019/02/06",
-				"derived":true,
-				"source":"1,2"
+				"value":"2019/02/06.0806597",
+				"source":"1"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"OGLE",
+				"source":"1,2,4"
+			}
+		],
+		"host":[
+			{
+				"value":"OGLE-GAL-LMC549.19-665.756-4250.206",
+				"source":"1"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"19.37",
 				"derived":true,
-				"source":"1,2"
+				"source":"3,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"I",
 				"derived":true,
-				"source":"1,2"
+				"source":"3,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2019/02/18",
 				"derived":true,
-				"source":"1,2"
+				"source":"3,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"19.37",
 				"derived":true,
-				"source":"1,2"
+				"source":"3,5"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"I",
 				"derived":true,
-				"source":"1,2"
+				"source":"3,5"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/02/18",
 				"derived":true,
-				"source":"1,2"
+				"source":"3,5"
+			}
+		],
+		"ra":[
+			{
+				"value":"04:37:22.920",
+				"u_value":"hours",
+				"source":"1,2,4"
 			}
 		],
 		"photometry":[
@@ -86,7 +131,7 @@
 				"system":"Vega",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"time":"58497.20370",
@@ -95,7 +140,7 @@
 				"system":"Vega",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"time":"58503.21470",
@@ -104,7 +149,7 @@
 				"system":"Vega",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"time":"58505.23070",
@@ -113,7 +158,7 @@
 				"system":"Vega",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"time":"58511.11166",
@@ -122,7 +167,7 @@
 				"system":"Vega",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"1"
+				"source":"1,3"
 			},
 			{
 				"time":"58520.08066",
@@ -131,7 +176,7 @@
 				"magnitude":"21.473",
 				"system":"Vega",
 				"u_time":"MJD",
-				"source":"1"
+				"source":"1,3"
 			},
 			{
 				"time":"58526.20274",
@@ -140,7 +185,7 @@
 				"magnitude":"19.889",
 				"system":"Vega",
 				"u_time":"MJD",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"time":"58532.13104",
@@ -149,7 +194,7 @@
 				"magnitude":"19.366",
 				"system":"Vega",
 				"u_time":"MJD",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"time":"58538.02723",
@@ -158,7 +203,25 @@
 				"magnitude":"19.537",
 				"system":"Vega",
 				"u_time":"MJD",
-				"source":"1"
+				"source":"3"
+			},
+			{
+				"time":"58546.03588",
+				"band":"I",
+				"e_magnitude":"0.066",
+				"magnitude":"19.793",
+				"system":"Vega",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58555.04956",
+				"band":"I",
+				"e_magnitude":"0.106",
+				"magnitude":"20.442",
+				"system":"Vega",
+				"u_time":"MJD",
+				"source":"3"
 			}
 		]
 	}
