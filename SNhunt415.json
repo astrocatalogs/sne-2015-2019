@@ -4,9 +4,26 @@
 		"name":"SNhunt415",
 		"sources":[
 			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"1"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"2"
+			},
+			{
 				"name":"Supernova Hunt",
 				"url":"http://nesssi.cacr.caltech.edu/catalina/current.html",
-				"alias":"1"
+				"alias":"3"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -14,42 +31,65 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"2"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"SNhunt415",
-				"source":"1"
+				"source":"2,4"
+			},
+			{
+				"value":"AT2019cvy",
+				"source":"2,3,4"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"340",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"+02:50:08.16",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"2,3,4"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2019/04/05",
-				"source":"1"
+				"value":"2019/04/05.298947",
+				"source":"2"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"SNHunt",
+				"source":"2"
+			},
+			{
 				"value":"CRTS",
-				"source":"1"
+				"source":"2,3,4"
 			},
 			{
 				"value":"Villi",
-				"source":"1"
+				"source":"3"
 			}
 		],
 		"host":[
 			{
 				"value":"2MASX J12241315+0250037",
-				"source":"1"
+				"source":"2,3"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"340",
+				"derived":true,
+				"source":"1,2,5"
 			}
 		],
 		"hostdec":[
@@ -57,7 +97,14 @@
 				"value":"+02:50:03.7",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"2"
+				"source":"5"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"370",
+				"derived":true,
+				"source":"1,2,5"
 			}
 		],
 		"hostoffsetang":[
@@ -65,7 +112,13 @@
 				"value":"5.291",
 				"derived":true,
 				"u_value":"arcseconds",
-				"source":"1,2"
+				"source":"2,3,4,5"
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"8.083",
+				"source":"1,2,3,4,5"
 			}
 		],
 		"hostra":[
@@ -73,14 +126,130 @@
 				"value":"12:24:13.15",
 				"derived":true,
 				"u_value":"hours",
+				"source":"5"
+			}
+		],
+		"hostredshift":[
+			{
+				"value":"0.079",
 				"source":"2"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"23000",
+				"source":"5"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"370",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,2,5"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-18.4",
+				"derived":true,
+				"source":"1,2,5"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"19.4",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxband":[
+			{
+				"value":"V-crts",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2019/04/05",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-18.4",
+				"derived":true,
+				"source":"1,2,5"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"19.4",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"V-crts",
+				"derived":true,
+				"source":"2,5"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2019/04/05",
+				"derived":true,
+				"source":"2,5"
 			}
 		],
 		"ra":[
 			{
+				"value":"12:24:12.960",
+				"u_value":"hours",
+				"source":"2,4"
+			},
+			{
 				"value":"12:24:12.96",
 				"u_value":"hours",
-				"source":"1"
+				"source":"3"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.079",
+				"kind":"host",
+				"source":"2"
+			},
+			{
+				"value":"0.079",
+				"source":"2,4"
+			}
+		],
+		"velocity":[
+			{
+				"value":"23000",
+				"u_value":"km/s",
+				"source":"5"
+			}
+		],
+		"photometry":[
+			{
+				"time":"58571.2753241",
+				"band":"V-crts",
+				"magnitude":"21.2",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
+				"time":"58578.2989468",
+				"band":"V-crts",
+				"magnitude":"19.4",
+				"u_time":"MJD",
+				"source":"2"
 			}
 		]
 	}
