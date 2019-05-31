@@ -1,33 +1,104 @@
 {
 	"AT2019gan":{
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/d3ef5fc/SCHEMA.md",
 		"name":"AT2019gan",
 		"sources":[
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"3"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2019gan",
-				"source":"1"
+				"source":"1,2"
 			},
 			{
 				"value":"ATLAS19lta",
-				"source":"1"
+				"source":"1,2"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
 				"value":"-27:27:15.32",
+				"u_value":"degrees",
+				"source":"1,2"
+			}
+		],
+		"discoverdate":[
+			{
+				"value":"2019/05/28.302998",
 				"source":"1"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"ATLAS",
+				"source":"1,2"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"18.3",
+				"derived":true,
+				"source":"1,2,3"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2019/05/27",
+				"derived":true,
+				"source":"1,2,3"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"18.3",
+				"derived":true,
+				"source":"1,2,3"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2019/05/27",
+				"derived":true,
+				"source":"1,2,3"
 			}
 		],
 		"ra":[
 			{
 				"value":"12:09:25.692",
-				"source":"1"
+				"u_value":"hours",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"time":"58630.5",
+				"magnitude":"18.3",
+				"u_time":"MJD",
+				"source":"1,2"
 			}
 		]
 	}
