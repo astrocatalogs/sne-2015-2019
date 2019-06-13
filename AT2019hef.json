@@ -1,32 +1,139 @@
 {
 	"AT2019hef":{
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/d3ef5fc/SCHEMA.md",
 		"name":"AT2019hef",
 		"sources":[
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"3"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2019hef",
-				"source":"1"
+				"source":"1,2"
 			},
 			{
 				"value":"MASTER OT J182528.48-454703.4",
-				"source":"1"
+				"source":"1,2"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
 				"value":"-45:47:03.40",
+				"u_value":"degrees",
+				"source":"1,2"
+			}
+		],
+		"discoverdate":[
+			{
+				"value":"2019/06/08.82772",
 				"source":"1"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"MASTER",
+				"source":"1,2"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"16.8",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxband":[
+			{
+				"value":"C",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2019/06/08",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"16.8",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"C",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2019/06/08",
+				"derived":true,
+				"source":"1,3"
 			}
 		],
 		"ra":[
 			{
 				"value":"18:25:28.480",
+				"u_value":"hours",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"time":"57879.1238426",
+				"band":"C",
+				"magnitude":"19.4",
+				"observer":"Robot",
+				"system":"Vega",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"58642.8277199",
+				"band":"C",
+				"magnitude":"16.8",
+				"observer":"Robot",
+				"system":"Vega",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58642.8322685",
+				"band":"C",
+				"magnitude":"16.8",
+				"observer":"Robot",
+				"system":"Vega",
+				"u_time":"MJD",
 				"source":"1"
 			}
 		]
