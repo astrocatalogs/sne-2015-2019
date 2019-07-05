@@ -4,15 +4,20 @@
 		"name":"PS19ctk",
 		"sources":[
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"1"
+			},
+			{
 				"name":"Pan-STARRS 3Pi",
 				"url":"https://wis-tns.weizmann.ac.il/object/2019jsi",
-				"alias":"1"
+				"alias":"2"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,71 +25,89 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"4"
 			}
 		],
 		"alias":[
 			{
 				"value":"PS19ctk",
-				"source":"1,2"
+				"source":"1,2,3"
 			},
 			{
 				"value":"AT2019jsi",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"dec":[
 			{
 				"value":"-12:06:49.87",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"discoverdate":[
 			{
-				"value":"2019/01/11",
-				"source":"1,2"
+				"value":"2019/01/11.64",
+				"source":"1"
 			}
 		],
 		"discoverer":[
 			{
+				"value":"Pan-STARRS1",
+				"source":"1"
+			},
+			{
 				"value":"PS1",
-				"source":"1,2"
+				"source":"2,3"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"21",
+				"value":"20.99",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,4"
+			}
+		],
+		"maxband":[
+			{
+				"value":"w",
+				"derived":true,
+				"source":"1,4"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/01/10",
+				"value":"2019/01/11",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,4"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"21",
+				"value":"20.99",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,4"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"w",
+				"derived":true,
+				"source":"1,4"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2019/01/10",
+				"value":"2019/01/11",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,4"
 			}
 		],
 		"ra":[
 			{
 				"value":"14:56:37.080",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"1,2,3"
 			}
 		],
 		"photometry":[
@@ -92,7 +115,18 @@
 				"time":"58493.5",
 				"magnitude":"21.0",
 				"u_time":"MJD",
-				"source":"1,2"
+				"source":"2,3"
+			},
+			{
+				"time":"58494.64",
+				"band":"w",
+				"e_magnitude":"0.11",
+				"instrument":"GPC1",
+				"magnitude":"20.99",
+				"observer":"Robot",
+				"telescope":"PS1",
+				"u_time":"MJD",
+				"source":"1"
 			}
 		]
 	}
