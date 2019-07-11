@@ -15,22 +15,38 @@
 				"alias":"2"
 			},
 			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"3"
+			},
+			{
+				"name":"ATel",
+				"url":"http://www.astronomerstelegram.org/?read=####",
+				"alias":"4"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"5"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2017ApJ...835...64G",
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-19qx",
-				"source":"2"
+				"source":"2,5"
 			},
 			{
 				"value":"AT2019knu",
-				"source":"2"
+				"source":"2,3,4,5"
 			}
 		],
 		"comovingdist":[
@@ -38,14 +54,19 @@
 				"value":"75.211",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3"
+				"source":"1,2,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"-07:18:11.27",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,5"
+			},
+			{
+				"value":"-07:18:11.88",
+				"u_value":"degrees",
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
@@ -57,20 +78,20 @@
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"2"
+				"source":"2,5"
 			}
 		],
 		"host":[
 			{
 				"value":"2MASS J03175281-0718048",
-				"source":"2"
+				"source":"2,3,4"
 			}
 		],
 		"hostcomovingdist":[
 			{
 				"value":"75.211",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,2,6"
 			}
 		],
 		"hostdec":[
@@ -78,28 +99,27 @@
 				"value":"-07:18:04.8",
 				"derived":true,
 				"u_value":"degrees",
-				"source":"3"
+				"source":"6"
 			}
 		],
 		"hostlumdist":[
 			{
 				"value":"76.4938",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,2,6"
 			}
 		],
 		"hostoffsetang":[
 			{
-				"value":"6.685",
-				"derived":true,
+				"value":"7.17",
 				"u_value":"arcseconds",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"hostoffsetdist":[
 			{
-				"value":"2.397",
-				"source":"1,2,3"
+				"value":"2.57",
+				"source":"1,2,5,6"
 			}
 		],
 		"hostra":[
@@ -107,7 +127,7 @@
 				"value":"03:17:52.81",
 				"derived":true,
 				"u_value":"hours",
-				"source":"3"
+				"source":"6"
 			}
 		],
 		"hostredshift":[
@@ -119,7 +139,7 @@
 		"hostvelocity":[
 			{
 				"value":"5071.4",
-				"source":"3"
+				"source":"6"
 			}
 		],
 		"lumdist":[
@@ -127,70 +147,75 @@
 				"value":"76.4938",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3"
+				"source":"1,2,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-17.3998",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,2,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2019/07/05",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17.4181",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/07/05",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"03:17:52.697",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,5"
+			},
+			{
+				"value":"03:17:52.68",
+				"u_value":"hours",
+				"source":"3,4"
 			}
 		],
 		"redshift":[
@@ -198,13 +223,17 @@
 				"value":"0.017062",
 				"kind":"host",
 				"source":"2"
+			},
+			{
+				"value":"0.017062",
+				"source":"2,3,4,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"5071.4",
 				"u_value":"km/s",
-				"source":"3"
+				"source":"6"
 			}
 		],
 		"photometry":[
