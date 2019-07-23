@@ -4,8 +4,8 @@
 		"name":"Gaia19boa",
 		"sources":[
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/",
+				"name":"Pan-STARRS 3Pi",
+				"url":"https://star.pst.qub.ac.uk/ps1threepi/psdb/",
 				"alias":"1"
 			},
 			{
@@ -14,10 +14,15 @@
 				"alias":"2"
 			},
 			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"3"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -25,17 +30,21 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia19boa",
-				"source":"1,2,3"
+				"source":"2,3,4"
+			},
+			{
+				"value":"PS19bxx",
+				"source":"1"
 			},
 			{
 				"value":"AT2019edg",
-				"source":"1,2,3"
+				"source":"1,2,3,4"
 			}
 		],
 		"claimedtype":[
@@ -48,107 +57,95 @@
 			{
 				"value":"+15:57:29.88",
 				"u_value":"degrees",
-				"source":"1,2,3"
+				"source":"2,3,4"
+			},
+			{
+				"value":"+15:57:29.9",
+				"u_value":"degrees",
+				"source":"1"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/04/25.0939931",
-				"source":"1"
+				"source":"3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"GaiaAlerts, ATLAS, ZTF, Pan-STARRS1",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"Gaia",
-				"source":"2,3"
+				"source":"2,4"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"18.38",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2019/04/29",
 				"derived":true,
-				"source":"2,4"
+				"source":"2,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"20.31",
+				"value":"18.38",
 				"derived":true,
-				"source":"1,4"
+				"source":"2,5"
 			}
 		],
 		"maxvisualband":[
 			{
-				"value":"g",
+				"value":"G",
 				"derived":true,
-				"source":"1,4"
+				"source":"2,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2019/06/04",
+				"value":"2019/04/29",
 				"derived":true,
-				"source":"1,4"
+				"source":"2,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"23:02:34.030",
 				"u_value":"hours",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"23:02:34.035",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"2,4"
 			},
 			{
 				"value":"23:02:34.08",
 				"u_value":"hours",
 				"source":"2"
+			},
+			{
+				"value":"23:02:34.03",
+				"u_value":"hours",
+				"source":"1"
 			}
 		],
 		"photometry":[
-			{
-				"time":"58597.9179977",
-				"band":"G",
-				"instrument":"Astrometric",
-				"magnitude":"21.5",
-				"observer":"Robot",
-				"telescope":"Gaia",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"source":"1"
-			},
-			{
-				"time":"58598.0939931",
-				"band":"G",
-				"e_magnitude":"0.2",
-				"instrument":"Astrometric",
-				"magnitude":"18.94",
-				"observer":"Robot",
-				"telescope":"Gaia",
-				"u_time":"MJD",
-				"source":"1"
-			},
 			{
 				"time":"58598.095",
 				"band":"G",
@@ -350,58 +347,6 @@
 				"source":"2"
 			},
 			{
-				"time":"58629.5969907",
-				"band":"orange",
-				"instrument":"ACAM1",
-				"magnitude":"19.06",
-				"observer":"Robot",
-				"telescope":"ATLAS1",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"source":"1"
-			},
-			{
-				"time":"58631.5509954",
-				"band":"orange",
-				"e_magnitude":"0.119",
-				"instrument":"ACAM1",
-				"magnitude":"18.978",
-				"observer":"Robot",
-				"telescope":"ATLAS1",
-				"u_time":"MJD",
-				"source":"1"
-			},
-			{
-				"time":"58635.4013194",
-				"band":"r",
-				"e_magnitude":"0.11",
-				"instrument":"ZTF-Cam",
-				"magnitude":"19.12",
-				"telescope":"P48",
-				"u_time":"MJD",
-				"source":"1"
-			},
-			{
-				"time":"58638.4466898",
-				"band":"g",
-				"e_magnitude":"0.24",
-				"instrument":"ZTF-Cam",
-				"magnitude":"20.31",
-				"telescope":"P48",
-				"u_time":"MJD",
-				"source":"1"
-			},
-			{
-				"time":"58641.478669",
-				"band":"r",
-				"e_magnitude":"0.11",
-				"instrument":"ZTF-Cam",
-				"magnitude":"19.51",
-				"telescope":"P48",
-				"u_time":"MJD",
-				"source":"1"
-			},
-			{
 				"time":"58645.332",
 				"band":"G",
 				"e_magnitude":"0.0",
@@ -412,13 +357,72 @@
 				"source":"2"
 			},
 			{
-				"time":"58663.5529977",
+				"time":"58663.5531123634",
 				"band":"w",
-				"e_magnitude":"0.16",
-				"instrument":"GPC1",
-				"magnitude":"20.85",
-				"observer":"Robot",
-				"telescope":"PS1",
+				"e_magnitude":"0.161453",
+				"instrument":"GPC",
+				"magnitude":"20.8467",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58663.5661361483",
+				"band":"w",
+				"e_magnitude":"0.0750663",
+				"instrument":"GPC",
+				"magnitude":"20.4633",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58663.5661361483",
+				"band":"w",
+				"e_magnitude":"0.0681288",
+				"instrument":"GPC",
+				"magnitude":"20.4829",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58663.5792122752",
+				"band":"w",
+				"e_magnitude":"0.0527208",
+				"instrument":"GPC",
+				"magnitude":"20.3634",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58663.5792122752",
+				"band":"w",
+				"e_magnitude":"0.0493252",
+				"instrument":"GPC",
+				"magnitude":"20.3674",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58663.5923721822",
+				"band":"w",
+				"e_magnitude":"0.0548184",
+				"instrument":"GPC",
+				"magnitude":"20.5391",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58663.5923721822",
+				"band":"w",
+				"e_magnitude":"0.0630022",
+				"instrument":"GPC",
+				"magnitude":"20.5416",
+				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
 				"source":"1"
 			}

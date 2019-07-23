@@ -4,15 +4,26 @@
 		"name":"AT2019cdr",
 		"sources":[
 			{
+				"name":"2016A&A...594A..13P",
+				"bibcode":"2016A&A...594A..13P",
+				"reference":"Planck Collaboration et al. (2016)",
+				"alias":"1"
+			},
+			{
+				"name":"Pan-STARRS 3Pi",
+				"url":"https://star.pst.qub.ac.uk/ps1threepi/psdb/",
+				"alias":"2"
+			},
+			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"1"
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"2"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -20,137 +31,269 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"5"
+			},
+			{
+				"name":"NED-D",
+				"bibcode":"1991ASSL..171...89H",
+				"reference":"Helou et al. (1991)",
+				"secondary":true,
+				"url":"http://ned.ipac.caltech.edu/Library/Distances/",
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2019cdr",
-				"source":"1,2"
+				"source":"2,3,4"
+			},
+			{
+				"value":"PS19cbg",
+				"source":"2"
 			},
 			{
 				"value":"ZTF19aandwkj",
-				"source":"1,2"
+				"source":"3,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"3"
+				"source":"5"
+			}
+		],
+		"comovingdist":[
+			{
+				"value":"336",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+42:59:07.64",
 				"u_value":"degrees",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"+42:59:07.76",
 				"u_value":"degrees",
-				"source":"1,2"
+				"source":"3,4"
+			},
+			{
+				"value":"+42:59:07.6",
+				"u_value":"degrees",
+				"source":"2"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/03/25.144248",
-				"source":"1"
+				"source":"3"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ZTF, Pan-STARRS1",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"ZTF",
-				"source":"1,2"
+				"source":"3,4"
+			}
+		],
+		"host":[
+			{
+				"value":"2MASX J07410206+4259111",
+				"source":"2"
+			}
+		],
+		"hostcomovingdist":[
+			{
+				"value":"336",
+				"derived":true,
+				"source":"1,5,6"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"+42:59:11.1",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"5"
+			}
+		],
+		"hostlumdist":[
+			{
+				"value":"361.8",
+				"derived":true,
+				"source":"1,5,6"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"3.88",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"3,5"
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"5.87",
+				"source":"1,3,5,6"
+			}
+		],
+		"hostra":[
+			{
+				"value":"07:41:02.06",
+				"derived":true,
+				"u_value":"hours",
+				"source":"5"
+			}
+		],
+		"hostredshift":[
+			{
+				"value":"0.0773",
+				"derived":true,
+				"source":"1,6"
+			}
+		],
+		"hostvelocity":[
+			{
+				"value":"22300",
+				"source":"5"
+			}
+		],
+		"lumdist":[
+			{
+				"value":"361.8",
+				"derived":true,
+				"u_value":"Mpc",
+				"source":"1,5,6"
+			}
+		],
+		"maxabsmag":[
+			{
+				"value":"-18.21",
+				"derived":true,
+				"source":"1,5,6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"19.48",
+				"value":"19.5",
 				"derived":true,
-				"source":"1,3"
-			}
-		],
-		"maxband":[
-			{
-				"value":"g",
-				"derived":true,
-				"source":"1,3"
+				"source":"3,4,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/03/25",
+				"value":"2019/03/24",
 				"derived":true,
-				"source":"1,3"
+				"source":"3,4,5"
+			}
+		],
+		"maxvisualabsmag":[
+			{
+				"value":"-18.29",
+				"derived":true,
+				"source":"1,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"19.48",
+				"value":"19.5",
 				"derived":true,
-				"source":"1,3"
-			}
-		],
-		"maxvisualband":[
-			{
-				"value":"g",
-				"derived":true,
-				"source":"1,3"
+				"source":"3,4,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2019/03/25",
+				"value":"2019/03/24",
 				"derived":true,
-				"source":"1,3"
+				"source":"3,4,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"07:41:01.900",
 				"u_value":"hours",
-				"source":"1"
+				"source":"3"
 			},
 			{
 				"value":"07:41:01.905",
 				"u_value":"hours",
-				"source":"1,2"
+				"source":"3,4"
+			},
+			{
+				"value":"07:41:01.89",
+				"u_value":"hours",
+				"source":"2"
+			}
+		],
+		"redshift":[
+			{
+				"value":"0.0773",
+				"derived":true,
+				"kind":"host",
+				"source":"1,6"
+			}
+		],
+		"velocity":[
+			{
+				"value":"22300",
+				"u_value":"km/s",
+				"source":"5"
 			}
 		],
 		"photometry":[
 			{
-				"time":"58559.1978009",
-				"band":"r",
-				"instrument":"ZTF-Cam",
-				"magnitude":"19.5584",
-				"telescope":"P48",
+				"time":"58566.5",
+				"magnitude":"19.5",
 				"u_time":"MJD",
-				"upperlimit":true,
-				"source":"1"
+				"source":"3,4"
 			},
 			{
-				"time":"58567.1442477",
-				"band":"r",
-				"e_magnitude":"0.12",
-				"instrument":"ZTF-Cam",
-				"magnitude":"19.55",
-				"telescope":"P48",
+				"time":"58589.2760275156",
+				"band":"i",
+				"e_magnitude":"0.0743678",
+				"instrument":"GPC",
+				"magnitude":"20.0567",
+				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1"
+				"source":"2"
 			},
 			{
-				"time":"58567.1874306",
-				"band":"g",
-				"e_magnitude":"0.15",
-				"instrument":"ZTF-Cam",
-				"magnitude":"19.48",
-				"telescope":"P48",
+				"time":"58589.2866043191",
+				"band":"i",
+				"e_magnitude":"0.0850998",
+				"instrument":"GPC",
+				"magnitude":"20.019",
+				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
-				"source":"1"
+				"source":"2"
+			},
+			{
+				"time":"58589.2973597902",
+				"band":"i",
+				"e_magnitude":"0.103258",
+				"instrument":"GPC",
+				"magnitude":"20.2329",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58589.3073629243",
+				"band":"i",
+				"e_magnitude":"0.0915253",
+				"instrument":"GPC",
+				"magnitude":"19.9447",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
 			}
 		]
 	}
