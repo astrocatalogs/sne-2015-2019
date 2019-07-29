@@ -15,22 +15,38 @@
 				"alias":"2"
 			},
 			{
+				"name":"ASAS-SN Supernovae",
+				"url":"http://www.astronomy.ohio-state.edu/~assassin/sn_list.html",
+				"alias":"3"
+			},
+			{
+				"name":"ATel",
+				"url":"http://www.astronomerstelegram.org/?read=####",
+				"alias":"4"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"5"
+			},
+			{
 				"name":"The Open Supernova Catalog",
 				"bibcode":"2017ApJ...835...64G",
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"3"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-19sj",
-				"source":"2"
+				"source":"2,5"
 			},
 			{
 				"value":"AT2019ltw",
-				"source":"2"
+				"source":"2,3,4,5"
 			}
 		],
 		"comovingdist":[
@@ -38,46 +54,58 @@
 				"value":"70.885",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3"
+				"source":"1,2,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+21:58:22.01",
 				"u_value":"degrees",
-				"source":"2"
+				"source":"2,5"
+			},
+			{
+				"value":"+21:58:23.16",
+				"u_value":"degrees",
+				"source":"3,4"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/07/25.88",
-				"source":"2"
+				"source":"2,3,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"2"
+				"source":"2,5"
 			}
 		],
 		"host":[
 			{
 				"value":"CGCG 137-076",
-				"source":"2"
+				"source":"2,3,4,5"
 			}
 		],
 		"hostcomovingdist":[
 			{
 				"value":"70.885",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,2,6"
 			}
 		],
 		"hostlumdist":[
 			{
 				"value":"72.0246",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,2,6"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"0.45",
+				"u_value":"arcseconds",
+				"source":"3,4"
 			}
 		],
 		"hostredshift":[
@@ -89,7 +117,7 @@
 		"hostvelocity":[
 			{
 				"value":"4781",
-				"source":"3"
+				"source":"6"
 			}
 		],
 		"lumdist":[
@@ -97,70 +125,75 @@
 				"value":"72.0246",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3"
+				"source":"1,2,6"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-17.2701",
+				"value":"-17.7301",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,2,6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"17",
+				"value":"16.54",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"maxband":[
 			{
-				"value":"g",
+				"value":"cyan",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/07/25",
+				"value":"2019/07/27",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17.2874",
 				"derived":true,
-				"source":"1,2,3"
+				"source":"1,2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"g",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/07/25",
 				"derived":true,
-				"source":"2,3"
+				"source":"2,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"16:18:38.626",
 				"u_value":"hours",
-				"source":"2"
+				"source":"2,5"
+			},
+			{
+				"value":"16:18:38.4",
+				"u_value":"hours",
+				"source":"3,4"
 			}
 		],
 		"redshift":[
@@ -168,13 +201,17 @@
 				"value":"0.016077",
 				"kind":"host",
 				"source":"2"
+			},
+			{
+				"value":"0.016077",
+				"source":"2,3,4,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"4781",
 				"u_value":"km/s",
-				"source":"3"
+				"source":"6"
 			}
 		],
 		"photometry":[
@@ -189,11 +226,33 @@
 				"source":"2"
 			},
 			{
+				"time":"58689.4759954",
+				"band":"orange",
+				"instrument":"ACAM1",
+				"magnitude":"18.96",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2"
+			},
+			{
 				"time":"58689.88",
 				"band":"g",
 				"instrument":"Payne-Gaposchkin",
 				"magnitude":"17",
 				"telescope":"ASASSN-5",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58691.4409954",
+				"band":"cyan",
+				"e_magnitude":"0.022",
+				"instrument":"ACAM1",
+				"magnitude":"16.538",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
 				"u_time":"MJD",
 				"source":"2"
 			}
