@@ -1,32 +1,131 @@
 {
 	"AT2019lvx":{
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/d3ef5fc/SCHEMA.md",
 		"name":"AT2019lvx",
 		"sources":[
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"3"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2019lvx",
-				"source":"1"
+				"source":"1,2"
 			},
 			{
 				"value":"DG19zrjmb",
-				"source":"1"
+				"source":"1,2"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
 				"value":"+07:55:10.04",
+				"u_value":"degrees",
+				"source":"1,2"
+			}
+		],
+		"discoverdate":[
+			{
+				"value":"2019/07/29.11",
 				"source":"1"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"DECam-GROWTH",
+				"source":"1,2"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"20.24",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2019/07/29",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"20.24",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2019/07/29",
+				"derived":true,
+				"source":"1,3"
 			}
 		],
 		"ra":[
 			{
 				"value":"20:45:45.052",
+				"u_value":"hours",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"time":"58693.11",
+				"band":"r",
+				"instrument":"DECAM",
+				"magnitude":"20.24",
+				"observer":"DECam",
+				"telescope":"CTIO-4m",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58693.1629977",
+				"band":"r",
+				"instrument":"DECAM",
+				"magnitude":"21.01",
+				"observer":"DECam",
+				"telescope":"CTIO-4m",
+				"u_time":"MJD",
 				"source":"1"
 			}
 		]

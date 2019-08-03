@@ -1,32 +1,146 @@
 {
 	"AT2019lvy":{
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/d3ef5fc/SCHEMA.md",
 		"name":"AT2019lvy",
 		"sources":[
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"3"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2019lvy",
-				"source":"1"
+				"source":"1,2"
 			},
 			{
 				"value":"DG19bfhpb",
-				"source":"1"
+				"source":"1,2"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
 				"value":"+09:58:43.66",
+				"u_value":"degrees",
+				"source":"1,2"
+			}
+		],
+		"discoverdate":[
+			{
+				"value":"2019/07/29.147998",
 				"source":"1"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"DECam-GROWTH, Pan-STARRS1",
+				"source":"1"
+			},
+			{
+				"value":"DECam-GROWTH",
+				"source":"1,2"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"19.74",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2019/07/29",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"19.74",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"r",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2019/07/29",
+				"derived":true,
+				"source":"1,3"
 			}
 		],
 		"ra":[
 			{
 				"value":"21:05:58.676",
+				"u_value":"hours",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"time":"58692.5259954",
+				"band":"w",
+				"e_magnitude":"0.06",
+				"instrument":"GPC1",
+				"magnitude":"21.05",
+				"observer":"Robot",
+				"telescope":"PS1",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58693.1479977",
+				"band":"r",
+				"instrument":"DECAM",
+				"magnitude":"19.74",
+				"observer":"DECam",
+				"telescope":"CTIO-4m",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58693.2009954",
+				"band":"r",
+				"instrument":"DECAM",
+				"magnitude":"20.13",
+				"observer":"DECam",
+				"telescope":"CTIO-4m",
+				"u_time":"MJD",
 				"source":"1"
 			}
 		]
