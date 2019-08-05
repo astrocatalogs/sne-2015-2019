@@ -20,10 +20,15 @@
 				"alias":"3"
 			},
 			{
+				"name":"OGLE-IV Transient Detection System",
+				"url":"http://ogle.astrouw.edu.pl/ogle4/transients/transients.html",
+				"alias":"4"
+			},
+			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,27 +36,31 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"SN2019lrh",
-				"source":"2,3,4"
+				"source":"2,3,4,5"
 			},
 			{
 				"value":"AT2019lrh",
-				"source":"2"
+				"source":"2,3,5"
 			},
 			{
 				"value":"Gaia19dcy",
-				"source":"2,3,4"
+				"source":"2,3,5"
+			},
+			{
+				"value":"OGLE19lrh",
+				"source":"3,5"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Ia",
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"comovingdist":[
@@ -59,7 +68,7 @@
 				"value":"210",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5"
+				"source":"1,2,6"
 			}
 		],
 		"dec":[
@@ -71,7 +80,7 @@
 			{
 				"value":"-67:38:00.51",
 				"u_value":"degrees",
-				"source":"3,4"
+				"source":"3,5"
 			},
 			{
 				"value":"-67:38:00.6",
@@ -87,12 +96,12 @@
 		],
 		"discoverer":[
 			{
-				"value":"GaiaAlerts",
+				"value":"GaiaAlerts, OGLE",
 				"source":"2"
 			},
 			{
 				"value":"Gaia",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"lumdist":[
@@ -100,63 +109,63 @@
 				"value":"220",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,5"
+				"source":"1,2,6"
 			}
 		],
 		"maxabsmag":[
 			{
-				"value":"-18.2",
+				"value":"-19.1",
 				"derived":true,
-				"source":"1,2,5"
+				"source":"1,2,6"
 			}
 		],
 		"maxappmag":[
 			{
-				"value":"18.46",
+				"value":"17.56",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,6"
 			}
 		],
 		"maxband":[
 			{
 				"value":"I",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/07/24",
+				"value":"2019/07/29",
 				"derived":true,
-				"source":"2,5"
+				"source":"4,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-17.9",
 				"derived":true,
-				"source":"1,2,5"
+				"source":"1,2,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"18.86",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,6"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"G",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,6"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2019/07/21",
 				"derived":true,
-				"source":"3,5"
+				"source":"3,6"
 			}
 		],
 		"ra":[
@@ -168,7 +177,7 @@
 			{
 				"value":"23:57:21.138",
 				"u_value":"hours",
-				"source":"3,4"
+				"source":"3,5"
 			},
 			{
 				"value":"23:57:21.12",
@@ -184,28 +193,52 @@
 			},
 			{
 				"value":"0.048",
-				"source":"3,4"
+				"source":"3,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"14000",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"photometry":[
 			{
-				"time":"58681.37821",
+				"time":"58492.06475",
 				"band":"I",
-				"instrument":"OGLEIV-Cam",
 				"magnitude":"22",
-				"observer":"OGLE-IV",
 				"system":"Vega",
-				"telescope":"OGLE-1.3m",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"2"
+				"source":"4"
+			},
+			{
+				"time":"58511.05942",
+				"band":"I",
+				"magnitude":"22",
+				"system":"Vega",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
+			},
+			{
+				"time":"58673.39801",
+				"band":"I",
+				"magnitude":"22",
+				"system":"Vega",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"4"
+			},
+			{
+				"time":"58681.37821",
+				"band":"I",
+				"magnitude":"22",
+				"system":"Vega",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"2,4"
 			},
 			{
 				"time":"58684.6139931",
@@ -252,6 +285,15 @@
 			{
 				"time":"58688.32954",
 				"band":"I",
+				"e_magnitude":"0.020",
+				"magnitude":"18.465",
+				"system":"Vega",
+				"u_time":"MJD",
+				"source":"4"
+			},
+			{
+				"time":"58688.32954",
+				"band":"I",
 				"e_magnitude":"0.02",
 				"instrument":"OGLEIV-Cam",
 				"magnitude":"18.465",
@@ -260,6 +302,15 @@
 				"telescope":"OGLE-1.3m",
 				"u_time":"MJD",
 				"source":"2"
+			},
+			{
+				"time":"58693.34135",
+				"band":"I",
+				"e_magnitude":"0.012",
+				"magnitude":"17.561",
+				"system":"Vega",
+				"u_time":"MJD",
+				"source":"4"
 			}
 		],
 		"spectra":[
