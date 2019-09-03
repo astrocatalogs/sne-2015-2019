@@ -1,32 +1,155 @@
 {
 	"AT2019mtj":{
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/d3ef5fc/SCHEMA.md",
 		"name":"AT2019mtj",
 		"sources":[
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"3"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2019mtj",
-				"source":"1"
+				"source":"1,2"
 			},
 			{
 				"value":"ATLAS19rmp",
-				"source":"1"
+				"source":"1,2"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
 				"value":"+35:08:58.97",
+				"u_value":"degrees",
+				"source":"1,2"
+			}
+		],
+		"discoverdate":[
+			{
+				"value":"2019/08/05.578993",
 				"source":"1"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"ATLAS",
+				"source":"1,2"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"19.78",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxband":[
+			{
+				"value":"cyan",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2019/08/05",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"19.78",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"cyan",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2019/08/05",
+				"derived":true,
+				"source":"1,3"
 			}
 		],
 		"ra":[
 			{
 				"value":"00:30:28.104",
+				"u_value":"hours",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"time":"58690.5819907",
+				"band":"i",
+				"e_magnitude":"0.23",
+				"instrument":"GPC1",
+				"magnitude":"21.51",
+				"observer":"Robot",
+				"telescope":"PS1",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58699.6019907",
+				"band":"cyan",
+				"instrument":"ACAM1",
+				"magnitude":"19.87",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"58700.5789931",
+				"band":"cyan",
+				"e_magnitude":"0.113",
+				"instrument":"ACAM1",
+				"magnitude":"19.785",
+				"observer":"Robot",
+				"telescope":"ATLAS1",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58719.5219907",
+				"band":"i",
+				"e_magnitude":"0.12",
+				"instrument":"GPC1",
+				"magnitude":"20.53",
+				"observer":"Robot",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"1"
 			}
 		]

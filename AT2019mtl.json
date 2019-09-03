@@ -1,32 +1,203 @@
 {
 	"AT2019mtl":{
+		"schema":"https://github.com/astrocatalogs/supernovae/blob/d3ef5fc/SCHEMA.md",
 		"name":"AT2019mtl",
 		"sources":[
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
 				"alias":"1"
+			},
+			{
+				"name":"Latest Supernovae",
+				"secondary":true,
+				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
+				"alias":"2"
+			},
+			{
+				"name":"The Open Supernova Catalog",
+				"bibcode":"2017ApJ...835...64G",
+				"reference":"Guillochon et al. (2017)",
+				"secondary":true,
+				"url":"https://sne.space",
+				"alias":"3"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2019mtl",
-				"source":"1"
+				"source":"1,2"
 			},
 			{
 				"value":"ZTF19abochep",
-				"source":"1"
+				"source":"1,2"
+			},
+			{
+				"value":"PS19ehi",
+				"source":"1,2"
+			}
+		],
+		"claimedtype":[
+			{
+				"value":"Candidate",
+				"source":"3"
 			}
 		],
 		"dec":[
 			{
-				"value":"-08:55:49.49",
+				"value":"-08:55:49.48",
+				"u_value":"degrees",
 				"source":"1"
+			},
+			{
+				"value":"-08:55:49.49",
+				"u_value":"degrees",
+				"source":"1,2"
+			}
+		],
+		"discoverdate":[
+			{
+				"value":"2019/08/06.460104",
+				"source":"1"
+			}
+		],
+		"discoverer":[
+			{
+				"value":"ALeRCE, Pan-STARRS1",
+				"source":"1"
+			},
+			{
+				"value":"ALeRCE",
+				"source":"1,2"
+			}
+		],
+		"host":[
+			{
+				"value":"2MASX J01573684-0855494",
+				"source":"1"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"-08:55:49.4",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"3"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"3.883",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"1,3"
+			}
+		],
+		"hostra":[
+			{
+				"value":"01:57:36.84",
+				"derived":true,
+				"u_value":"hours",
+				"source":"3"
+			}
+		],
+		"maxappmag":[
+			{
+				"value":"20.14",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxband":[
+			{
+				"value":"i",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxdate":[
+			{
+				"value":"2019/08/25",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualappmag":[
+			{
+				"value":"20.21",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"1,3"
+			}
+		],
+		"maxvisualdate":[
+			{
+				"value":"2019/08/06",
+				"derived":true,
+				"source":"1,3"
 			}
 		],
 		"ra":[
 			{
+				"value":"01:57:37.102",
+				"u_value":"hours",
+				"source":"1"
+			},
+			{
 				"value":"01:57:37.107",
+				"u_value":"hours",
+				"source":"1,2"
+			}
+		],
+		"photometry":[
+			{
+				"time":"58695.4629977",
+				"band":"r",
+				"instrument":"ZTF-Cam",
+				"magnitude":"20.5735",
+				"observer":"Robot",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"upperlimit":true,
+				"source":"1"
+			},
+			{
+				"time":"58699.5909954",
+				"band":"w",
+				"e_magnitude":"0.04",
+				"instrument":"GPC1",
+				"magnitude":"20.29",
+				"observer":"Robot",
+				"telescope":"PS1",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58701.4601042",
+				"band":"g",
+				"e_magnitude":"0.18212",
+				"instrument":"ZTF-Cam",
+				"magnitude":"20.2074",
+				"observer":"Robot",
+				"telescope":"P48",
+				"u_time":"MJD",
+				"source":"1"
+			},
+			{
+				"time":"58720.5639931",
+				"band":"i",
+				"e_magnitude":"0.15",
+				"instrument":"GPC1",
+				"magnitude":"20.14",
+				"observer":"Robot",
+				"telescope":"PS1",
+				"u_time":"MJD",
 				"source":"1"
 			}
 		]
