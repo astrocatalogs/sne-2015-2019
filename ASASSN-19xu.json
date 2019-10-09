@@ -10,8 +10,8 @@
 				"alias":"1"
 			},
 			{
-				"name":"Transient Name Server",
-				"url":"https://wis-tns.weizmann.ac.il/object/2019riy",
+				"name":"ATel 13147",
+				"url":"http://www.astronomerstelegram.org/?read=13147",
 				"alias":"2"
 			},
 			{
@@ -20,15 +20,20 @@
 				"alias":"3"
 			},
 			{
-				"name":"ATel ##",
+				"name":"ATel",
 				"url":"http://www.astronomerstelegram.org/?read=####",
 				"alias":"4"
+			},
+			{
+				"name":"Transient Name Server",
+				"url":"https://wis-tns.weizmann.ac.il/",
+				"alias":"5"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -36,17 +41,17 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"6"
+				"alias":"7"
 			}
 		],
 		"alias":[
 			{
 				"value":"ASASSN-19xu",
-				"source":"2,5"
+				"source":"2,6"
 			},
 			{
 				"value":"AT2019riy",
-				"source":"2,3,4,5"
+				"source":"2,3,4,5,6"
 			}
 		],
 		"comovingdist":[
@@ -54,14 +59,14 @@
 				"value":"147.8",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4,5,6"
+				"source":"1,2,3,4,6,7"
 			}
 		],
 		"dec":[
 			{
-				"value":"+37:47:52.19",
+				"value":"+37:47:53.60",
 				"u_value":"degrees",
-				"source":"2,5"
+				"source":"2,6"
 			},
 			{
 				"value":"+37:47:53.52",
@@ -72,19 +77,19 @@
 		"discoverdate":[
 			{
 				"value":"2019/09/28",
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ASAS-SN",
-				"source":"2,5"
+				"source":"2,6"
 			}
 		],
 		"host":[
 			{
 				"value":"NGC 6122",
-				"source":"2,3,4,5"
+				"source":"2,3,4,6"
 			}
 		],
 		"hostoffsetang":[
@@ -99,56 +104,70 @@
 				"value":"152.73",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4,5,6"
+				"source":"1,2,3,4,6,7"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18.284",
 				"derived":true,
-				"source":"1,2,3,4,5,6"
+				"source":"1,2,3,4,6,7"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"17.6",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"5,7"
+			}
+		],
+		"maxband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"5,7"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/09/27",
+				"value":"2019/09/28",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"5,7"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-18.32",
 				"derived":true,
-				"source":"1,2,3,4,5,6"
+				"source":"1,2,3,4,6,7"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"17.6",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"5,7"
+			}
+		],
+		"maxvisualband":[
+			{
+				"value":"g",
+				"derived":true,
+				"source":"5,7"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2019/09/27",
+				"value":"2019/09/28",
 				"derived":true,
-				"source":"2,5,6"
+				"source":"5,7"
 			}
 		],
 		"ra":[
 			{
-				"value":"16:20:09.374",
+				"value":"16:20:09.519",
 				"u_value":"hours",
-				"source":"2,5"
+				"source":"2,6"
 			},
 			{
 				"value":"16:20:09.6",
@@ -159,22 +178,35 @@
 		"redshift":[
 			{
 				"value":"0.03365",
-				"source":"2,3,4,5"
+				"source":"2,3,4,6"
 			}
 		],
 		"velocity":[
 			{
 				"value":"9918",
 				"u_value":"km/s",
-				"source":"6"
+				"source":"7"
 			}
 		],
 		"photometry":[
 			{
-				"time":"58753.5",
-				"magnitude":"17.6",
+				"time":"58752.13",
+				"band":"g",
+				"instrument":"Leavitt",
+				"magnitude":"18.1",
+				"telescope":"ASASSN-4",
 				"u_time":"MJD",
-				"source":"2,5"
+				"upperlimit":true,
+				"source":"5"
+			},
+			{
+				"time":"58754.12",
+				"band":"g",
+				"instrument":"Leavitt",
+				"magnitude":"17.6",
+				"telescope":"ASASSN-4",
+				"u_time":"MJD",
+				"source":"5"
 			}
 		]
 	}
