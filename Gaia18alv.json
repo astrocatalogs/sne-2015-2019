@@ -15,26 +15,31 @@
 				"alias":"2"
 			},
 			{
+				"name":"Pan-STARRS 3Pi",
+				"url":"https://star.pst.qub.ac.uk/ps1threepi/psdb/",
+				"alias":"3"
+			},
+			{
 				"name":"CPCS Alert 26847",
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/get_alert_lc_data?alert_id=26847",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"Cambridge Photometric Calibration Server",
 				"secondary":true,
 				"url":"http://gsaweb.ast.cam.ac.uk/followup/",
-				"alias":"5"
+				"alias":"6"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"6"
+				"alias":"7"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -42,21 +47,21 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"7"
+				"alias":"8"
 			}
 		],
 		"alias":[
 			{
 				"value":"Gaia18alv",
-				"source":"2,5,6"
+				"source":"2,6,7"
 			},
 			{
 				"value":"AT2018xh",
-				"source":"2,4,6"
+				"source":"2,3,5,7"
 			},
 			{
 				"value":"PS18ls",
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"claimedtype":[
@@ -69,7 +74,7 @@
 			{
 				"value":"+72:46:01.03",
 				"u_value":"degrees",
-				"source":"2,6"
+				"source":"2,7"
 			},
 			{
 				"value":"+72:46:00.84",
@@ -77,21 +82,26 @@
 				"source":"2"
 			},
 			{
+				"value":"+72:46:01.0",
+				"u_value":"degrees",
+				"source":"3"
+			},
+			{
 				"value":"+72:46:01.2",
 				"u_value":"degrees",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2018/02/14",
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"Gaia",
-				"source":"2,6"
+				"source":"2,7"
 			}
 		],
 		"ebv":[
@@ -99,61 +109,96 @@
 				"value":"0.0293",
 				"derived":true,
 				"e_value":"0.0009",
-				"source":"1,7"
+				"source":"1,8"
+			}
+		],
+		"host":[
+			{
+				"value":"2MASX J15443713+7246030",
+				"source":"3"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"+72:46:03.0",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"8"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"2.126",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"2,7,8"
+			}
+		],
+		"hostra":[
+			{
+				"value":"15:44:37.13",
+				"derived":true,
+				"u_value":"hours",
+				"source":"8"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"15.48",
 				"derived":true,
-				"source":"3,5,7"
+				"source":"4,6,8"
 			}
 		],
 		"maxband":[
 			{
 				"value":"r",
 				"derived":true,
-				"source":"3,5,7"
+				"source":"4,6,8"
 			}
 		],
 		"maxdate":[
 			{
 				"value":"2018/03/12",
 				"derived":true,
-				"source":"3,5,7"
+				"source":"4,6,8"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"15.82",
 				"derived":true,
-				"source":"3,5,7"
+				"source":"4,6,8"
 			}
 		],
 		"maxvisualband":[
 			{
 				"value":"V",
 				"derived":true,
-				"source":"3,5,7"
+				"source":"4,6,8"
 			}
 		],
 		"maxvisualdate":[
 			{
 				"value":"2018/03/12",
 				"derived":true,
-				"source":"3,5,7"
+				"source":"4,6,8"
 			}
 		],
 		"ra":[
 			{
 				"value":"15:44:37.310",
 				"u_value":"hours",
-				"source":"2,6"
+				"source":"2,7"
 			},
 			{
 				"value":"15:44:37.2",
 				"u_value":"hours",
-				"source":"2,5"
+				"source":"2,6"
+			},
+			{
+				"value":"15:44:37.31",
+				"u_value":"hours",
+				"source":"3"
 			}
 		],
 		"photometry":[
@@ -166,7 +211,7 @@
 				"telescope":"Gaia",
 				"u_time":"MJD",
 				"upperlimit":true,
-				"source":"4"
+				"source":"5"
 			},
 			{
 				"time":"58163.7889931",
@@ -177,7 +222,7 @@
 				"observer":"Robot",
 				"telescope":"Gaia",
 				"u_time":"MJD",
-				"source":"4"
+				"source":"5"
 			},
 			{
 				"time":"58163.790",
@@ -200,6 +245,16 @@
 				"source":"2"
 			},
 			{
+				"time":"58183.6018778006",
+				"band":"i",
+				"e_magnitude":"0.0593375",
+				"instrument":"GPC",
+				"magnitude":"18.9971",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
 				"time":"58183.6019907",
 				"band":"i",
 				"e_magnitude":"0.06",
@@ -208,7 +263,37 @@
 				"observer":"Robot",
 				"telescope":"PS1",
 				"u_time":"MJD",
-				"source":"4"
+				"source":"5"
+			},
+			{
+				"time":"58183.6155599238",
+				"band":"i",
+				"e_magnitude":"0.0508691",
+				"instrument":"GPC",
+				"magnitude":"18.9681",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58183.6292216703",
+				"band":"i",
+				"e_magnitude":"0.0453143",
+				"instrument":"GPC",
+				"magnitude":"18.9833",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
+			},
+			{
+				"time":"58183.6429127738",
+				"band":"i",
+				"e_magnitude":"0.0478379",
+				"instrument":"GPC",
+				"magnitude":"18.95",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"3"
 			},
 			{
 				"time":"58186.359",
@@ -237,7 +322,7 @@
 				"magnitude":"15.8187",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
-				"source":"3,5"
+				"source":"4,6"
 			},
 			{
 				"time":"58189.138",
@@ -246,7 +331,7 @@
 				"magnitude":"15.4838",
 				"observatory":"Liam Hardy pt5m",
 				"u_time":"MJD",
-				"source":"3,5"
+				"source":"4,6"
 			},
 			{
 				"time":"58223.001",

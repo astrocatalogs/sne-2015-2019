@@ -10,15 +10,20 @@
 				"alias":"1"
 			},
 			{
+				"name":"Pan-STARRS 3Pi",
+				"url":"https://star.pst.qub.ac.uk/ps1threepi/psdb/",
+				"alias":"2"
+			},
+			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/object/2018kek",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -26,23 +31,27 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"4"
+				"alias":"5"
 			}
 		],
 		"alias":[
 			{
 				"value":"AT2018kek",
-				"source":"2,3"
+				"source":"2,3,4"
+			},
+			{
+				"value":"PS19aia",
+				"source":"2"
 			},
 			{
 				"value":"ZTF18acvwgdu",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"claimedtype":[
 			{
 				"value":"Candidate",
-				"source":"4"
+				"source":"5"
 			}
 		],
 		"comovingdist":[
@@ -50,26 +59,67 @@
 				"value":"276.39",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4"
+				"source":"1,3,4,5"
 			}
 		],
 		"dec":[
 			{
 				"value":"-05:45:06.99",
 				"u_value":"degrees",
-				"source":"2,3"
+				"source":"3,4"
+			},
+			{
+				"value":"-05:45:03.8",
+				"u_value":"degrees",
+				"source":"2"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2018/12/13",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"ZTF",
-				"source":"2,3"
+				"source":"3,4"
+			}
+		],
+		"host":[
+			{
+				"value":"2MASX J09284448-0545074",
+				"source":"2"
+			}
+		],
+		"hostdec":[
+			{
+				"value":"-05:45:07.4",
+				"derived":true,
+				"u_value":"degrees",
+				"source":"5"
+			}
+		],
+		"hostoffsetang":[
+			{
+				"value":"0.4363",
+				"derived":true,
+				"u_value":"arcseconds",
+				"source":"3,4,5"
+			}
+		],
+		"hostoffsetdist":[
+			{
+				"value":"0.5498",
+				"source":"1,3,4,5"
+			}
+		],
+		"hostra":[
+			{
+				"value":"09:28:44.48",
+				"derived":true,
+				"u_value":"hours",
+				"source":"5"
 			}
 		],
 		"lumdist":[
@@ -77,123 +127,120 @@
 				"value":"293.909",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,3,4"
+				"source":"1,3,4,5"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-18.2743",
 				"derived":true,
-				"source":"1,2,3,4"
+				"source":"1,3,4,5"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"19",
 				"derived":true,
-				"source":"2,4"
-			}
-		],
-		"maxband":[
-			{
-				"value":"r",
-				"derived":true,
-				"source":"2,4"
+				"source":"3,4,5"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2018/12/16",
+				"value":"2018/12/12",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,5"
 			}
 		],
 		"maxvisualabsmag":[
 			{
-				"value":"-18.3211",
+				"value":"-18.3411",
 				"derived":true,
-				"source":"1,2,3,4"
+				"source":"1,3,4,5"
 			}
 		],
 		"maxvisualappmag":[
 			{
-				"value":"19.02",
+				"value":"19",
 				"derived":true,
-				"source":"2,4"
-			}
-		],
-		"maxvisualband":[
-			{
-				"value":"g",
-				"derived":true,
-				"source":"2,4"
+				"source":"3,4,5"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2018/12/16",
+				"value":"2018/12/12",
 				"derived":true,
-				"source":"2,4"
+				"source":"3,4,5"
 			}
 		],
 		"ra":[
 			{
 				"value":"09:28:44.490",
 				"u_value":"hours",
-				"source":"2,3"
+				"source":"3,4"
+			},
+			{
+				"value":"09:28:44.32",
+				"u_value":"hours",
+				"source":"2"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.063394",
-				"source":"2,3"
+				"source":"3,4"
 			}
 		],
 		"velocity":[
 			{
 				"value":"18404",
 				"u_value":"km/s",
-				"source":"4"
+				"source":"5"
 			}
 		],
 		"photometry":[
 			{
-				"time":"58465.482",
-				"band":"r",
-				"instrument":"ZTF-Cam",
-				"magnitude":"20.12",
-				"telescope":"P48",
+				"time":"58464.5",
+				"magnitude":"19.0",
 				"u_time":"MJD",
-				"upperlimit":true,
-				"source":"2"
+				"source":"3,4"
 			},
 			{
-				"time":"58465.5252778",
-				"band":"g",
-				"e_magnitude":"0.180026",
-				"instrument":"ZTF-Cam",
-				"magnitude":"20.2169",
-				"telescope":"P48",
+				"time":"58596.2536973011",
+				"band":"w",
+				"e_magnitude":"0.0456909",
+				"instrument":"GPC",
+				"magnitude":"20.2564",
+				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58468.4411574",
-				"band":"g",
-				"e_magnitude":"0.0855961",
-				"instrument":"ZTF-Cam",
-				"magnitude":"19.0174",
-				"telescope":"P48",
+				"time":"58596.2641818677",
+				"band":"w",
+				"e_magnitude":"0.0438885",
+				"instrument":"GPC",
+				"magnitude":"20.2507",
+				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58468.5010995",
-				"band":"r",
-				"e_magnitude":"0.0982603",
-				"instrument":"ZTF-Cam",
-				"magnitude":"18.9958",
-				"telescope":"P48",
+				"time":"58596.2746358789",
+				"band":"w",
+				"e_magnitude":"0.0400922",
+				"instrument":"GPC",
+				"magnitude":"20.269",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58596.2850988427",
+				"band":"w",
+				"e_magnitude":"0.0386966",
+				"instrument":"GPC",
+				"magnitude":"20.2295",
+				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
 				"source":"2"
 			}

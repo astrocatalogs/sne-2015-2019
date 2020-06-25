@@ -10,20 +10,25 @@
 				"alias":"1"
 			},
 			{
+				"name":"Pan-STARRS 3Pi",
+				"url":"https://star.pst.qub.ac.uk/ps1threepi/psdb/",
+				"alias":"2"
+			},
+			{
 				"name":"Transient Name Server",
 				"url":"https://wis-tns.weizmann.ac.il/object/2019brn",
-				"alias":"2"
+				"alias":"3"
 			},
 			{
 				"name":"Supernova Hunt",
 				"url":"http://nesssi.cacr.caltech.edu/catalina/current.html",
-				"alias":"3"
+				"alias":"4"
 			},
 			{
 				"name":"Latest Supernovae",
 				"secondary":true,
 				"url":"http://www.rochesterastronomy.org/snimages/snredshiftall.html",
-				"alias":"4"
+				"alias":"5"
 			},
 			{
 				"name":"The Open Supernova Catalog",
@@ -31,17 +36,21 @@
 				"reference":"Guillochon et al. (2017)",
 				"secondary":true,
 				"url":"https://sne.space",
-				"alias":"5"
+				"alias":"6"
 			}
 		],
 		"alias":[
 			{
 				"value":"SNhunt409",
+				"source":"3,5"
+			},
+			{
+				"value":"PS19ajj",
 				"source":"2,4"
 			},
 			{
 				"value":"AT2019brn",
-				"source":"2,3,4"
+				"source":"2,3,5"
 			}
 		],
 		"comovingdist":[
@@ -49,36 +58,41 @@
 				"value":"192",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,3,5,6"
 			}
 		],
 		"dec":[
 			{
 				"value":"+18:04:36.84",
 				"u_value":"degrees",
-				"source":"2,3,4"
+				"source":"3,4,5"
+			},
+			{
+				"value":"+18:04:36.6",
+				"u_value":"degrees",
+				"source":"2"
 			}
 		],
 		"discoverdate":[
 			{
 				"value":"2019/03/09",
-				"source":"2,3,4"
+				"source":"3,4,5"
 			}
 		],
 		"discoverer":[
 			{
 				"value":"CRTS",
-				"source":"2,3,4"
+				"source":"3,4,5"
 			},
 			{
 				"value":"Mishevskiy",
-				"source":"3"
+				"source":"4"
 			}
 		],
 		"host":[
 			{
 				"value":"CGCG 108-046",
-				"source":"2,3,4"
+				"source":"2,3,4,5"
 			}
 		],
 		"lumdist":[
@@ -86,114 +100,185 @@
 				"value":"200.7",
 				"derived":true,
 				"u_value":"Mpc",
-				"source":"1,2,4,5"
+				"source":"1,3,5,6"
 			}
 		],
 		"maxabsmag":[
 			{
 				"value":"-15.77",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,3,5,6"
 			}
 		],
 		"maxappmag":[
 			{
 				"value":"20.7",
 				"derived":true,
-				"source":"2,5"
-			}
-		],
-		"maxband":[
-			{
-				"value":"V-crts",
-				"derived":true,
-				"source":"2,5"
+				"source":"3,5,6"
 			}
 		],
 		"maxdate":[
 			{
-				"value":"2019/03/09",
+				"value":"2019/03/08",
 				"derived":true,
-				"source":"2,5"
+				"source":"3,5,6"
 			}
 		],
 		"maxvisualabsmag":[
 			{
 				"value":"-15.81",
 				"derived":true,
-				"source":"1,2,4,5"
+				"source":"1,3,5,6"
 			}
 		],
 		"maxvisualappmag":[
 			{
 				"value":"20.7",
 				"derived":true,
-				"source":"2,5"
-			}
-		],
-		"maxvisualband":[
-			{
-				"value":"V-crts",
-				"derived":true,
-				"source":"2,5"
+				"source":"3,5,6"
 			}
 		],
 		"maxvisualdate":[
 			{
-				"value":"2019/03/09",
+				"value":"2019/03/08",
 				"derived":true,
-				"source":"2,5"
+				"source":"3,5,6"
 			}
 		],
 		"ra":[
 			{
 				"value":"16:00:48.216",
 				"u_value":"hours",
-				"source":"2,4"
+				"source":"3,5"
+			},
+			{
+				"value":"16:00:48.21",
+				"u_value":"hours",
+				"source":"2"
 			},
 			{
 				"value":"16:00:48.24",
 				"u_value":"hours",
-				"source":"3"
+				"source":"4"
 			}
 		],
 		"redshift":[
 			{
 				"value":"0.0439",
-				"source":"2,4"
+				"source":"3,5"
 			}
 		],
 		"velocity":[
 			{
 				"value":"12900",
 				"u_value":"km/s",
-				"source":"5"
+				"source":"6"
 			}
 		],
 		"photometry":[
 			{
-				"time":"58309.2411574",
-				"band":"V-crts",
-				"magnitude":"21.5",
-				"u_time":"MJD",
-				"upperlimit":true,
-				"source":"2"
-			},
-			{
-				"time":"58551.5110764",
-				"band":"V-crts",
+				"time":"58550.5",
 				"magnitude":"20.7",
 				"u_time":"MJD",
+				"source":"3,5"
+			},
+			{
+				"time":"58610.3567694063",
+				"band":"w",
+				"e_magnitude":"0.15685",
+				"instrument":"GPC",
+				"magnitude":"22.2726",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
 				"source":"2"
 			},
 			{
-				"time":"58610.3569907",
+				"time":"58610.3696066931",
 				"band":"w",
-				"e_magnitude":"0.16",
-				"instrument":"GPC1",
-				"magnitude":"22.27",
-				"observer":"Robot",
-				"telescope":"PS1",
+				"e_magnitude":"0.177392",
+				"instrument":"GPC",
+				"magnitude":"22.48",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58610.3951850813",
+				"band":"w",
+				"e_magnitude":"0.163055",
+				"instrument":"GPC",
+				"magnitude":"22.524",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58611.5355297393",
+				"band":"w",
+				"e_magnitude":"0.132827",
+				"instrument":"GPC",
+				"magnitude":"22.2735",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58611.5496120746",
+				"band":"w",
+				"e_magnitude":"0.147227",
+				"instrument":"GPC",
+				"magnitude":"22.4238",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58611.5638122126",
+				"band":"w",
+				"e_magnitude":"0.181861",
+				"instrument":"GPC",
+				"magnitude":"22.7939",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58611.5780376596",
+				"band":"w",
+				"e_magnitude":"0.151953",
+				"instrument":"GPC",
+				"magnitude":"22.4489",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58632.4674829152",
+				"band":"w",
+				"e_magnitude":"0.203594",
+				"instrument":"GPC",
+				"magnitude":"22.6634",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58632.5094541573",
+				"band":"w",
+				"e_magnitude":"0.216794",
+				"instrument":"GPC",
+				"magnitude":"22.5063",
+				"telescope":"Pan-STARRS1",
+				"u_time":"MJD",
+				"source":"2"
+			},
+			{
+				"time":"58633.5093685935",
+				"band":"w",
+				"e_magnitude":"0.273202",
+				"instrument":"GPC",
+				"magnitude":"22.332",
+				"telescope":"Pan-STARRS1",
 				"u_time":"MJD",
 				"source":"2"
 			}
